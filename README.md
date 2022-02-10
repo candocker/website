@@ -1,2 +1,2 @@
 # website
-The website system
+The module website wiki

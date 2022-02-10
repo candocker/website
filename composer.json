@@ -1,0 +1,38 @@
+{
+    "name": "candocker/website",
+    "type": "project",
+    "keywords": [
+        "php",
+        "application",
+        "website",
+        "resource"
+    ],
+    "description": "A application of website",
+    "license": "MIT",
+    "require": {
+        "php": "^7.3.0"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "ModuleWebsite\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ModuleWebsite\\Test\\": "./test/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": [],
+    "scripts": {
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer/"
+        }
+    }
+}
