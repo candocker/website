@@ -1,0 +1,11 @@
+@extends('layouts.main')
+@section('main')
+@include('modules.guide._header-top')
+@yield('content')
+@include('modules.guide._footer-brand')
+@include('modules.guide._footer')
+@include('modules.guide._footer-js')
+@endsection
+@section('dynamicMeta')
+@section('jscss')
+@section('bodyClass')
