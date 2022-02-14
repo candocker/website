@@ -6,17 +6,14 @@ class GraphicController extends AbstractController
 {
     public function home()
     {
-        $this->getHuman();
-        return $this->customView('home');
+        $datas = [];
+        $datas['tdkData'] = [
+            'title' => '定制自己的网络导航,驾驭浩瀚的网络信息',
+            'keywords' => '',
+            'description' => '',
+        ];
+        return $this->customView('home', $datas);
     }
-
-	public function isMobile($force = false)
-	{
-        if (empty($force)) {
-		    return null;
-        }
-        return parent::isMobile($force);
-	}
 
 	protected function viewPath()
 	{

@@ -76,7 +76,7 @@ abstract class AbstractController extends AbstractControllerBase
         $viewBasePath = dirname(dirname(__DIR__)) . '/resources/views/';
         //$paths = [resource_path('views') . '/' . $path];
         $paths = [$viewBasePath . $path];
-        $finder =new FileViewFinder(App::make ('files'), $paths);
+        $finder = new FileViewFinder(App::make ('files'), $paths);
         View::setFinder ($finder);
     }
 
