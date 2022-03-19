@@ -6,8 +6,11 @@
 {{--@include('graphic.modules._home-top', ['data' => ''])--}}
 <div class="body">
     {{--@include('graphic.modules._home-brief', ['data' => ''])--}}
-    @include('graphic.modules._home-ext1', ['data' => ''])
-    @include('graphic.modules._home-section1', ['data' => ''])
+    @foreach ($datas['graphics'] as $pData)
+        @include('graphic.modules._home-' . $pData['view'], ['data' => $pData])
+    @endforeach
+    {{--@include('graphic.modules._home-ext1', ['data' => ''])--}}
+    {{--@include('graphic.modules._home-section1', ['data' => ''])--}}
     {{--@include('graphic.modules._home-section2', ['data' => ''])--}}
     {{--@include('graphic.modules._home-section3', ['data' => ''])--}}
     {{--@include('graphic.modules._home-section4', ['data' => ''])--}}
@@ -17,5 +20,5 @@
     {{--@include('graphic.modules._home-section8', ['data' => ''])--}}
     {{--@include('graphic.modules._home-section9', ['data' => ''])--}}
 </div>
-@include('graphic.modules._home-footer', ['data' => ''])
+@include('graphic.modules._home-footer', ['data' => $datas['footerLinks']])
 @endsection

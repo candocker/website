@@ -2,8 +2,11 @@
     <a href="" title="美国历任总统名单_历任美国总统名单一览表及就职情况_美国总统（POTUS）">美国历任总统名单</a>
 </div>-->
 <ul style="width: 960px; margin: auto; overflow: hidden;">
+    @foreach ($data as $pData)
     <li style="float: left; margin-right: 20px;">
-        <a target="_self" href="http://114.xixik.com/chaodai/" title="中国朝代顺序表 - 中国朝代更替表,中国历史朝代公元对照简表">中国朝代顺序表</a></li>
+        <a target="_self" href="/{{$pData['code']}}" title="{{$pData['name']}}">{{$pData['name']}}</a>
+    </li>
+    @endforeach
 </ul>
 <!--<div class="lindBox">
     <div class="btnGray">

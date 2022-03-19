@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\DB;
 class TestController extends AbstractController
 {
     public function test1()
-    {   
+    {
         $results = DB::table('TABLES')->where('TABLE_SCHEMA', 'edu-m')->get();
         $sql = ''; 
 
@@ -81,5 +81,119 @@ class TestController extends AbstractController
     protected function getEnvValue($key)
     {
         return env($key);
+    }
+
+    public function tmp()
+    {
+        $text = file('/data/log/dealdata/tmp/admin.json');
+        $data = json_decode($text[0], true);
+        return $this->successCustom($data);
+        echo $text[0];exit();
+        $request = $this->request;
+        $inTest = config('app.inTest');
+        if (empty($inTest)) {
+            return $this->error(400, '非法请求');
+        }
+        $method = ucfirst($request->input('method', ''));
+        $method = "_test{$method}";
+        $this->$method($request);
+    }
+
+    public function option()
+    {
+        return $this->testTmp('option');
+    }
+
+    public function articleContext()
+    {
+        return $this->testTmp('acontext');
+    }
+
+    public function statistic()
+    {
+        return $this->testTmp('statistic');
+    }
+
+    public function archive()
+    {
+        return $this->testTmp('archive');
+    }
+
+    public function category()
+    {
+        return $this->testTmp('category');
+    }
+
+    public function comment()
+    {
+        return $this->testTmp('comment');
+    }
+
+    public function disqus()
+    {
+        return $this->testTmp('disqus');
+    }
+
+    public function tag()
+    {
+        return $this->testTmp('tag');
+    }
+
+    public function article()
+    {
+        $text = file('/data/log/dealdata/tmp/article.json');
+        $model = $this->getModelObj('culture-cultureArticle');
+        $info = $model->find(2);
+        $data = json_decode($text[0], true);
+        $data['result']['title'] = $info['title'];
+        //$data['result']['content'] = file_get_contents('/tmp/content.txt');//$info['content'];
+        $data['result']['content'] = $info['content'];
+        return $this->successCustom($data);
+        echo json_encode($data);exit();
+
+        //print_r($data);exit();
+    }
+
+    public function ahot()
+    {
+        return $this->testTmp('ahot');
+    }
+
+    public function userinfo()
+    {
+        return $this->testTmp('userinfo');
+    }
+
+    public function acalendar()
+    {
+        return $this->testTmp('acalendar');
+    }
+
+    public function announce()
+    {
+        return $this->testTmp('announce');
+    }
+
+    public function articleList()
+    {
+        return $this->testTmp('articleList');
+    }
+
+    public function admin()
+    {
+        return $this->testTmp('admin');
+    }
+
+    protected function testTmp($code)
+    {
+        $text = file('/data/log/dealdata/tmp/' . $code . '.json');
+        $data = json_decode($text[0], true);
+        return $this->successCustom($data);
+        echo $text[0];exit();
+    }
+
+    public function _test()
+    {
+        //exit();
     }
 }
