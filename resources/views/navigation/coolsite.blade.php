@@ -25,11 +25,11 @@
             </a>
         </div>
         @endforeach
-        <div class="col">
+        <!--<div class="col">
         <a href="https://www.boredpanda.com/" class="card-link" target="_blank">
         <div class="card-tit"><img src="{{$commonAssetUrl}}/nav/img/72fcb-9508.png"><span class="name">Boredpanda</span></div>
         <div class="card-desc">分享全球有趣的图片故事</div></a>
-        </div>
+        </div>-->
     </div>
 </div>
 @endforeach

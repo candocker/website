@@ -38,8 +38,7 @@ class BlogController extends AbstractController
     public function articleRelate($id)
     {
         $service = $this->getServiceObj('culture-cultureArticle');
-        $where = ['id' => $id];
-        $data = $service->getInfoRelate('cultureArticle', $where);
+        $data = $service->getInfoRelate('cultureArticle', $id);
         return $this->responseResult($data);
     }
 
