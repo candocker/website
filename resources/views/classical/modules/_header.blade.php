@@ -48,3 +48,32 @@
         </td>
     </tr>
 </tbody></table>
+
+<!--<table  cellspacing='0'>
+    <tr><td width="80">
+      <a href="../../index.htm" target="_blank"><img src="../../img/logo.gif" border="0" alt="劝学网主页"></a>
+    </td><td width="300">
+      <table style="width:100%;align:center;"><tr>
+          <td width="20%" class="head_td top_bottom"><a href="../../index.htm" target="_blank">主页</a></td>
+          <td width="20%" class="head_td top_bottom current_menu"><a href="../../CT_RuJia/index.html">儒家</a></td>
+          <td width="20%" class="head_td top_bottom"><a href="../../CT_DaoJia/index.html">道家</a></td>
+          <td width="20%" class="head_td top_bottom"><a href="../../CT_FoJia/index.html">佛经</a></td>
+          <td width="20%" class="head_td top_bottom"><a href="../../CT_FaJia/index.html">法家</a></td>
+      </tr></table>
+      <table style="width:100%;align:center;"><tr>
+          <td width="20%" class="head_td"><a href="../../CT_BaiJia/index.html">百家</a></td>
+          <td width="20%" class="head_td"><a href="../../CT_BingFa/index.html">兵法</a></td>
+          <td width="20%" class="head_td"><a href="../../CT_ZhongYi/index.html">中医</a></td>
+          <td width="20%" class="head_td"><a href="../../LS_ZhengShi/index.html">正史</a></td>
+          <td width="20%" class="head_td"><a href="../../LS_LiShiIndex.html">历史</a></td>
+      </tr></table>
+      <table style="width:100%;align:center;"><tr>
+          <td width="20%" class="head_td top_bottom"><a href="../../QT_MingXiang/Index.html">易经</a></td>
+          <td width="20%" class="head_td top_bottom"><a href="../../CT_NanHuaiJin/index.html">南怀瑾</a></td>
+          <td width="20%" class="head_td top_bottom"><a href="../../QT_XiaoYa/Index.html">小雅</a></td>
+          <td width="20%" class="head_td top_bottom"><a href="http://jianzhan.quanxue.cn" target="_blank">自助建站</a></td>
+          <td width="20%" class="head_td top_bottom"><a href="http://buy.quanxue.cn" target="_blank">书城</a></td>
+      </tr></table>-->
+<script><!--
+//genMenu();
+--></script>

@@ -5,23 +5,29 @@
 <div class="base_index">
     {{--@include('classical.modules._header', ['data' => ''])--}}
     @include('classical.modules._header-top', ['data' => ''])
-    <h1>周易</h1>
+    <h1>{{$datas['title']}}</h1>
     <!--<div style="text-align:center">
         <a href="" target="_blank">
             <img src="{{$commonAssetUrl}}/classical/img/bc82d-3894.jpg" alt="周易">
         </a>
     </div>-->
     
+    @foreach ($datas['chapters'] as $pData)
     <table width="95%" border="1" align="center" cellspacing="0" class="indextable">
-        <caption></caption>
+        <caption>{{$datas['brief']}}</caption>
         <colgroup><col width="25%"><col width="25%"><col width="25%"><col></colgroup>
-        <tbody><tr>
-        <td class="index_left_td"><a href="ZhouYi/ZhouYi01.html">01卦 乾为天</a></td>
-        <td class="index_left_td"><a href="ZhouYi/ZhouYi02.html">02卦 坤为地</a></td>
-        <td class="index_left_td"><a href="ZhouYi/ZhouYi03.html">03卦 水雷屯</a>(<span class="piny">zhūn</span>)</td>
-        <td class="index_left_td"><a href="ZhouYi/ZhouYi04.html">04卦 山水蒙</a></td>
-        </tr></tbody>
+        <tbody>
+        @php $i = 1; @endphp
+        @foreach ($pData['infos'] as $code => $pInfo)
+        @if ($i % 4 == 1)<tr>@endif
+        <td class="index_left_td"><a href="/detail-{{$code}}">{{$pInfo['serial']}}卦 {{$pInfo['brief']}}</a>@if (isset($pInfo['spell']) && $pInfo['spell'])(<span class="piny">{{$pInfo['spell']}}</span>)@endif</td>
+        @if ($i % 4 == 4)</tr>@endif
+        @php $i += 1; @endphp
+        @endforeach
+        @if ($i % 4 != 4)</tr>@endif
+        </tbody>
     </table>
+    @endforeach
     <table width="95%" border="1" align="center" cellspacing="0" class="indextable">
         <colgroup><col width="20%"><col width="20%"><col width="20%"><col><col></colgroup>
         <tbody><tr>

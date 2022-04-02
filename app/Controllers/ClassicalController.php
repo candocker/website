@@ -18,6 +18,21 @@ class ClassicalController extends AbstractController
         return $this->customView('list', $datas);
     }
 
+    public function detail($code = null)
+    {
+        $datas = $this->getDetail($code);
+        $symbols = [0 => '■■■　■■■', 1 => '■■■■■■■'];
+        foreach ([0, 0, 1, 1, 1, 0] as $sKey) {
+            $datas['symbols'][] = $symbols[$sKey];
+        }
+        $datas['tdkData'] = [
+            'title' => '驾驭浩瀚的网络信息',
+            'keywords' => '',
+            'description' => '',
+        ];
+        return $this->customView('detail', $datas);
+    }
+
     public function home($code = null, $extcode = null)
     {
         $params = $this->request->all();
