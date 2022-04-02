@@ -20,7 +20,15 @@
         @php $i = 1; @endphp
         @foreach ($pData['infos'] as $code => $pInfo)
         @if ($i % 4 == 1)<tr>@endif
-        <td class="index_left_td"><a href="/detail-{{$code}}">{{$pInfo['serial']}}卦 {{$pInfo['brief']}}</a>@if (isset($pInfo['spell']) && $pInfo['spell'])(<span class="piny">{{$pInfo['spell']}}</span>)@endif</td>
+        <td class="index_left_td">
+            <span class="baguatu">
+            @foreach ($pInfo['symbols'] as $symbol) {{$symbol}}<br>@endforeach
+            </span>
+            <span class="baguaname" style="text-align:center;margin-top: 20px;font-size:14pt;">
+                <a href="/detail-{{$code}}">{{$pInfo['serial']}}-{{$pInfo['brief']}}</a>
+                @if (isset($pInfo['spell']) && $pInfo['spell'])<!--<br />(<span class="piny">{{$pInfo['spell']}}</span>)-->@endif
+            </span>
+        </td>
         @if ($i % 4 == 4)</tr>@endif
         @php $i += 1; @endphp
         @endforeach

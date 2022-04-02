@@ -8,7 +8,7 @@
     {{--@include('classical.modules._header', ['data' => ''])--}}
     @include('classical.modules._header-top', ['data' => ''])
     <h1 style="display:none;">《周易》第{{$datas['serial']}}卦 {{$datas['brief']}}</h1>
-    <span class="title4">乾上<br>乾下</span>
+    <span class="title4">{{$datas['up']}}上<br>{{$datas['down']}}下</span>
     <span class="baguatu">
     @foreach ($datas['symbols'] as $symbol) {{$symbol}}<br>@endforeach
     </span>
