@@ -2,6 +2,7 @@
 return [
     'serial' => 23,
     'name' => '剥',
+    'symbol' => [0, 0, 0, 0, 0, 1],
     'brief' => '山地剥',
     'spell' => '',
     'gua' => '不利有攸往。',

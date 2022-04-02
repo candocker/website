@@ -2,6 +2,7 @@
 return [
     'serial' => 38,
     'name' => '睽',
+    'symbol' => [1, 1, 0, 1, 0, 1],
     'brief' => '火泽睽',
     'spell' => 'kuí',
     'gua' => '小事吉。',

@@ -2,6 +2,7 @@
 return [
     'serial' => 7,
     'name' => '师',
+    'symbol' => [0, 1, 0, 0, 0, 0],
     'brief' => '地水师',
     'spell' => '',
     'gua' => '贞，丈人，吉无咎。',

@@ -2,6 +2,7 @@
 return [
     'serial' => 11,
     'name' => '泰',
+    'symbol' => [1, 1, 1, 0, 0, 0],
     'brief' => '地天泰',
     'spell' => '',
     'gua' => '小往大来，吉亨。',

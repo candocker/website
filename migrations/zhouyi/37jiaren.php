@@ -2,6 +2,7 @@
 return [
     'serial' => 37,
     'name' => '家人',
+    'symbol' => [1, 0, 1, 0, 1, 1],
     'brief' => '风火家人',
     'spell' => '',
     'gua' => '利女贞。',

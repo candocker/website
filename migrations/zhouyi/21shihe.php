@@ -2,6 +2,7 @@
 return [
     'serial' => 21,
     'name' => '噬嗑',
+    'symbol' => [1, 0, 0, 1, 0, 1],
     'brief' => '火雷筮盍',
     'spell' => 'shìhé',
     'gua' => '亨。利用狱。',

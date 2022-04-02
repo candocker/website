@@ -2,6 +2,7 @@
 return [
     'serial' => 15,
     'name' => '谦',
+    'symbol' => [0, 0, 1, 0, 0, 0],
     'brief' => '地山谦',
     'spell' => '',
     'gua' => '亨，君子有终。',

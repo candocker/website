@@ -2,6 +2,7 @@
 return [
     'serial' => 60,
     'name' => '节',
+    'symbol' => [1, 1, 0, 0, 1, 0],
     'brief' => '水泽节',
     'spell' => '',
     'gua' => '亨。苦节不可贞。',

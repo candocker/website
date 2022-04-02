@@ -2,6 +2,7 @@
 return [
     'serial' => 17,
     'name' => '随',
+    'symbol' => [1, 0, 0, 1, 1, 0],
     'brief' => '泽雷随',
     'spell' => '',
     'gua' => '元亨利贞，无咎。',

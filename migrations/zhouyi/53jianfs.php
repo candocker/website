@@ -2,6 +2,7 @@
 return [
     'serial' => 53,
     'name' => '渐',
+    'symbol' => [0, 0, 1, 0, 1, 1],
     'brief' => '风山渐',
     'spell' => '',
     'gua' => '女归吉，利贞。',

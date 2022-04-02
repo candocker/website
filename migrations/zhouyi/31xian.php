@@ -2,6 +2,7 @@
 return [
     'serial' => 31,
     'name' => '咸',
+    'symbol' => [0, 0, 1, 1, 1, 0],
     'brief' => '泽山咸',
     'spell' => '',
     'gua' => '亨，利贞，取女吉。',

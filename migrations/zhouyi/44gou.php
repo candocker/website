@@ -2,6 +2,7 @@
 return [
     'serial' => 44,
     'name' => '姤',
+    'symbol' => [0, 1, 1, 1, 1, 1],
     'brief' => '天风姤',
     'spell' => 'gòu',
     'gua' => '女壮，勿用取女。',

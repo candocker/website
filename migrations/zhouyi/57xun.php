@@ -2,6 +2,7 @@
 return [
     'serial' => 57,
     'name' => '巽',
+    'symbol' => [0, 1, 1, 0, 1, 1],
     'brief' => '巽为风',
     'spell' => 'xùn',
     'gua' => '小亨，利攸往，利见大人。',

@@ -2,6 +2,7 @@
 return [
     'serial' => 56,
     'name' => '旅',
+    'symbol' => [0, 0, 1, 1, 0, 1],
     'brief' => '火山旅',
     'spell' => '',
     'gua' => '小亨，旅贞吉。',

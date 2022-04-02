@@ -2,6 +2,7 @@
 return [
     'serial' => 54,
     'name' => '归妹',
+    'symbol' => [1, 1, 0, 1, 0, 0],
     'brief' => '雷泽归妹',
     'spell' => '',
     'gua' => '征凶，无攸利。',

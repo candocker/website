@@ -2,6 +2,7 @@
 return [
     'serial' => 16,
     'name' => '豫',
+    'symbol' => [0, 0, 0, 1, 0, 0],
     'brief' => '雷地豫',
     'spell' => '',
     'gua' => '利建侯行师。',

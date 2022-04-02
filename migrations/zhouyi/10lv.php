@@ -2,6 +2,7 @@
 return [
     'serial' => 10,
     'name' => '履',
+    'symbol' => [1, 1, 0, 1, 1, 1],
     'brief' => '天泽履',
     'spell' => 'lǚ',
     'gua' => '履虎尾，不咥人，亨。',

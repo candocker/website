@@ -2,6 +2,7 @@
 return [
     'serial' => 36,
     'name' => '明夷',
+    'symbol' => [1, 0, 1, 0, 0, 0],
     'brief' => '地火明夷',
     'spell' => 'yí',
     'gua' => '利艰贞。',

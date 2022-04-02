@@ -2,6 +2,7 @@
 return [
     'serial' => 58,
     'name' => '兑',
+    'symbol' => [1, 1, 0, 1, 1, 0],
     'brief' => '兑为泽',
     'spell' => '',
     'gua' => '亨，利贞。',
