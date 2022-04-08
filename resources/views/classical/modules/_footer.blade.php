@@ -1,10 +1,5 @@
-<!--<div class="foot">
-    本站所列电子书为方便之用，请大家尽可能购买实体书（本站<a href="http://buy.quanxue.cn" target="_blank">书城</a>有售）<br>
-    海内存知已，天涯若比邻，欢迎您加入劝学网以下QQ群，结识志同道合的朋友：<br>
-    <b>劝学网儒家群: 136761088；</b>
-    <b>雅说道家群: 122950569；</b>
-    <b>劝学网历史群: 154204903；</b>
-    <b>劝学网周易群: 961369711；</b><br>
-    纠错或者投稿联系方式：E-mail：43093713@qq.com QQ联系:43093713，微信：13138640099<br>
-</div>-->
-<div class="foot">本站所列电子书为方便之用，请大家尽可能购买实体书（本站<a href="http://buy.quanxue.cn" target="_blank">书城</a>有售）<br>海内存知已，天涯若比邻，欢迎您加入劝学网以下QQ群，结识志同道合的朋友：<br><b>劝学网儒家群: 136761088；</b><b>雅说道家群: 122950569；</b><b>劝学网历史群: 154204903；</b><b>劝学网周易群: 961369711；</b><br>纠错或者投稿联系方式：E-mail：43093713@qq.com QQ联系:43093713，微信：13138640099<br></div>
+<div class="foot">
+    Copyright &copy; 2019-
+    <script language="javascript" type="text/javascript">var thisYear = new Date(); document.write(thisYear.getFullYear());</script>
+    <a href="http://beian.miit.gov.cn/">工业和信息化部备案管理系统网站 <?php echo config('app.icp91zuiai'); ?></a>
+</div>

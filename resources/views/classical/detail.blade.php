@@ -14,6 +14,7 @@
     </span>
     <center><span class="title3">{{$datas['serial']}} {{$datas['brief']}}</span><br clear="left"></center><hr />
     <div class="guaci">{{$datas['name']}}: {{$datas['gua']}}</div>
+    @if (isset($datas['vernacular']))<div class="yiwen"><p>【译文】{{$datas['vernacular']['gua']}}</p></div>@endif
 <pre class="yaoci">
 @foreach ($datas['yao'] as $elem)
 {{$elem}}
@@ -22,18 +23,28 @@
 <hr />
 
     <p class="tuan"><big>彖曰</big>{{$datas['tuan']}}</p>
+    @if (isset($datas['vernacular']))<div class="yiwen"><p>【译文】{{$datas['vernacular']['tuan']}}</p></div>@endif
     
     <p class="xiang"><big>象曰</big>{{$datas['xiang']}}</p>
+    @if (isset($datas['vernacular']))<div class="yiwen"><p>【译文】{{$datas['vernacular']['xiang']}}</p></div>@endif
     
     @foreach ($datas['yao'] as $key => $elem)
     <p class="xiang">
         <big>爻辞</big> <span class="yin">{{$elem}}</span><br>
-        <big>象曰</big> {{$datas['xiaoxiang'][$key]}}<br />
+        @if (isset($datas['vernacular']))<div class="yiwen"><p>【译文】{{$datas['vernacular']['yao'][$key]}}</p></div>@endif
+        <big>象曰</big> <span style="color: #0099FF;">{{$datas['xiaoxiang'][$key]}}</span><br />
+        @if (isset($datas['vernacular']))<div class="yiwen"><p>【译文】{{$datas['vernacular']['xiaoxiang'][$key]}}</p></div>@endif
     </p>
     @endforeach
 
+    @if (isset($datas['notes']))
+        @foreach ($datas['notes'] as $note)
+        <div id="comment1" class="comment"><p>
+【注释】{{$note}}
+</p></div>
+        @endforeach
+    @endif
     <hr />
-    <span class="foot_key">分类:</span><a href="../index.html">儒家经典</a><span class="foot_key">书名:</span><a href="../ZhouYiIndex.html">周易</a><span class="foot_key">作者:</span>伏羲,文王,孔子
-    <script>genNavigator("DOWN");</script>
+    @include('classical.modules._footer-detail', ['data' => ''])
 </div>
 @endsection
