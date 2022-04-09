@@ -5,6 +5,12 @@
 
 <script>genNavigator("LEFT");</script>
 <div class="main">
+<div class="b_center">
+<span class="button width6em">【０１】</span>
+<span class="button width4em" onclick="disp('comment','1');">注释</span>
+<span class="button width4em" onclick="disp('yiwen','1');">译文</span>
+<span class="button width4em" onclick="disp('jiedu','1');">解读</span>
+</div>
     {{--@include('classical.modules._header', ['data' => ''])--}}
     @include('classical.modules._header-top', ['data' => ''])
     <h1 style="display:none;">《周易》第{{$datas['serial']}}卦 {{$datas['brief']}}</h1>
@@ -14,7 +20,7 @@
     </span>
     <center><span class="title3">{{$datas['serial']}} {{$datas['brief']}}</span><br clear="left"></center><hr />
     <div class="guaci">{{$datas['name']}}: {{$datas['gua']}}</div>
-    @if (isset($datas['vernacular']))<div class="yiwen"><p>【译文】{{$datas['vernacular']['gua']}}</p></div>@endif
+    @if (isset($datas['vernacular']))<div id="yiwen" class="yiwen"><p>【译文】{{$datas['vernacular']['gua']}}</p></div>@endif
 <pre class="yaoci">
 @foreach ($datas['yao'] as $elem)
 {{$elem}}
@@ -31,7 +37,7 @@
     @foreach ($datas['yao'] as $key => $elem)
     <p class="xiang">
         <big>爻辞</big> <span class="yin">{{$elem}}</span><br>
-        @if (isset($datas['vernacular']))<div class="yiwen"><p>【译文】{{$datas['vernacular']['yao'][$key]}}</p></div>@endif
+        @if (isset($datas['vernacular']))<div id="yiwen" class="yiwen"><p>【译文】{{$datas['vernacular']['yao'][$key]}}</p></div>@endif
         <big>象曰</big> <span style="color: #0099FF;">{{$datas['xiaoxiang'][$key]}}</span><br />
         @if (isset($datas['vernacular']))<div class="yiwen"><p>【译文】{{$datas['vernacular']['xiaoxiang'][$key]}}</p></div>@endif
     </p>
