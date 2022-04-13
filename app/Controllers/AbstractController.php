@@ -58,11 +58,11 @@ abstract class AbstractController extends AbstractControllerBase
 		$viewPath = is_null($viewPath) ? $this->viewPath() : $viewPath;
 		$view = $viewPath . '.' . $view;
 		$viewPre = $this->viewPre();
-		$datas = array_merge([
+		/*$datas = array_merge([
 			'title' => 'title',
 			'keywords' => 'keywords',
 			'description' => 'description'
-		], $datas);
+        ], $datas);*/
 		return view($view, ['datas' => $datas]);
 	}
 

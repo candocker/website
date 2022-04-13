@@ -25,7 +25,7 @@
             @foreach ($pInfo['symbols'] as $symbol) {{$symbol}}<br>@endforeach
             </span>
             <span class="baguaname" style="text-align:center;margin-top: 20px;font-size:14pt;">
-                <a href="/detail-{{$code}}">{{$pInfo['serial']}}-{{$pInfo['brief']}}</a>
+                <a href="/zhouyi-{{$code}}">{{$pInfo['serial']}}-{{$pInfo['brief']}}</a>
                 @if (isset($pInfo['spell']) && $pInfo['spell'])<!--<br />(<span class="piny">{{$pInfo['spell']}}</span>)-->@endif
             </span>
         </td>

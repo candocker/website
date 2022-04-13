@@ -6,13 +6,13 @@ class ClassicalController extends AbstractController
 {
     use TraitClassical;
 
-    public function listinfo($code = null)
+    public function scripturesZhou()
     {
         $cacheData = $this->request->input('cache_data');
         if ($cacheData) {
             $this->dealDatas();exit();
         }
-        $datas = $this->getListDatas($code);
+        $datas = $this->getListZhou();
         $datas['tdkData'] = [
             'title' => '驾驭浩瀚的网络信息',
             'keywords' => '',
@@ -21,13 +21,13 @@ class ClassicalController extends AbstractController
         return $this->customView('list', $datas);
     }
 
-    public function detail($code = null)
+    public function detailZhou($code = null)
     {
-        $datas = $this->getDetail($code);
+        $datas = $this->getDetailZhou($code);
         $datas['tdkData'] = [
-            'title' => '驾驭浩瀚的网络信息',
+            'title' => $datas['name'] . '-' . $datas['brief'],
             'keywords' => '',
-            'description' => '',
+            'description' => 'ooo',
         ];
         return $this->customView('detail', $datas);
     }

@@ -4,18 +4,12 @@ namespace ModuleWebsite\Controllers;
 
 trait TraitClassical
 {
-    public function getDetail($code)
+    public function getDetailZhou($code)
     {
-        return $this->_zhouyiDatas($code);
+        return $this->getListZhou($code);
     }
 
-    public function getListDatas($code)
-    {
-        $method = "_{$code}Datas";
-        return $this->$method();
-    }
-
-    public function _zhouyiDatas($code = null)
+    public function getListZhou($code = null)
     {
         $file = base_path() . "/vendor/candocker/website/migrations/cachedata/zhouyi.php";
         $infos = require($file);
