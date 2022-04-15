@@ -16,6 +16,6 @@
         <div style="font-size:17px;color:#ff0000;font-weight:bold;margin-bottom:10px;"></div>
         Copyright &copy; 2019-
         <script language="javascript" type="text/javascript">var thisYear = new Date(); document.write(thisYear.getFullYear());</script>
-        <a href="http://beian.miit.gov.cn/">工业和信息化部备案管理系统网站 <?php echo config('app.icp91zuiai'); ?></a>
+        <a href="http://beian.miit.gov.cn/">工业和信息化部备案管理系统网站 {{$currentIcp}}</a>
     </div>
 </div>
