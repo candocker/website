@@ -32,6 +32,17 @@ class ClassicalController extends AbstractController
         return $this->customView('detail', $datas);
     }
 
+    public function show($bookCode, $chapterCode)
+    {
+        $datas = $this->getBookDetail($bookCode, $chapterCode);
+        $datas['tdkData'] = [
+            'title' => $datas['name'] . '-' . $datas['brief'],
+            'keywords' => '',
+            'description' => 'ooo',
+        ];
+        return $this->customView('show', $datas);
+    }
+
     public function home($code = null, $extcode = null)
     {
         $params = $this->request->all();

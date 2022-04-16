@@ -9,6 +9,12 @@ trait TraitClassical
         return $this->getListZhou($code);
     }
 
+    public function getBookDetail($bookCode, $chapterCode)
+    {
+        $file = base_path() . "/vendor/candocker/website/migrations/{$bookCode}/{$chapterCode}.php";
+        return require($file);
+    }
+
     public function getListZhou($code = null)
     {
         $file = base_path() . "/vendor/candocker/website/migrations/cachedata/zhouyi.php";

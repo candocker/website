@@ -37,13 +37,11 @@
     </table>
     @endforeach
     <table width="95%" border="1" align="center" cellspacing="0" class="indextable">
-        <colgroup><col width="20%"><col width="20%"><col width="20%"><col><col></colgroup>
+        <colgroup><col width="18%"><col width="18%"><col width="18%"><col><col></colgroup>
         <tbody><tr>
-        <td class="index_left_td"><a href="ZhouYi/ZhouYi65.html">系辞上传</a></td>
-        <td class="index_left_td"><a href="ZhouYi/ZhouYi66.html">系辞下传</a></td>
-        <td class="index_left_td"><a href="ZhouYi/ZhouYi67.html">说卦传</a></td>
-        <td class="index_left_td"><a href="ZhouYi/ZhouYi68.html">序卦传</a></td>
-        <td class="index_left_td"><a href="ZhouYi/ZhouYi69.html">杂卦传</a></td>
+        @foreach (['wenyan' => '文言', 'xici1' => '系辞上', 'xici2' => '系辞下', 'shuogua' => '说卦', 'xugua' => '序卦', 'zagua' => '杂卦'] as $code => $name)
+        <td class="index_left_td"><a href="/show-yizhuan-{{$code}}">{{$name}}传</a></td>
+        @endforeach
         </tr></tbody>
     </table>
 </div>
