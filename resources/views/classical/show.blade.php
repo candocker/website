@@ -2,19 +2,22 @@
 @section('dynamicMeta')@include('modules._meta', $datas['tdkData'])@endsection
 @section('header')@include('classical.modules._jscss-show', ['view' => 'home'])@endsection
 @section('content')
+<script>genNavigator("LEFT");</script>
 <div class="main">
     {{--@include('classical.modules._header', ['data' => ''])--}}
     @include('classical.modules._header-top', ['data' => ''])
     <div class="b_center">
         <span class="button width6em">【０１】</span>
-        <span class="button width4em" onclick="disp('comment','1');">注释</span>
-        <span class="button width4em" onclick="disp('yiwen','1');">译文</span>
-        <span class="button width4em" onclick="disp('jiedu','1');">解读</span></div>
+        <span class="button width4em" onclick="disp('comment');">注释</span>
+        <span class="button width4em" onclick="disp('yiwen');">译文</span>
+        <span class="button width4em" onclick="disp('jiedu');">解读</span></div>
     <h1>{{$datas['name']}}</h1>
     <hr />
     @foreach ($datas['chapters'] as $chapter)
     <div class="b_center"><span class="button width6em">{{$chapter['name']}}</span>
-    <div class="jingwen">{{$chapter['content']}}</div>
+    @foreach ((array) $chapter['content'] as $cContent)
+    <div class="jingwen">{{$cContent}}</div>
+    @endforeach
     <div id="comment1" class="comment">
         @if (isset($chapter['notes']) && $chapter['notes'])
         @foreach ((array) $chapter['notes'] as $i => $note)
