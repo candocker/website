@@ -16,21 +16,41 @@
     <div class="b_center"><span class="button width6em">{{$chapter['name']}}</span>
     <div class="jingwen">{{$chapter['content']}}</div>
     <div id="comment1" class="comment">
+        @if (isset($chapter['notes']) && $chapter['notes'])
         @foreach ((array) $chapter['notes'] as $i => $note)
         <p>【注释@if ($i){{$i}}@endif】 {{$note}}</p>
         @endforeach
+        @endif
     </div>
     <div id="yiwen1" class="yiwen">
+        @if (isset($chapter['vernacular']) && $chapter['vernacular'])
         @foreach ((array) $chapter['vernacular'] as $i => $vernacular)
         <p>【译文@if ($i){{$i}}@endif】 {{$vernacular}}</p>
         @endforeach
+        @endif
     </div>
     <div id="jiedu1" class="jiedu">
+        @if (isset($chapter['unscramble']) && $chapter['unscramble'])
         @foreach ((array) $chapter['unscramble'] as $i => $unscramble)
         <p>【解读】@if ($i){{$i}}@endif】 {{$unscramble}}</p>
         @endforeach
+        @endif
     </div>
     @endforeach
+    <div id="yiwen1" class="yiwen">
+        @if (isset($datas['notes']))
+        @foreach ((array) $datas['notes'] as $i => $note)
+        <p>【译文@if ($i){{$i}}@endif】 {{$note}}</p>
+        @endforeach
+        @endif
+    </div>
+    <div id="jiedu1" class="jiedu">
+        @if (isset($datas['unscramble']))
+        @foreach ((array) $datas['unscramble'] as $i => $unscramble)
+        <p>【解读@if ($i){{$i}}@endif】 {{$unscramble}}</p>
+        @endforeach
+        @endif
+    </div>
     <hr />
     <span class="foot_key">分类:</span>
     <a href="../index.html">儒家经典</a>
