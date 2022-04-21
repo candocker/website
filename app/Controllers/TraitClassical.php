@@ -11,13 +11,13 @@ trait TraitClassical
 
     public function getBookDetail($bookCode, $chapterCode)
     {
-        $file = base_path() . "/vendor/candocker/website/migrations/{$bookCode}/{$chapterCode}.php";
+        $file = $this->getBasePath() . "{$bookCode}/{$chapterCode}.php";
         return require($file);
     }
 
     public function getListZhou($code = null)
     {
-        $file = base_path() . "/vendor/candocker/website/migrations/cachedata/zhouyi.php";
+        $file = $this->getBasePath() . "cachedata/zhouyi.php";
         $infos = require($file);
         if (!is_null($code)) {
             return $infos[$code];
@@ -85,5 +85,10 @@ trait TraitClassical
             'binSerial' => bindec(implode('', array_reverse($symbol))),
         ];
         return $data;
+    }
+
+    public function getBasePath()
+    {
+        return base_path() . "/vendor/candocker/website/migrations/";
     }
 }
