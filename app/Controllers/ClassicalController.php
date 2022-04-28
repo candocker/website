@@ -71,6 +71,7 @@ class ClassicalController extends AbstractController
             ['code' => 'zhuangzi', 'name' => '庄子'],
             ['code' => 'mozi', 'name' => '墨子'],
             ['code' => 'xunzi', 'name' => '荀子'],
+            ['code' => 'tongshu', 'name' => '通书'],
         ];
         $datas['tdkData'] = [
             'title' => '古典精华',

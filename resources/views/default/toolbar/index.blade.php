@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Charisma, a fully featured, responsive, HTML5, Bootstrap admin template.">
     <meta name="author" content="Muhammad Usman">
-    <title>{{$datas['title']}}</title>
     <link id="bs-css" href="http://static.canliang.wang/backend/css/bootstrap-cerulean.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="">
 <link rel="stylesheet" href="http://39.106.102.45/common/asset-third/promotion/css/d4ccd-6570.css" data-minify="1">

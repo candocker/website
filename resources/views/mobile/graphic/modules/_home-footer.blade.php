@@ -11,7 +11,7 @@
         <script language="javascript" type="text/javascript">var thisYear = new Date(); document.write(thisYear.getFullYear());</script>
         <a href="" title="">91zuiai.com</a>&trade; Corporation and its licensors All Rights Reserved. &trade;
         <a href="">版权所有</a>本公司保留所有权利。<br />
-        <a href="http://beian.miit.gov.cn/">工业和信息化部备案管理系统网站 {{currentIcp}}</a>
+        <a href="http://beian.miit.gov.cn/">工业和信息化部备案管理系统网站 {{$currentIcp}}</a>
     </div>
 </div>
 <script type="text/javascript">

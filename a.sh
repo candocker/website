@@ -1,0 +1,10 @@
+cp migrations/zhongyong/33.php migrations/zhongyong/20.php
+cp migrations/zhongyong/33.php migrations/zhongyong/21.php
+cp migrations/zhongyong/33.php migrations/zhongyong/22.php
+cp migrations/zhongyong/33.php migrations/zhongyong/23.php
+cp migrations/zhongyong/33.php migrations/zhongyong/24.php
+cp migrations/zhongyong/33.php migrations/zhongyong/25.php
+cp migrations/zhongyong/33.php migrations/zhongyong/26.php
+cp migrations/zhongyong/33.php migrations/zhongyong/27.php
+cp migrations/zhongyong/33.php migrations/zhongyong/28.php
+cp migrations/zhongyong/33.php migrations/zhongyong/29.php

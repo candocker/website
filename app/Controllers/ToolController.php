@@ -29,6 +29,7 @@ class ToolController extends AbstractController
             'sortData' => $sortData,
             'subInfos' => $subInfos,
             'sorts' => $this->isMobile(true) ? array_chunk($sorts, ceil(count($sorts) / 2), true) : [$sorts],
+            'tdkDatas' => ['title' => '', 'description' => '', 'keyword' => ''],
         ];
 
 		//$dataTdk = ['{{TAGSTR}}' => $sortData['name']];
