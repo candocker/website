@@ -18,14 +18,14 @@
     @foreach ((array) $chapter['content'] as $cContent)
     <div class="jingwen">{{$cContent}}</div>
     @endforeach
-    <div id="comment1" class="comment">
+    <div id="comment1" class="comment" style="display: none;">
         @if (isset($chapter['notes']) && $chapter['notes'])
         @foreach ((array) $chapter['notes'] as $i => $note)
         <p>【注释@if ($i){{$i}}@endif】 {{$note}}</p>
         @endforeach
         @endif
     </div>
-    <div id="yiwen1" class="yiwen">
+    <div id="yiwen1" class="yiwen" style="display: none;">
         @if (isset($chapter['vernacular']) && $chapter['vernacular'])
         @foreach ((array) $chapter['vernacular'] as $i => $vernacular)
         <p>【译文@if ($i){{$i}}@endif】 {{$vernacular}}</p>
