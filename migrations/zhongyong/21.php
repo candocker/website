@@ -1,75 +1,23 @@
 <?php
 return [
-    'name' => '文言传',
-    'brief' => '文言',
+    'name' => '诚明',
+    'brief' => '诚则明，明则诚',
     'chapters' => [
         [
-            'name' => '第节',
+            'name' => '第一节',
             'content' => [
+                '『１』「自诚明，谓之性；自明诚谓之教。诚则明矣；明则诚矣。」',
             ],
             'notes' => [
+                '（1）自：从，由。明：明白。（2）则：即，就。',
             ],
             'vernacular' => [
+                '由真诚而自然明白道理，这叫做天性；由明白道理后做到真诚，这叫做人为的教育。真诚也就会自然明白道理，明白道理后也就会做到真诚。',
             ],
             'unscramble' => [
+                '无论是天性还是后天人为的教育，只要做到了真诚，二者也就合一了。',
+                '革命不分先后，明道向善不问先天后天。从另一个角度看，这里也表达了天人合一的思想。',
             ],
         ],
-        [
-            'name' => '第节',
-            'content' => [
-            ],
-            'notes' => [
-            ],
-            'vernacular' => [
-            ],
-            'unscramble' => [
-            ],
-        ],
-        [
-            'name' => '第节',
-            'content' => [
-            ],
-            'notes' => [
-            ],
-            'vernacular' => [
-            ],
-            'unscramble' => [
-            ],
-        ],
-        [
-            'name' => '第节',
-            'content' => [
-            ],
-            'notes' => [
-            ],
-            'vernacular' => [
-            ],
-            'unscramble' => [
-            ],
-        ],
-        [
-            'name' => '第节',
-            'content' => [
-            ],
-            'notes' => [
-            ],
-            'vernacular' => [
-            ],
-            'unscramble' => [
-            ],
-        ],
-        [
-            'name' => '第节',
-            'content' => [
-            ],
-            'notes' => [
-            ],
-            'vernacular' => [
-            ],
-            'unscramble' => [
-            ],
-        ],
-
     ],
-],
-
+];

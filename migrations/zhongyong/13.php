@@ -21,65 +21,8 @@ return [
                 不过也不要紧，只要你做到忠恕，也就离道不远了。说到底，还是要“言顾行，行顾言”，凡事不走偏锋，不走极端，这就是“中庸”的原则，这就是中庸之道。',
             ],
             'unscramble' => [
-                '',
             ],
         ],
-        [
-            'name' => '第节',
-            'content' => [
-            ],
-            'notes' => [
-            ],
-            'vernacular' => [
-            ],
-            'unscramble' => [
-            ],
-        ],
-        [
-            'name' => '第节',
-            'content' => [
-            ],
-            'notes' => [
-            ],
-            'vernacular' => [
-            ],
-            'unscramble' => [
-            ],
-        ],
-        [
-            'name' => '第节',
-            'content' => [
-            ],
-            'notes' => [
-            ],
-            'vernacular' => [
-            ],
-            'unscramble' => [
-            ],
-        ],
-        [
-            'name' => '第节',
-            'content' => [
-            ],
-            'notes' => [
-            ],
-            'vernacular' => [
-            ],
-            'unscramble' => [
-            ],
-        ],
-        [
-            'name' => '第节',
-            'content' => [
-            ],
-            'notes' => [
-            ],
-            'vernacular' => [
-            ],
-            'unscramble' => [
-            ],
-        ],
-
     ],
 ],
 
