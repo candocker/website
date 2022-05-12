@@ -2,12 +2,12 @@
 @section('dynamicMeta')@include('modules._meta', $datas['tdkData'])@endsection
 @section('header')@include('navigation.common/_pagecss', ['view' => 'home'])@endsection
 @section('content')
-@include('navigation.modules._home-signupin', ['data' => ''])
-@include('navigation.modules._home-addsite', ['data' => ''])
+{{--@include('navigation.modules._home-signupin', ['data' => ''])--}}
+{{--@include('navigation.modules._home-addsite', ['data' => ''])--}}
 @include('navigation.modules._home-header', ['data' => ''])
 @include('navigation.modules._home-recommend', ['datas' => $datas['recommendDatas']])
 <div class="container content" data-spy="scroll" data-target="#list-example" data-offset="0">
-    @include('navigation.modules._home-toolbar', ['data' => ''])
+    {{--@include('navigation.modules._home-toolbar', ['data' => ''])--}}
     <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
         @foreach ($datas['sorts'] as $pIndex => $pData)
         <div class="col subs">
@@ -44,7 +44,7 @@
                 @else
                 <div class="col">
                     <a href="{{$subData['url']}}" target="_blank" class="cy">
-                        @if ($subData['logo_path']) <img src="{{$commonAssetUrl}}{{$subData['logo_path']}}" class="img"> @endif
+                        @if ($subData['logo_path']) <img src="{{$subData['logo_path']}}" class="img"> @endif
                         {{$subData['name']}}
                     </a>
                 </div>

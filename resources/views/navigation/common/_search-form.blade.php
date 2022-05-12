@@ -12,7 +12,7 @@ $sorts = [
     'readnav' => '小说·电子书·文库',
     'operation' => 'Make work more efficient',
 ];
-$currentTitle = $sorts[$currentSort];
+$currentTitle = $sorts[$currentSort] ?? $sortName;
 $actions = [
     'cartoon' => 'https://m.u17.com/wap/Search/Search',
     'readnav' => 'https://m.zhangyue.com/search',

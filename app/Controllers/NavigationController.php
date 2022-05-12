@@ -45,7 +45,7 @@ class NavigationController extends AbstractController
 
     public function search()
     {
-        //$this->dealData();exit();
+        $this->dealData();exit();
         $recommendDatas = $this->getModelObj('bench-position')->getPointDatas('search');
         $focusDatas = $this->getModelObj('bench-position')->getFocusDatas('search');
         $mobileDatas = array_chunk($this->getModelObj('bench-position')->getMobileListDatas('search'), 6);
@@ -158,9 +158,41 @@ class NavigationController extends AbstractController
         $websiteModel = $this->getModelObj('bench-website');
         $positionInfoModel = $this->getModelObj('bench-positionInfo');
         $toolbarModel = $this->getModelObj('bench-toolbar');
-        $navModel = $this->getModelObj('bench-navigation');
+        //$navModel = $this->getModelObj('bench-navigation');
         $navsortModel = $this->getModelObj('bench-navsort');
         $navsortInfoModel = $this->getModelObj('bench-navsortInfo');
+
+        $wInfos = $websiteModel->get();
+        $tmps = [];
+        foreach ($wInfos as $wInfo) {
+            $tmps[$wInfo['domain']][$wInfo['url']] = $wInfo;
+        }
+
+        foreach ($tmps as $domain => $tmp) {
+            if (count($tmp) > 1) {
+                echo "<h2>{$domain}==000=</h2>";
+                ksort($tmp);
+
+                $sql = "<br />SELECT * FROM `wp_website` WHERE `domain` = '{$domain};<br />";
+                foreach ($tmp as $website) {
+                    $sInfos = $navsortInfoModel->where(['info_id' => $website['id']])->get();
+                    $rName = '';
+                    foreach ($sInfos as $sInfo) {
+                        $rName .= 'nn-' . $sInfo->navsort->name . '-' . $sInfo->navsort->id . '==';
+                    }
+                    $pInfos = $positionInfoModel->where(['info_id' => $website['id']])->get();
+                    foreach ($pInfos as $pInfo) {
+                        $rName .= 'pp-' . $pInfo->position->name . '-' . $pInfo->position->id . '==';
+                    }
+                    echo "<a href='{$website['url']}' target='_blank'>{$website['url']}</a>" . '    |=|=' . $website['id'] . '--' . $website->name . '==' . $rName . '<br />';
+                    $sql .= "DELETE FROM `wp_website` WHERE `id` = {$website['id']};";
+                    $sql .= "DELETE FROM `wp_position_info` WHERE `info_id` = {$website['id']};";
+                    $sql .= "DELETE FROM `wp_navsort_info` WHERE `info_id` = {$website['id']};<br />";
+                }
+                echo $sql;
+            }
+        }
+        exit();
 
         $navsorts = $navsortModel->get();
         foreach ($navsorts as $navsort) {
@@ -180,107 +212,6 @@ class NavigationController extends AbstractController
                 $navsort->save();
             }
         }
-        exit();
-
-
-        /*$infos = [];//require('/tmp/text/navdatas.php');
-        $infos['ext'] = require('/tmp/text/navext.php');
-        foreach ($infos as $key => $value) {
-            //if ($key == 'searchElems') {
-            //if (!in_array($key, ['ext', 'mobileSearchs'])) {
-            if (true) {//!in_array($key, ['ext'])) {
-                continue;
-            }
-            $i = 10000;
-            foreach ($value as $iKey => $info) {
-                if ($iKey < 48) {
-                    continue;
-                }
-                $wInfo = $websiteModel->where(['url' => $info['url']])->first();
-                if (!empty($wInfo)) {
-                    $piData = [
-                        'class_style' => '',
-                        'title' => $info['name'],
-                        'position_code' => 'readnavmobilelist',
-                        'info_type' => 'website',
-                        'icon' => $info['icon'] ?? '',
-                        'icon_color' => $info['iColor'] ?? '',
-                        'info_id' => $wInfo['id'],
-                        'orderlist' => $i,
-                    ];
-                    $positionInfoModel->create($piData);
-                    $i--;
-                    echo 'ddddddddd';
-                } else {
-                    $wData = ['name' => $info['name'], 'logo_path' => $info['logo_path'] ?? '', 'url' => $info['url']];
-                    //$websiteModel->create($wData);
-                print_r($info);
-                }
-            }
-        }*/
-        exit();
-        $sortDatas = $model->get();
-        $positionModel = $this->getModelObj('bench-position');
-        $sortDatas = $sortDatas->keyBy('code')->toArray();
-        foreach ($sortDatas as $key => $info) {
-            //if ($info['parent_code'] . 'tj' == $info['code']) {
-                /*$pData = [
-                    'code' => $info['parent_code'],
-                    'name' => $sortDatas[$info['parent_code']]['name'] . $info['name'],
-                    'description' => $info['description'],
-                ];
-                $pResult = $positionModel->create($pData);*/
-                $navDatas = $navModel->where('sort', $info['code'])->get()->toArray();
-                foreach ($navDatas as $nData) {
-                    $website = $websiteModel->where('url', $nData['website'])->first();
-                    /*$piData = [
-                        'position_code' => $info['parent_code'],
-                        'info_type' => 'website',
-                        'info_id' => $website['id'],
-                        'orderlist' => $nData['orderlist'],
-                    ];
-                    $positionInfoModel->create($piData);*/
-                    /*$siData = [
-                        'navsort_code' => $info['code'],
-                        'title' => $nData['name'],
-                        'info_id' => $website['id'],
-                        'orderlist' => $nData['orderlist'],
-                    ];
-                    $sortInfoModel->create($siData);*/
-                }
-            //}
-        }
-        exit();
-
-
-
-        /*$infos = $websiteModel->get();
-        $i = 0;
-        foreach ($infos as $info) {
-            $url = $info['url'];
-            if ($info['extfield'] <= 1) {
-                continue;
-            }
-            if ($info['logo_path'] != '') {
-                $navDatas = $navModel->where('website', $url)->get()->toArray();
-                foreach ($navDatas as $navData) {
-                    if (empty($navData['extfield'])) {
-                        continue;
-                    }
-                    if ($info['logo_path'] != $navData['extfield']) {
-                        echo "<a href='{$info['url']}' target='_blank'>{$info['name']}</a>" . '---' . "<img src='http://39.106.102.45/filesys/spider/pages{$info['logo_path']}' />" . '===' . "<img src='http://39.106.102.45/filesys/spider/pages{$navData['extfield']}' />UPDATE `wp_website` SET `logo_path` = '{$navData['extfield']}' WHERE `id` = {$info['id']};<br />";
-                        //print_r($info->toArray());
-                        //print_r($navData);
-                        //echo '<br />' . "\n";
-                    }
-
-                    //$info->logo_path = $navData['extfield'];
-                    //$info->logo_type = $navData['logo_type'];
-                    //$info->save();
-                }
-            }
-        }
-        echo $i;*/
         exit();
     }
 }

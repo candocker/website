@@ -20,7 +20,7 @@ $classDatas = ['one', 'two', 'three', 'four', 'five', 'six'];
         @foreach ($pData['navDatas'] as $subIndex => $subData)
         <div class="col">
             <a href="{{$subData['url']}}" target="_blank">
-                @if ($subData['logo_path']) <img src="{{$commonAssetUrl}}/{{$subData['logo_path']}}" class="ico"> @endif
+                @if ($subData['logo_path']) <img src="{{$subData['logo_path']}}" class="ico"> @endif
                 {{$subData['name']}}
             </a>
         </div>

@@ -9,7 +9,7 @@
         @endforeach 
     </ui>
 </div>
-<div class="random">
+<div class="random" style="height:200px">
     <ul>
         @foreach ($datas['homeRandoms'] as $pKey => $pData)
         <li>

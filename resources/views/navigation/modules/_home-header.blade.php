@@ -22,9 +22,33 @@
                 </a>
             </li>
             <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">自媒体</a>
+                <div class="dropdown-menu dropdown-menu-right more" aria-labelledby="navbarDropdown">
+                    @foreach ($datas['categorys']['mediaCategorys'] as $tIndex => $tData)
+                    <div class="row row-cols-4 row-cols-sm-4 row-cols-md-4 row-cols-lg-4">
+                        @foreach ($tData as $pKey => $pData)
+                        <div class="col">
+                            <a href="{{$pData['url']}}" target="_blank">
+                                <img src="{{$commonAssetUrl}}{{$pData['icon_path']}}" />
+                                <p>{{$pData['name_short']}}</p>
+                            </a>
+                        </div>
+                        @endforeach
+                    </div>
+                    @if ($tIndex == 1) <hr style="margin-top: 7px;"> @endif
+                    @endforeach
+                    <!--<hr style="margin-top: 7px;margin-bottom: 7px;">
+                    <h6 style="font-size: 13px;">
+                        <a href="/products/27320" target="_blank">反馈</a>·
+                        <a href="/tc/" target="_blank">捐助</a>·
+                        <a href="https://wj.qq.com/s2/7137862/9f15/" target="_blank">合作</a>
+                    </h6>-->
+                </div>
+            </li>
+            <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">更多</a>
                 <div class="dropdown-menu dropdown-menu-right more" aria-labelledby="navbarDropdown">
-                    @foreach ($datas['categorys'] as $tIndex => $tData)
+                    @foreach ($datas['categorys']['categorys'] as $tIndex => $tData)
                     <div class="row row-cols-4 row-cols-sm-4 row-cols-md-4 row-cols-lg-4">
                         @foreach ($tData as $pKey => $pData)
                         <div class="col">

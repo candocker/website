@@ -16,9 +16,19 @@
                     <a class="nav-link" href="/" target="_blank">导航</a>
                 </li>
                 <li class="nav-item dropdown" style="z-index:20000">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">自媒体</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        @foreach ($datas['categorys']['mediaCategorys'] as $pData)
+                        <a class="dropdown-item" href="{{$pData['url']}}" target="_blank">{{$pData['name']}}</a>
+                        @endforeach
+                        <!--<div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/tc/" target="_blank">联系/吐槽/捐助</a>-->
+                    </div>
+                </li>
+                <li class="nav-item dropdown" style="z-index:20000">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">更多</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        @foreach ($datas['categorys'] as $pData)
+                        @foreach ($datas['categorys']['categorys'] as $pData)
                         <a class="dropdown-item" href="{{$pData['url']}}" target="_blank">{{$pData['name']}}</a>
                         @endforeach
                         <!--<div class="dropdown-divider"></div>
@@ -36,23 +46,33 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="{{$datas['bigSort']['url']}}">{{$datas['bigSort']['name']}}</a>
         <ul class="nav justify-content-end">
+            <li class="nav-item"><a class="nav-link" href="/">导航</a></li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">更多</a>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">自媒体</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    @foreach ($datas['categorys'] as $pData)
+                    @foreach ($datas['categorys']['mediaCategorys'] as $pData)
                     <a class="dropdown-item" href="{{$pData['url']}}" target="_blank">{{$pData['name']}}</a>
                     @endforeach
                     <!--<div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="/tc/" target="_blank">联系/吐槽/捐助</a>-->
                 </div>
             </li>
-            <li class="nav-item"><a class="nav-link" href="/">导航</a></li>
-            <li class="nav-item"><a class="nav-link" href="/search">搜索</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">更多</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    @foreach ($datas['categorys']['categorys'] as $pData)
+                    <a class="dropdown-item" href="{{$pData['url']}}" target="_blank">{{$pData['name']}}</a>
+                    @endforeach
+                    <!--<div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/tc/" target="_blank">联系/吐槽/捐助</a>-->
+                </div>
+            </li>
+            <!--<li class="nav-item"><a class="nav-link" href="/search">搜索</a></li>-->
         </ul>
     </nav>
     @endif
     <div class="container so">
-        @include('navigation.common._search-form', ['currentSort' => $datas['currentSort']])
+        @include('navigation.common._search-form', ['currentSort' => $datas['currentSort'], 'sortName' => $datas['bigSort']['name']])
         @if ($datas['focusDatas'])
         <h6 @if ($datas['currentSort'] == 'operation') class="hs" @else class="mob-hs" @endif>
             @foreach ($datas['focusDatas'] as $pData)
