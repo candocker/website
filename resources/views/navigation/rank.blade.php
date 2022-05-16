@@ -32,9 +32,17 @@
                     </a>
                 </li>
                 <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">自媒体</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        @foreach ($datas['categorys']['mediaCategorys'] as $pData)
+                        <a class="dropdown-item" href="{{$pData['url']}}" target="_blank">{{$pData['name']}}</a>
+                        @endforeach
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">更多</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        @foreach ($datas['categorys'] as $pData)
+                        @foreach ($datas['categorys']['categorys'] as $pData)
                         <a class="dropdown-item" href="{{$pData['url']}}" target="_blank">{{$pData['name']}}</a>
                         @endforeach
                     </div>

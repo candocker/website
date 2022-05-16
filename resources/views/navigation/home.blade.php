@@ -27,7 +27,7 @@
                 @if ($subData['name'] == '邮箱')
                 <div class="col yx">
                     <a href="https://mail.qq.com/" target="_blank" class="cy">
-                        <img src="{{$commonAssetUrl}}{{$subData['logo_path']}}" class="img">邮箱
+                        <img src="{{$subData['logo_path']}}" class="img">邮箱
                         <i class="fa fa-caret-down"></i>
                     </a>
                     <div class="emlist">

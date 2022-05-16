@@ -153,6 +153,19 @@ class NavigationController extends AbstractController
         ];
     }
 
+    protected function dealDatanew()
+    {
+        $websiteModel = $this->getModelObj('bench-website');
+        $positionInfoModel = $this->getModelObj('bench-positionInfo');
+        $toolbarModel = $this->getModelObj('bench-toolbar');
+        //$navModel = $this->getModelObj('bench-navigation');
+        $navsortModel = $this->getModelObj('bench-navsort');
+        $navsortInfoModel = $this->getModelObj('bench-navsortInfo');
+
+        $this->_dealDomain($websiteModel, $navsortInfoModel, $positionInfoModel);
+        //$this->_dealNavData($websiteModel, $navsortInfoModel, $positionInfoModel);
+    }
+
     protected function dealData()
     {
         $websiteModel = $this->getModelObj('bench-website');
@@ -162,14 +175,35 @@ class NavigationController extends AbstractController
         $navsortModel = $this->getModelObj('bench-navsort');
         $navsortInfoModel = $this->getModelObj('bench-navsortInfo');
 
-        $wInfos = $websiteModel->get();
+        //$this->_dealDomain($websiteModel, $navsortInfoModel, $positionInfoModel);
+        $this->_dealNavData($websiteModel, $navsortModel, $navsortInfoModel, $positionInfoModel);
+    }
+
+    protected function _dealNavData($websiteModel, $navsortModel, $navsortInfoModel, $positionInfoModel)
+    {
+        $sorts = $navsortModel->where(['parent_code' => 'tvfilm'])->orWhere(['code' => 'tvfilm'])->get();
+        $infos = $websiteModel->where('extfield', '')->where('extfield1', '<>', 'deal')->limit(500)->get();
+        $service = $this->getServiceObj('passport-guzzle');
+        $result = [];
+        foreach ($infos as $info) {
+            $info->extfield = $rCode;
+            $info->save();
+            $result[$rCode] = $info->toArray();
+        }
+        print_r($result);
+    }
+
+    protected function _dealDomain($websiteModel, $navsortInfoModel, $positionInfoModel)
+    {
+        //$wInfos = $websiteModel->where('extfield', '<>', '999')->where('extfield', '')->where('extfield', '<>', '200')->limit(50)->get();
+        $wInfos = $websiteModel->where('extfield', '999')->get();
         $tmps = [];
         foreach ($wInfos as $wInfo) {
             $tmps[$wInfo['domain']][$wInfo['url']] = $wInfo;
         }
 
         foreach ($tmps as $domain => $tmp) {
-            if (count($tmp) > 1) {
+            if (true) {//count($tmp) > 1) {
                 echo "<h2>{$domain}==000=</h2>";
                 ksort($tmp);
 
@@ -182,12 +216,17 @@ class NavigationController extends AbstractController
                     }
                     $pInfos = $positionInfoModel->where(['info_id' => $website['id']])->get();
                     foreach ($pInfos as $pInfo) {
+                        if ($pInfo->position_code == 'bottomrandoma') {
+                            $pInfo->position_code = 'bottomrandom';
+                        }
                         $rName .= 'pp-' . $pInfo->position->name . '-' . $pInfo->position->id . '==';
                     }
                     echo "<a href='{$website['url']}' target='_blank'>{$website['url']}</a>" . '    |=|=' . $website['id'] . '--' . $website->name . '==' . $rName . '<br />';
                     $sql .= "DELETE FROM `wp_website` WHERE `id` = {$website['id']};";
                     $sql .= "DELETE FROM `wp_position_info` WHERE `info_id` = {$website['id']};";
                     $sql .= "DELETE FROM `wp_navsort_info` WHERE `info_id` = {$website['id']};<br />";
+                    $website->extfield = 999;
+                    //$website->save();
                 }
                 echo $sql;
             }

@@ -43,7 +43,7 @@ $inputValues = [
 ];
 $currentInputValue = $inputValues[$currentSort] ?? '百度一下';
 @endphp
-<h2>{{$currentTitle}}</h2>
+<h2>{!!$currentTitle!!}</h2>
 <form class="input-group" action="{{$currentAction}}" target="_blank" method="get">
     <style type="text/css">.bdsug_copy{display:none}</style>
     <input name="ie" type="hidden" value="utf-8">
