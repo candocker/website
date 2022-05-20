@@ -49,7 +49,7 @@
     @if (isset($datas['vernacular']) && isset($datas['vernacular']['tuan1']))<div class="yiwen"><p>【译文2】{{$datas['vernacular']['tuan1']}}</p></div>@endif
     
     <p class="xiang xiangci"><big>象曰</big>{{$datas['xiang']}}</p>
-    @if (isset($datas['vernacular']))<div class="yiwen yiwentrue xiangci"><p>【译文】{{$datas['vernacular']['xiang']}}</p></div>@endif
+    @if (isset($datas['vernacular']['xiang'])) @foreach ((array) $datas['vernacular']['xiang'] as $i => $xiangStr) <div id="yiwen" class="yiwen yiwentrue xiangci"><p>【译文@if ($i) {{$i}} @endif】{{$xiangStr}}</p></div>@endforeach @endif
     
     @foreach ($datas['yao'] as $key => $elem)
     <p class="xiang">

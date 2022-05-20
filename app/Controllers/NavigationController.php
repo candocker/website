@@ -8,10 +8,11 @@ class NavigationController extends AbstractController
 {
     public function home()
     {
-        $navInfos = $this->getNavigationDatas('nav');
+        //$navInfos = $this->getNavigationDatas('nav');
         $positionModel = $this->getModelObj('bench-position');
         $datas = [
-            'categorys' => $this->getModelObj('bench-navsort')->getCategoryDatas(4),
+            'categorys' => $this->getModelObj('bench-navsort')->getHomeInfos(4),
+            //'categorys' => $this->getModelObj('bench-navsort')->getCategoryDatas(4),
             'searchElems' => $this->getSearchElems(),
             'homeFocus' => $positionModel->getFocusDatas('home'),
             'recommendDatas' => $positionModel->getPointDatas('home'),
@@ -20,13 +21,15 @@ class NavigationController extends AbstractController
             'mobileBottom' => $positionModel->getPointDatas('bottommobile'),
             'homeRandoms' => $positionModel->getPointDatas('bottomrandom'),
         ];
+        //print_r($datas['categorys']);exit();
         $datas['tdkData'] = [
             'title' => '定制自己的网络导航,驾驭浩瀚的网络信息',
             'keywords' => '',
             'description' => '',
         ];
         //print_r($datas['mobileTop']);exit();
-        return $this->customView('home', array_merge($navInfos, $datas));
+        return $this->customView('home', $datas);
+        //return $this->customView('home', array_merge($navInfos, $datas));
     }
 
     public function rank()
@@ -91,7 +94,7 @@ class NavigationController extends AbstractController
         $model = $this->getModelObj('bench-navsort');
         $positionModel = $this->getModelObj('bench-position');
         $bigSortData = $model->where(['code' => $bigSort])->first();
-        $sorts = $model->where(['parent_code' => $bigSort])->get();
+        $sorts = $model->where(['parent_code' => $bigSort])->orderBy('orderlist', 'desc')->get();
         $results = [];
         foreach ($sorts as $sort) {
             $sData = $sort->toArray();
@@ -181,16 +184,30 @@ class NavigationController extends AbstractController
 
     protected function _dealNavData($websiteModel, $navsortModel, $navsortInfoModel, $positionInfoModel)
     {
-        $sorts = $navsortModel->where(['parent_code' => 'tvfilm'])->orWhere(['code' => 'tvfilm'])->get();
-        $infos = $websiteModel->where('extfield', '')->where('extfield1', '<>', 'deal')->limit(500)->get();
-        $service = $this->getServiceObj('passport-guzzle');
-        $result = [];
-        foreach ($infos as $info) {
-            $info->extfield = $rCode;
-            $info->save();
-            $result[$rCode] = $info->toArray();
+        $bigSorts = $navsortModel->where('parent_code', '')->get();
+        $bigSorts = $navsortModel->where('code', 'game')->get();
+        foreach ($bigSorts as $bigSort) {
+            $subSorts = $bigSort->getSubElem()->toArray();
+            $subCodes = array_keys($subSorts);
+            $subCodeStr = implode("','", $subCodes);
+            $sql = "SELECT `w`.`name`, `w`.`url`, `w`.`id`, `n`.`name`, `n`.`code`, `n`.`id` FROM `wp_website` AS `w`, `wp_navsort` AS `n`, `wp_navsort_info` AS `ni` WHERE `w`.`id` = `ni`.`info_id` AND `ni`.`navsort_code` = `n`.`code` AND `ni`.`navsort_code` IN ('{$subCodeStr}');";
+            echo $sql;
+        $sorts = $navsortModel->where('parent_code', $bigSort['code'])->get();
+        foreach ($sorts as $sort) {
+            $infos = $navsortInfoModel->where('navsort_code', $sort['code'])->limit(500)->get();
+            $sql = '';
+            echo "<h2>{$sort['name']}-{$sort['code']}-{$sort['id']}</h2>";
+            $websiteIds = [];
+            foreach ($infos as $info) {
+                $websiteIds[] = $info['info_id'];
+                $website = $info->website;
+                $sql = $this->formatWebsite($website, $sql, $navsortInfoModel, $positionInfoModel);
+            }
+            $websiteIdStr = implode(',', $websiteIds);
+            echo "SELECT * FROM `wp_navsort_info` WHERE `info_id` IN ({$websiteIdStr});<br />";
         }
-        print_r($result);
+        }
+        exit();
     }
 
     protected function _dealDomain($websiteModel, $navsortInfoModel, $positionInfoModel)
@@ -209,24 +226,7 @@ class NavigationController extends AbstractController
 
                 $sql = "<br />SELECT * FROM `wp_website` WHERE `domain` = '{$domain};<br />";
                 foreach ($tmp as $website) {
-                    $sInfos = $navsortInfoModel->where(['info_id' => $website['id']])->get();
-                    $rName = '';
-                    foreach ($sInfos as $sInfo) {
-                        $rName .= 'nn-' . $sInfo->navsort->name . '-' . $sInfo->navsort->id . '==';
-                    }
-                    $pInfos = $positionInfoModel->where(['info_id' => $website['id']])->get();
-                    foreach ($pInfos as $pInfo) {
-                        if ($pInfo->position_code == 'bottomrandoma') {
-                            $pInfo->position_code = 'bottomrandom';
-                        }
-                        $rName .= 'pp-' . $pInfo->position->name . '-' . $pInfo->position->id . '==';
-                    }
-                    echo "<a href='{$website['url']}' target='_blank'>{$website['url']}</a>" . '    |=|=' . $website['id'] . '--' . $website->name . '==' . $rName . '<br />';
-                    $sql .= "DELETE FROM `wp_website` WHERE `id` = {$website['id']};";
-                    $sql .= "DELETE FROM `wp_position_info` WHERE `info_id` = {$website['id']};";
-                    $sql .= "DELETE FROM `wp_navsort_info` WHERE `info_id` = {$website['id']};<br />";
-                    $website->extfield = 999;
-                    //$website->save();
+                    $sql = $this->formatWebsit($website, $sql, $navsortInfoModel, $positionInfoModel);
                 }
                 echo $sql;
             }
@@ -252,5 +252,29 @@ class NavigationController extends AbstractController
             }
         }
         exit();
+    }
+
+    protected function formatWebsite($website, $sql, $navsortInfoModel, $positionInfoModel)
+    {
+        $sInfos = $navsortInfoModel->where(['info_id' => $website['id']])->get();
+        $rName = '';
+        foreach ($sInfos as $sInfo) {
+            $rName .= 'nn-' . $sInfo->navsort->name . '-' . $sInfo->navsort->id . '==' . $sInfo->navsort->code . '==';
+        }
+        $pInfos = $positionInfoModel->where(['info_id' => $website['id']])->get();
+        foreach ($pInfos as $pInfo) {
+            if ($pInfo->position_code == 'bottomrandoma') {
+                $pInfo->position_code = 'bottomrandom';
+            }
+            $rName .= 'pp-' . $pInfo->position->name . '-' . $pInfo->position->id . '==';
+        }
+        //echo "<a href='{$website['url']}' target='_blank'>{$website['url']}</a>" . '    |=|=' . $website['id'] . '--' . $website->name . '==' . $rName . '<br />';
+        echo "{$rName}==={$website->name}--<a href='{$website['url']}' target='_blank'>{$website['url']}</a>" . $website['id'] . '<br />';
+        $sql .= "DELETE FROM `wp_website` WHERE `id` = {$website['id']};";
+        $sql .= "DELETE FROM `wp_position_info` WHERE `info_id` = {$website['id']};";
+        $sql .= "DELETE FROM `wp_navsort_info` WHERE `info_id` = {$website['id']};<br />";
+        $website->extfield = 999;
+        //$website->save();
+        return $sql;
     }
 }

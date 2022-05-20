@@ -69,13 +69,13 @@
                     </h6>-->
                 </div>
             </li>
-            <li class="nav-item jd">
+            <!--<li class="nav-item jd">
                 <a class="nav-link" href="http://guozhivip.com/yy/" target="_blank">一言</a>
             </li>
             <li class="nav-item jd">
                 <a href="#renyimen" class="nav-link anchor-scroll" data-class-to="body">任意门</a>
             </li>
-            <!--<li class="nav-item dropdown">
+            <li class="nav-item dropdown">
                 <a href="#" class="nav-link" data-toggle="modal" data-target="#Login" title="注册登录后可添加自己常用的网站、云同步">
                     <i class="fa fa-user" style="color: #F90"></i> 登录</a>
                 </a>

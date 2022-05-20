@@ -9,21 +9,24 @@
 <div class="container content" data-spy="scroll" data-target="#list-example" data-offset="0">
     {{--@include('navigation.modules._home-toolbar', ['data' => ''])--}}
     <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
-        @foreach ($datas['sorts'] as $pIndex => $pData)
+        @foreach ($datas['categorys'] as $pIndex => $pElems)
+        @foreach ($pElems as $pElem)
+        @foreach ($pElem as $pData)
+        @if (!in_array($pData['code'], ['rank', 'search']))
         <div class="col subs">
             <h5 class="tit">
                 <i class="fa {{$pData['icon']}}" style="color: #7CCD7C;"></i> {{$pData['name']}}
-                @if ($pData['focusDatas'])
+                @if (isset($pData['focusDatas']))
                 @foreach ($pData['focusDatas'] as $focusData)
                 <a href="{{$focusData['url']}}" class="yule tg" target="_blank" style="margin-left: 13px">{{$focusData['title']}}</a>
                 @endforeach
                 @endif
                 <!--<a href="https://m.bilibili.com/ranking" class="rd"><img src="{{$commonAssetUrl}}/nav/img/93824-4007.png" class="simg">热门视频</a>
                 <a href="https://www.kuaishou.com/" class="yule tg" target="_blank" style="margin-left: 12px">快手</a>-->
-                @if ($pData['url']) <a href="{{$pData['url']}}" style="color: #999" title="{{$pData['name']}}">更多> </a>@endif
+                <a href="{{$pData['url']}}" style="color: #999; margin-left: 140px;" title="{{$pData['name']}}">更多>> </a>
             </h5>
             <div class="row row-cols-3 row-cols-sm-3 row-cols-md-3 row-cols-lg-3">
-                @foreach ($pData['navDatas'] as $subIndex => $subData)
+                @foreach ($pData['websites'] as $subIndex => $subData)
                 @if ($subData['name'] == '邮箱')
                 <div class="col yx">
                     <a href="https://mail.qq.com/" target="_blank" class="cy">
@@ -52,12 +55,15 @@
                 @endforeach
             </div>
         </div>
+        @endif
+        @endforeach
+        @endforeach
         @endforeach
     </div>
     @include('navigation.modules._home-footer-recommend', ['datas' => $datas])
 </div>
 @include('navigation.modules._home-footer-mobile', ['datas' => $datas['mobileBottom']])
 @include('navigation.common._footer-simple', ['data' => ''])
-@include('navigation.modules._home-float', ['data' => ''])
+{{--@include('navigation.modules._home-float', ['data' => ''])--}}
 @include('navigation.modules._home-js', ['data' => ''])
 @endsection
