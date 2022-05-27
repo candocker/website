@@ -180,18 +180,24 @@ class NavigationController extends AbstractController
 
         //$this->_dealDomain($websiteModel, $navsortInfoModel, $positionInfoModel);
         $this->_dealNavData($websiteModel, $navsortModel, $navsortInfoModel, $positionInfoModel);
+        //$this->_dealWebsiteIcon($websiteModel, $navsortModel, $navsortInfoModel, $positionInfoModel);
     }
 
     protected function _dealNavData($websiteModel, $navsortModel, $navsortInfoModel, $positionInfoModel)
     {
         $bigSorts = $navsortModel->where('parent_code', '')->get();
-        $bigSorts = $navsortModel->where('code', 'game')->get();
-        foreach ($bigSorts as $bigSort) {
-            $subSorts = $bigSort->getSubElem()->toArray();
-            $subCodes = array_keys($subSorts);
-            $subCodeStr = implode("','", $subCodes);
-            $sql = "SELECT `w`.`name`, `w`.`url`, `w`.`id`, `n`.`name`, `n`.`code`, `n`.`id` FROM `wp_website` AS `w`, `wp_navsort` AS `n`, `wp_navsort_info` AS `ni` WHERE `w`.`id` = `ni`.`info_id` AND `ni`.`navsort_code` = `n`.`code` AND `ni`.`navsort_code` IN ('{$subCodeStr}');";
-            echo $sql;
+        $bigSorts = [
+            'cartoon', 'coolsite', 'design', 'game', 'news', 'rank','readnav', 'search',
+            'shop', 'study', 'tvfilm', 'pingtai', 'wenan', 
+            'sucai', 'redian', 'website', 
+            'common', 'operation', 'picture', 'tool'
+        ];
+        $bigSort = $navsortModel->where('code', 'pingtai')->first();
+        $subSorts = $bigSort->getSubElem()->toArray();
+        $subCodes = array_keys($subSorts);
+        $subCodeStr = implode("','", $subCodes);
+        $sql = "SELECT `w`.`name`, `w`.`url`, `w`.`id`, `n`.`name`, `n`.`code`, `n`.`id` FROM `wp_website` AS `w`, `wp_navsort` AS `n`, `wp_navsort_info` AS `ni` WHERE `w`.`id` = `ni`.`info_id` AND `ni`.`navsort_code` = `n`.`code` AND `ni`.`navsort_code` IN ('{$subCodeStr}');";
+        echo $sql;
         $sorts = $navsortModel->where('parent_code', $bigSort['code'])->get();
         foreach ($sorts as $sort) {
             $infos = $navsortInfoModel->where('navsort_code', $sort['code'])->limit(500)->get();
@@ -205,7 +211,6 @@ class NavigationController extends AbstractController
             }
             $websiteIdStr = implode(',', $websiteIds);
             echo "SELECT * FROM `wp_navsort_info` WHERE `info_id` IN ({$websiteIdStr});<br />";
-        }
         }
         exit();
     }
@@ -276,5 +281,38 @@ class NavigationController extends AbstractController
         $website->extfield = 999;
         //$website->save();
         return $sql;
+    }
+
+    protected function _dealWebsiteIcon($websiteModel, $navsortModel, $navsortInfoModel, $positionInfoModel)
+    {
+        $infos = $websiteModel->where(['extfield1' => ''])->limit(500)->get();
+        $sh = '';
+        $pathPre = '/data/htmlwww/filesys/spider/pages';
+        foreach ($infos as $info) {
+            $logoPath = $info['logo_path'];
+            //if (strpos($logoPath, 'http') === false || empty($logoPath)) {
+            if (empty($logoPath)) {
+                $info->extfield1 = 'old';
+                $info->save();
+                continue;
+            }
+            $tFile = $pathPre . $logoPath;
+            if (file_exists($tFile)) {
+                $info->extfield1 = 'yes';
+            } else {
+                $info->extfield1 = 'ooo';
+            }
+            $info->save();
+            continue;
+                
+            $file = '/nav/icon/' . $info->id . substr($logoPath, strrpos($logoPath, '.'));
+            $info->extfield = $file;
+            $info->save();
+            $file = $pathPre . $file;
+            $sh .= "wget  -U \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36\" -O {$file} {$logoPath}\n";
+            //echo $file . '<br />';
+        }
+        echo $sh;
+        exit();
     }
 }

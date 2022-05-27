@@ -28,7 +28,7 @@
                     <div class="row row-cols-4 row-cols-sm-4 row-cols-md-4 row-cols-lg-4">
                         @foreach ($tData as $pKey => $pData)
                         <div class="col">
-                            <a href="{{$pData['url']}}" target="_blank">
+                            <a href="{{$pData['url']}}">
                                 <img src="{{$commonAssetUrl}}{{$pData['icon_path']}}" />
                                 <p>{{$pData['name_short']}}</p>
                             </a>
@@ -39,9 +39,9 @@
                     @endforeach
                     <!--<hr style="margin-top: 7px;margin-bottom: 7px;">
                     <h6 style="font-size: 13px;">
-                        <a href="/products/27320" target="_blank">反馈</a>·
-                        <a href="/tc/" target="_blank">捐助</a>·
-                        <a href="https://wj.qq.com/s2/7137862/9f15/" target="_blank">合作</a>
+                        <a href="/products/27320">反馈</a>·
+                        <a href="/tc/">捐助</a>·
+                        <a href="https://wj.qq.com/s2/7137862/9f15/">合作</a>
                     </h6>-->
                 </div>
             </li>
@@ -52,7 +52,7 @@
                     <div class="row row-cols-4 row-cols-sm-4 row-cols-md-4 row-cols-lg-4">
                         @foreach ($tData as $pKey => $pData)
                         <div class="col">
-                            <a href="{{$pData['url']}}" target="_blank">
+                            <a href="{{$pData['url']}}">
                                 <img src="{{$commonAssetUrl}}{{$pData['icon_path']}}" />
                                 <p>{{$pData['name_short']}}</p>
                             </a>
@@ -63,14 +63,14 @@
                     @endforeach
                     <!--<hr style="margin-top: 7px;margin-bottom: 7px;">
                     <h6 style="font-size: 13px;">
-                        <a href="/products/27320" target="_blank">反馈</a>·
-                        <a href="/tc/" target="_blank">捐助</a>·
-                        <a href="https://wj.qq.com/s2/7137862/9f15/" target="_blank">合作</a>
+                        <a href="/products/27320">反馈</a>·
+                        <a href="/tc/">捐助</a>·
+                        <a href="https://wj.qq.com/s2/7137862/9f15/">合作</a>
                     </h6>-->
                 </div>
             </li>
             <!--<li class="nav-item jd">
-                <a class="nav-link" href="http://guozhivip.com/yy/" target="_blank">一言</a>
+                <a class="nav-link" href="http://guozhivip.com/yy/">一言</a>
             </li>
             <li class="nav-item jd">
                 <a href="#renyimen" class="nav-link anchor-scroll" data-class-to="body">任意门</a>
@@ -109,7 +109,7 @@
                     </div>
                 </div>
             </div>
-            <form class="input-group" action="https://www.baidu.com/s" method="GET" target="_blank" id="searchCheck">
+            <form class="input-group" action="https://www.baidu.com/s" method="GET" id="searchCheck">
                 <style type="text/css">.bdsug_copy{display:none}</style>
                 <input type="hidden" name="type" value="2" autocomplete="off">
                 <input class="form-control" type="text" value="" x-webkit-speech="" lang="zh-CN" placeholder="请输入搜索内容" baiduSug="1" name="wd" id="search" class="textb" autocomplete="off" autofocus="autofocus" />
@@ -120,7 +120,7 @@
         </div>
         <h6 class="tit">
             @foreach ($datas['homeFocus'] as $pData)
-            <a href="{{$pData['url']}}" target="_blank" style="{{$pData['icon_color']}}">
+            <a href="{{$pData['url']}}" style="{{$pData['icon_color']}}">
                 @if ($pData['icon']) <i class="fa fa-lightbulb-o"></i> @endif 
                 {{$pData['name']}}
             </a>&nbsp;&nbsp;

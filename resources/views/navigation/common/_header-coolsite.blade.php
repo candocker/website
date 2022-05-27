@@ -9,19 +9,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="/" target="_blank">导航<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/">导航<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/rank" target="_blank">热榜</a>
+                    <a class="nav-link" href="/rank">热榜</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/tool" target="_blank">工具</a>
+                    <a class="nav-link" href="/tool">工具</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">自媒体</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         @foreach ($datas['categorys']['mediaCategorys'] as $pData)
-                        <a class="dropdown-item" href="{{$pData['url']}}" target="_blank">{{$pData['name']}}</a>
+                        <a class="dropdown-item" href="{{$pData['url']}}">{{$pData['name']}}</a>
                         @endforeach
                     </div>
                 </li>
@@ -29,13 +29,13 @@
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">更多</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         @foreach ($datas['categorys']['categorys'] as $pData)
-                        <a class="dropdown-item" href="{{$pData['url']}}" target="_blank">{{$pData['name']}}</a>
+                        <a class="dropdown-item" href="{{$pData['url']}}">{{$pData['name']}}</a>
                         @endforeach
                     </div>
                 </li>
             </ul>
         </div>
-        <form class="form-inline" action="https://www.baidu.com/s" target="_blank" method="get">
+        <form class="form-inline" action="https://www.baidu.com/s" method="get">
             <style type="text/css">.bdsug_copy{display:none}</style>
             <input name="ie" type="hidden" value="utf-8">
             <input class="form-control mr-sm-2" type="text" name="word" baiduSug="1" placeholder="搜你所想" aria-label="搜你所想">

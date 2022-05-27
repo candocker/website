@@ -14,8 +14,19 @@ class ClassicalController extends AbstractController
         }
         $datas = $this->getListZhou();
         $datas['tdkData'] = [
-            'title' => '驾驭浩瀚的网络信息',
-            'keywords' => '',
+            'title' => '群经之首-周易',
+            'keywords' => '经典，周易，易经，易传',
+            'description' => '',
+        ];
+        return $this->customView('list', $datas);
+    }
+
+    public function scripturesPoetry()
+    {
+        $datas = $this->getListPoetry();
+        $datas['tdkData'] = [
+            'title' => '群经之首-周易',
+            'keywords' => '经典，周易，易经，易传',
             'description' => '',
         ];
         return $this->customView('list', $datas);
@@ -69,6 +80,7 @@ class ClassicalController extends AbstractController
             ['code' => 'zhongyong', 'name' => '中庸'],
             ['code' => 'mengzi', 'name' => '孟子'],
             ['code' => 'zhuangzi', 'name' => '庄子'],
+            ['code' => 'shijing', 'name' => '诗经'],
             //['code' => 'mozi', 'name' => '墨子'],
             //['code' => 'xunzi', 'name' => '荀子'],
             //['code' => 'tongshu', 'name' => '通书'],
