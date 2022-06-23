@@ -160,7 +160,6 @@ class NavigationController extends AbstractController
     {
         $websiteModel = $this->getModelObj('bench-website');
         $positionInfoModel = $this->getModelObj('bench-positionInfo');
-        $toolbarModel = $this->getModelObj('bench-toolbar');
         //$navModel = $this->getModelObj('bench-navigation');
         $navsortModel = $this->getModelObj('bench-navsort');
         $navsortInfoModel = $this->getModelObj('bench-navsortInfo');
@@ -173,7 +172,6 @@ class NavigationController extends AbstractController
     {
         $websiteModel = $this->getModelObj('bench-website');
         $positionInfoModel = $this->getModelObj('bench-positionInfo');
-        $toolbarModel = $this->getModelObj('bench-toolbar');
         //$navModel = $this->getModelObj('bench-navigation');
         $navsortModel = $this->getModelObj('bench-navsort');
         $navsortInfoModel = $this->getModelObj('bench-navsortInfo');
@@ -192,7 +190,7 @@ class NavigationController extends AbstractController
             'sucai', 'redian', 'website', 
             'common', 'operation', 'picture', 'tool'
         ];
-        $bigSort = $navsortModel->where('code', 'pingtai')->first();
+        $bigSort = $navsortModel->where('code', 'tool')->first();
         $subSorts = $bigSort->getSubElem()->toArray();
         $subCodes = array_keys($subSorts);
         $subCodeStr = implode("','", $subCodes);
