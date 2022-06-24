@@ -6,7 +6,7 @@
 <div class="foot">
     <div class="copy">Copyright © 2016-
         <span id="show"></span>
-        <a href="http://navigation.canliang.wang/">acanstudio</a> All Rights Reserved.
-        <a href="http://beian.miit.gov.cn/" target="_blank">京ICP备13015487号-5</a>
+        <a href="{{$currentDomain}}">acanstudio</a> All Rights Reserved.
+        <a href="http://beian.miit.gov.cn/" target="_blank">{{$currentIcp}}</a>
     </div>
 </div>
