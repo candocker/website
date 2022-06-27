@@ -50,5 +50,3 @@
     @yield('main')
 </body>
 </html>
-
-

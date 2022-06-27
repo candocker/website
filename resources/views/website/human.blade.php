@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en-US" dir="ltr">
-<head>
-
-</head>  
+@extends('layouts.website')
 
  
-  <body class="page">
-  
+@section('content')
   
           
               
@@ -51,7 +46,7 @@
                  <div class="container">
                  
                                                 <div class="uix-brand">
-                            <a href="index.html"><img src="../assets/images/logo.png" alt="Uix Kit"></a>                       
+                            <a href="index.html"><img src="{{$commonAssetUrl}}/website/assets/images/logo.png" alt="Uix Kit"></a>                       
                         </div>
                         <!-- .uix-brand end -->
                         
@@ -63,7 +58,7 @@
                                
                                <div class="uix-menu__inner">
                                
-									<span class="uix-brand--mobile"><img src="../assets/images/logo-colorful.png" alt="Uix Kit"></span>
+									<span class="uix-brand--mobile"><img src="{{$commonAssetUrl}}/website/assets/images/logo-colorful.png" alt="Uix Kit"></span>
 									<ul class="uix-menu"> 
 										<li class="multi-column current-menu-item is-active"><a href="index.html">Components</a>
 											<ul class="sub-menu">
@@ -373,7 +368,7 @@
 				   <div class="uix-advanced-slider-sp__inner">
 
 					   <div class="uix-advanced-slider-sp__item">
-						   <img src="../assets/images/demo/slide-1.jpg" alt="Title 1" />
+						   <img src="{{$commonAssetUrl}}/website/assets/images/demo/slide-1.jpg" alt="Title 1" />
 							<div class="uix-advanced-slider-sp__txt">
 								<div class="uix-core-grid__col-7 uix-typo--color-white">
 									<h2 data-text-eff="letters-eff-flyInOut1" data-text-eff-speed="800">Beautiful Free &amp; Premium Responsive WordPress Themes</h2>
@@ -385,7 +380,7 @@
 					   </div>
 
 					   <div class="uix-advanced-slider-sp__item">
-						   <img src="../assets/images/demo/slide-2.jpg" alt="Title 1" />
+						   <img src="{{$commonAssetUrl}}/website/assets/images/demo/slide-2.jpg" alt="Title 1" />
 							<div class="uix-advanced-slider-sp__txt">
 								<div class="uix-core-grid__col-7 uix-typo--color-white">
 									<h2 data-text-eff="letters-eff-flyInOut2" data-text-eff-speed="800">Hello World</h2>
@@ -397,7 +392,7 @@
 					   </div>
 
 					   <div class="uix-advanced-slider-sp__item">
-						   <img src="../assets/images/demo/slide-3.jpg" alt="Title 1" />
+						   <img src="{{$commonAssetUrl}}/website/assets/images/demo/slide-3.jpg" alt="Title 1" />
 							<div class="uix-advanced-slider-sp__txt">
 								<div class="uix-core-grid__col-7 uix-typo--color-white">
 									<h2 data-text-eff="letters-eff-flyInOut3" data-text-eff-speed="800">Title 3</h2>
@@ -445,7 +440,7 @@
 						<!-- //////// -->
 						<div class="col-12 col-lg-4 col-sm-6">
 							<div class="uix-el--transparent uix-border--rounded uix-border--rounded-img" data-uix-anim='{"viewport":"100%","from":{"opacity":0,"y":150},"to":{"opacity":1,"y":0},"ease":"Power2.easeOut","duration":0.4,"delay":0.2,"infinite":false}' > 
-								<img src="../assets/images/demo/avatar-r-3.jpg" alt="">
+								<img src="{{$commonAssetUrl}}/website/assets/images/demo/avatar-r-3.jpg" alt="">
 							</div>
 						</div>
 						<!-- ///////// -->
@@ -791,7 +786,7 @@
 			====================================================== -->	
 			<section class="uix-spacing--s uix-spacing--no-top uix-el--transparent" data-uix-anim='{"viewport":"100%","from":{"opacity":0,"y":150},"to":{"opacity":1,"y":0},"ease":"Power2.easeOut","duration":0.4,"delay":0,"infinite":false}'>
 				<div class="uix-parallax uix-height--50 uix-typo--color-white" data-fully-visible="false" data-offset-top="0" data-overlay-bg="rgba(0,0,0,.6)" data-skew="0" data-speed="0.3">
-					<img class="uix-parallax__img" src="../assets/images/demo/spiral-galaxy-1920x309.jpg" alt="">
+					<img class="uix-parallax__img" src="{{$commonAssetUrl}}/website/assets/images/demo/spiral-galaxy-1920x309.jpg" alt="">
 					<div class="uix-v-align--absolute uix-t-c">
 						<div class="row">
 							<div class="col-12">
@@ -958,7 +953,7 @@
 
 					<div class="row">
 						  <div class="col-lg-3 col-md-3 uix-t-c--md">
-							   <img class="logo" src="../assets/images/logo.png" alt="">
+							   <img class="logo" src="{{$commonAssetUrl}}/website/assets/images/logo.png" alt="">
 						  </div>
 						  <div class="col-lg-6 col-md-6">
 
@@ -1009,7 +1004,7 @@
 											<i class="fa fa-qrcode"></i>
 										</a>
 									</span>
-									<div class="uix-t-c"><img src="../assets/images/demo/qr-code.png" alt="" width="150" height="150" /></div>
+									<div class="uix-t-c"><img src="{{$commonAssetUrl}}/website/assets/images/demo/qr-code.png" alt="" width="150" height="150" /></div>
 								</div>	
 
 
@@ -1037,66 +1032,4 @@
         
     </div>
     <!-- .uix-wrapper end -->
-       
-       
-      
-
-    <!-- Vendor -->
-	<script defer src="../assets/js/min/axios.min.js?ver=0.19.2"></script>
-    <script defer src="../assets/js/min/jquery.waitforimages.min.js?ver=1.0"></script>
-    <script defer src="../assets/js/min/video.min.js?ver=7.5.3"></script>
-    <script defer src="../assets/js/min/template7.min.js?ver=1.4.2"></script>
-    <script defer src="../assets/js/min/TweenMax.min.js?ver=2.0.2"></script>
-    <script defer src="../assets/js/min/pixi.min.js?ver=5.2.0"></script>
-    <script defer src="../assets/js/min/three.min.js?ver=r114"></script>
-    <script defer src="../assets/js/min/anime.min.js?ver=3.1"></script>
-    <script defer src="../assets/js/min/hammer.min.js?ver=2.0.8"></script>
-    <script defer src="../assets/js/min/muuri.min.js?ver=0.8.0"></script>
-
-
-    
-	<!-- Your Plugins & Theme Scripts
-	============================================= -->
-	
-	<script>
-        /*
-        * Some global vars. DO NOT change these variables names. 
-        * These variables are being used in `uix-kit.min.js`.
-        *    
-        */ 
-		var REVISION     = "4.6.5",
-			APP_ROOTPATH = {
-				"templateUrl" : "", //If the file is in the root directory, you can leave it empty. If in another directory, you can write: "/blog"
-				"homeUrl"     : "",  //Eg. https://uiux.cc
-				"ajaxUrl"     : ""   //Eg. https://uiux.cc/wp-admin/admin-ajax.php
-			};
-        
-
-        /*
-        * Fixed a bug that Cannot read property 'fn' of undefined for jQuery 1.xx.x.
-        *    
-        */
-        window.$ = window.jQuery;
-    </script>  
-    <script defer src=../js/uix-kit.min.js?ver=qXJ1d1suw95dRqLHFWpI"></script>
-	<!-- Your Plugins & Theme Scripts  end -->
-    
-
-	<script>
-			/* Google analytics */
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.defer=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-			ga('create', 'UA-70658525-1', 'auto');
-			ga('send', 'pageview');
-
-	</script> 
-    
-
-  </body>
-</html>
-
-    
-   
+@endsection
