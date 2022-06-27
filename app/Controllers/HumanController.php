@@ -7,7 +7,7 @@ class HumanController extends AbstractController
     public function home()
     {
         $this->getHuman();
-        return $this->customView('home');
+        return $this->customView('human');
     }
 
     public function view()
@@ -36,7 +36,7 @@ class HumanController extends AbstractController
 
 	protected function viewPath()
 	{
-		return 'human';
+		return 'website';
 	}
 
     public function getHuman()

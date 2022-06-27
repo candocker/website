@@ -53,6 +53,14 @@ abstract class AbstractController extends AbstractControllerBase
         return $this->resource->isMobile();
     }
 
+	/*public function isMobile($force = false)
+	{
+        if (empty($force)) {
+		    return null;
+        }
+        return parent::isMobile($force);
+    }*/
+
 	protected function customView($view, $datas = [], $viewPath = null)
 	{
 		$viewPath = is_null($viewPath) ? $this->viewPath() : $viewPath;
@@ -84,4 +92,10 @@ abstract class AbstractController extends AbstractControllerBase
     {
         return 'website';
     }
+
+    /*public function getHuman()
+    {
+        $human = $this->getRouteParam('human');
+        return $human;
+    }*/
 }

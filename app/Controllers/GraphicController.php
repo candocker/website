@@ -16,6 +16,7 @@ class GraphicController extends AbstractController
         ];
         $datas['footerLinks'] = $graphicModel->getFooterLinks();
         return $this->customView('home', $datas);
+        return $this->_showCommon($code, 'home', 'brand', 'infocms');
     }
 
     protected function getGraphicDatas($graphicModel, $code, $extcode, $params)

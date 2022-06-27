@@ -78,119 +78,37 @@ class TestController extends AbstractController
         return true;//false;
     }   
 
-    protected function getEnvValue($key)
-    {
-        return env($key);
-    }
+	/*public function test()
+	{
+		$str = '';
+		$domains = [
+			'culture' => 'http://culture.91zuiai.com', 
+			'pet' => 'http://pet.91zuiai.com', 
+            'subject' => 'http://subject-test.91zuiai.com',
+            'brand' => 'http://brand-test.91zuiai.com',
+			'guide' => 'http://guide.91zuiai.com',
+            'human' => 'http://human-test.91zuiai.com',
+		];
 
-    public function tmp()
-    {
-        $text = file('/data/log/dealdata/tmp/admin.json');
-        $data = json_decode($text[0], true);
-        return $this->successCustom($data);
-        echo $text[0];exit();
-        $request = $this->request;
-        $inTest = config('app.inTest');
-        if (empty($inTest)) {
-            return $this->error(400, '非法请求');
-        }
-        $method = ucfirst($request->input('method', ''));
-        $method = "_test{$method}";
-        $this->$method($request);
-    }
+		$routes = [
+			'culture' => ['/', '/listinfo', '/show-1'],
+			'pet' => ['/', '/info-show-1', '/info-list', '/info-home', '/pet-home', '/pet-list', '/pet-show-1', '/special-list', '/special-show-1'],
+			'subject' => ['/', '/human', '/info', '/knowledge', '/league', '/product', '/shop', '/store'],
+			'brand' => ['/', '/detail', '/product', '/shop', '/store'],
+			'guide' => ['/', '/show-human-1', '/show-info-1', '/show-knowledge-1', '/show-league-1', '/show-shop-1', '/show-store-1', '/vote'],
+			'human' => ['/', '/404', '/about', '/blog', '/contact', '/elements', '/gallery', '/home_alternative', '/page_alternative', '/portfolio', '/portfolio_item', '/portfolio_item_2', '/register', '/services', '/single_post', '/resume'],
+		];
 
-    public function option()
-    {
-        return $this->testTmp('option');
-    }
-
-    public function articleContext()
-    {
-        return $this->testTmp('acontext');
-    }
-
-    public function statistic()
-    {
-        return $this->testTmp('statistic');
-    }
-
-    public function archive()
-    {
-        return $this->testTmp('archive');
-    }
-
-    public function category()
-    {
-        return $this->testTmp('category');
-    }
-
-    public function comment()
-    {
-        return $this->testTmp('comment');
-    }
-
-    public function disqus()
-    {
-        return $this->testTmp('disqus');
-    }
-
-    public function tag()
-    {
-        return $this->testTmp('tag');
-    }
-
-    public function article()
-    {
-        $text = file('/data/log/dealdata/tmp/article.json');
-        $model = $this->getModelObj('culture-cultureArticle');
-        $info = $model->find(2);
-        $data = json_decode($text[0], true);
-        $data['result']['title'] = $info['title'];
-        //$data['result']['content'] = file_get_contents('/tmp/content.txt');//$info['content'];
-        $data['result']['content'] = $info['content'];
-        return $this->successCustom($data);
-        echo json_encode($data);exit();
-
-        //print_r($data);exit();
-    }
-
-    public function ahot()
-    {
-        return $this->testTmp('ahot');
-    }
-
-    public function userinfo()
-    {
-        return $this->testTmp('userinfo');
-    }
-
-    public function acalendar()
-    {
-        return $this->testTmp('acalendar');
-    }
-
-    public function announce()
-    {
-        return $this->testTmp('announce');
-    }
-
-    public function articleList()
-    {
-        return $this->testTmp('articleList');
-    }
-
-    public function admin()
-    {
-        return $this->testTmp('admin');
-    }
-
-    protected function testTmp($code)
-    {
-        $text = file('/data/log/dealdata/tmp/' . $code . '.json');
-        $data = json_decode($text[0], true);
-        return $this->successCustom($data);
-        echo $text[0];exit();
-    }
+		foreach (['culture', 'pet', 'subject', 'brand', 'guide', 'human'] as $elem) {
+			$domain = $domains[$elem];
+			foreach ($routes[$elem] as $route) {
+				$url = $domain . $route;
+				$str .= "<a href='{$url}' target='_blank'>{$url}</a><br />";
+			}
+		}
+        //echo "<img src='http://api.91zuiai.com/captcha' />";
+		echo $str;
+    }*/
 
     public function _test()
     {
