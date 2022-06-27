@@ -5,6 +5,13 @@ use Swoolecan\Foundation\Helpers\CommonTool;
 
 class CultureController extends AbstractController
 {
+    public function view($code = '')
+    {
+        $datas = [];
+        $view = 'elem-' . str_replace('_', '/', $code);
+        return $this->customView($view);
+    }
+
     public function home($sort = 'pingtai')
     {
         $datas = [];
@@ -173,7 +180,7 @@ class CultureController extends AbstractController
 
 	protected function viewPath()
 	{
-		return 'culture';
+		return 'website';
 	}
 
 	public function isMobile($force = false)
