@@ -235,3 +235,6 @@
         <div class="uix-clearfix"></div>
     </div>
 </header>
+@if ($nav == 'fixed')
+<div class="uix-header__placeholder js-uix-header__placeholder-autoheight"></div>
+@endif

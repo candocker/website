@@ -1,6 +1,12 @@
 @php
 $layoutElems = ['ltr', 'rtl'];
 $layoutElem = $layoutElems[0];
+$bodyClasses = [
+    '3D-simulate-html-layout' => 'class="page uix-hidden-scrollbar"', // ajax-page-loader
+    'mousewheel-interaction' => 'class="page mousewheel-interaction"',
+    'one-page' => 'class="page uix-hidden-scrollbar onepage"',
+    'typography-rtl' => 'class="page rtl"',
+];
 @endphp
 <!DOCTYPE html>
 <html lang="en-US" dir="{{$layoutElem}}">
