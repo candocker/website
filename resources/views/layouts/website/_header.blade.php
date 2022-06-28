@@ -21,6 +21,11 @@
 
 <!-- Theme  -->
 <link rel="stylesheet" href={{$commonAssetUrl}}/website/css/uix-kit.min.css?ver=qXJ1d1suw95dRqLHFWpI"/>
+@if ($layoutElem && $layoutElem == 'rtl')
+<!-- RTL  -->
+<link rel="stylesheet" href="{{$commonAssetUrl}}/website/assets/css/rtl/bootstrap-rtl.min.css?ver=4.2.1" media="all"/>
+<link rel="stylesheet" href="{{$commonAssetUrl}}/website/css/uix-kit-rtl.min.css?ver=qXJ1d1suw95dRqLHFWpI" media="all" />
+@endif
 
 <!--[if lt IE 10]>
 <link rel="stylesheet" href="{{$commonAssetUrl}}/website/assets/css/IE.css?ver=qXJ1d1suw95dRqLHFWpI" />

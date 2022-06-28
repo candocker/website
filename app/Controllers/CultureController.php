@@ -8,7 +8,9 @@ class CultureController extends AbstractController
     public function view($code = '')
     {
         $datas = [];
-        $view = 'elem-' . str_replace('_', '/', $code);
+        $elems = explode('_', $code);
+        $view = 'sources/' . $elems[0] . '/_' . $elems[1];
+        //echo $view;exit();
         return $this->customView($view);
     }
 

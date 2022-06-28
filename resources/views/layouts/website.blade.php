@@ -1,10 +1,14 @@
+@php
+$layoutElems = ['ltr', 'rtl'];
+$layoutElem = $layoutElems[0];
+@endphp
 <!DOCTYPE html>
-<html lang="en-US" dir="ltr">
+<html lang="en-US" dir="{{$layoutElem}}">
 <head>
-@include('layouts.website._header')
+@include('layouts.website._header', ['layoutElem' => $layoutElem])
 </head>  
 <body @yield('bodyClass')>
-    @include('layouts.website._loader-mobile')
+    @include('layouts.website._loader-mobile', ['layoutElem' => $layoutElem])
     <div class="uix-wrapper">
         @include('website.modules._nav', ['data' => []])
         @yield('content')
