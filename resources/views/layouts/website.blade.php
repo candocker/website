@@ -16,7 +16,7 @@ $bodyClasses = [
 <body @yield('bodyClass')>
     @include('layouts.website._loader-mobile', ['layoutElem' => $layoutElem])
     <div class="uix-wrapper">
-        @include('website.modules._nav', ['data' => []])
+        @include('layouts.website._top', ['data' => []])
         @yield('content')
         @include('layouts.website._footer-simple', ['data' => []])
     </div>
