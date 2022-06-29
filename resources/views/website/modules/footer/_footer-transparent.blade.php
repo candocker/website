@@ -1,9 +1,10 @@
-        <footer class="uix-special-footer__container">
+        <footer class="uix-special-footer__container is-transparent">
             <div class="uix-special-footer">
                 <div class="container">
 					<div class="row">
+						  <!--<div class="col-lg-3 col-md-3">-->
 						  <div class="col-lg-3 col-md-3 uix-t-c--md">
-							   <img class="logo" src="../assets/images/logo.png" alt="">
+							   <img class="logo" src="{{$commonAssetUrl}}/website/assets/images/logo-colorful.png" alt="">
 						  </div>
 						  <div class="col-lg-6 col-md-6">
 								<div class="uix-special-footer__menus uix-special-footer__menus--mobile-nowrap">
@@ -48,7 +49,7 @@
 											<i class="fa fa-qrcode"></i>
 										</a>
 									</span>
-									<div class="uix-t-c"><img src="../assets/images/demo/qr-code.png" alt="" width="150" height="150" /></div>
+									<div class="uix-t-c"><img src="{{$commonAssetUrl}}/website/assets/images/demo/qr-code.png" alt="" width="150" height="150" /></div>
 								</div>	
 								<a class="uix-social-btn uix-social-btn--small uix-social-btn--circle uix-social-btn--thin is-fill-white" title="Follow us on Twitter" href="https://twitter.com/uiux_lab" target="_blank">
 									<i class="fa fa-twitter"></i>

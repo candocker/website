@@ -18,9 +18,9 @@ $bodyClasses = [
     <div class="uix-wrapper">
         @include('website.modules._nav', ['data' => []])
         @yield('content')
-        @include('website.modules._footer', ['data' => []])
+        @include('layouts.website._footer-simple', ['data' => []])
     </div>
     <!-- .uix-wrapper end -->
-    @include('layouts.website._footer')
+    @include('layouts.website._bottom')
 </body>
 </html>
