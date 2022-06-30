@@ -48,7 +48,7 @@ class NavigationController extends AbstractController
 
     public function search()
     {
-        $this->dealData();exit();
+        //$this->dealData();exit();
         $recommendDatas = $this->getModelObj('bench-position')->getPointDatas('search');
         $focusDatas = $this->getModelObj('bench-position')->getFocusDatas('search');
         $mobileDatas = array_chunk($this->getModelObj('bench-position')->getMobileListDatas('search'), 6);

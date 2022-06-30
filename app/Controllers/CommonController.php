@@ -29,6 +29,6 @@ class CommonController extends AbstractController
         header("Cache-Control: no-cache, must-revalidate");
         header('Content-Type: image/jpeg');
 
-$builder->output();
+        $builder->output();
     }
 }
