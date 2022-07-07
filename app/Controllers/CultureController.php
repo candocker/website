@@ -22,7 +22,7 @@ class CultureController extends AbstractController
 
     public function bookSort($sort = '')
     {
-        $datas = $this->getRepositoryObj('culture-scholarism')->getCategoryDatas($sort);
+        $datas = $this->getRepositoryObj('culture-bookPublish')->getCategoryDatas($sort);
         return $this->customView('table', $datas);
     }
 

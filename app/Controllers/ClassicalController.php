@@ -52,6 +52,7 @@ class ClassicalController extends AbstractController
             'keywords' => '',
             'description' => '',
         ];
+        $datas['mobileClass'] = $this->resource->isMobile() ? 'mobile' : '';
         return $this->customView('detail', $datas);
     }
 
