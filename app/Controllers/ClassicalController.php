@@ -23,13 +23,13 @@ class ClassicalController extends AbstractController
 
     public function scripturesPoetry()
     {
-        $datas = $this->getListPoetry();
+        $datas = $this->getBookDetail('shijing', 'chapter');
         $datas['tdkData'] = [
-            'title' => '群经之首-周易',
-            'keywords' => '经典，周易，易经，易传',
+            'title' => '第一部诗歌总集-诗经',
+            'keywords' => '经典，诗经 ',
             'description' => '',
         ];
-        return $this->customView('list', $datas);
+        return $this->customView('poetry', $datas);
     }
 
     public function bookCatalogue($code = null)
@@ -64,6 +64,7 @@ class ClassicalController extends AbstractController
             'keywords' => '',
             'description' => '',
         ];
+        $datas['mobileClass'] = $this->resource->isMobile() ? 'mobile' : '';
         return $this->customView('show', $datas);
     }
 

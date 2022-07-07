@@ -3,7 +3,7 @@
 @section('header')@include('classical.modules._jscss-show', ['view' => 'home'])@endsection
 @section('content')
 <script>genNavigator("LEFT");</script>
-<div class="main">
+<div class="main {{$datas['mobileClass']}}">
     {{--@include('classical.modules._header', ['data' => ''])--}}
     @include('classical.modules._header-top', ['data' => ''])
     <div class="b_center">

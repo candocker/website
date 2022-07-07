@@ -60,9 +60,9 @@
         @if (isset($datas['vernacular'])) @foreach ((array) $datas['vernacular']['yao'][$key] as $i => $vernacularStr)<div class="yiwen yiwentrue"><p>【译文@if ($i) {{$i}} @endif】{{$vernacularStr}}</p></div>@endforeach @endif
         <span class="xiangci"><big>象曰</big> <span style="color: #0099FF;">{{$datas['xiaoxiang'][$key]}}</span><br /></span>
         @if (isset($datas['vernacular']))<div class="yiwen yiwentrue"><p>【译文】{{$datas['vernacular']['xiaoxiang'][$key]}}</p></div>@endif
-        @if (isset($datas['zhuxi']) && isset($datas['zhuxi']['xiaoxiang']))<div class="yiwen zhuxi"><p>【朱熹】{{$datas['zhuxi']['xiaoxiang'][$key]}}</p></div>@endif
-        @if (isset($datas['wangbi']) && isset($datas['wangbi']['xiaoxiang']))<div class="yiwen wangbi"><p>【王弼】{{$datas['wangbi']['xiaoxiang'][$key]}}</p></div>@endif
-        @if (isset($datas['sushi']) && isset($datas['sushi']['xiaoxiang']))<div class="yiwen sushi"><p>【苏轼】{{$datas['sushi']['xiaoxiang'][$key]}}</p></div>@endif
+        @if (isset($datas['zhuxi']) && isset($datas['zhuxi']['xiaoxiang']) && !empty($datas['zhuxi']['xiaoxiang'][$key]))<div class="yiwen zhuxi"><p>【朱熹】{{$datas['zhuxi']['xiaoxiang'][$key]}}</p></div>@endif
+        @if (isset($datas['wangbi']) && isset($datas['wangbi']['xiaoxiang']) && !empty($datas['wangbi']['xiaoxiang'][$key]))<div class="yiwen wangbi"><p>【王弼】{{$datas['wangbi']['xiaoxiang'][$key]}}</p></div>@endif
+        @if (isset($datas['sushi']) && isset($datas['sushi']['xiaoxiang']) && !empty($datas['sushi']['xiaoxiang'][$key]))<div class="yiwen sushi"><p>【苏轼】{{$datas['sushi']['xiaoxiang'][$key]}}</p></div>@endif
     </p>
     @endforeach
 
