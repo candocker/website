@@ -8,16 +8,16 @@ $rowCount = $mobileClass ? $datas['rowCountMobile'] : $datas['rowCount'];
     <tbody>
     @php $i = 1; @endphp
     @foreach ($pData['infos'] as $pInfo)
-    @if ($i % 4 == 1)<tr>@endif
+    @if ($i % $rowCount == 1)<tr>@endif
     <td class="index_left_td">
         <span style="text-align:center;margin-top: 20px;font-size:14pt;">
             <a href="/show-{{$datas['bookCode']}}-{{$pInfo['code']}}">{{$pInfo['name']}}</a>
         </span>
     </td>
-    @if ($i % 4 == 4)</tr>@endif
+    @if ($i % $rowCount == $rowCount)</tr>@endif
     @php $i += 1; @endphp
     @endforeach
-    @if ($i % 4 != 4)</tr>@endif
+    @if ($i % $rowCount != $rowCount)</tr>@endif
     </tbody>
 </table>
 @endforeach

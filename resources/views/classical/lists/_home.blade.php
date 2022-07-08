@@ -7,7 +7,7 @@
     @if ($i % 4 == 1)<tr>@endif
     <td class="index_left_td">
         <span class="baguaname" style="text-align:center;margin-top: 20px;font-size:14pt;">
-            <a href="@if (in_array($bCode, ['zhouyi']))/{{$bCode}} @else /book-{{$bCode}}@endif">{{$pInfo['name']}}</a>
+            <a href="/book-{{$bCode}}">{{$pInfo['title']}}</a>
         </span>
     </td>
     @if ($i % 4 == 4)</tr>@endif

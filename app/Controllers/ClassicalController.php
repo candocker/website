@@ -6,83 +6,81 @@ class ClassicalController extends AbstractController
 {
     use TraitClassical;
 
-    public function home($code = null, $extcode = null)
-    {
-        $datas = $this->getBookInfos();
-        $datas['pageCode'] = 'home';
-        return $this->customView('list', $datas);
-    }
-
-    public function bookZhou()
+    public function home()
     {
         $cacheData = $this->request->input('cache_data');
         if ($cacheData) {
             $this->dealDatas();exit();
         }
-        $datas = $this->getListZhou();
-        $datas['tdkData'] = [
-            'title' => '群经之首-周易',
-            'keywords' => '经典，周易，易经，易传',
-            'description' => '',
-        ];
-        $datas['pageCode'] = 'zhouyi';
+
+        $datas = $this->getBookInfos(true);
+        $datas['pageCode'] = 'home';
         return $this->customView('list', $datas);
     }
 
     public function bookCatalogue($code = null)
     {
-        $file = $this->getBasePath() . "book/{$code}.php";
-        $datas = require($file);
-        $datas['bookCode'] = $code;
-        $datas['tdkData'] = [
-            'title' => $datas['name'] . '-' . $datas['brief'],
-            'keywords' => '',
-            'description' => '',
-        ];
-        $datas['pageCode'] = $code == 'shijing' ? 'shijing' : 'common';
-        return $this->customView('list', $datas);
-    }
+        $datas = $this->getChapterInfos($code, true);
 
-    public function detailZhou($code = null)
-    {
-        $datas = $this->getDetailZhou($code);
-        $datas['tdkData'] = [
-            'title' => $datas['name'] . '-' . $datas['brief'],
-            'keywords' => '',
-            'description' => '',
-        ];
-        return $this->customView('detail', $datas);
+        $datas['pageCode'] = in_array($code, ['zhouyi', 'shijing']) ? $code : 'common';
+        return $this->customView('list', $datas);
     }
 
     public function show($bookCode, $chapterCode)
     {
-        $datas = $this->getBookInfos($bookCode, $chapterCode);
-        $datas['tdkData'] = [
-            'title' => $datas['name'] . '-' . $datas['brief'],
-            'keywords' => '',
-            'description' => '',
+        if ($bookCode == 'zhouyi') {
+            $datas = $this->getDetailZhou($chapterCode);
+        } else {
+            $file = $this->getBasePath() . "{$bookCode}/{$chapterCode}.php";
+            $datas = require($file);
+        }
+
+        $datas['tdkData'] = $this->formatTdk($datas);
+        $datas['pageCode'] = in_array($bookCode, ['shijing', 'zhouyi']) ? $bookCode : 'common';
+        return $this->customView('detail', $datas);
+    }
+
+    protected function getBookInfos($withTdk = false)
+    {
+        $bookListFile = $this->getBasePath() . 'book/list.php';
+        $bookDatas = require($bookListFile);
+        if ($withTdk) {
+            $bookDatas['tdkData'] = $this->formatTdk($bookDatas);
+            return $bookDatas;
+        }
+        return $bookDatas;
+    }
+
+    protected function getChapterInfos($bookCode, $withTdk = false)
+    {
+        $bookDatas = $this->getBookInfos();
+        if ($bookCode == 'zhouyi') {
+            $chapterDatas = $this->getListZhou();
+        } else {
+            $chapterFile = $this->getBasePath() . "book/{$bookCode}.php";
+            $chapterDatas = require($chapterFile);
+        }
+
+        $bookData = $bookDatas['books'][$bookCode];
+        $chapterDatas['tdkData'] = $this->formatTdk($bookData);
+        $chapterDatas = array_merge($bookData, $chapterDatas);
+        $chapterDatas['bookCode'] = $bookCode;
+        return $chapterDatas;
+    }
+
+    protected function formatTdk($datas)
+    {
+        $tdkData = [
+            'title' => $datas['title'] ?? '古典精华',
+            'keywords' => $datas['kewowrd'] ?? '',
+            'description' => $datas['description'] ?? '',
         ];
-        $view = in_array($bookCode, ['shijing']) ? 'detail-poetry' : 'show';
-        return $this->customView($view, $datas);
+        return $tdkData;
     }
 
     public function getBasePath()
     {
         return base_path() . "/vendor/candocker/website/migrations/";
-    }
-
-    public function getBookInfos($bookCode = null, $chapterCode = null)
-    {
-        $file = $this->getBasePath() . "{$bookCode}/{$chapterCode}.php";
-
-        $file = $this->getBasePath() . 'book/list.php';
-        $datas = require($file);
-        $datas['tdkData'] = [
-            'title' => '古典精华',
-            'keywords' => '',
-            'description' => '',
-        ];
-        return require($file);
     }
 
 	protected function viewPath()
