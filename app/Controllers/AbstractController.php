@@ -72,6 +72,11 @@ abstract class AbstractController extends AbstractControllerBase
         $mobile = $this->isMobile();
         $path = is_null($mobile) ? '' : ($mobile ? 'mobile' : 'pc');
         //$path = 'mobile';
+        if ($this->resource->isMobile()) {
+            View::share('mobileClass', 'mobile');
+        } else {
+            View::share('mobileClass', '');
+        }
 
         $viewBasePath = dirname(dirname(__DIR__)) . '/resources/views/';
         //$paths = [resource_path('views') . '/' . $path];

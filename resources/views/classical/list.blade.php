@@ -1,7 +1,11 @@
 @extends('layouts.main-classical')
 @section('dynamicMeta')@include('modules._meta', $datas['tdkData'])@endsection
 @section('header')@include('classical.modules._jscss', ['view' => 'home'])@endsection
+@php
+$rowCount = $mobileClass ? 3 : 4;
+@endphp
 @section('content')
+<div class="{{$mobileClass}}">
 <div class="base_index">
     {{--@include('classical.modules._header', ['data' => ''])--}}
     @include('classical.modules._header-top', ['data' => ''])
@@ -19,7 +23,7 @@
         <tbody>
         @php $i = 1; @endphp
         @foreach ($pData['infos'] as $code => $pInfo)
-        @if ($i % 4 == 1)<tr>@endif
+        @if ($i % $rowCount == 1)<tr>@endif
         <td class="index_left_td">
             <span class="baguatu">
             @foreach ($pInfo['symbols'] as $symbol) {{$symbol}}<br>@endforeach
@@ -29,10 +33,10 @@
                 @if (isset($pInfo['spell']) && $pInfo['spell'])<!--<br />(<span class="piny">{{$pInfo['spell']}}</span>)-->@endif
             </span>
         </td>
-        @if ($i % 4 == 4)</tr>@endif
+        @if ($i % $rowCount == $rowCount)</tr>@endif
         @php $i += 1; @endphp
         @endforeach
-        @if ($i % 4 != 4)</tr>@endif
+        @if ($i % $rowCount != $rowCount)</tr>@endif
         </tbody>
     </table>
     @endforeach
@@ -44,6 +48,7 @@
         @endforeach
         </tr></tbody>
     </table>
+</div>
 </div>
 <hr />
 @include('classical.modules._footer', ['data' => ''])

@@ -2,7 +2,7 @@
 @section('dynamicMeta')@include('modules._meta', $datas['tdkData'])@endsection
 @section('header')@include('classical.modules._jscss', ['view' => 'home'])@endsection
 @section('content')
-<div class="base_index">
+<div class="base_index {{$mobileClass}}">
     {{--@include('classical.modules._header', ['data' => ''])--}}
     @include('classical.modules._header-top', ['data' => ''])
     <h1>{{$datas['title']}}</h1>

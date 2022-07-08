@@ -1,7 +1,7 @@
 <?php
 return [
 'name' => '诗经',
-'chpaters' => [
+'chapters' => [
 'nationalStyle' => [
     'name' => '国风',
     'elems' => [[
@@ -211,8 +211,8 @@ return [
         'name' => '瓠叶之什',
         'poems' => [
             ['code' => '231', 'name' => '瓠叶'], ['code' => '232', 'name' => '渐渐之石'], ['code' => '233', 'name' => '苕之华'], ['code' => '234', 'name' => '何草不黄'],
-            ['code' => 'no', 'name' => '南陔(缺)'], ['code' => 'no1', 'name' => '白华(缺)'], ['code' => 'no2', 'name' => '华黍(缺)'], ['code' => 'no3', 'name' => '由庚(缺)'],
-            ['code' => 'no4', 'name' => '崇丘(缺)'], ['code' => 'no5', 'name' => '由仪(缺)'],
+            ['code' => '', 'name' => '南陔(缺)', 'lost' => 1], ['code' => '', 'name' => '白华(缺)', 'lost' => 1], ['code' => '', 'name' => '华黍(缺)', 'lost' => 1], ['code' => '', 'name' => '由庚(缺)', 'lost' => 1],
+            ['code' => '', 'name' => '崇丘(缺)', 'lost' => 1], ['code' => '', 'name' => '由仪(缺)', 'lost' => 1],
         ],
     ],
 ],

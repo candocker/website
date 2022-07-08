@@ -4,7 +4,7 @@
 @section('content')
 
 <script>genNavigator("LEFT");</script>
-<div class="main {{$datas['mobileClass']}}">
+<div class="main {{$mobileClass}}">
     {{--@include('classical.modules._header', ['data' => ''])--}}
     @include('classical.modules._header-top', ['data' => ''])
     <h1 style="display:none;">《周易》第{{$datas['serial']}}卦 {{$datas['brief']}}</h1>

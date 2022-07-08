@@ -52,7 +52,6 @@ class ClassicalController extends AbstractController
             'keywords' => '',
             'description' => '',
         ];
-        $datas['mobileClass'] = $this->resource->isMobile() ? 'mobile' : '';
         return $this->customView('detail', $datas);
     }
 
@@ -64,8 +63,8 @@ class ClassicalController extends AbstractController
             'keywords' => '',
             'description' => '',
         ];
-        $datas['mobileClass'] = $this->resource->isMobile() ? 'mobile' : '';
-        return $this->customView('show', $datas);
+        $view = in_array($bookCode, ['shijing']) ? 'detail-poetry' : 'show';
+        return $this->customView($view, $datas);
     }
 
     public function home($code = null, $extcode = null)

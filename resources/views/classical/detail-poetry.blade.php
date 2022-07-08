@@ -4,7 +4,6 @@
 @section('content')
 <script>genNavigator("LEFT");</script>
 <div class="main {{$mobileClass}}">
-    {{--@include('classical.modules._header', ['data' => ''])--}}
     @include('classical.modules._header-top', ['data' => ''])
     <div class="b_center">
         <span class="button width6em">【０１】</span>
