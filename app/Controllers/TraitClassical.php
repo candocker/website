@@ -9,12 +9,6 @@ trait TraitClassical
         return $this->getListZhou($code);
     }
 
-    public function getBookDetail($bookCode, $chapterCode)
-    {
-        $file = $this->getBasePath() . "{$bookCode}/{$chapterCode}.php";
-        return require($file);
-    }
-
     public function getListZhou($code = null)
     {
         $file = $this->getBasePath() . "cachedata/zhouyi.php";
@@ -23,8 +17,6 @@ trait TraitClassical
             return $infos[$code];
         }
         $datas = [
-            'title' => '周易',
-            'brief' => '卦象(伏羲)、 卦辞(文王)、爻辞(周公)、易传(孔子)',
             'chapters' => [
                 ['name' => '上经', 'infos' => array_slice($infos, 0, 30)],
                 ['name' => '下经', 'infos' => array_slice($infos, 30)],
@@ -85,10 +77,5 @@ trait TraitClassical
             'binSerial' => bindec(implode('', array_reverse($symbol))),
         ];
         return $data;
-    }
-
-    public function getBasePath()
-    {
-        return base_path() . "/vendor/candocker/website/migrations/";
     }
 }

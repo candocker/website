@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '大学',
-    'brief' => '大学描述',
     'chapters' => [
         [
             'name' => '大学',

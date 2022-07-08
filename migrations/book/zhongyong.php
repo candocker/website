@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '中庸',
-    'brief' => '中庸描述',
     'chapters' => [
         [
             'name' => '上篇',

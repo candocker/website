@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '墨子',
-    'brief' => '墨子描述',
     'chapters' => [
         [
             'name' => '卷一',

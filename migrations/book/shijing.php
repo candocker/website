@@ -1,6 +1,7 @@
 <?php
 return [
-'name' => '诗经',
+'rowCount' => 5,
+'rowCountMobile' => 3,
 'chapters' => [
 'nationalStyle' => [
     'name' => '国风',

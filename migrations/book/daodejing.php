@@ -1,8 +1,5 @@
 <?php
 return [
-    'bookCode' => 'daodejing',
-    'name' => '道德经',
-    'brief' => '道德经描述',
     'chapters' => [
         [
             'name' => '上篇',

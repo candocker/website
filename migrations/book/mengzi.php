@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '孟子',
-    'brief' => '孟子描述',
     'chapters' => [
         [
             'name' => '孟子',

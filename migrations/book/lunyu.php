@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '论语',
-    'brief' => '论语描述',
     'chapters' => [
         [
             'name' => '上篇',
