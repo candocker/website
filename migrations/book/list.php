@@ -51,16 +51,25 @@ return [
             'rowCount' => 5,
             'rowCountMobile' => 3,
         ],
-        /*'mozi' => [
+        /*'chuci' => [
+            'title' => '楚辞',
+            'brief' => '诗经',
+            'rowCount' => 5,
+            'rowCountMobile' => 3,
+        ],
+        'guwengz' => [
+            'title' => '古文观止',
+            'brief' => '古文观止',
+            'rowCount' => 5,
+            'rowCountMobile' => 3,
+        ],
+        'mozi' => [
             'title' => '墨子',
             'brief' => '墨子描述',
         ],
         'xunzi' => [
             'title' => '荀子',
             'brief' => '荀子描述',
-        ],
-        'tongshu' => [
-            'title' => '通书',
         ],*/
     ],
 ];

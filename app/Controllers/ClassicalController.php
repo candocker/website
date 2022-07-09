@@ -28,6 +28,23 @@ class ClassicalController extends AbstractController
 
     public function show($bookCode, $chapterCode)
     {
+        /*$file = $this->getBasePath() . "chuci/lisao.php";
+        $lines = file($file);
+        $spell = $content = '';
+        foreach ($lines as $line) {
+            if (strpos($line, 'class="s_t"') != false) {
+                $spell .= strip_tags($line);
+            }
+            if (strpos($line, 'class="s_b"') != false) {
+                $content .= trim(strip_tags($line));
+            }
+            if (strpos($line, '<strong>') != false) {
+                $content .= trim(strip_tags($line));
+            }
+        }
+        echo $spell . '<br />';
+        echo $content;exit();*/
+
         if ($bookCode == 'zhouyi') {
             $datas = $this->getDetailZhou($chapterCode);
         } else {

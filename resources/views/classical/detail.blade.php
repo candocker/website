@@ -1,6 +1,6 @@
 @extends('layouts.main-classical')
 @section('dynamicMeta')@include('modules._meta', $datas['tdkData'])@endsection
-@section('header')@include('classical.modules._jscss-detail', ['view' => 'home'])@endsection
+@section('header')@include('classical.modules._jscss', ['view' => 'detail'])@endsection
 @section('content')
 
 <script>genNavigator("LEFT");</script>

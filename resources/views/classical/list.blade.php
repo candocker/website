@@ -4,7 +4,6 @@
 @section('content')
 <div class="{{$mobileClass}}">
 <div class="base_index">
-
     {{--@include('classical.modules._header', ['data' => ''])--}}
     @include('classical.modules._header-top', ['data' => ''])
     <h1>{{$datas['title']}}</h1>
