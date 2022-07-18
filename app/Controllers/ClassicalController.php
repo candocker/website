@@ -13,7 +13,7 @@ class ClassicalController extends AbstractController
             $this->dealDatas();exit();
         }
 
-        $datas = $this->getBookInfos(true);
+        $datas = $this->getBookInfos(null, true);
         $datas['pageCode'] = 'home';
         return $this->customView('list', $datas);
     }
@@ -45,22 +45,57 @@ class ClassicalController extends AbstractController
         echo $spell . '<br />';
         echo $content;exit();*/
 
+        $bookData = $this->getBookInfos($bookCode);
         if ($bookCode == 'zhouyi') {
             $datas = $this->getDetailZhou($chapterCode);
         } else {
             $file = $this->getBasePath() . "{$bookCode}/{$chapterCode}.php";
             $datas = require($file);
+            if (isset($bookData['noteType']) && $bookData['noteType'] == 'inner') {
+                $datas = $this->formatInnerNote($datas);
+            }
         }
 
+        $datas['bookData'] = $bookData;
         $datas['tdkData'] = $this->formatTdk($datas);
         $datas['pageCode'] = in_array($bookCode, ['shijing', 'zhouyi']) ? $bookCode : 'common';
         return $this->customView('detail', $datas);
     }
 
-    protected function getBookInfos($withTdk = false)
+    protected function formatInnerNote($datas)
+    {
+        foreach ($datas['chapters'] as & $chapter) {
+            $i = 0;
+            $notes = $chapter['notes'];
+            $contents = $chapter['content'];
+            foreach ($contents as & $content) {
+                $mids = explode(')', $content);
+                $newContents = [];
+                foreach ($mids as $key => $mid) {
+                    $index = $key + $i;
+                    $note = $notes[$index] ?? '';
+                    $note = substr($note, strpos($note, ')') + 1);
+                    $note = $note ? '<span class="commentinner" style="display: none; color:#3949ab; font-weight:normal; text-decoration:underline; font-style:oblique;">' . $note . '</span>' : '';
+                    $mid .= $key + 1 == count($mids) ? '' : ')' . $note;
+                    $newContents[$index] = $mid;
+                }
+                $i += $key;
+                //$content = '<strong class="comment">' . implode('', $newContents) . '</strong>';
+                $content = implode('', $newContents);
+            }
+            $chapter['content'] = $contents;
+        }
+        return $datas;
+    }
+
+    protected function getBookInfos($bookCode = null, $withTdk = false)
     {
         $bookListFile = $this->getBasePath() . 'book/list.php';
         $bookDatas = require($bookListFile);
+        if (!empty($bookCode)) {
+            return $bookDatas['books'][$bookCode];
+        }
+
         if ($withTdk) {
             $bookDatas['tdkData'] = $this->formatTdk($bookDatas);
             return $bookDatas;
@@ -70,7 +105,7 @@ class ClassicalController extends AbstractController
 
     protected function getChapterInfos($bookCode, $withTdk = false)
     {
-        $bookDatas = $this->getBookInfos();
+        $bookData = $this->getBookInfos($bookCode);
         if ($bookCode == 'zhouyi') {
             $chapterDatas = $this->getListZhou();
         } else {
@@ -78,7 +113,6 @@ class ClassicalController extends AbstractController
             $chapterDatas = require($chapterFile);
         }
 
-        $bookData = $bookDatas['books'][$bookCode];
         $chapterDatas['tdkData'] = $this->formatTdk($bookData);
         $chapterDatas = array_merge($bookData, $chapterDatas);
         $chapterDatas['bookCode'] = $bookCode;

@@ -42,6 +42,7 @@ return [
         'zhuangzi' => [
             'title' => '庄子',
             'brief' => '庄子描述',
+            'noteType' => 'inner',
             'rowCount' => 4,
             'rowCountMobile' => 4,
         ],

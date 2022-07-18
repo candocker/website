@@ -39,10 +39,10 @@
 @if (isset($datas['vernacular']['xiang'])) @foreach ((array) $datas['vernacular']['xiang'] as $i => $xiangStr) <div class="yiwen yiwentrue xiangci"><p>【译文@if ($i) {{$i}} @endif】{{$xiangStr}}</p></div>@endforeach @endif
 
 <p class="tuan"><big>彖曰</big>{{$datas['tuan']}}</p>
-@if (isset($datas['zhuxi']) && isset($datas['zhuxi']['tuan']))<div class="yiwen zhuxi"><p>【朱熹】{{$datas['zhuxi']['tuan']}}</p></div>@endif
+@if (isset($datas['zhuxi']) && isset($datas['zhuxi']['tuan']))<div class="yiwen zhuxi"><p>【朱熹】{!!$datas['zhuxi']['tuan']!!}</p></div>@endif
 @if (isset($datas['wangbi']) && isset($datas['wangbi']['tuan']))<div class="yiwen wangbi"><p>【王弼】{{$datas['wangbi']['tuan']}}</p></div>@endif
 @if (isset($datas['sushi']) && isset($datas['sushi']['tuan']))<div class="yiwen sushi"><p>【苏轼】{{$datas['sushi']['tuan']}}</p></div>@endif
-@if (isset($datas['vernacular']))<div class="yiwen yiwentrue"><p>【译文】{{$datas['vernacular']['tuan']}}</p></div>@endif
+@if (isset($datas['vernacular']))<div class="yiwen yiwentrue"><p>【译文】{!!$datas['vernacular']['tuan']!!}</p></div>@endif
 
 <hr />
 @foreach ($datas['yao'] as $key => $elem)
