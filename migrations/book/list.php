@@ -47,30 +47,38 @@ return [
             'rowCountMobile' => 4,
         ],
         'shijing' => [
+            'spell' => 1,
+            'rowspan' => 15,
             'title' => '诗经',
             'brief' => '诗经',
             'rowCount' => 5,
             'rowCountMobile' => 3,
         ],
-        /*'chuci' => [
+        'chuci' => [
+            'spell' => 1,
             'title' => '楚辞',
             'brief' => '诗经',
             'rowCount' => 5,
-            'rowCountMobile' => 3,
+            'rowCountMobile' => 4,
         ],
-        'guwengz' => [
+        'guwenguanzhi' => [
+            //'rowspan' => 10,
             'title' => '古文观止',
             'brief' => '古文观止',
-            'rowCount' => 5,
-            'rowCountMobile' => 3,
+            'rowCount' => 3,
+            'rowCountMobile' => 2,
         ],
         'mozi' => [
             'title' => '墨子',
             'brief' => '墨子描述',
+            'rowCount' => 5,
+            'rowCountMobile' => 3,
         ],
         'xunzi' => [
             'title' => '荀子',
             'brief' => '荀子描述',
-        ],*/
+            'rowCount' => 5,
+            'rowCountMobile' => 3,
+        ],
     ],
 ];

@@ -2,26 +2,40 @@
 return [
     'chapters' => [
         [
-            'name' => '上篇',
-            'brief' => '',
+            'name' => '屈原',
+            'brief' => '屈原',
             'infos' => [
-                ['code' => '1', 'name' => '天命'], ['code' => '2', 'name' => '时中'], ['code' => '3', 'name' => '鲜能'],
-                ['code' => '4', 'name' => '行明'], ['code' => '5', 'name' => '不行'], ['code' => '6', 'name' => '大知'],
-                ['code' => '7', 'name' => '予知'], ['code' => '8', 'name' => '服膺'], ['code' => '9', 'name' => '可均'],
-                ['code' => '10', 'name' => '问强'], ['code' => '11', 'name' => '素隐'], ['code' => '12', 'name' => '费隐'],
-                ['code' => '13', 'name' => '不远'], ['code' => '14', 'name' => '素位'], ['code' => '15', 'name' => '行远'],
+                ['code' => 'lisao', 'name' => '离骚'], ['code' => 'tianwen', 'name' => '天问'], ['code' => 'yuanyou', 'name' => '远游'],
+                ['code' => 'buju', 'name' => '卜居'], ['code' => 'yufu', 'name' => '渔父'], ['code' => 'zhaohun', 'name' => '招魂'],
+                ['code' => 'dazhao', 'name' => '大招'], 
             ],
         ],
         [
-            'name' => '上篇',
+            'name' => '九歌',
             'brief' => '',
             'infos' => [
-                ['code' => '16', 'name' => '鬼神'], ['code' => '17', 'name' => '大德'], ['code' => '18', 'name' => '无忧'],
-                ['code' => '19', 'name' => '达孝'], ['code' => '20', 'name' => '问政'], ['code' => '21', 'name' => '诚明'],
-                ['code' => '22', 'name' => '尽性'], ['code' => '23', 'name' => '至曲'], ['code' => '24', 'name' => '前知'],
-                ['code' => '25', 'name' => '自成'], ['code' => '26', 'name' => '无息'], ['code' => '27', 'name' => '明哲'],
-                ['code' => '28', 'name' => '自用'], ['code' => '29', 'name' => '三重'], ['code' => '3', 'name' => '教化'],
-                ['code' => '31', 'name' => '至圣'], ['code' => '32', 'name' => '至诚'], ['code' => '33', 'name' => '尚纲'],
+                ['code' => 'jg_donghuangtaiyi', 'name' => '东皇太一'], ['code' => 'jg_yunzhongjun', 'name' => '云中君'], ['code' => 'jg_xiangjun', 'name' => '湘君'],
+                ['code' => 'jg_xiangfuren', 'name' => '湘夫人'], ['code' => 'jg_dasiming', 'name' => '大司命'], ['code' => 'jg_shaosiming', 'name' => '少司命'],
+                ['code' => 'jg_dongjun', 'name' => '东君'], ['code' => 'jg_hebo', 'name' => '河伯'], ['code' => 'jg_shangui', 'name' => '山鬼'],
+                ['code' => 'jg_guoshang', 'name' => '国殇'], ['code' => 'jg_lihun', 'name' => '礼魂'],
+            ],
+        ],
+        [
+            'name' => '九章',
+            'brief' => '',
+            'infos' => [
+                ['code' => 'jz_xisong', 'name' => '惜诵'], ['code' => 'jz_shejiang', 'name' => '涉江'], ['code' => 'jz_aiying', 'name' => '哀郢'],
+                ['code' => 'jz_chousi', 'name' => '抽思'], ['code' => 'jz_huaisha', 'name' => '怀沙'], ['code' => 'jz_simeiren', 'name' => '思美人'],
+                ['code' => 'jz_xiwangri', 'name' => '惜往日'], ['code' => 'jz_jusong', 'name' => '橘颂'], ['code' => 'jz_beihuifeng', 'name' => '悲回风'],
+            ],
+        ],
+        [
+            'name' => '其他',
+            'brief' => '',
+            'infos' => [
+                ['code' => 'jiubian', 'name' => '九辫'], ['code' => 'xishi', 'name' => '惜誓'], ['code' => 'zhaoyinshi', 'name' => '招隐士'],
+                ['code' => 'qijian', 'name' => '七谏'], ['code' => 'aishiming', 'name' => '哀时命'], ['code' => 'jiuhuai', 'name' => '九怀'],
+                ['code' => 'jiutan', 'name' => '九叹'], ['code' => 'jiusi', 'name' => '九思'],
             ],
         ],
     ],

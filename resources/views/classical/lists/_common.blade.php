@@ -4,7 +4,7 @@ $rowCount = $mobileClass ? $datas['rowCountMobile'] : $datas['rowCount'];
 @foreach ($datas['chapters'] as $pData)
 <table width="95%" border="1" align="center" cellspacing="0" class="indextable">
     <caption>{{$pData['name']}}</caption>
-    <colgroup><col width="25%"><col width="25%"><col width="25%"><col></colgroup>
+    <colgroup><col width="25%"><col width="25%"></colgroup>
     <tbody>
     @php $i = 1; @endphp
     @foreach ($pData['infos'] as $pInfo)

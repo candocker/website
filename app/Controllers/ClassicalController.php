@@ -8,6 +8,7 @@ class ClassicalController extends AbstractController
 
     public function home()
     {
+        //$this->dealcc();exit();
         $cacheData = $this->request->input('cache_data');
         if ($cacheData) {
             $this->dealDatas();exit();
@@ -22,29 +23,17 @@ class ClassicalController extends AbstractController
     {
         $datas = $this->getChapterInfos($code, true);
 
-        $datas['pageCode'] = in_array($code, ['zhouyi', 'shijing']) ? $code : 'common';
+        $pageCodes = [
+            'zhouyi' => 'zhouyi',
+            'shijing' => 'shijing',
+            //'guwenguanzhi' => 'shijing'
+        ];
+        $datas['pageCode'] = $pageCodes[$code] ?? 'common';//in_array($code, ['zhouyi', 'shijing']) ? $code : 'common';
         return $this->customView('list', $datas);
     }
 
     public function show($bookCode, $chapterCode)
     {
-        /*$file = $this->getBasePath() . "chuci/lisao.php";
-        $lines = file($file);
-        $spell = $content = '';
-        foreach ($lines as $line) {
-            if (strpos($line, 'class="s_t"') != false) {
-                $spell .= strip_tags($line);
-            }
-            if (strpos($line, 'class="s_b"') != false) {
-                $content .= trim(strip_tags($line));
-            }
-            if (strpos($line, '<strong>') != false) {
-                $content .= trim(strip_tags($line));
-            }
-        }
-        echo $spell . '<br />';
-        echo $content;exit();*/
-
         $bookData = $this->getBookInfos($bookCode);
         if ($bookCode == 'zhouyi') {
             $datas = $this->getDetailZhou($chapterCode);
@@ -58,7 +47,14 @@ class ClassicalController extends AbstractController
 
         $datas['bookData'] = $bookData;
         $datas['tdkData'] = $this->formatTdk($datas);
-        $datas['pageCode'] = in_array($bookCode, ['shijing', 'zhouyi']) ? $bookCode : 'common';
+
+        $pageCodes = [
+            'zhouyi' => 'zhouyi',
+            'shijing' => 'shijing',
+            'chuci' => 'shijing'
+        ];
+        $datas['pageCode'] = $pageCodes[$bookCode] ?? 'common';
+        //$datas['pageCode'] = in_array($bookCode, ['shijing', 'zhouyi']) ? $bookCode : 'common';
         return $this->customView('detail', $datas);
     }
 
@@ -122,9 +118,9 @@ class ClassicalController extends AbstractController
     protected function formatTdk($datas)
     {
         $tdkData = [
-            'title' => $datas['title'] ?? '古典精华',
+            'title' => $datas['name'] ?? '古典精华',
             'keywords' => $datas['kewowrd'] ?? '',
-            'description' => $datas['description'] ?? '',
+            'description' => $datas['brief'] ?? '',
         ];
         return $tdkData;
     }
@@ -146,4 +142,30 @@ class ClassicalController extends AbstractController
         }
         return parent::isMobile($force);
 	}
+
+    protected function dealcc()
+    {
+        $elems = ['boju.txt', 'jiuge-dongjun.txt', 'jiuge-shangui.txt', 'jiuge-yunzhongjun.txt', 'jiuzhang-huaisha.txt', 'jiuzhang-xisong.txt', 'yuanyou.txt ', 'dazhao.txt', 'jiuge-guoshang.txt', 'jiuge-shaosiming.txt', 'jiuzhang-aiying.txt', 'jiuzhang-jusong.txt', 'jiuzhang-xiwangri.txt', 'yufu.txt ', 'jiuge-dasiming.txt', 'jiuge-hebo.txt', 'jiuge-xiangfuren.txt', 'jiuzhang-beiqiufeng.txt', 'jiuzhang-shejiang.txt', 'lisao.txt', 'zhaohun.txt', 'jiuge-donghuangtaiyi.txt', 'jiuge-lihun.txt', 'jiuge-xiangjun.txt', 'jiuzhang-chousi.txt', 'jiuzhang-simeiren.txt', 'tianwen.txt'];
+        $elems = ['yufu.txt'];
+
+        foreach ($elems as $elem) {
+        $file = $this->getBasePath() . "chucibak/{$elem}";
+        $lines = file($file);
+        $spell = $content = '';
+        foreach ($lines as $line) {
+            if (strpos($line, 'class="s_t"') != false) {
+                $spell .= strip_tags($line);
+            }
+            if (strpos($line, 'class="s_b"') != false) {
+                $content .= trim(strip_tags($line));
+            }
+            if (strpos($line, '<strong>') != false) {
+                $content .= trim(strip_tags($line));
+            }
+        }
+        echo $spell . '<br />';
+        echo $content;exit();
+        }
+
+    }
 }
