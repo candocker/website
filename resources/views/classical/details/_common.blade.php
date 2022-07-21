@@ -5,10 +5,12 @@
     <span class="button width6em" onclick="disp('jiedu');">解读</span></div>
 <h1>{{$datas['name']}}</h1>
 <hr />
+@php $j = 1; @endphp
 @foreach ($datas['chapters'] as $chapter)
-<div class="b_center"><span class="button width6em">{{$chapter['name']}}</span>
+@if (count($datas['chapters']) > 1)<div class="b_center"><span class="button width6em">@if (isset($chapter['name'])){{$chapter['name']}}@else 第 {{$j}} 节 @endif</span></div>@endif
 @foreach ((array) $chapter['content'] as $cContent)
 <div class="jingwen">{!!$cContent!!}</div>
+@php $j++; @endphp
 @endforeach
 <div id="comment1" class="comment" style="display: none;">
     @if (isset($chapter['notes']) && $chapter['notes'])
