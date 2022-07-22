@@ -15,6 +15,7 @@ class ClassicalController extends AbstractController
         }
 
         $datas = $this->getBookInfos(null, true);
+        unset($datas['books']['yizhuan']);
         $datas['pageCode'] = 'home';
         return $this->customView('list', $datas);
     }

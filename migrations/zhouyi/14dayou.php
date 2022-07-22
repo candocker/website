@@ -24,6 +24,16 @@ return [
         '厥孚交如，信以发志也。威如之吉，易而无备也。',
         '大有上吉，自天佑也。',
     ],
+    'zhuxi' => [
+        'gua' => '',
+        'tuan' => '
+            . '<span class="commentinner">
+        'xiang' => '',
+        'yao' => [
+        ],
+        'xiaoxiang' => [
+        ],
+    ],
     'vernacular' => [
         'gua' => [
             '《大有卦》象征大有收获：至为亨通。',

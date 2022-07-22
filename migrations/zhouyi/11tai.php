@@ -24,6 +24,16 @@ return [
         '以祉元吉，中以行愿也。',
         '城复于隍，其命乱也。',
     ],
+    'zhuxi' => [
+        'gua' => '',
+        'tuan' => '
+            . '<span class="commentinner">
+        'xiang' => '',
+        'yao' => [
+        ],
+        'xiaoxiang' => [
+        ],
+    ],
     'vernacular' => [
         'gua' => [
             '《泰卦》象征通达：这时弱小者离去，强大者到来，吉祥，亨通。',

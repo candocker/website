@@ -25,6 +25,16 @@ return [
         '夬履贞厉，位正当也。',
         '元吉在上，大有庆也。',
     ],
+    'zhuxi' => [
+        'gua' => '',
+        'tuan' => '
+            . '<span class="commentinner">
+        'xiang' => '',
+        'yao' => [
+        ],
+        'xiaoxiang' => [
+        ],
+    ],
 
     'vernacular' => [
         'gua' => '《履卦》象征小心行动：跟在老虎尾巴后面走路，老虎却没有回头咬人，当然亨通顺利。',

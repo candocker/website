@@ -12,6 +12,16 @@ return [
     'xiaoxiang' => [
     ],
 ];
+    'zhuxi' => [
+        'gua' => '',
+        'tuan' => '
+            . '<span class="commentinner">
+        'xiang' => '',
+        'yao' => [
+        ],
+        'xiaoxiang' => [
+        ],
+    ],
 
     /*'vernacular' => [
         'gua' => '',

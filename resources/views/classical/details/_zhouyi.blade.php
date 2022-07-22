@@ -49,6 +49,7 @@
 <p class="xiang">
     <big>爻辞</big> <span class="yin">{{$elem}}</span><br>
     @if (isset($datas['vernacular'])) @foreach ((array) $datas['vernacular']['yao'][$key] as $i => $vernacularStr)<div class="yiwen yiwentrue"><p>【译文@if ($i) {{$i}} @endif】{{$vernacularStr}}</p></div>@endforeach @endif
+    @if (isset($datas['zhuxi']) && isset($datas['zhuxi']['yao']) && !empty($datas['zhuxi']['yao'][$key]))<div class="yiwen zhuxi"><p>【朱熹】{{$datas['zhuxi']['yao'][$key]}}</p></div>@endif
     <span class="xiangci"><big>象曰</big> <span style="color: #0099FF;">{{$datas['xiaoxiang'][$key]}}</span><br /></span>
     @if (isset($datas['vernacular']))<div class="yiwen yiwentrue"><p>【译文】{{$datas['vernacular']['xiaoxiang'][$key]}}</p></div>@endif
     @if (isset($datas['zhuxi']) && isset($datas['zhuxi']['xiaoxiang']) && !empty($datas['zhuxi']['xiaoxiang'][$key]))<div class="yiwen zhuxi"><p>【朱熹】{{$datas['zhuxi']['xiaoxiang'][$key]}}</p></div>@endif

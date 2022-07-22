@@ -24,6 +24,16 @@ return [
         '大君之宜，行中之谓也。',
         '敦临之吉，志在内也。',
     ],
+    'zhuxi' => [
+        'gua' => '',
+        'tuan' => '
+            . '<span class="commentinner">
+        'xiang' => '',
+        'yao' => [
+        ],
+        'xiaoxiang' => [
+        ],
+    ],
     'vernacular' => [
         'gua' => [
             '《临卦》象征督导：能亨通无阻，祥和有益，坚守正道。但是到了八月（陽衰陰盛），会有凶险。',

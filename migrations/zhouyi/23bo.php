@@ -24,6 +24,16 @@ return [
         '以宫人宠，终无尤也。',
         '君子得舆，民所载也。小人剥庐，终不可用也。',
     ],
+    'zhuxi' => [
+        'gua' => '',
+        'tuan' => '
+            . '<span class="commentinner">
+        'xiang' => '',
+        'yao' => [
+        ],
+        'xiaoxiang' => [
+        ],
+    ],
     'vernacular' => [
         'gua' => [
             '《剥卦》象征剥落：不利于前去行事。',

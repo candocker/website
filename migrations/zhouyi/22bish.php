@@ -24,6 +24,16 @@ return [
         '六五之吉，有喜也。',
         '白贲无咎，上得志也。',
     ],
+    'zhuxi' => [
+        'gua' => '',
+        'tuan' => '
+            . '<span class="commentinner">
+        'xiang' => '',
+        'yao' => [
+        ],
+        'xiaoxiang' => [
+        ],
+    ],
     'vernacular' => [
         'gua' => [
             '《贲卦》象征装饰：亨通，利于柔小者前去行事。',

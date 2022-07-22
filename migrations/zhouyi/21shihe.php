@@ -24,6 +24,16 @@ return [
         '贞厉无咎，得当也。',
         '何校灭耳，聪不明也。',
     ],
+    'zhuxi' => [
+        'gua' => '',
+        'tuan' => '
+            . '<span class="commentinner">
+        'xiang' => '',
+        'yao' => [
+        ],
+        'xiaoxiang' => [
+        ],
+    ],
     'vernacular' => [
         'gua' => [
             '《噬磕卦》象征咬合：亨通无阻，有利于使用刑法。',

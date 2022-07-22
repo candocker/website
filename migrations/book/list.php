@@ -80,5 +80,11 @@ return [
             'rowCount' => 5,
             'rowCountMobile' => 3,
         ],
+        'yizhuan' => [
+            'title' => '易传',
+            'brief' => '易传',
+            'rowCount' => 5,
+            'rowCountMobile' => 3,
+        ],
     ],
 ];
