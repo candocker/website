@@ -5,147 +5,165 @@ return [
 'chapters' => [
 'nationalStyle' => [
     'name' => '国风',
+    'spell' => 'guó fēng',
     'elems' => [[
         'code' => 'zhounan',
+        'spell' => 'zhōu nán',
         'name' => '周南',
         'infos' => [
-           ['code' => '01', 'name' => '关雎'], ['code' => '02', 'name' => '葛覃'], ['code' => '03', 'name' => '卷耳'], ['code' => '04', 'name' => '樛木'],
-           ['code' => '05', 'name' => '螽斯'], ['code' => '06', 'name' => '桃夭'], ['code' => '07', 'name' => '兔罝'], ['code' => '08', 'name' => '芣莒'],
-           ['code' => '09', 'name' => '汉广'], ['code' => '10', 'name' => '汝坟'], ['code' => '11', 'name' => '麟之趾'],
-       ],
+            ['code' => '01', 'name' => '关雎'], ['code' => '02', 'name' => '葛覃'], ['code' => '03', 'name' => '卷耳'], ['code' => '04', 'name' => '樛木'],
+            ['code' => '05', 'name' => '螽斯'], ['code' => '06', 'name' => '桃夭'], ['code' => '07', 'name' => '兔罝'], ['code' => '08', 'name' => '芣莒'],
+            ['code' => '09', 'name' => '汉广'], ['code' => '10', 'name' => '汝坟'], ['code' => '11', 'name' => '麟之趾'],
+        ],
    ],
    [
-       'code' => 'shaonan',
-       'name' => '召南',
-       'infos' => [
-           ['code' => '12', 'name' => '鹊巢'], ['code' => '13', 'name' => '采蘩'], ['code' => '14', 'name' => '草虫'], ['code' => '15', 'name' => '采蘋'],
-           ['code' => '16', 'name' => '甘棠'], ['code' => '17', 'name' => '行露'], ['code' => '18', 'name' => '羔羊'], ['code' => '19', 'name' => '殷其雷'],
-           ['code' => '20', 'name' => '摽有梅'], ['code' => '21', 'name' => '小星'], ['code' => '22', 'name' => '江有汜'], ['code' => '23', 'name' => '野有死麕'],
-           ['code' => '24', 'name' => '何彼襛矣'], ['code' => '25', 'name' => '驺虞'],
-       ],
+        'code' => 'shaonan',
+        'spell' => 'shào nán',
+        'name' => '召南',
+        'infos' => [
+            ['code' => '12', 'name' => '鹊巢'], ['code' => '13', 'name' => '采蘩'], ['code' => '14', 'name' => '草虫'], ['code' => '15', 'name' => '采蘋'],
+            ['code' => '16', 'name' => '甘棠'], ['code' => '17', 'name' => '行露'], ['code' => '18', 'name' => '羔羊'], ['code' => '19', 'name' => '殷其雷'],
+            ['code' => '20', 'name' => '摽有梅'], ['code' => '21', 'name' => '小星'], ['code' => '22', 'name' => '江有汜'], ['code' => '23', 'name' => '野有死麕'],
+            ['code' => '24', 'name' => '何彼襛矣'], ['code' => '25', 'name' => '驺虞'],
+        ],
    ],
    [
-       'code' => 'beifeng',
-       'name' => '邶风',
-       'infos' => [
-           ['code' => '26', 'name' => '柏舟'], ['code' => '27', 'name' => '绿衣'], ['code' => '28', 'name' => '燕燕'], ['code' => '29', 'name' => '日月'],
-           ['code' => '30', 'name' => '终风'], ['code' => '31', 'name' => '击鼓'], ['code' => '32', 'name' => '凯风'], ['code' => '33', 'name' => '雄雉'], 
-           ['code' => '34', 'name' => '匏有苦叶'], ['code' => '35', 'name' => '谷风'], ['code' => '36', 'name' => '式微'], ['code' => '37', 'name' => '旄丘'],
-           ['code' => '38', 'name' => '简兮'], ['code' => '39', 'name' => '泉水'], ['code' => '40', 'name' => '北门'], ['code' => '41', 'name' => '北风'],
-           ['code' => '42', 'name' => '静女'], ['code' => '43', 'name' => '新台'], ['code' => '44', 'name' => '二子乘舟'],
-       ],
+        'code' => 'beifeng',
+        'spell' => 'bèi fēng',
+        'name' => '邶风',
+        'infos' => [
+            ['code' => '26', 'name' => '柏舟'], ['code' => '27', 'name' => '绿衣'], ['code' => '28', 'name' => '燕燕'], ['code' => '29', 'name' => '日月'],
+            ['code' => '30', 'name' => '终风'], ['code' => '31', 'name' => '击鼓'], ['code' => '32', 'name' => '凯风'], ['code' => '33', 'name' => '雄雉'], 
+            ['code' => '34', 'name' => '匏有苦叶'], ['code' => '35', 'name' => '谷风'], ['code' => '36', 'name' => '式微'], ['code' => '37', 'name' => '旄丘'],
+            ['code' => '38', 'name' => '简兮'], ['code' => '39', 'name' => '泉水'], ['code' => '40', 'name' => '北门'], ['code' => '41', 'name' => '北风'],
+            ['code' => '42', 'name' => '静女'], ['code' => '43', 'name' => '新台'], ['code' => '44', 'name' => '二子乘舟'],
+        ],
    ],
    [
-       'code' => 'yongfeng',
-       'name' => '鄘风',
-       'infos' => [
-           ['code' => '45', 'name' => '柏舟'], ['code' => '46', 'name' => '墙有茨'], ['code' => '47', 'name' => '君子偕老'], ['code' => '48', 'name' => '桑中'],
-           ['code' => '49', 'name' => '鹑之奔奔'], ['code' => '50', 'name' => '定之方中'], ['code' => '51', 'name' => '蝃蝀'], ['code' => '52', 'name' => '相鼠'],
-           ['code' => '53', 'name' => '干旄'], ['code' => '54', 'name' => '载驰'],
-       ],
+        'code' => 'yongfeng',
+        'spell' => 'yōng fēng',
+        'name' => '鄘风',
+        'infos' => [
+            ['code' => '45', 'name' => '柏舟'], ['code' => '46', 'name' => '墙有茨'], ['code' => '47', 'name' => '君子偕老'], ['code' => '48', 'name' => '桑中'],
+            ['code' => '49', 'name' => '鹑之奔奔'], ['code' => '50', 'name' => '定之方中'], ['code' => '51', 'name' => '蝃蝀'], ['code' => '52', 'name' => '相鼠'],
+            ['code' => '53', 'name' => '干旄'], ['code' => '54', 'name' => '载驰'],
+        ],
    ],
    [
-       'code' => 'weifeng',
-       'name' => '卫风',
-       'infos' => [
-           ['code' => '55', 'name' => '淇奥'], ['code' => '56', 'name' => '考槃'], ['code' => '57', 'name' => '硕人'], ['code' => '58', 'name' => '氓'],
-           ['code' => '59', 'name' => '竹竿'], ['code' => '60', 'name' => '芄兰'], ['code' => '61', 'name' => '河广'], ['code' => '62', 'name' => '伯兮'],
-           ['code' => '63', 'name' => '有狐'], ['code' => '64', 'name' => '木瓜'],
-       ],
+        'code' => 'weifeng',
+        'spell' => 'wèi fēng',
+        'name' => '卫风',
+        'infos' => [
+            ['code' => '55', 'name' => '淇奥'], ['code' => '56', 'name' => '考槃'], ['code' => '57', 'name' => '硕人'], ['code' => '58', 'name' => '氓'],
+            ['code' => '59', 'name' => '竹竿'], ['code' => '60', 'name' => '芄兰'], ['code' => '61', 'name' => '河广'], ['code' => '62', 'name' => '伯兮'],
+            ['code' => '63', 'name' => '有狐'], ['code' => '64', 'name' => '木瓜'],
+        ],
    ],
    [
-       'code' => 'wangfeng',
-       'name' => '王风',
-       'infos' => [
-           ['code' => '65', 'name' => '黍离'], ['code' => '66', 'name' => '君子于役'], ['code' => '67', 'name' => '君子阳阳'], ['code' => '68', 'name' => '扬之水'],
-           ['code' => '69', 'name' => '中谷有蓷'], ['code' => '70', 'name' => '兔爰'], ['code' => '71', 'name' => '葛藟'], ['code' => '72', 'name' => '采葛'],
-           ['code' => '73', 'name' => '大车'], ['code' => '74', 'name' => '丘中有麻'],
-       ],
+        'code' => 'wangfeng',
+        'spell' => 'wáng fēng',
+        'name' => '王风',
+        'infos' => [
+            ['code' => '65', 'name' => '黍离'], ['code' => '66', 'name' => '君子于役'], ['code' => '67', 'name' => '君子阳阳'], ['code' => '68', 'name' => '扬之水'],
+            ['code' => '69', 'name' => '中谷有蓷'], ['code' => '70', 'name' => '兔爰'], ['code' => '71', 'name' => '葛藟'], ['code' => '72', 'name' => '采葛'],
+            ['code' => '73', 'name' => '大车'], ['code' => '74', 'name' => '丘中有麻'],
+        ],
    ],
    [
-       'code' => 'zhengfeng',
-       'name' => '郑风',
-       'infos' => [
-           ['code' => '75', 'name' => '缁衣'], ['code' => '76', 'name' => '将仲子'], ['code' => '77', 'name' => '叔于田'], ['code' => '78', 'name' => '大叔于田'],
-           ['code' => '79', 'name' => '清人'], ['code' => '80', 'name' => '羔裘'], ['code' => '81', 'name' => '遵大路'], ['code' => '82', 'name' => '女曰鸡鸣'],
-           ['code' => '83', 'name' => '有女同车'], ['code' => '84', 'name' => '山有扶苏'], ['code' => '85', 'name' => '萚兮'], ['code' => '86', 'name' => '狡童'],
-           ['code' => '87', 'name' => '褰裳'], ['code' => '88', 'name' => '丰'], ['code' => '89', 'name' => '东门之墠'], ['code' => '90', 'name' => '风雨'],
-           ['code' => '91', 'name' => '子衿'], ['code' => '92', 'name' => '扬之水'], ['code' => '93', 'name' => '出其东门'], ['code' => '94', 'name' => '野有蔓草'],
-           ['code' => '95', 'name' => '溱洧'],
-       ],
+        'code' => 'zhengfeng',
+        'spell' => 'zhèng fēng',
+        'name' => '郑风',
+        'infos' => [
+            ['code' => '75', 'name' => '缁衣'], ['code' => '76', 'name' => '将仲子'], ['code' => '77', 'name' => '叔于田'], ['code' => '78', 'name' => '大叔于田'],
+            ['code' => '79', 'name' => '清人'], ['code' => '80', 'name' => '羔裘'], ['code' => '81', 'name' => '遵大路'], ['code' => '82', 'name' => '女曰鸡鸣'],
+            ['code' => '83', 'name' => '有女同车'], ['code' => '84', 'name' => '山有扶苏'], ['code' => '85', 'name' => '萚兮'], ['code' => '86', 'name' => '狡童'],
+            ['code' => '87', 'name' => '褰裳'], ['code' => '88', 'name' => '丰'], ['code' => '89', 'name' => '东门之墠'], ['code' => '90', 'name' => '风雨'],
+            ['code' => '91', 'name' => '子衿'], ['code' => '92', 'name' => '扬之水'], ['code' => '93', 'name' => '出其东门'], ['code' => '94', 'name' => '野有蔓草'],
+            ['code' => '95', 'name' => '溱洧'],
+        ],
    ],
    [
-       'code' => 'qifeng',
-       'name' => '齐风',
-       'infos' => [
-           ['code' => '96', 'name' => '鸡鸣'], ['code' => '97', 'name' => '还'], ['code' => '98', 'name' => '著'], ['code' => '99', 'name' => '东方之日'],
-           ['code' => '100', 'name' => '东方未明'], ['code' => '101', 'name' => '南山'], ['code' => '102', 'name' => '甫田'], ['code' => '103', 'name' => '卢令'],
-           ['code' => '104', 'name' => '敝笱'], ['code' => '105', 'name' => '载驱'], ['code' => '106', 'name' => '猗嗟'],
-       ],
+        'code' => 'qifeng',
+        'spell' => 'qí fēng',
+        'name' => '齐风',
+        'infos' => [
+            ['code' => '96', 'name' => '鸡鸣'], ['code' => '97', 'name' => '还'], ['code' => '98', 'name' => '著'], ['code' => '99', 'name' => '东方之日'],
+            ['code' => '100', 'name' => '东方未明'], ['code' => '101', 'name' => '南山'], ['code' => '102', 'name' => '甫田'], ['code' => '103', 'name' => '卢令'],
+            ['code' => '104', 'name' => '敝笱'], ['code' => '105', 'name' => '载驱'], ['code' => '106', 'name' => '猗嗟'],
+        ],
    ],
    [
-       'code' => 'weifeng',
-       'name' => '魏风',
-       'infos' => [
-           ['code' => '107', 'name' => '葛屦'], ['code' => '108', 'name' => '汾沮洳'], ['code' => '109', 'name' => '园有桃'], ['code' => '110', 'name' => '陟岵'],
-           ['code' => '111', 'name' => '十亩之间'], ['code' => '112', 'name' => '伐檀'], ['code' => '113', 'name' => '硕鼠'],
-       ],
+        'code' => 'weifeng',
+        'spell' => 'wèi fēng',
+        'name' => '魏风',
+        'infos' => [
+            ['code' => '107', 'name' => '葛屦'], ['code' => '108', 'name' => '汾沮洳'], ['code' => '109', 'name' => '园有桃'], ['code' => '110', 'name' => '陟岵'],
+            ['code' => '111', 'name' => '十亩之间'], ['code' => '112', 'name' => '伐檀'], ['code' => '113', 'name' => '硕鼠'],
+        ],
    ],
    [
-       'code' => 'tangfeng',
-       'name' => '唐风',
-       'infos' => [
-           ['code' => '114', 'name' => '蟋蟀'], ['code' => '115', 'name' => '山有枢'], ['code' => '116', 'name' => '扬之水'], ['code' => '117', 'name' => '椒聊'],
-           ['code' => '118', 'name' => '绸缪'], ['code' => '119', 'name' => '杕杜'], ['code' => '120', 'name' => '羔裘'], ['code' => '121', 'name' => '鸨羽'],
-           ['code' => '122', 'name' => '无衣'], ['code' => '123', 'name' => '有杕之杜'], ['code' => '124', 'name' => '葛生'], ['code' => '125', 'name' => '采苓'],
-       ],
+        'code' => 'tangfeng',
+        'spell' => 'táng fēng',
+        'name' => '唐风',
+        'infos' => [
+            ['code' => '114', 'name' => '蟋蟀'], ['code' => '115', 'name' => '山有枢'], ['code' => '116', 'name' => '扬之水'], ['code' => '117', 'name' => '椒聊'],
+            ['code' => '118', 'name' => '绸缪'], ['code' => '119', 'name' => '杕杜'], ['code' => '120', 'name' => '羔裘'], ['code' => '121', 'name' => '鸨羽'],
+            ['code' => '122', 'name' => '无衣'], ['code' => '123', 'name' => '有杕之杜'], ['code' => '124', 'name' => '葛生'], ['code' => '125', 'name' => '采苓'],
+        ],
    ],
    [
-       'code' => 'qinfeng',
-       'name' => '秦风',
-       'infos' => [
-           ['code' => '126', 'name' => '车邻'], ['code' => '127', 'name' => '驷驖'], ['code' => '128', 'name' => '小戎'], ['code' => '129', 'name' => '蒹葭'],
-           ['code' => '130', 'name' => '终南'], ['code' => '131', 'name' => '黄鸟'], ['code' => '132', 'name' => '晨风'], ['code' => '133', 'name' => '无衣'],
-           ['code' => '134', 'name' => '渭阳'], ['code' => '135', 'name' => '权舆'],
-       ],
+        'code' => 'qinfeng',
+        'spell' => 'qín fēng',
+        'name' => '秦风',
+        'infos' => [
+            ['code' => '126', 'name' => '车邻'], ['code' => '127', 'name' => '驷驖'], ['code' => '128', 'name' => '小戎'], ['code' => '129', 'name' => '蒹葭'],
+            ['code' => '130', 'name' => '终南'], ['code' => '131', 'name' => '黄鸟'], ['code' => '132', 'name' => '晨风'], ['code' => '133', 'name' => '无衣'],
+            ['code' => '134', 'name' => '渭阳'], ['code' => '135', 'name' => '权舆'],
+        ],
    ],
    [
-       'code' => 'chenfeng',
-       'name' => '陈风',
-       'infos' => [
-           ['code' => '136', 'name' => '宛丘'], ['code' => '137', 'name' => '东门之枌'], ['code' => '138', 'name' => '衡门'], ['code' => '139', 'name' => '东门之池'],
-           ['code' => '140', 'name' => '东门之杨'], ['code' => '141', 'name' => '墓门'], ['code' => '142', 'name' => '防有鹊巢'], ['code' => '143', 'name' => '月出'],
-           ['code' => '144', 'name' => '株林'], ['code' => '145', 'name' => '泽陂'],
-       ],
+        'code' => 'chenfeng',
+        'spell' => 'chén fēng',
+        'name' => '陈风',
+        'infos' => [
+            ['code' => '136', 'name' => '宛丘'], ['code' => '137', 'name' => '东门之枌'], ['code' => '138', 'name' => '衡门'], ['code' => '139', 'name' => '东门之池'],
+            ['code' => '140', 'name' => '东门之杨'], ['code' => '141', 'name' => '墓门'], ['code' => '142', 'name' => '防有鹊巢'], ['code' => '143', 'name' => '月出'],
+            ['code' => '144', 'name' => '株林'], ['code' => '145', 'name' => '泽陂'],
+        ],
    ],
    [
-       'code' => 'guifeng',
-       'name' => '桧风',
-       'infos' => [
-           ['code' => '146', 'name' => '羔裘'], ['code' => '147', 'name' => '素冠'], ['code' => '148', 'name' => '隰有苌楚'], ['code' => '149', 'name' => '匪风'],
-       ],
+        'code' => 'guifeng',
+        'spell' => 'guì fēng',
+        'name' => '桧风',
+        'infos' => [
+            ['code' => '146', 'name' => '羔裘'], ['code' => '147', 'name' => '素冠'], ['code' => '148', 'name' => '隰有苌楚'], ['code' => '149', 'name' => '匪风'],
+        ],
    ],
    [
-       'code' => 'caofeng',
-       'name' => '曹风',
-       'infos' => [
-           ['code' => '150', 'name' => '蜉蝣'], ['code' => '151', 'name' => '候人'], ['code' => '152', 'name' => '鳲鸠'], ['code' => '153', 'name' => '下泉'],
-       ],
+        'code' => 'caofeng',
+        'spell' => 'cáo fēng',
+        'name' => '曹风',
+        'infos' => [
+            ['code' => '150', 'name' => '蜉蝣'], ['code' => '151', 'name' => '候人'], ['code' => '152', 'name' => '鳲鸠'], ['code' => '153', 'name' => '下泉'],
+        ],
    ],
    [
-       'code' => 'binfeng',
-       'name' => '豳风',
-       'infos' => [
-           ['code' => '154', 'name' => '七月'], ['code' => '155', 'name' => '鸱鸮'], ['code' => '156', 'name' => '东山'], ['code' => '157', 'name' => '破斧'],
-           ['code' => '158', 'name' => '伐柯'], ['code' => '159', 'name' => '九罭'], ['code' => '160', 'name' => '狼跋'],
-       ],
+        'code' => 'binfeng',
+        'spell' => 'bīn fēng',
+        'name' => '豳风',
+        'infos' => [
+            ['code' => '154', 'name' => '七月'], ['code' => '155', 'name' => '鸱鸮'], ['code' => '156', 'name' => '东山'], ['code' => '157', 'name' => '破斧'],
+            ['code' => '158', 'name' => '伐柯'], ['code' => '159', 'name' => '九罭'], ['code' => '160', 'name' => '狼跋'],
+        ],
    ],
 ],
 ],
 'xiaoya' => [
     'name' => '小雅',
+    'spell' => 'xiǎo yǎ',
     'elems' => [[
         'code' => 'lumingzhishi',
+        'spell' => 'lù míng zhī shí',
         'name' => '鹿鸣之什',
         'infos' => [
             ['code' => '161', 'name' => '鹿鸣'], ['code' => '162', 'name' => '四牡'], ['code' => '163', 'name' => '皇皇者华'], ['code' => '164', 'name' => '棠棣'],
@@ -155,6 +173,7 @@ return [
     ],
     [
         'code' => 'nanyoujiayuzhishi',
+        'spell' => 'nán yǒu jiā yú zhī shí',
         'name' => '南有嘉鱼之什',
         'infos' => [
             ['code' => '171', 'name' => '南有嘉鱼'], ['code' => '172', 'name' => '南山有台'], ['code' => '173', 'name' => '蓼萧'], ['code' => '174', 'name' => '湛露'],
@@ -164,6 +183,7 @@ return [
     ],
     [
         'code' => 'hongyanzhishi',
+        'spell' => 'hóng yàn zhī shí',
         'name' => '鸿雁之什',
         'infos' => [
             ['code' => '181', 'name' => '鸿雁'], ['code' => '182', 'name' => '庭燎'], ['code' => '183', 'name' => '沔水'], ['code' => '184', 'name' => '鹤鸣'],
@@ -173,6 +193,7 @@ return [
     ],
     [
         'code' => 'jienanshanzhishi',
+        'spell' => 'jié nán shān zhī shí',
         'name' => '节南山之什',
         'infos' => [
             ['code' => '191', 'name' => '节南山'], ['code' => '192', 'name' => '正月'], ['code' => '193', 'name' => '十月之交'], ['code' => '194', 'name' => '雨无正'],
@@ -182,6 +203,7 @@ return [
     ],
     [
         'code' => 'gufengzhishi',
+        'spell' => 'gǔ fēng zhī shí',
         'name' => '谷风之什',
         'infos' => [
             ['code' => '201', 'name' => '谷风'], ['code' => '202', 'name' => '蓼莪'], ['code' => '203', 'name' => '大东'], ['code' => '204', 'name' => '四月'],
@@ -191,6 +213,7 @@ return [
     ],
     [
         'code' => 'putianzhishi',
+        'spell' => 'fǔ tián zhī shí',
         'name' => '甫田之什',
         'infos' => [
             ['code' => '211', 'name' => '甫田'], ['code' => '212', 'name' => '大田'], ['code' => '213', 'name' => '瞻彼洛矣'], ['code' => '214', 'name' => '裳裳者华'],
@@ -200,6 +223,7 @@ return [
     ],
     [
         'code' => 'yuzaozhishi',
+        'spell' => 'yú zǎo zhī shí',
         'name' => '鱼藻之什',
         'infos' => [
             ['code' => '221', 'name' => '鱼藻'], ['code' => '222', 'name' => '采菽'], ['code' => '223', 'name' => '角弓'], ['code' => '224', 'name' => '菀柳'],
@@ -209,6 +233,7 @@ return [
     ],
     [
         'code' => 'huyezhishi',
+        'spell' => 'hù yè zhī shí',
         'name' => '瓠叶之什',
         'infos' => [
             ['code' => '231', 'name' => '瓠叶'], ['code' => '232', 'name' => '渐渐之石'], ['code' => '233', 'name' => '苕之华'], ['code' => '234', 'name' => '何草不黄'],
@@ -222,6 +247,7 @@ return [
     'name' => '大雅',
     'elems' => [[
         'code' => 'wangwangzhishi',
+        'spell' => 'shēng mín zhī shí',
         'name' => '文王之什',
         'infos' => [
             ['code' => '235', 'name' => '文王'], ['code' => '236', 'name' => '大明'], ['code' => '237', 'name' => '绵'], ['code' => '238', 'name' => '棫樸'],
@@ -231,6 +257,7 @@ return [
     ],
     [
         'code' => 'shengminzhishi',
+        'spell' => 'shēng mín zhī shí',
         'name' => '生民之什',
         'infos' => [
             ['code' => '245', 'name' => '生民'], ['code' => '246', 'name' => '行葦'], ['code' => '247', 'name' => '既醉鍭'], ['code' => '248', 'name' => '鳧鹥'],
@@ -240,6 +267,7 @@ return [
     ],
     [
         'code' => 'dangzhishi',
+        'spell' => 'dàng zhī shí',
         'name' => '荡之什',
         'infos' => [
             ['code' => '255', 'name' => '荡'], ['code' => '256', 'name' => '抑'], ['code' => '257', 'name' => '桑柔'], ['code' => '258', 'name' => '云汉'],
@@ -253,6 +281,7 @@ return [
     'name' => '颂',
     'elems' => [[
         'code' => 'zhousong',
+        'spell' => 'zhōu sòng',
         'name' => '周颂',
         'infos' => [
             ['code' => '266', 'name' => '清庙'], ['code' => '267', 'name' => '维天之命'], ['code' => '268', 'name' => '维清'], ['code' => '269', 'name' => '烈文'],
@@ -267,6 +296,7 @@ return [
     ],
     [
         'code' => 'lusong',
+        'spell' => 'lǔ sòng',
         'name' => '鲁颂',
         'infos' => [
             ['code' => '297', 'name' => '駉'], ['code' => '298', 'name' => '有駜'], ['code' => '299', 'name' => '泮水'], ['code' => '300', 'name' => '閟宫'],
@@ -274,6 +304,7 @@ return [
     ],
     [
         'code' => 'shangsong',
+        'spell' => 'shāng sòng',
         'name' => '商颂',
         'infos' => [
             ['code' => '301', 'name' => '那'], ['code' => '302', 'name' => '烈祖'], ['code' => '303', 'name' => '玄鸟'], ['code' => '304', 'name' => '长发'],

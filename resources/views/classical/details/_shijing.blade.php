@@ -3,7 +3,8 @@
     <span class="button width6em" onclick="disp('comment');">注释</span>
     <span class="button width6em" onclick="disp('yiwen');">译文</span>
     <span class="button width6em" onclick="disp('jiedu');">解读</span></div>
-<h1>{{$datas['name']}}@if (isset($datas['nameSpell']))<span class="spellclass" style="display: none;"> ( {{$datas['nameSpell']}} )@endif</span></h1>
+<h1>@if (isset($datas['nameSpell']))<span class="spellclass" style="display: none;"> ( {{$datas['nameSpell']}} )</span>@endif{{$datas['name']}}</h1>
+@if (isset($datas['nameSpell']))<h5 style="font-size: 14pt; font-weight: bold; text-align: center; padding: 4px; color: green;">{{$datas['brief']}}</h5>@endif
 <hr />
 @php $i = 1; @endphp
 @foreach ($datas['chapters'] as $chapter)
