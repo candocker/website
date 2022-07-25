@@ -8,20 +8,14 @@ return [
     'chapters' => [
         [
             'spell' => [
-                'zhōngsīyǔ，shēnshēnxī。',
-                'yíěr zǐ sūn ，zhènzhènxī。',
-                'zhōngsīyǔ，hōnghōngxī。',
-                'yíěr zǐ sūn 。 shéng shéng xī。',
-                'zhōngsīyǔ，jíjí xī。',
-                'yíěr zǐ sūn ，zhézhéxī。',
+                'zhōngsīyǔ，shēnshēnxī。yíěr zǐ sūn ，zhènzhènxī。',
+                'zhōngsīyǔ，hōnghōngxī。yíěr zǐ sūn 。 shéng shéng xī。',
+                'zhōngsīyǔ，jíjí xī。yíěr zǐ sūn ，zhézhéxī。',
             ],
             'content' => [
-                '螽斯羽，诜诜兮。',
-                '宜尔子孙，振振兮。',
-                '螽斯羽，薨薨兮。',
-                '宜尔子孙。绳绳兮。',
-                '螽斯羽，揖揖兮。',
-                '宜尔子孙，蛰蛰兮。',
+                '螽斯羽，诜诜兮。宜尔子孙，振振兮。',
+                '螽斯羽，薨薨兮。宜尔子孙。绳绳兮。',
+                '螽斯羽，揖揖兮。宜尔子孙，蛰蛰兮。',
             ],
             'vernacular' => [
                 '译文一',
