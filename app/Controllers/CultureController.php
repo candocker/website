@@ -20,10 +20,16 @@ class CultureController extends AbstractController
         return $this->customView('home', ['datas' => $datas]);
     }
 
-    public function bookSort($sort = '')
+    public function graphic($sort = '')
     {
-        $datas = $this->getRepositoryObj('culture-bookPublish')->getCategoryDatas($sort);
+        $datas = [];//$this->getRepositoryObj('culture-bookPublish')->getCategoryDatas($sort);
         return $this->customView('table', $datas);
+    }
+
+    public function timeline($sort = '')
+    {
+        $datas = [];//$this->getRepositoryObj('culture-bookPublish')->getCategoryDatas($sort);
+        return $this->customView('timeline', $datas);
     }
 
 	protected function viewPath()
