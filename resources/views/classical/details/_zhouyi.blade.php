@@ -1,3 +1,16 @@
+@php
+$authors = [
+    'zhuxi' => ['name' => '朱熹', 'nameFull' => '朱熹解易'],
+    'wangbi' => ['name' => '王弼', 'nameFull' => '王弼周易注'],
+    'sushi' => ['name' => '苏轼', 'nameFull' => '东坡易传'],
+    'vernacular' => ['name' => '译文', 'nameFull' => '译文'],
+];
+$showElems = [
+    'gua' => ['class' => 'tuan', 'name' => '卦辞', 'classPre' => ''], 
+    'xiang' => ['class' => 'xiang xiangci daxiang', 'name' => '象曰', 'classPre' => 'xiangci'],
+    'tuan' => ['class' => 'tuan', 'name' => '彖曰', 'classPre' => '']
+];
+@endphp
 <h1 style="display:none;">《周易》第{{$datas['serial']}}卦 {{$datas['brief']}}</h1>
 <span class="title4">{{$datas['up']}}上<br>{{$datas['down']}}下</span>
 <span class="baguatu">
@@ -10,10 +23,9 @@
 </center>
 <hr />
 <div class="b_center">
-    <span class="button width6em" onclick="showElems('zhuxi');">朱熹解易</span>
-    <span class="button width6em" onclick="showElems('wangbi');">王弼周易注</span>
-    <span class="button width6em" onclick="showElems('sushi');">东坡易传</span>
-    <span class="button width6em" onclick="showElems('yiwentrue');">译文</span>
+    @foreach ($authors as $aCode => $author)
+    <span class="button width6em" onclick="showElems('{{$aCode}}');">{{$author['nameFull']}}</span>
+    @endforeach
     <span class="button width6em" onclick="showElems('simple');">原文</span>
     <!--<span class="button width4em" onclick="showElems('comment');">注释</span>
     <span class="button width4em" onclick="showElems('jiedu');">解读</span>-->
@@ -26,35 +38,33 @@
 </pre>
 <hr />
 
-<p class="tuan" style=""><big>卦辞</big><span>{{$datas['gua']}}</span></p>
-@if (isset($datas['zhuxi']) && isset($datas['zhuxi']['gua']))<div class="yiwen zhuxi"><p>【朱熹】{{$datas['zhuxi']['gua']}}</p></div>@endif
-@if (isset($datas['wangbi']) && isset($datas['wangbi']['gua']))<div class="yiwen wangbi"><p>【王弼】{{$datas['wangbi']['gua']}}</p></div>@endif
-@if (isset($datas['sushi']) && isset($datas['sushi']['gua']))<div class="yiwen sushi"><p>【东坡】{{$datas['sushi']['gua']}}</p></div>@endif
-@if (isset($datas['vernacular']['gua'])) @foreach ((array) $datas['vernacular']['gua'] as $i => $guaStr) <div class="yiwen yiwentrue"><p>【译文@if ($i) {{$i}} @endif】{{$guaStr}}</p></div>@endforeach @endif
-
-<p class="xiang xiangci daxiang"><big>象曰</big>{{$datas['xiang']}}</p>
-@if (isset($datas['zhuxi']) && isset($datas['zhuxi']['xiang']))<div class="yiwen zhuxi"><p>【朱熹】{{$datas['zhuxi']['xiang']}}</p></div>@endif
-@if (isset($datas['wangbi']) && isset($datas['wangbi']['xiang']))<div class="yiwen wangbi"><p>【王弼】{{$datas['wangbi']['xiang']}}</p></div>@endif
-@if (isset($datas['sushi']) && isset($datas['sushi']['xiang']))<div class="yiwen sushi"><p>【东坡】{{$datas['sushi']['xiang']}}</p></div>@endif
-@if (isset($datas['vernacular']['xiang'])) @foreach ((array) $datas['vernacular']['xiang'] as $i => $xiangStr) <div class="yiwen yiwentrue xiangci"><p>【译文@if ($i) {{$i}} @endif】{{$xiangStr}}</p></div>@endforeach @endif
-
-<p class="tuan"><big>彖曰</big>{{$datas['tuan']}}</p>
-@if (isset($datas['zhuxi']) && isset($datas['zhuxi']['tuan']))<div class="yiwen zhuxi"><p>【朱熹】{!!$datas['zhuxi']['tuan']!!}</p></div>@endif
-@if (isset($datas['wangbi']) && isset($datas['wangbi']['tuan']))<div class="yiwen wangbi"><p>【王弼】{{$datas['wangbi']['tuan']}}</p></div>@endif
-@if (isset($datas['sushi']) && isset($datas['sushi']['tuan']))<div class="yiwen sushi"><p>【苏轼】{{$datas['sushi']['tuan']}}</p></div>@endif
-@if (isset($datas['vernacular']))<div class="yiwen yiwentrue"><p>【译文】{!!$datas['vernacular']['tuan']!!}</p></div>@endif
+@foreach ($showElems as $pointKey => $pointElem)
+<p class="{{$pointElem['class']}}" style=""><big>{{$pointElem['name']}}</big><span>{{$datas[$pointKey]}}</span></p>
+@foreach ($authors as $aCode => $author)
+@if (isset($datas[$aCode]) && isset($datas[$aCode][$pointKey]) && !empty($datas[$aCode][$pointKey]))
+@foreach ((array) $datas[$aCode][$pointKey] as $i => $elemStr)
+<div class="yiwen {{$aCode}} {{$pointElem['classPre']}}"><p>【{{$author['name']}}】{!!$elemStr!!}</p></div>
+@endforeach
+@endif
+@endforeach
+@endforeach
 
 <hr />
 @foreach ($datas['yao'] as $key => $elem)
 <p class="xiang">
     <big>爻辞</big> <span class="yin">{{$elem}}</span><br>
-    @if (isset($datas['vernacular'])) @foreach ((array) $datas['vernacular']['yao'][$key] as $i => $vernacularStr)<div class="yiwen yiwentrue"><p>【译文@if ($i) {{$i}} @endif】{{$vernacularStr}}</p></div>@endforeach @endif
-    @if (isset($datas['zhuxi']) && isset($datas['zhuxi']['yao']) && !empty($datas['zhuxi']['yao'][$key]))<div class="yiwen zhuxi"><p>【朱熹】{{$datas['zhuxi']['yao'][$key]}}</p></div>@endif
+    @foreach ($authors as $aCode => $author)
+    @if (isset($datas[$aCode]['yao']) && isset($datas[$aCode]['yao'][$key]) && !empty($datas[$aCode]['yao'][$key]))
+    <div class="yiwen {{$aCode}}"><p>【{{$author['name']}}】{!!$datas[$aCode]['yao'][$key]!!}</p></div>
+    @endif
+    @endforeach
+
     <span class="xiangci"><big>象曰</big> <span style="color: #0099FF;">{{$datas['xiaoxiang'][$key]}}</span><br /></span>
-    @if (isset($datas['vernacular']))<div class="yiwen yiwentrue"><p>【译文】{{$datas['vernacular']['xiaoxiang'][$key]}}</p></div>@endif
-    @if (isset($datas['zhuxi']) && isset($datas['zhuxi']['xiaoxiang']) && !empty($datas['zhuxi']['xiaoxiang'][$key]))<div class="yiwen zhuxi"><p>【朱熹】{{$datas['zhuxi']['xiaoxiang'][$key]}}</p></div>@endif
-    @if (isset($datas['wangbi']) && isset($datas['wangbi']['xiaoxiang']) && !empty($datas['wangbi']['xiaoxiang'][$key]))<div class="yiwen wangbi"><p>【王弼】{{$datas['wangbi']['xiaoxiang'][$key]}}</p></div>@endif
-    @if (isset($datas['sushi']) && isset($datas['sushi']['xiaoxiang']) && !empty($datas['sushi']['xiaoxiang'][$key]))<div class="yiwen sushi"><p>【苏轼】{{$datas['sushi']['xiaoxiang'][$key]}}</p></div>@endif
+    @foreach ($authors as $aCode => $author)
+    @if (isset($datas[$aCode]['xiaoxiang']) && isset($datas[$aCode]['xiaoxiang'][$key]) && !empty($datas[$aCode]['xiaoxiang'][$key]))
+    <div class="yiwen {{$aCode}}"><p>【{{$author['name']}}】{!!$datas[$aCode]['xiaoxiang'][$key]!!}</p></div>
+    @endif
+    @endforeach
 </p>
 @endforeach
 

@@ -4,6 +4,33 @@ return [
     'brief' => '',
     'chapters' => [
         [
+            'name' => '',
+            'content' => [
+            ],
+            'spell' => [
+            ],
+            'vernacular' => [
+            ],
+            'notes' => [
+            ],
+            'unscramble' => [
+            ],
+        ],
+
+        [
+            'name' => '',
+            'content' => [
+            ],
+            'spell' => [
+            ],
+            'vernacular' => [
+            ],
+            'notes' => [
+            ],
+            'unscramble' => [
+            ],
+        ],
+        [
             'content' => [
                 '逢尤',
                 '悲兮愁，哀兮忧！',

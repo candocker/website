@@ -33,9 +33,9 @@ return [
             'name' => '其他',
             'brief' => '',
             'infos' => [
-                ['code' => 'jiubian', 'name' => '九辫'], ['code' => 'xishi', 'name' => '惜誓'], ['code' => 'zhaoyinshi', 'name' => '招隐士'],
-                ['code' => 'qijian', 'name' => '七谏'], ['code' => 'aishiming', 'name' => '哀时命'], ['code' => 'jiuhuai', 'name' => '九怀'],
-                ['code' => 'jiutan', 'name' => '九叹'], ['code' => 'jiusi', 'name' => '九思'],
+                ['code' => 'jiubian', 'name' => '九辩 (宋玉)'], ['code' => 'xishi', 'name' => '惜誓 (贾谊)'], ['code' => 'zhaoyinshi', 'name' => '招隐士 (淮南小山)'],
+                ['code' => 'qijian', 'name' => '七谏(东方朔)'], ['code' => 'aishiming', 'name' => '哀时命(庄忌)'], ['code' => 'jiuhuai', 'name' => '九怀(王褒)'],
+                ['code' => 'jiutan', 'name' => '九叹(刘向)'], ['code' => 'jiusi', 'name' => '九思(王逸)'],
             ],
         ],
     ],

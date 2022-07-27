@@ -25,7 +25,7 @@ return [
             'title' => '大学',
             'brief' => '大学描述',
             'rowCount' => 4,
-            'rowCountMobile' => 3,
+            'rowCountMobile' => 2,
         ],
         'zhongyong' => [
             'title' => '中庸',
@@ -37,7 +37,7 @@ return [
             'title' => '孟子',
             'brief' => '孟子描述',
             'rowCount' => 4,
-            'rowCountMobile' => 3,
+            'rowCountMobile' => 2,
         ],
         'zhuangzi' => [
             'title' => '庄子',
@@ -59,7 +59,7 @@ return [
             'title' => '楚辞',
             'brief' => '诗经',
             'rowCount' => 5,
-            'rowCountMobile' => 4,
+            'rowCountMobile' => 3,
         ],
         'guwenguanzhi' => [
             //'rowspan' => 10,
