@@ -1,7 +1,6 @@
 @extends('layouts.website')
 @section('bodyClass')class="page"@endsection
 @section('content')
-<main id="uix-maincontent">
 <section class="uix-spacing--s uix-spacing--no-bottom">
     <div class="container">
         <div class="row">
@@ -13,6 +12,20 @@
         </div>
     </div>
 </section>
+			<section class="uix-spacing--s">
+				<div class="container uix-t-c">
+					<div class="uix-lavalamp-menu__container">
+						<ul class="uix-lavalamp-menu">
+							<li><a href="#">menu</a></li>
+							<li><a href="#">long menu</a></li>
+							<li><a href="#">even longer menu</a></li>
+							<li><a href="#">short menu</a></li>
+						</ul>
+					</div>   
+					<!-- /.uix-lavalamp-menu__container -->           
+				</div> 
+				<!-- .container end -->
+			</section>
 <section class="uix-spacing--s">
     <div class="container">
         <div class="row">
@@ -742,5 +755,23 @@
         <!-- .row end -->
     </div>
 </section>          
-</main>
+			
+			<!-- Floating Side Element
+			============================================= -->      
+			<div class="uix-floating-side-el">
+
+				<a id="app-quick-appointment" href="javascript:"><span><i class="fa fa-envelope-open" aria-hidden="true"></i></span>Order</a>
+
+				<a id="app-quick-service" href="javascript:"><span><i class="fa fa-headphones" aria-hidden="true"></i></span>Service Online</a>
+
+
+				<a id="app-quick-appointment" href="javascript:"><span><i class="fa fa-calculator" aria-hidden="true"></i></span>Estimate</a>
+
+				<a href="faq.html"><span><i class="fa fa-question-circle-o" aria-hidden="true"></i></span>FAQ</a>
+
+			</div>
+			<!-- .uix-floating-side-el end -->
+
+
+			<div style="height: 2500px;"></div>
 @endsection

@@ -22,7 +22,8 @@ class CultureController extends AbstractController
 
     public function graphic($sort = '')
     {
-        $datas = [];//$this->getRepositoryObj('culture-bookPublish')->getCategoryDatas($sort);
+        //$datas = $this->getRepositoryObj('culture-bookPublish')->getCategoryDatas($sort);
+        $datas = [];
         return $this->customView('table', $datas);
     }
 

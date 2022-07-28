@@ -17,7 +17,9 @@ $bodyClasses = [
     @include('layouts.website._loader-mobile', ['layoutElem' => $layoutElem])
     <div class="uix-wrapper">
         @include('layouts.website._top', ['data' => []])
+        <main id="uix-maincontent">
         @yield('content')
+        </main>
         @include('layouts.website._footer-simple', ['data' => []])
     </div>
     <!-- .uix-wrapper end -->

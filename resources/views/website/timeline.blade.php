@@ -1,7 +1,6 @@
 @extends('layouts.website')
 @section('bodyClass')class="page"@endsection
 @section('content')
-		<main id="uix-maincontent">
 			<!-- Content 
 			====================================================== -->
 			<section class="uix-spacing--s uix-spacing--no-bottom">
@@ -688,5 +687,4 @@
 				</div>
 				<!-- .container end -->
 			</section>
-		</main>
 @endsection
