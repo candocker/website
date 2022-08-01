@@ -9,7 +9,7 @@
     @include('classical.modules._header-top', ['data' => ''])
 
     @include('classical.details._' . $datas['pageCode'], ['datas' => $datas])
-    @include('classical.modules._footer-detail', ['data' => ''])
+    @include('classical.modules._footer-detail', ['data' => $datas])
 </div>
 <script>
 function showElems(type) 

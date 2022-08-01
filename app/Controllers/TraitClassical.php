@@ -4,11 +4,6 @@ namespace ModuleWebsite\Controllers;
 
 trait TraitClassical
 {
-    public function getDetailZhou($code)
-    {
-        return $this->getListZhou($code);
-    }
-
     public function getListZhou($code = null)
     {
         $file = $this->getBasePath() . "cachedata/zhouyi.php";

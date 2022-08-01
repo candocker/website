@@ -8,7 +8,6 @@ class ClassicalController extends AbstractController
 
     public function home()
     {
-        //$this->dealcc();exit();
         $cacheData = $this->request->input('cache_data');
         if ($cacheData) {
             $this->dealDatas();exit();
@@ -37,7 +36,7 @@ class ClassicalController extends AbstractController
     {
         $bookData = $this->getBookInfos($bookCode);
         if ($bookCode == 'zhouyi') {
-            $datas = $this->getDetailZhou($chapterCode);
+            $datas = $this->getListZhou($chapterCode);
         } else {
             $file = $this->getBasePath() . "{$bookCode}/{$chapterCode}.php";
             $datas = require($file);
@@ -45,9 +44,12 @@ class ClassicalController extends AbstractController
                 $datas = $this->formatInnerNote($datas);
             }
         }
+        $relateInfos = $this->getRelateInfo($bookCode, $chapterCode);
 
         $datas['bookData'] = $bookData;
+        $datas['bookCode'] = $bookCode;
         $datas['tdkData'] = $this->formatTdk($datas);
+        $datas = array_merge($datas, $relateInfos);
 
         $pageCodes = [
             'zhouyi' => 'zhouyi',
@@ -57,6 +59,39 @@ class ClassicalController extends AbstractController
         $datas['pageCode'] = $pageCodes[$bookCode] ?? 'common';
         //$datas['pageCode'] = in_array($bookCode, ['shijing', 'zhouyi']) ? $bookCode : 'common';
         return $this->customView('detail', $datas);
+    }
+
+    protected function getRelateInfo($bookCode, $code, $types = ['pre', 'next'])
+    {
+        $chapters = $this->getChapterInfos($bookCode);
+        //print_r($chapters['chapters']);exit();
+        foreach ($chapters['chapters'] as $chapter) {
+            if ($bookCode == 'shijing') {
+                foreach ($chapter['elems'] as $tmp) {
+                    foreach ($tmp['infos'] as $data) {
+                        $keyValues[$data['code']] = $data;
+                    }
+                }
+            } else {
+                foreach ($chapter['infos'] as $data) {
+                    $keyValues[$data['code']] = $data;
+                }
+            }
+        }
+        $keys = array_keys($keyValues);
+        $cIndex = array_search($code, $keys);
+        $results = [];
+        foreach ($types as $type) {
+            $index = $type == 'pre' ? $cIndex - 1 : $cIndex + 1;
+
+            if ($index < 0 || $index > count($keys)) {
+                $results[$type] = ['code' => '', 'name' => '没有了'];
+            } else {
+                $results[$type] = $keyValues[$keys[$index]];
+            }
+        }
+        return $results;
+        print_r($results);exit();
     }
 
     protected function formatInnerNote($datas)
@@ -143,30 +178,4 @@ class ClassicalController extends AbstractController
         }
         return parent::isMobile($force);
 	}
-
-    protected function dealcc()
-    {
-        $elems = ['boju.txt', 'jiuge-dongjun.txt', 'jiuge-shangui.txt', 'jiuge-yunzhongjun.txt', 'jiuzhang-huaisha.txt', 'jiuzhang-xisong.txt', 'yuanyou.txt ', 'dazhao.txt', 'jiuge-guoshang.txt', 'jiuge-shaosiming.txt', 'jiuzhang-aiying.txt', 'jiuzhang-jusong.txt', 'jiuzhang-xiwangri.txt', 'yufu.txt ', 'jiuge-dasiming.txt', 'jiuge-hebo.txt', 'jiuge-xiangfuren.txt', 'jiuzhang-beiqiufeng.txt', 'jiuzhang-shejiang.txt', 'lisao.txt', 'zhaohun.txt', 'jiuge-donghuangtaiyi.txt', 'jiuge-lihun.txt', 'jiuge-xiangjun.txt', 'jiuzhang-chousi.txt', 'jiuzhang-simeiren.txt', 'tianwen.txt'];
-        $elems = ['yufu.txt'];
-
-        foreach ($elems as $elem) {
-        $file = $this->getBasePath() . "chucibak/{$elem}";
-        $lines = file($file);
-        $spell = $content = '';
-        foreach ($lines as $line) {
-            if (strpos($line, 'class="s_t"') != false) {
-                $spell .= strip_tags($line);
-            }
-            if (strpos($line, 'class="s_b"') != false) {
-                $content .= trim(strip_tags($line));
-            }
-            if (strpos($line, '<strong>') != false) {
-                $content .= trim(strip_tags($line));
-            }
-        }
-        echo $spell . '<br />';
-        echo $content;exit();
-        }
-
-    }
 }
