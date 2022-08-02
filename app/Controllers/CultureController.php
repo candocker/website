@@ -20,6 +20,15 @@ class CultureController extends AbstractController
         return $this->customView('home', ['datas' => $datas]);
     }
 
+    public function luxunResume()
+    {
+        $repository = $this->getRepositoryObj('culture-series');
+        $pointCodes = ['luxunquanji1938', 'luxunquanji2005', 'luxunquanji1958', 'luxunquanji1981', 'luxunmanuscript', 'luxunmanuall'];
+        $datas = $repository->getSeriesDatas($pointCodes);
+        return $this->success($datas);
+        echo 'sss';exit();
+    }
+
     public function luxunWorks()
     {
         $repository = $this->getRepositoryObj('culture-series');
