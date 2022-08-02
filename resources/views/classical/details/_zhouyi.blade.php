@@ -15,7 +15,7 @@ $symbols = [0 => '■■■　■■■', 1 => '■■■■■■■'];
 <h1 style="display:none;">《周易》第{{$datas['serial']}}卦 {{$datas['brief']}}</h1>
 <span class="title4">{{$datas['up']}}上<br>{{$datas['down']}}下</span>
 <span class="baguatu">
-@foreach ($datas['symbol'] as $symbol) {{$symbols[$symbol]}}<br>@endforeach
+@foreach (array_reverse($datas['symbol']) as $symbol) {{$symbols[$symbol]}}<br>@endforeach
 </span>
 <center>
     <span class="title3">{{$datas['serial']}} {{$datas['brief']}} 

@@ -1,12 +1,12 @@
 <span class="foot_key">分类:</span>
-<a href="/">古典文献</a>
+<a href="/">经典古籍</a>
 <span class="foot_key">书名:</span>
-<a href="/book-{{$datas['bookCode']}}">{{$datas['bookData']['title']}}</a>
+<a href="/book-{{$datas['bookCode']}}">{{$datas['bookData']['name']}}</a>
 @if (isset($datas['bookData']['author']))<span class="foot_key">作者:</span>{{$datas['bookData']['author']}} @endif
 <span id="foot_right">
     <a @if ($datas['pre']['code'])href="/show-{{$datas['bookCode']}}-{{$datas['pre']['code']}}"@endif><< {{$datas['pre']['name']}}</a>
 　  <a href="/book-{{$datas['bookCode']}}">目录</a>　
-    <a @if ($datas['next']['code'])href="/show-{{$datas['bookCode']}}-{{$datas['next']['code']}}"@endif><< {{$datas['next']['name']}}</a>
+    <a @if ($datas['next']['code'])href="/show-{{$datas['bookCode']}}-{{$datas['next']['code']}}"@endif>{{$datas['next']['name']}} >></a>
 </span>
 <div class="foot_comm">
     <div>

@@ -73,4 +73,55 @@ trait TraitClassical
         ];
         return $data;
     }
+
+    public function bak()
+    {
+        /*if ($bookCode == 'zhouyi') {
+            $chapterDatas = $this->getListZhou();
+        } else {*/
+        //}
+        /*if ($bookCode == 'zhouyi') {
+            $datas = $this->getListZhou($chapterCode);
+        } else {*/
+        //}
+        //
+        /*$cacheData = $this->request->input('cache_data');
+        if ($cacheData) {
+            $this->dealDatas();exit();
+        }*/
+
+        /*$basePath = $this->getBasePath();
+        foreach ($datas['books'] as $bookCode => $data) {
+            //if (in_array($bookCode, ['zhouyi', 'shijing', 'yizhuan'])) {
+            if (in_array($bookCode, ['shijing', 'guwenguanzhi', 'daodejing', 'chuci', 'lunyu', 'daxue', 'mengzi', 'xunzi', 'zhuangzi', 'zhongyong', 'mozi', 'yizhuan'])) {
+                continue;
+            }
+            $file = $basePath . "book/{$bookCode}_catalogue.php";
+            $chapters = $this->getChapterInfos($bookCode);
+            //print_r($chapters);exit();
+            $keyValues = [];
+    
+            foreach ($chapters['chapters'] as $chapter) {
+                    foreach ($chapter['infos'] as $cCode => $data) {
+                        $keyValues[$cCode] = $data;
+                    }
+            }
+            //print_r($keyValues);exit();
+    
+                $str = "<?php\nreturn [\n";
+            foreach ($keyValues as $key => $value) {
+                //print_r($value);exit();
+                $spell = $value['spell'] ?? '';
+                $symbolStr = implode(',', $value['symbol']);
+                $rKey = $value['serial'] < 10 ? '0' . $value['serial'] . $key : $value['serial'] . $key;
+                echo "'" . $rKey . "', ";
+                $str .= "    '{$rKey}' => [\n        'code' => '{$rKey}', 'serial' => {$value['serial']}, 'binSerial' => {$value['binSerial']}, 'name' => '{$value['name']}', 'spell' => '{$spell}', 'brief' => '{$value['brief']}', \n        'down' => '{$value['down']}', 'up' => '{$value['up']}', 'downOther' => '{$value['downOther']}', 'upOther' => '{$value['upOther']}', 'symbol' => [{$symbolStr}],\n    ],\n";
+            }
+            $str .= "];";
+            echo $str;
+            //file_put_contents($file, $str);
+        }
+        echo $str;exit();
+        print_r($datas);exit();*/
+    }
 }

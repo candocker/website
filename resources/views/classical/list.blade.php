@@ -6,7 +6,7 @@
 <div class="base_index">
     {{--@include('classical.modules._header', ['data' => ''])--}}
     @include('classical.modules._header-top', ['data' => ''])
-    <h1>{{$datas['title']}}</h1>
+    <h1>{{$datas['name']}}</h1>
     <!--<div style="text-align:center">
         <a href="" target="_blank">
             <img src="{{$commonAssetUrl}}/classical/img/bc82d-3894.jpg" alt="周易">

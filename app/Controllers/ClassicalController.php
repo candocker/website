@@ -8,45 +8,7 @@ class ClassicalController extends AbstractController
 
     public function home()
     {
-        /*$cacheData = $this->request->input('cache_data');
-        if ($cacheData) {
-            $this->dealDatas();exit();
-        }*/
-
         $datas = $this->getBookInfos(null, true);
-        /*$basePath = $this->getBasePath();
-        foreach ($datas['books'] as $bookCode => $data) {
-            //if (in_array($bookCode, ['zhouyi', 'shijing', 'yizhuan'])) {
-            if (in_array($bookCode, ['shijing', 'guwenguanzhi', 'daodejing', 'chuci', 'lunyu', 'daxue', 'mengzi', 'xunzi', 'zhuangzi', 'zhongyong', 'mozi', 'yizhuan'])) {
-                continue;
-            }
-            $file = $basePath . "book/{$bookCode}_catalogue.php";
-            $chapters = $this->getChapterInfos($bookCode);
-            //print_r($chapters);exit();
-            $keyValues = [];
-    
-            foreach ($chapters['chapters'] as $chapter) {
-                    foreach ($chapter['infos'] as $cCode => $data) {
-                        $keyValues[$cCode] = $data;
-                    }
-            }
-            //print_r($keyValues);exit();
-    
-                $str = "<?php\nreturn [\n";
-            foreach ($keyValues as $key => $value) {
-                //print_r($value);exit();
-                $spell = $value['spell'] ?? '';
-                $symbolStr = implode(',', $value['symbol']);
-                $rKey = $value['serial'] < 10 ? '0' . $value['serial'] . $key : $value['serial'] . $key;
-                echo "'" . $rKey . "', ";
-                $str .= "    '{$rKey}' => [\n        'code' => '{$rKey}', 'serial' => {$value['serial']}, 'binSerial' => {$value['binSerial']}, 'name' => '{$value['name']}', 'spell' => '{$spell}', 'brief' => '{$value['brief']}', \n        'down' => '{$value['down']}', 'up' => '{$value['up']}', 'downOther' => '{$value['downOther']}', 'upOther' => '{$value['upOther']}', 'symbol' => [{$symbolStr}],\n    ],\n";
-            }
-            $str .= "];";
-            echo $str;
-            //file_put_contents($file, $str);
-        }
-        echo $str;exit();
-        print_r($datas);exit();*/
         unset($datas['books']['yizhuan']);
         $datas['pageCode'] = 'home';
         return $this->customView('list', $datas);
@@ -68,15 +30,11 @@ class ClassicalController extends AbstractController
     public function show($bookCode, $chapterCode)
     {
         $bookData = $this->getBookInfos($bookCode);
-        /*if ($bookCode == 'zhouyi') {
-            $datas = $this->getListZhou($chapterCode);
-        } else {*/
             $file = $this->getBasePath() . "{$bookCode}/{$chapterCode}.php";
             $datas = require($file);
             if (isset($bookData['noteType']) && $bookData['noteType'] == 'inner') {
                 $datas = $this->formatInnerNote($datas);
             }
-        //}
         $relateInfos = $this->getRelateInfo($bookCode, $chapterCode);
 
         $datas['bookData'] = $bookData;
@@ -158,14 +116,11 @@ class ClassicalController extends AbstractController
     protected function getChapterInfos($bookCode, $withTdk = false)
     {
         $bookData = $this->getBookInfos($bookCode);
-        /*if ($bookCode == 'zhouyi') {
-            $chapterDatas = $this->getListZhou();
-        } else {*/
-            $chapterFile = $this->getBasePath() . "book/{$bookCode}.php";
-            $chapterInfosFile = $this->getBasePath() . "book/{$bookCode}_catalogue.php";
-            $chapterDatas = require($chapterFile);
-            $chapterDatas['infos'] = require($chapterInfosFile);
-        //}
+
+        $chapterFile = $this->getBasePath() . "book/{$bookCode}.php";
+        $chapterInfosFile = $this->getBasePath() . "book/{$bookCode}_catalogue.php";
+        $chapterDatas = require($chapterFile);
+        $chapterDatas['infos'] = require($chapterInfosFile);
 
         //print_r($chapterDatas);exit();
         $chapterDatas['tdkData'] = $this->formatTdk($bookData);
@@ -177,7 +132,7 @@ class ClassicalController extends AbstractController
     protected function formatTdk($datas)
     {
         $tdkData = [
-            'title' => $datas['name'] ?? '古典精华',
+            'title' => $datas['name'] ?? '经典古籍',
             'keywords' => $datas['kewowrd'] ?? '',
             'description' => $datas['brief'] ?? '',
         ];

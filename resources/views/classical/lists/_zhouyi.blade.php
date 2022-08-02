@@ -13,7 +13,7 @@ $symbols = [0 => '■■■　■■■', 1 => '■■■■■■■'];
     @if ($i % $rowCount == 1)<tr>@endif
     <td class="index_left_td">
         <span class="baguatu">
-        @foreach ($infos[$pCode]['symbol'] as $symbol) {{$symbols[$symbol]}}<br>@endforeach
+        @foreach (array_reverse($infos[$pCode]['symbol']) as $symbol) {{$symbols[$symbol]}}<br>@endforeach
         </span>
         <span class="baguaname" style="text-align:center;margin-top: 20px;font-size:14pt;">
             <a href="/show-zhouyi-{{$pCode}}">{{$infos[$pCode]['serial']}}-{{$infos[$pCode]['brief']}}</a>
