@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷五 汉文 报任少卿书 / 报任安书',
-    'nameShort' => '报任少卿书 / 报任安书',
-    'author' => '汉文帝',
-    'keyword' => '古文观止,汉文',
     'chapters' => [
         [
             'content' => [

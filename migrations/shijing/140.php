@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '东门之杨·陈风·国风',
-    'nameShort' => '东门之杨',
-    'nameSpell' => ' dōng mén zhī yáng',
-    'brief' => '刺时也。昬姻失时，男女多违。亲迎，女犹有不至者也。(2章4句)',
-    'keyword' => '关键词：诗经,爱情,国风,陈风',
     'chapters' => [
         [
             'spell' => [

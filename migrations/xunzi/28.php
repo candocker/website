@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '宥坐篇第二十八',
-    'keyword' => '关键词：荀子,宥坐',
     'chapters' => [
         [
             'content' => [

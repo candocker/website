@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '非相篇第五',
-    'keyword' => '关键词：荀子,非相',
     'chapters' => [
         [
             'content' => [

@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷九 唐宋文 释秘演诗集序',
-    'nameShort' => '释秘演诗集序',
-    'author' => '欧阳修',
-    'keyword' => '古文观止,唐宋文',
     'chapters' => [
         [
             'content' => [

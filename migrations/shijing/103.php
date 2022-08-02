@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '卢令·齐风·国风',
-    'nameShort' => '卢令',
-    'nameSpell' => ' lú líng',
-    'brief' => '刺荒也。襄公好田猎毕弋而不修民事，百姓苦之，故陈古以风焉。(3章2句)',
-    'keyword' => '关键词：诗经,赞美,国风,齐风',
     'chapters' => [
         [
             'spell' => [

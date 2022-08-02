@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '子张',
-    'brief' => '记录孔子和弟子们探讨求学为道的言论，弟子们对于孔子的敬仰赞颂',
     'chapters' => [
         [
             'content' => [

@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '尧问篇第三十二',
-    'keyword' => '关键词：荀子,尧问',
     'chapters' => [
         [
             'content' => [

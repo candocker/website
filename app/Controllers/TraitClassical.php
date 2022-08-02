@@ -4,22 +4,6 @@ namespace ModuleWebsite\Controllers;
 
 trait TraitClassical
 {
-    public function getListZhou($code = null)
-    {
-        $file = $this->getBasePath() . "cachedata/zhouyi.php";
-        $infos = require($file);
-        if (!is_null($code)) {
-            return $infos[$code];
-        }
-        $datas = [
-            'chapters' => [
-                ['name' => '上经', 'infos' => array_slice($infos, 0, 30), 'desc' => '周，代名也。易，書名也。其卦本伏羲所畫，有交易、變易之義，故謂之易。其辭則文王、周公所繫，故繫之周。以其簡袠重大，故分為上下兩篇。《經》則伏羲之畫，文王、周公之辭也。並孔子所作之《傳》十篇，凡十二篇。中間頗為諸儒所亂。近世晁氏始正其失，而未能盡合古文。呂氏又更定著為《經》二卷、《傳》十卷，乃復孔氏之舊云。'],
-                ['name' => '下经', 'infos' => array_slice($infos, 30)],
-            ],
-        ];
-        return $datas;
-    }
-
     protected function dealDatas()
     {
         $divinations = [
@@ -74,54 +58,50 @@ trait TraitClassical
         return $data;
     }
 
-    public function bak()
+    public function deal()
     {
-        /*if ($bookCode == 'zhouyi') {
-            $chapterDatas = $this->getListZhou();
-        } else {*/
-        //}
-        /*if ($bookCode == 'zhouyi') {
-            $datas = $this->getListZhou($chapterCode);
-        } else {*/
-        //}
-        //
-        /*$cacheData = $this->request->input('cache_data');
-        if ($cacheData) {
-            $this->dealDatas();exit();
-        }*/
-
-        /*$basePath = $this->getBasePath();
-        foreach ($datas['books'] as $bookCode => $data) {
-            //if (in_array($bookCode, ['zhouyi', 'shijing', 'yizhuan'])) {
-            if (in_array($bookCode, ['shijing', 'guwenguanzhi', 'daodejing', 'chuci', 'lunyu', 'daxue', 'mengzi', 'xunzi', 'zhuangzi', 'zhongyong', 'mozi', 'yizhuan'])) {
+        $datas = $this->getBookInfos(null, true);
+        $basePath = $this->getBasePath();
+        $cancels = ['name', 'brief', 'nameShort', 'author', 'keyword', 'nameSpell'];
+        foreach ($datas['books'] as $bookCode => $bData) {
+            if (!in_array($bookCode, ['shijing'])) {
+            //if (in_array($bookCode, ['zhouyi', 'yizhuan'])) {
+            //if (in_array($bookCode, ['shijing', 'guwenguanzhi', 'daodejing', 'chuci', 'lunyu', 'daxue', 'mengzi', 'xunzi', 'zhuangzi', 'zhongyong', 'mozi', 'yizhuan'])) {
                 continue;
             }
-            $file = $basePath . "book/{$bookCode}_catalogue.php";
+            //$file = $basePath . "book/{$bookCode}_catalogue.php";
             $chapters = $this->getChapterInfos($bookCode);
-            //print_r($chapters);exit();
-            $keyValues = [];
-    
-            foreach ($chapters['chapters'] as $chapter) {
-                    foreach ($chapter['infos'] as $cCode => $data) {
-                        $keyValues[$cCode] = $data;
+            foreach ($chapters['infos'] as $cCode => $cData) {
+                $dFile = $basePath . "{$bookCode}/{$cCode}.php";
+                if (isset($cData['isLost'])) {
+                    continue;
+                }
+                $content = file($dFile);
+                foreach ($content as $index => & $iValue) {
+                    if (strpos($iValue, "'name' => '第节'") !== false) {
+                        //$iValue = str_replace('第节', '白话', $iValue);
                     }
+                    if ($index > 10) {
+                        continue;
+                    }
+
+                    foreach ($cancels as $cancel) {
+                        if (strpos($iValue, "    '{$cancel}' => ") !== false) {
+                            unset($content[$index]);
+                        }
+                    }
+                }
+                $nContent = implode('', $content);
+                file_put_contents($dFile, $nContent);
             }
-            //print_r($keyValues);exit();
-    
-                $str = "<?php\nreturn [\n";
-            foreach ($keyValues as $key => $value) {
-                //print_r($value);exit();
-                $spell = $value['spell'] ?? '';
-                $symbolStr = implode(',', $value['symbol']);
-                $rKey = $value['serial'] < 10 ? '0' . $value['serial'] . $key : $value['serial'] . $key;
-                echo "'" . $rKey . "', ";
-                $str .= "    '{$rKey}' => [\n        'code' => '{$rKey}', 'serial' => {$value['serial']}, 'binSerial' => {$value['binSerial']}, 'name' => '{$value['name']}', 'spell' => '{$spell}', 'brief' => '{$value['brief']}', \n        'down' => '{$value['down']}', 'up' => '{$value['up']}', 'downOther' => '{$value['downOther']}', 'upOther' => '{$value['upOther']}', 'symbol' => [{$symbolStr}],\n    ],\n";
-            }
+            //print_r($chapters);exit();
+
+            /*$str = "<?php\nreturn [\n";
+            $str .= "    '{$rKey}' => [\n        'code' => '{$rKey}',\n    ],\n";
             $str .= "];";
-            echo $str;
-            //file_put_contents($file, $str);
+            file_put_contents($file, $str);*/
         }
-        echo $str;exit();
-        print_r($datas);exit();*/
+        //echo $str;exit();
+        //print_r($datas);exit();
     }
 }

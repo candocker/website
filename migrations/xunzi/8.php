@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '儒效篇第八',
-    'keyword' => '关键词：荀子,儒效',
     'chapters' => [
         [
             'content' => [

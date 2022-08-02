@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '山有扶苏·郑风·国风',
-    'nameShort' => '山有扶苏',
-    'nameSpell' => ' shān yǒu fú sū',
-    'brief' => '刺忽也。所美非美然。(2章4句)',
-    'keyword' => '关键词：诗经,爱情,国风,郑风',
     'chapters' => [
         [
             'spell' => [

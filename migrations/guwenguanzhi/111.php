@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷七 六朝唐文 谏太宗十思疏',
-    'nameShort' => '谏太宗十思疏',
-    'author' => '王勃',
-    'keyword' => '古文观止,六朝唐文',
     'chapters' => [
         [
             'content' => [

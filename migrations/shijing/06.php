@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '桃夭·周南·国风',
-    'nameShort' => '桃夭',
-    'nameSpell' => 'táo yāo',
-    'brief' => '后妃之所致也。不妬忌，则男女以正，婚姻以时，国无鳏民也。(3章4句)',
-    'keyword' => '关键词：古诗三百首,诗经,桃花,民谣,国风,周南',
     'chapters' => [
         [
             'spell' => [

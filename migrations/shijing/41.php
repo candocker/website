@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '北风·邶风·国风',
-    'nameShort' => '北风',
-    'nameSpell' => ' běi fēng',
-    'brief' => '刺虐也。卫国并为威虐，百姓不亲，莫不相携持而去焉。(3章6句)',
-    'keyword' => '关键词：诗经,写风,国风,邶风',
     'chapters' => [
         [
             'spell' => [

@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷四 战国文 邹忌讽齐王纳谏',
-    'nameShort' => '邹忌讽齐王纳谏',
-    'author' => '战国策',
-    'keyword' => '古文观止,战国文',
     'chapters' => [
         [
             'content' => [

@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '匏有苦叶·邶风·国风',
-    'nameShort' => '匏有苦叶',
-    'nameSpell' => ' páo yǒu kǔ yè',
-    'brief' => '刺卫宣公也。公与夫人并为淫乱。(4章4句)',
-    'keyword' => '关键词：诗经,爱情,国风,邶风',
     'chapters' => [
         [
             'spell' => [

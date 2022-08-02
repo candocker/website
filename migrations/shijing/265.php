@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '召旻·荡之什·大雅',
-    'nameShort' => '召旻',
-    'nameSpell' => ' zhào mín',
-    'brief' => '凡伯刺幽王大坏也。旻，闵也，闵天下无如召公之臣也。(4章4:5，3:7句)',
-    'keyword' => '关键词：诗经,怀人,讽刺,大雅,荡之什',
     'chapters' => [
         [
             'spell' => [

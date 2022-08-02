@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷八 唐文 与于襄阳书',
-    'nameShort' => '与于襄阳书',
-    'author' => '韩愈',
-    'keyword' => '古文观止,唐文',
     'chapters' => [
         [
             'content' => [

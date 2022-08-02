@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '祈父·鸿雁之什·小雅',
-    'nameShort' => '祈父',
-    'nameSpell' => ' qí fù',
-    'brief' => '刺宣王也。(3章4句)',
-    'keyword' => '关键词：诗经,抒情,小雅,鸿雁之什',
     'chapters' => [
         [
             'spell' => [

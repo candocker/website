@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '天论篇第十七',
-    'keyword' => '关键词：荀子,天论',
     'chapters' => [
         [
             'content' => [

@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '信南山·谷风之什·小雅',
-    'nameShort' => '信南山',
-    'nameSpell' => ' shēn nán shān',
-    'brief' => '刺幽王也。不能修成王之业，疆理天下，以奉禹功，故君子思古焉。(6章6句)',
-    'keyword' => '关键词：诗经,田园,小雅,谷风之什',
     'chapters' => [
         [
             'spell' => [

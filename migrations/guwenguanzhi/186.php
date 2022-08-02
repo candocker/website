@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十一 宋文 放鹤亭记',
-    'nameShort' => '放鹤亭记',
-    'author' => '苏轼',
-    'keyword' => '古文观止,宋文',
     'chapters' => [
         [
             'content' => [

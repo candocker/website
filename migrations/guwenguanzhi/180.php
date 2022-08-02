@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十 宋文 贾谊论',
-    'nameShort' => '贾谊论',
-    'author' => '苏轼',
-    'keyword' => '古文观止,宋文',
     'chapters' => [
         [
             'content' => [

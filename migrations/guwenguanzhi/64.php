@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷四 战国文 庄辛论幸臣',
-    'nameShort' => '庄辛论幸臣',
-    'author' => '战国策',
-    'keyword' => '古文观止,战国文',
     'chapters' => [
         [
             'content' => [

@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '达孝-第十九章',
-    'brief' => '真正的孝道',
     'chapters' => [
         [
             'content' => [

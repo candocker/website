@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '日月·邶风·国风',
-    'nameShort' => '日月',
-    'nameSpell' => ' rì yuè',
-    'brief' => '卫庄姜伤己也。遭州吁之难，伤己不见荅于先君，以至困穷之诗也。(4章6句)',
-    'keyword' => '关键词：诗经,闺怨,国风,邶风',
     'chapters' => [
         [
             'spell' => [

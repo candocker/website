@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '汝坟·周南·国风',
-    'nameShort' => '汝坟',
-    'nameSpell' => 'rǔ fén',
-    'brief' => '道化行也。文王之化行乎汝坟之国，妇人能闵其君子，犹勉之以正也。(3章4句)',
-    'keyword' => '关键词：诗经,思念,国风,周南',
     'chapters' => [
         [
             'spell' => [

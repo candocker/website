@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '九罭·豳风·国风',
-    'nameShort' => '九罭',
-    'nameSpell' => ' jiǔ yù',
-    'brief' => '美周公也。周大夫刺朝廷之不知也。(4章4,3,3,3句)',
-    'keyword' => '关键词：诗经,国风,豳风',
     'chapters' => [
         [
             'spell' => [

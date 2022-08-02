@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '野有蔓草·郑风·国风',
-    'nameShort' => '野有蔓草',
-    'nameSpell' => ' yě yǒu màn cǎo',
-    'brief' => '思遇时也。君之泽不下流，民穷于兵革，男女失时，思不期而会焉。(2章6句)',
-    'keyword' => '关键词：诗经,爱情,国风,郑风',
     'chapters' => [
         [
             'spell' => [

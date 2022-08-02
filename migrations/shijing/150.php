@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '蜉蝣·曹风·国风',
-    'nameShort' => '蜉蝣',
-    'nameSpell' => ' fú yóu',
-    'brief' => '刺奢也。昭公小学而迫，无法以自守，好奢而任小人，将无所依焉。(3章4句)',
-    'keyword' => '关键词：诗经,咏物,国风,曹风',
     'chapters' => [
         [
             'spell' => [

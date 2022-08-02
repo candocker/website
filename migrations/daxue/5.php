@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '凡事抓住根本',
-    'brief' => '第五章',
     'chapters' => [
         [
             'content' => [

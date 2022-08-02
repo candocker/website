@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '既醉·生民之什·大雅',
-    'nameShort' => '既醉',
-    'nameSpell' => ' jì zuì',
-    'brief' => '大平也。醉酒饱德，人有士君子之行焉。(8章4句)',
-    'keyword' => '关键词：诗经,宴饮,大雅,生民之什',
     'chapters' => [
         [
             'spell' => [

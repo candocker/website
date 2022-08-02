@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '不苟篇第三',
-    'keyword' => '关键词：荀子,不苟',
     'chapters' => [
         [
             'content' => [

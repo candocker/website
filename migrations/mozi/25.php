@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '墨子25章 节葬(下)',
-    'keyword' => '关键词：墨子,节葬(下)',
     'chapters' => [
         [
             'content' => [

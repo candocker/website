@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷一 周文 齐桓公伐楚盟屈完',
-    'nameShort' => '齐桓公伐楚盟屈完',
-    'author' => '左传',
-    'keyword' => '古文观止,周文',
     'chapters' => [
         [
             'content' => [

@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '候人·曹风·国风',
-    'nameShort' => '候人',
-    'nameSpell' => ' hòu rén',
-    'brief' => '刺近小人也。共公远君子而好近小人焉。(4章4句)',
-    'keyword' => '关键词：诗经,怨刺,国风,曹风',
     'chapters' => [
         [
             'spell' => [

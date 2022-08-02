@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '摽有梅·召南·国风',
-    'nameShort' => '摽有梅',
-    'nameSpell' => ' biào yǒu méi',
-    'brief' => '男女及时也。召南之国，被文王之化，男女得以及时也。(3章4句)',
-    'keyword' => '关键词：诗经,抒情,民谣,国风,召南',
     'chapters' => [
         [
             'spell' => [

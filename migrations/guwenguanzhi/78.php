@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷五 汉文 孔子世家赞',
-    'nameShort' => '孔子世家赞',
-    'author' => '史记',
-    'keyword' => '古文观止,汉文',
     'chapters' => [
         [
             'content' => [

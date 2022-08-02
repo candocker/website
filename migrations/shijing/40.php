@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '北门·邶风·国风',
-    'nameShort' => '北门',
-    'nameSpell' => ' běi mén',
-    'brief' => '卫女思归也。嫁于诸侯，父母终，思归宁而不得，故作是诗以自见也。(3章7句)',
-    'keyword' => '关键词：诗经,国风,邶风',
     'chapters' => [
         [
             'spell' => [

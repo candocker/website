@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '天保·鹿鸣之什·小雅',
-    'nameShort' => '天保',
-    'nameSpell' => ' tiān bǎo',
-    'brief' => '下报上也。君能下下以成其政，臣能归美以报其上焉。(6章6句)',
-    'keyword' => '关键词：诗经,祝福,小雅,鹿鸣之什',
     'chapters' => [
         [
             'spell' => [

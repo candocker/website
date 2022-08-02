@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '柏舟·邶风·国风',
-    'nameShort' => '柏舟',
-    'nameSpell' => ' bǎi zhōu',
-    'brief' => '言仁而不遇也。卫顷公之时，仁人不遇，小人在侧。(5章6句)',
-    'keyword' => '关键词：诗经,爱国,国风,邶风',
     'chapters' => [
         [
             'spell' => [

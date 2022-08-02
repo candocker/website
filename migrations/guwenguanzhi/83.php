@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷五 汉文 酷吏列传序',
-    'nameShort' => '酷吏列传序',
-    'author' => '史记',
-    'keyword' => '古文观止,汉文',
     'chapters' => [
         [
             'content' => [

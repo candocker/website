@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '昊天有成命·清庙之什·周颂',
-    'nameShort' => '昊天有成命',
-    'nameSpell' => ' hào tiān yǒu chéng mìng',
-    'brief' => '郊祀天地也。(1章7句)',
-    'keyword' => '关键词：诗经,祭祀,周颂,清庙之什',
     'chapters' => [
         [
             'spell' => [

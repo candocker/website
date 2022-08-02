@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷五 汉文 管晏列传',
-    'nameShort' => '管晏列传',
-    'author' => '史记',
-    'keyword' => '古文观止,汉文',
     'chapters' => [
         [
             'content' => [

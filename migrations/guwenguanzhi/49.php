@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷三 周文 郑伯克段于鄢',
-    'nameShort' => '郑伯克段于鄢',
-    'author' => '谷梁传',
-    'keyword' => '古文观止,周文',
     'chapters' => [
         [
             'content' => [

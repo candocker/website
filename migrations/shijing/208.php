@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '鼓钟·谷风之什·小雅',
-    'nameShort' => '鼓钟',
-    'nameSpell' => ' gǔ zhōng',
-    'brief' => '刺幽王也。(4章5句)',
-    'keyword' => '关键词：诗经,咏物,怀人,小雅,谷风之什',
     'chapters' => [
         [
             'spell' => [

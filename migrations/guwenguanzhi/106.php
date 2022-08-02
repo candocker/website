@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷七 六朝唐文 兰亭序',
-    'nameShort' => '兰亭序',
-    'author' => '陶渊明',
-    'keyword' => '古文观止,六朝唐文',
     'chapters' => [
         [
             'content' => [

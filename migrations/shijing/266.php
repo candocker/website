@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '清庙·清庙之什·周颂',
-    'nameShort' => '清庙',
-    'nameSpell' => ' qīng miào',
-    'brief' => '祀文王也。周公既成洛邑，朝诸侯，率以祀文王焉。(1章8句)',
-    'keyword' => '关键词：诗经,祭祀,乐歌,周颂,清庙之什',
     'chapters' => [
         [
             'spell' => [

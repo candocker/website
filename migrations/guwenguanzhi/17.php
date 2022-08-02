@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷一 周文 烛之武退秦师',
-    'nameShort' => '烛之武退秦师',
-    'author' => '左传',
-    'keyword' => '古文观止,周文',
     'chapters' => [
         [
             'content' => [

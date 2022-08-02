@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '墨子69章 旗帜',
-    'keyword' => '关键词：墨子,旗帜',
     'chapters' => [
         [
             'content' => [

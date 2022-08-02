@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '维天之命·清庙之什·周颂',
-    'nameShort' => '维天之命',
-    'nameSpell' => ' wéi tiān zhī mìng',
-    'brief' => '大平告文王也。(1章8句)',
-    'keyword' => '关键词：诗经,祭祀,周颂,清庙之什',
     'chapters' => [
         [
             'spell' => [

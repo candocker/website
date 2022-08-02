@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '墨子04章 法仪',
-    'keyword' => '关键词：墨子,法仪',
     'chapters' => [
         [
             'content' => [

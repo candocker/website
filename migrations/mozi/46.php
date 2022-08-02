@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '墨子46章 耕柱',
-    'keyword' => '关键词：墨子,耕柱',
     'chapters' => [
         [
             'content' => [

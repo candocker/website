@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '齐物论',
-    'brief' => '庄子第二篇',
     'chapters' => [
         [
             'name' => '第一节',

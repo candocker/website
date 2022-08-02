@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷一 周文 寺人披见文公',
-    'nameShort' => '寺人披见文公',
-    'author' => '左传',
-    'keyword' => '古文观止,周文',
     'chapters' => [
         [
             'content' => [

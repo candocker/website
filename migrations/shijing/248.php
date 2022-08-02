@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '凫鹥·生民之什·大雅',
-    'nameShort' => '凫鹥',
-    'nameSpell' => ' fú yī',
-    'brief' => '守成也。大平之君子，能持盈守成，神祇祖考安乐之也。(5章6句)',
-    'keyword' => '关键词：诗经,宴饮,大雅,生民之什',
     'chapters' => [
         [
             'spell' => [

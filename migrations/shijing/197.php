@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '小弁·节南山之什·小雅',
-    'nameShort' => '小弁',
-    'nameSpell' => ' xiǎo pán',
-    'brief' => '刺幽王也。大子之傅作焉。(8章8句)',
-    'keyword' => '关键词：诗经,哀怨,小雅,节南山之什',
     'chapters' => [
         [
             'spell' => [

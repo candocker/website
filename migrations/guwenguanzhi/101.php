@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷六 汉文 光武帝临淄劳耿弇',
-    'nameShort' => '光武帝临淄劳耿弇',
-    'author' => '诸葛亮',
-    'keyword' => '古文观止,汉文',
     'chapters' => [
         [
             'content' => [

@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十 宋文 晁错论',
-    'nameShort' => '晁错论',
-    'author' => '苏轼',
-    'keyword' => '古文观止,宋文',
     'chapters' => [
         [
             'content' => [

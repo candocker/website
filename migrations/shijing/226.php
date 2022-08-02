@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '采绿·鱼藻之什·小雅',
-    'nameShort' => '采绿',
-    'nameSpell' => ' cǎi lù',
-    'brief' => '刺怨旷也。幽王之时，多怨旷者也。(4章4句)',
-    'keyword' => '关键词：诗经,写人,小雅,鱼藻之什',
     'chapters' => [
         [
             'spell' => [

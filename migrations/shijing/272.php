@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '我将·清庙之什·周颂',
-    'nameShort' => '我将',
-    'nameSpell' => ' wǒ jiāng',
-    'brief' => '祀文王于明堂也。(1章10句)',
-    'keyword' => '关键词：诗经,祭祀,乐歌,周颂,清庙之什',
     'chapters' => [
         [
             'spell' => [

@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '采葛·王风·国风',
-    'nameShort' => '采葛',
-    'nameSpell' => ' cǎi gé',
-    'brief' => '惧谗也。(3章3句)',
-    'keyword' => '关键词：诗经,思念,民谣,国风,王风',
     'chapters' => [
         [
             'spell' => [

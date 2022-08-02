@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷二 周文 子产却楚逆女以兵',
-    'nameShort' => '子产却楚逆女以兵',
-    'author' => '左传',
-    'keyword' => '古文观止,周文',
     'chapters' => [
         [
             'content' => [

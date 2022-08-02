@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷八 唐文 祭鳄鱼文',
-    'nameShort' => '祭鳄鱼文',
-    'author' => '柳宗元',
-    'keyword' => '古文观止,唐文',
     'chapters' => [
         [
             'content' => [

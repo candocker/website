@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十 宋文 五代史宦官传序',
-    'nameShort' => '五代史宦官传序',
-    'author' => '欧阳修',
-    'keyword' => '古文观止,宋文',
     'chapters' => [
         [
             'content' => [

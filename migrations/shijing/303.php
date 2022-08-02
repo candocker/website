@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '玄鸟·商颂',
-    'nameShort' => '玄鸟',
-    'nameSpell' => ' xuán niǎo',
-    'brief' => '祀高宗也。(1章22句)',
-    'keyword' => '关键词：诗经,祭祀,颂歌,商颂',
     'chapters' => [
         [
             'spell' => [

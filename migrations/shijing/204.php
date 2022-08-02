@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '四月·谷风之什·小雅',
-    'nameShort' => '四月',
-    'nameSpell' => ' sì yuè',
-    'brief' => '大夫刺幽王也。在位贪残，下国构祸，怨乱并兴焉。(8章4句)',
-    'keyword' => '关键词：诗经,迁谪,小雅,谷风之什',
     'chapters' => [
         [
             'spell' => [

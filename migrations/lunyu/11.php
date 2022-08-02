@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '先进',
-    'brief' => '记录孔子教育言论和对其弟子的评论',
     'chapters' => [
         [
             'content' => [

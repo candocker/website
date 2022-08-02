@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '墨子27章 天志(中)',
-    'keyword' => '关键词：墨子,天志(中)',
     'chapters' => [
         [
             'content' => [

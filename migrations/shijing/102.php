@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '甫田·齐风·国风',
-    'nameShort' => '甫田',
-    'nameSpell' => ' fǔ tián',
-    'brief' => '大夫刺襄公也。无礼义而求大功，不修德而求诸侯，志大心劳，所以求者非其道也。(3章4句)',
-    'keyword' => '关键词：诗经,怀人,国风,齐风',
     'chapters' => [
         [
             'spell' => [

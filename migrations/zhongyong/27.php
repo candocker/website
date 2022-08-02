@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '明哲-第二十七章',
-    'brief' => '明哲保身，进退自如',
     'chapters' => [
         [
             'content' => [

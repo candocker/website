@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '皇皇者华·鹿鸣之什·小雅',
-    'nameShort' => '皇皇者华',
-    'nameSpell' => ' huáng huáng zhě huā',
-    'brief' => '君遣使臣也。送之以礼乐，言远而有光华也。(5章4句)',
-    'keyword' => '关键词：诗经,赞美,小雅,鹿鸣之什',
     'chapters' => [
         [
             'spell' => [

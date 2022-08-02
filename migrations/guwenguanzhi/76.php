@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷五 汉文 秦楚之际月表',
-    'nameShort' => '秦楚之际月表',
-    'author' => '史记',
-    'keyword' => '古文观止,汉文',
     'chapters' => [
         [
             'content' => [

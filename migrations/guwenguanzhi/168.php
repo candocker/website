@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十 宋文 丰乐亭记',
-    'nameShort' => '丰乐亭记',
-    'author' => '欧阳修',
-    'keyword' => '古文观止,宋文',
     'chapters' => [
         [
             'content' => [

@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷九 唐宋文 驳复仇议',
-    'nameShort' => '驳复仇议',
-    'author' => '柳宗元',
-    'keyword' => '古文观止,唐宋文',
     'chapters' => [
         [
             'content' => [

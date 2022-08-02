@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '采苓·唐风·国风',
-    'nameShort' => '采苓',
-    'nameSpell' => ' cǎi líng',
-    'brief' => '刺晋献公也。献公好听谗焉。(3章8句)',
-    'keyword' => '关键词：诗经,咏物,唐风,国风',
     'chapters' => [
         [
             'spell' => [

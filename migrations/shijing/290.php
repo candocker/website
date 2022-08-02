@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '载芟·闵予小子之什·周颂',
-    'nameShort' => '载芟',
-    'nameSpell' => ' zài shān',
-    'brief' => '春籍田而祈社稷也。(1章31句)',
-    'keyword' => '关键词：诗经,祭祀,乐歌,周颂,闵予小子之什',
     'chapters' => [
         [
             'spell' => [

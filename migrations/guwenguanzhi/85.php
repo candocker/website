@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷五 汉文 滑稽列传',
-    'nameShort' => '滑稽列传',
-    'author' => '史记',
-    'keyword' => '古文观止,汉文',
     'chapters' => [
         [
             'content' => [

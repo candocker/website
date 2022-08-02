@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '緜·文王之什·大雅',
-    'nameShort' => '緜',
-    'nameSpell' => ' mián',
-    'brief' => '文王之兴，本由大王也。(9章6句)',
-    'keyword' => '关键词：诗经,咏史怀古,大雅,文王之什',
     'chapters' => [
         [
             'spell' => [

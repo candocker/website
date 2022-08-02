@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '樛木·周南·国风',
-    'nameShort' => '樛木',
-    'nameSpell' => 'jiū mù',
-    'brief' => '后妃逮下也。言能逮下，而无嫉妬之心焉。(3章4句)',
-    'keyword' => '关键词：诗经,祝福,国风,周南',
     'chapters' => [
         [
             'spell' => [

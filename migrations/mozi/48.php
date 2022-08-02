@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '墨子48章 公孟',
-    'keyword' => '关键词：墨子,公孟',
     'chapters' => [
         [
             'content' => [

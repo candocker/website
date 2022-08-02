@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '皇矣·文王之什·大雅',
-    'nameShort' => '皇矣',
-    'nameSpell' => ' huáng yǐ',
-    'brief' => '美周也。天监代殷，莫若周。周世世修德，莫若文王。(8章12句)',
-    'keyword' => '关键词：诗经,咏史怀古,赞颂,大雅,文王之什',
     'chapters' => [
         [
             'spell' => [

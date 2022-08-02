@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '烈祖·商颂',
-    'nameShort' => '烈祖',
-    'nameSpell' => ' liè zǔ',
-    'brief' => '祀中宗也。(1章22句)',
-    'keyword' => '关键词：诗经,祭祀,颂歌,商颂',
     'chapters' => [
         [
             'spell' => [

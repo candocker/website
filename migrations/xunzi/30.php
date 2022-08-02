@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '法行篇第三十',
-    'keyword' => '关键词：荀子,法行',
     'chapters' => [
         [
             'content' => [

@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '问政-第二十章',
-    'brief' => '治国平天下的法则',
     'chapters' => [
         [
             'content' => [

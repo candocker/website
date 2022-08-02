@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷六 汉文 尚德缓刑书',
-    'nameShort' => '尚德缓刑书',
-    'author' => '光武帝',
-    'keyword' => '古文观止,汉文',
     'chapters' => [
         [
             'content' => [

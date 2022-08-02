@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '株林·陈风·国风',
-    'nameShort' => '株林',
-    'nameSpell' => ' zhū lín',
-    'brief' => '刺灵公也。淫乎夏姬，驱驰而往，朝夕不休息焉。(2章4句)',
-    'keyword' => '关键词：诗经,怨刺,国风,陈风',
     'chapters' => [
         [
             'spell' => [

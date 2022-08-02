@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷四 战国文 唐雎不辱使命',
-    'nameShort' => '唐雎不辱使命',
-    'author' => '战国策',
-    'keyword' => '古文观止,战国文',
     'chapters' => [
         [
             'content' => [

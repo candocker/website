@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十 宋文 张益州画像记',
-    'nameShort' => '张益州画像记',
-    'author' => '苏洵',
-    'keyword' => '古文观止,宋文',
     'chapters' => [
         [
             'content' => [

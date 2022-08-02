@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '渐渐之石·鱼藻之什·小雅',
-    'nameShort' => '渐渐之石',
-    'nameSpell' => ' chán chán zhī shí',
-    'brief' => '下国刺幽王也。戎狄叛之，荆舒不至，乃命将率东征。役久病于外，故作是诗也。(3章6句)',
-    'keyword' => '关键词：诗经,叙事,战争,小雅,鱼藻之什',
     'chapters' => [
         [
             'spell' => [

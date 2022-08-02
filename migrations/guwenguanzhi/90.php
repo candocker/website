@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷六 汉文 文帝议佐百姓诏',
-    'nameShort' => '文帝议佐百姓诏',
-    'author' => '汉武帝',
-    'keyword' => '古文观止,汉文',
     'chapters' => [
         [
             'content' => [

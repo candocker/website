@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '扬之水·王风·国风',
-    'nameShort' => '扬之水',
-    'nameSpell' => ' yáng zhī shuǐ',
-    'brief' => '刺平王也。不抚其民，而远屯戍于母家，周人怨思焉。(3章6句)',
-    'keyword' => '关键词：诗经,思念,国风,王风',
     'chapters' => [
         [
             'spell' => [

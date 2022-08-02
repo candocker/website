@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '君子于役·王风·国风',
-    'nameShort' => '君子于役',
-    'nameSpell' => ' jūn zǐ yú yì',
-    'brief' => '刺平王也。君子行役无期度，大夫思其危难以风焉。(2章8句)',
-    'keyword' => '关键词：诗经,闺怨,战争,民谣,国风,王风',
     'chapters' => [
         [
             'spell' => [

@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '杕杜·鹿鸣之什·小雅',
-    'nameShort' => '杕杜',
-    'nameSpell' => ' dì dù',
-    'brief' => '劳还役也。(4章7句)',
-    'keyword' => '关键词：诗经,思念,小雅,鹿鸣之什',
     'chapters' => [
         [
             'spell' => [

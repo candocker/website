@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷二 周文 子产坏晋馆垣',
-    'nameShort' => '子产坏晋馆垣',
-    'author' => '左传',
-    'keyword' => '古文观止,周文',
     'chapters' => [
         [
             'content' => [

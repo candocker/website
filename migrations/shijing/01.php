@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '关雎·国风·周南',
-    'nameShort' => '关雎',
-    'nameSpell' => 'guān jū',
-    'keyword' => '古诗,诗经,爱情,国风,周南',
-    'brief' => '后妃之德也。(5章4句)',
     'chapters' => [
         [
             'spell' => [

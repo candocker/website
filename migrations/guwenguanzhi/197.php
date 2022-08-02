@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十一 宋文 寄欧阳舍人书',
-    'nameShort' => '寄欧阳舍人书',
-    'author' => '曾巩',
-    'keyword' => '古文观止,宋文',
     'chapters' => [
         [
             'content' => [

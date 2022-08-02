@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷一 周文 臧僖伯谏观鱼',
-    'nameShort' => '臧僖伯谏观鱼',
-    'author' => '左传',
-    'keyword' => '古文观止,周文',
     'chapters' => [
         [
             'content' => [

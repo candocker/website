@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷九 唐宋文 种树郭橐驼传',
-    'nameShort' => '种树郭橐驼传',
-    'author' => '柳宗元',
-    'keyword' => '古文观止,唐宋文',
     'chapters' => [
         [
             'content' => [

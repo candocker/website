@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '女曰鸡鸣·郑风·国风',
-    'nameShort' => '女曰鸡鸣',
-    'nameSpell' => ' nǚ yuē jī míng',
-    'brief' => '刺不说德也。陈古义以刺今，不说德而好色也。(3章6句)',
-    'keyword' => '关键词：诗经,爱情,民谣,国风,郑风',
     'chapters' => [
         [
             'spell' => [

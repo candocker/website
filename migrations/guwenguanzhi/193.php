@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十一 宋文 方山子传',
-    'nameShort' => '方山子传',
-    'author' => '苏轼',
-    'keyword' => '古文观止,宋文',
     'chapters' => [
         [
             'content' => [

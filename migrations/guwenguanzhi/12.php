@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷一 周文 阴饴甥对秦伯',
-    'nameShort' => '阴饴甥对秦伯',
-    'author' => '左传',
-    'keyword' => '古文观止,周文',
     'chapters' => [
         [
             'content' => [

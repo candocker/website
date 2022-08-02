@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '问强-第十章',
-    'brief' => '什么是真正的强？',
     'chapters' => [
         [
             'content' => [

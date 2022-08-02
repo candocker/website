@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '阳货',
-    'brief' => '记录孔子论述仁德，阐发礼乐治国之道',
     'chapters' => [
         [
             'content' => [

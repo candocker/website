@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '卷阿·生民之什·大雅',
-    'nameShort' => '卷阿',
-    'nameSpell' => ' quán ē',
-    'brief' => '召康公戒成王也。言求贤用吉士也。(10章6：5、:4：6句)',
-    'keyword' => '关键词：诗经,赞颂,大雅,生民之什',
     'chapters' => [
         [
             'spell' => [

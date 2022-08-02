@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '泮水·駉之什·鲁颂',
-    'nameShort' => '泮水',
-    'nameSpell' => ' pàn shuǐ',
-    'brief' => '颂僖公能修泮宫也。(8章8句)',
-    'keyword' => '关键词：诗经,写水,鲁颂,駉之什',
     'chapters' => [
         [
             'spell' => [

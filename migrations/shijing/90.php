@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '风雨·郑风·国风',
-    'nameShort' => '风雨',
-    'nameSpell' => ' fēng yǔ',
-    'brief' => '思君子也。乱世则思君子，不改其度焉。(3章4句)',
-    'keyword' => '关键词：诗经,写雨,怀人,民谣,国风,郑风',
     'chapters' => [
         [
             'spell' => [

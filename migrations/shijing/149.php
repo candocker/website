@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '匪风·桧风·国风',
-    'nameShort' => '匪风',
-    'nameSpell' => ' fěi fēng',
-    'brief' => '思周道也。小学政乱，忧及祸难，而思周道焉。(3章4句)',
-    'keyword' => '关键词：诗经,写风,思乡,国风,桧风',
     'chapters' => [
         [
             'spell' => [

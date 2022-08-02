@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '思文·清庙之什·周颂',
-    'nameShort' => '思文',
-    'nameSpell' => ' sī wén',
-    'brief' => '后稷配天也。(1章8句)',
-    'keyword' => '关键词：诗经,赞颂,祭祀,写人,周颂,清庙之什',
     'chapters' => [
         [
             'spell' => [

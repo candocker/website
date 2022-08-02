@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '小宛·节南山之什·小雅',
-    'nameShort' => '小宛',
-    'nameSpell' => ' xiǎo wǎn',
-    'brief' => '大夫刺宣王也。(6章6句)',
-    'keyword' => '关键词：诗经,伤怀,小雅,节南山之什',
     'chapters' => [
         [
             'spell' => [

@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '駉·駉之什·鲁颂',
-    'nameShort' => '駉',
-    'nameSpell' => ' jiōng',
-    'brief' => '颂僖公也。(4章8句)',
-    'keyword' => '关键词：诗经,写马,鲁颂,駉之什',
     'chapters' => [
         [
             'spell' => [

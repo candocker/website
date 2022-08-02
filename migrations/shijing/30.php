@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '终风·邶风·国风',
-    'nameShort' => '终风',
-    'nameSpell' => ' zhōng fēng',
-    'brief' => '卫庄姜伤己也。遭州吁之暴，见侮慢而不能正也。(4章4句)',
-    'keyword' => '关键词：诗经,闺怨,民谣,国风,邶风',
     'chapters' => [
         [
             'spell' => [

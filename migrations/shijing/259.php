@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '崧高·荡之什·大雅',
-    'nameShort' => '崧高',
-    'nameSpell' => ' sōng gāo',
-    'brief' => '尹吉甫美宣王也。天下复平，能建国亲诸侯，褒赏申伯焉。(8章8句)',
-    'keyword' => '关键词：诗经,赞颂,大雅,荡之什',
     'chapters' => [
         [
             'spell' => [

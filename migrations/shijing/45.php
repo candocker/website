@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '柏舟·鄘风·国风',
-    'nameShort' => '柏舟',
-    'nameSpell' => ' bǎi zhōu',
-    'brief' => '思伋、寿也。卫宣公之二子争相为死，国人伤而思之，作是诗也。(2章7句)',
-    'keyword' => '关键词：诗经,婚恋,国风,鄘风',
     'chapters' => [
         [
             'spell' => [

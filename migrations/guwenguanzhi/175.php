@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十 宋文 心术',
-    'nameShort' => '心术',
-    'author' => '苏洵',
-    'keyword' => '古文观止,宋文',
     'chapters' => [
         [
             'content' => [

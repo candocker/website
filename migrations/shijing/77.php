@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '叔于田·郑风·国风',
-    'nameShort' => '叔于田',
-    'nameSpell' => ' shū yú tián',
-    'brief' => '刺庄公也。叔处于京，缮甲治兵，以出于田，国人说而归之。(3章5句)',
-    'keyword' => '关键词：诗经,写人,赞美,狩猎,国风,郑风',
     'chapters' => [
         [
             'spell' => [

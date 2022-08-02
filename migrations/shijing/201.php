@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '谷风·谷风之什·小雅',
-    'nameShort' => '谷风',
-    'nameSpell' => ' gǔ fēng',
-    'brief' => '刺幽王也。天下俗薄，朋友道绝焉。(3章6句)',
-    'keyword' => '关键词：诗经,弃妇,小雅,谷风之什',
     'chapters' => [
         [
             'spell' => [

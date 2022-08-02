@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '著·齐风·国风',
-    'nameShort' => '著',
-    'nameSpell' => ' zhù',
-    'brief' => '刺时也。时不亲迎也。(3章3句)',
-    'keyword' => '关键词：诗经,国风,齐风',
     'chapters' => [
         [
             'spell' => [

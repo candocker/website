@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '至圣-第三十一章',
-    'brief' => '德厚才能载物',
     'chapters' => [
         [
             'content' => [

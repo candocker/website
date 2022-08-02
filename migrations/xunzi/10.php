@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '富国篇第十',
-    'keyword' => '关键词：荀子,富国',
     'chapters' => [
         [
             'content' => [

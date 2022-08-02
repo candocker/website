@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷九 唐宋文 纵囚论',
-    'nameShort' => '纵囚论',
-    'author' => '欧阳修',
-    'keyword' => '古文观止,唐宋文',
     'chapters' => [
         [
             'content' => [

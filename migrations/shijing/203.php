@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '大东·谷风之什·小雅',
-    'nameShort' => '大东',
-    'nameSpell' => ' dà dōng',
-    'brief' => '刺乱也。东国困于役而伤于财，谭大夫作是诗以告病焉。(7章8句)',
-    'keyword' => '关键词：诗经,战争,生活,长诗,小雅,谷风之什',
     'chapters' => [
         [
             'spell' => [

@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '非十二子篇第六',
-    'keyword' => '关键词：荀子,非十二子',
     'chapters' => [
         [
             'content' => [

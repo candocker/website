@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '谷风·邶风·国风',
-    'nameShort' => '谷风',
-    'nameSpell' => ' gǔ fēng',
-    'brief' => '刺夫妇失道也。卫人化其上，淫于新昬而弃其旧室，夫妇离绝，国俗伤败焉。(6章8句)',
-    'keyword' => '关键词：诗经,闺怨,国风,邶风',
     'chapters' => [
         [
             'spell' => [

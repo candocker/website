@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '无羊·鸿雁之什·小雅',
-    'nameShort' => '无羊',
-    'nameSpell' => ' wú yáng',
-    'brief' => '宣王考牧也。(4章8句)',
-    'keyword' => '关键词：诗经,写羊,小雅,鸿雁之什',
     'chapters' => [
         [
             'spell' => [

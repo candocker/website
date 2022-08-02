@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十 宋文 泷冈阡表',
-    'nameShort' => '泷冈阡表',
-    'author' => '欧阳修',
-    'keyword' => '古文观止,宋文',
     'chapters' => [
         [
             'content' => [

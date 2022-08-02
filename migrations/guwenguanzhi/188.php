@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十一 宋文 潮州韩文公庙碑',
-    'nameShort' => '潮州韩文公庙碑',
-    'author' => '苏轼',
-    'keyword' => '古文观止,宋文',
     'chapters' => [
         [
             'content' => [

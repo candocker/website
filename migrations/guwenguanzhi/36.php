@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷三 周文 召公谏厉王止谤',
-    'nameShort' => '召公谏厉王止谤',
-    'author' => '国语',
-    'keyword' => '古文观止,周文',
     'chapters' => [
         [
             'content' => [

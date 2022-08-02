@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '正论篇第十八',
-    'keyword' => '关键词：荀子,正论',
     'chapters' => [
         [
             'content' => [

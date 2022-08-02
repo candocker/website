@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '有杕之杜·唐风·国风',
-    'nameShort' => '有杕之杜',
-    'nameSpell' => ' yǒu dì zhī dù',
-    'brief' => '刺晋武也。武公寡特，兼其宗族，而不求贤以自辅焉。(2章6句)',
-    'keyword' => '关键词：诗经,孤独,唐风,国风',
     'chapters' => [
         [
             'spell' => [

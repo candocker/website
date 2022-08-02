@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '赋篇第二十六',
-    'keyword' => '关键词：荀子,赋',
     'chapters' => [
         [
             'content' => [

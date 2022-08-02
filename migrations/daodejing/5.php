@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '多言数穷',
-    'brief' => '道德经第五章',
     'chapters' => [
         [
             'name' => '白话',

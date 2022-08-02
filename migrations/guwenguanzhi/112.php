@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷七 六朝唐文 为徐敬业讨武曌檄 / 代李敬业讨武曌檄',
-    'nameShort' => '为徐敬业讨武曌檄 / 代李敬业讨武曌檄',
-    'author' => '李白',
-    'keyword' => '古文观止,六朝唐文',
     'chapters' => [
         [
             'content' => [

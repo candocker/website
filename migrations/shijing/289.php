@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '小毖·闵予小子之什·周颂',
-    'nameShort' => '小毖',
-    'nameSpell' => ' xiǎo bì',
-    'brief' => '嗣王求助也。(1章8句)',
-    'keyword' => '关键词：诗经,周颂,闵予小子之什',
     'chapters' => [
         [
             'spell' => [

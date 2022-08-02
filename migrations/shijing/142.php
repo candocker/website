@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '防有鹊巢·陈风·国风',
-    'nameShort' => '防有鹊巢',
-    'nameSpell' => ' fáng yǒu què cháo',
-    'brief' => '忧谗贼也。宣公多信谗，君子忧惧焉。(2章4句)',
-    'keyword' => '关键词：诗经,抒情,国风,陈风',
     'chapters' => [
         [
             'spell' => [

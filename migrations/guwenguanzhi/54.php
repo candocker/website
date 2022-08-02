@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷三 周文 公子重耳对秦客',
-    'nameShort' => '公子重耳对秦客',
-    'author' => '礼记·檀弓',
-    'keyword' => '古文观止,周文',
     'chapters' => [
         [
             'content' => [

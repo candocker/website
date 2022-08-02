@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '正名篇第二十二',
-    'keyword' => '关键词：荀子,正名',
     'chapters' => [
         [
             'content' => [

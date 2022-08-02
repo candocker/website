@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '服膺-第八章',
-    'brief' => '牢牢抓住不要放弃',
     'chapters' => [
         [
             'content' => [

@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '鹤鸣·鸿雁之什·小雅',
-    'nameShort' => '鹤鸣',
-    'nameSpell' => ' hè míng',
-    'brief' => '诲宣王也。(2章9句)',
-    'keyword' => '关键词：诗经,写鸟,抒情,小雅,鸿雁之什',
     'chapters' => [
         [
             'spell' => [

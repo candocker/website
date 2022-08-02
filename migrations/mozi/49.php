@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '墨子49章 鲁问',
-    'keyword' => '关键词：墨子,鲁问',
     'chapters' => [
         [
             'content' => [

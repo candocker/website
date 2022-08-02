@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '芣苢·周南·国风',
-    'nameShort' => '芣苢',
-    'nameSpell' => 'fú yǐ',
-    'brief' => '后妃之美也。和平则妇人乐有子矣。(3章4句)',
-    'keyword' => '关键词：诗经,民歌,劳动,国风,周南',
     'chapters' => [
         [
             'spell' => [

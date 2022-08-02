@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷四 战国文 范雎说秦王',
-    'nameShort' => '范雎说秦王',
-    'author' => '战国策',
-    'keyword' => '古文观止,战国文',
     'chapters' => [
         [
             'content' => [

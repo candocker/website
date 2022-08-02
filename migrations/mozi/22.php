@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '墨子22章 节用(下)',
-    'keyword' => '关键词：墨子,节用(下)',
     'chapters' => [
         [
             'content' => [

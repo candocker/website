@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷六 汉文 出师表 / 前出师表',
-    'nameShort' => '出师表 / 前出师表',
-    'author' => '李密',
-    'keyword' => '古文观止,汉文',
     'chapters' => [
         [
             'content' => [

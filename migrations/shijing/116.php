@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '扬之水·唐风·国风',
-    'nameShort' => '扬之水',
-    'nameSpell' => ' yáng zhī shuǐ',
-    'brief' => '刺晋昭公也。昭公分国以封沃，沃盛强，昭公微弱，国人将叛而归沃焉。(3章2:6,4句)',
-    'keyword' => '关键词：诗经,写水,国风,唐风',
     'chapters' => [
         [
             'spell' => [

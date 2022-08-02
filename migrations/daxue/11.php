@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '平天下先治国',
-    'brief' => '第十一章',
     'chapters' => [
         [
             'content' => [

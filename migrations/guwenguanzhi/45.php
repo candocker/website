@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷三 周文 申胥谏许越成',
-    'nameShort' => '申胥谏许越成',
-    'author' => '国语',
-    'keyword' => '佚名',
     'chapters' => [
         [
             'content' => [

@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '巷伯·节南山之什·小雅',
-    'nameShort' => '巷伯',
-    'nameSpell' => ' xiàng bó',
-    'brief' => '刺幽王也。寺人伤于谗，故作是诗也。(7章4:4,5,8,6句)',
-    'keyword' => '关键词：诗经,小雅,节南山之什',
     'chapters' => [
         [
             'spell' => [

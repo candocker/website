@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '行露·召南·国风',
-    'nameShort' => '行露',
-    'nameSpell' => ' háng lù',
-    'brief' => '召伯听讼也。衰乱之俗微，贞信之教兴，强暴之男不能侵陵贞女也。(3章3,6,6句)',
-    'keyword' => '关键词：诗经,国风,召南',
     'chapters' => [
         [
             'spell' => [

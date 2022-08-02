@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '卫灵公',
-    'brief' => '记录孔子及其弟子在周游列国时的关于仁德治国方面的言论',
     'chapters' => [
         [
             'content' => [

@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '哀公篇第三十一',
-    'keyword' => '关键词：荀子,哀公',
     'chapters' => [
         [
             'content' => [

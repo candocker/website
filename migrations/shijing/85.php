@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '萚兮·郑风·国风',
-    'nameShort' => '萚兮',
-    'nameSpell' => ' tuò xī',
-    'brief' => '刺忽也。君弱臣强，不倡而和也。(2章4句)',
-    'keyword' => '关键词：诗经,伤怀,国风,郑风',
     'chapters' => [
         [
             'spell' => [

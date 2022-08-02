@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '墓门·陈风·国风',
-    'nameShort' => '墓门',
-    'nameSpell' => ' mù mén',
-    'brief' => '刺陈佗也。陈佗无良师傅，以至于不义，恶加于万民焉。(2章6句)',
-    'keyword' => '关键词：诗经,怨刺,国风,陈风',
     'chapters' => [
         [
             'spell' => [

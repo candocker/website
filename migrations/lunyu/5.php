@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '公冶长',
-    'brief' => '讲评价古今人物及其得失',
     'chapters' => [
         [
             'content' => [

@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '閟宫·駉之什·鲁颂',
-    'nameShort' => '閟宫',
-    'nameSpell' => ' bì gōng',
-    'brief' => '颂僖公能复周公之宇也。(8章17、12、38、17、8、8、10、10句)',
-    'keyword' => '关键词：诗经,长诗,写人,鲁颂,駉之什',
     'chapters' => [
         [
             'spell' => [

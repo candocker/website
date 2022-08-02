@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '板·生民之什·大雅',
-    'nameShort' => '板',
-    'nameSpell' => ' bǎn',
-    'brief' => '凡伯刺厉王也。(8章8句)',
-    'keyword' => '关键词：诗经,讽刺,大雅,生民之什',
     'chapters' => [
         [
             'spell' => [

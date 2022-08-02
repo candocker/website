@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '硕鼠·魏风·国风',
-    'nameShort' => '硕鼠',
-    'nameSpell' => ' shuò shǔ',
-    'brief' => '刺重敛也。国人刺其君重敛，蚕食于民，不修其政，贪而畏人，若大鼠也。(3章8句)',
-    'keyword' => '关键词：古诗三百首,诗经,寓理,国风,魏风',
     'chapters' => [
         [
             'spell' => [

@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '丰·郑风·国风',
-    'nameShort' => '丰',
-    'nameSpell' => ' fēng',
-    'brief' => '刺乱也。婚姻之道缺，阳倡而阴不和，男行而女不随。(4章2:3,2:4句)',
-    'keyword' => '关键词：诗经,国风,郑风',
     'chapters' => [
         [
             'spell' => [

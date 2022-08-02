@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷三 周文 有子之言似夫子',
-    'nameShort' => '有子之言似夫子',
-    'author' => '礼记·檀弓',
-    'keyword' => '古文观止,周文',
     'chapters' => [
         [
             'content' => [

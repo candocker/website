@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '旄丘·邶风·国风',
-    'nameShort' => '旄丘',
-    'nameSpell' => ' máo qiū',
-    'brief' => '责卫伯也。狄人迫逐黎侯，黎侯寓于卫。卫不能修方伯连率之职，黎之臣子以责于卫也。(4章4句)',
-    'keyword' => '关键词：诗经,国风,邶风',
     'chapters' => [
         [
             'spell' => [

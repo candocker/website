@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '将仲子·郑风·国风',
-    'nameShort' => '将仲子',
-    'nameSpell' => ' qiāng zhòng zǐ',
-    'brief' => '刺庄公也。不胜其母，以害其弟。弟叔失道而公弗制，祭仲谏而公弗听，小不忍以致大乱焉。(3章8句)',
-    'keyword' => '关键词：诗经,爱情,民谣,国风,郑风',
     'chapters' => [
         [
             'spell' => [

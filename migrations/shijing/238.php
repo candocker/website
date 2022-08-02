@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '棫朴·文王之什·大雅',
-    'nameShort' => '棫朴',
-    'nameSpell' => ' yù pǔ',
-    'brief' => '文王能官人也。(5章4句)',
-    'keyword' => '关键词：诗经,赞美,大雅,文王之什',
     'chapters' => [
         [
             'spell' => [

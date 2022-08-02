@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '成相篇第二十五',
-    'keyword' => '关键词：荀子,成相',
     'chapters' => [
         [
             'content' => [

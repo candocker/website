@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '青蝇·甫田之什·小雅',
-    'nameShort' => '青蝇',
-    'nameSpell' => ' qīng yíng',
-    'brief' => '大夫刺幽王也。(3章4句)',
-    'keyword' => '关键词：诗经,讽刺,小雅,甫田之什',
     'chapters' => [
         [
             'spell' => [

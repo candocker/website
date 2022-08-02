@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '中谷有蓷·王风·国风',
-    'nameShort' => '中谷有蓷',
-    'nameSpell' => ' zhōng gǔ yǒu tuī',
-    'brief' => '闵周也。夫妇日以衰薄，凶年饥馑，室家相弃尔。(3章6句)',
-    'keyword' => '关键词：诗经,闺怨,国风,王风',
     'chapters' => [
         [
             'spell' => [

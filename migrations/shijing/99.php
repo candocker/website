@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '东方之日·齐风·国风',
-    'nameShort' => '东方之日',
-    'nameSpell' => ' dōng fāng zhī rì',
-    'brief' => '刺衰也。君臣失道，男女淫奔，不能以礼化也。(2章5句)',
-    'keyword' => '关键词：诗经,女子,国风,齐风',
     'chapters' => [
         [
             'spell' => [

@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '巧言·节南山之什·小雅',
-    'nameShort' => '巧言',
-    'nameSpell' => ' qiǎo yán',
-    'brief' => '刺幽王也。大夫伤于谗，故作是诗也。(6章8句)',
-    'keyword' => '关键词：诗经,伤怀,小雅,节南山之什',
     'chapters' => [
         [
             'spell' => [

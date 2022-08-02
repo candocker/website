@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '汉广·周南·国风',
-    'nameShort' => '汉广',
-    'nameSpell' => 'hàn guǎng',
-    'brief' => '德广所及也。文王之道被于南国，美化行乎江汉之域，无思犯礼，求而不可得也。(3章8句)',
-    'keyword' => '关键词：诗经,爱情,国风,周南',
     'chapters' => [
         [
             'spell' => [

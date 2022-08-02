@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '噫嘻·臣工之什·周颂',
-    'nameShort' => '噫嘻',
-    'nameSpell' => ' yī xī',
-    'brief' => '春夏祈谷于上帝也。(1章8句)',
-    'keyword' => '关键词：诗经,农事,周颂,臣工之什',
     'chapters' => [
         [
             'spell' => [

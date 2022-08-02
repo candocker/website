@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '大明·文王之什·大雅',
-    'nameShort' => '大明',
-    'nameSpell' => ' dà míng',
-    'brief' => '文王有明德，故天复命武王也。(8章6、6、8、6、8、8、6、8句)',
-    'keyword' => '关键词：诗经,咏史怀古,大雅,文王之什',
     'chapters' => [
         [
             'spell' => [

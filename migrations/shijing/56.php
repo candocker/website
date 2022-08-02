@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '考槃·卫风·国风',
-    'nameShort' => '考槃',
-    'nameSpell' => ' kǎo pán',
-    'brief' => '刺庄公也。不能继先公之业，使贤者退而穷处。(3章4句)',
-    'keyword' => '关键词：诗经,讽刺,国风,卫风',
     'chapters' => [
         [
             'spell' => [

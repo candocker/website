@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '有客·臣工之什·周颂',
-    'nameShort' => '有客',
-    'nameSpell' => ' yǒu kè',
-    'brief' => '微子来见祖庙也。(1章12句)',
-    'keyword' => '关键词：诗经,宴会,乐歌,周颂,臣工之什',
     'chapters' => [
         [
             'spell' => [

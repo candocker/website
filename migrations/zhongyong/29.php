@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '三重-第二十九章',
-    'brief' => '无征不信，不信民弗从',
     'chapters' => [
         [
             'content' => [

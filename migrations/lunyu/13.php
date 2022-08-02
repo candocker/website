@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '子路',
-    'brief' => '记录孔子论述为人和为政的道理',
     'chapters' => [
         [
             'content' => [

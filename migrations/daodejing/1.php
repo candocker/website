@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '离骚 屈原',
-    'brief' => '',
     'chapters' => [
         [
             'content' => [

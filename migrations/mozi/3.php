@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '墨子03章 所染',
-    'keyword' => '关键词：墨子,所染',
     'chapters' => [
         [
             'content' => [

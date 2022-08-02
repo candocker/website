@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '乡党',
-    'brief' => '记录孔子言谈举止，衣食住行和生活习惯',
     'chapters' => [
         [
             'content' => [

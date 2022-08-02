@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '湛露·南有嘉鱼之什·小雅',
-    'nameShort' => '湛露',
-    'nameSpell' => ' zhàn lù',
-    'brief' => '天子燕诸侯也。(4章4句)',
-    'keyword' => '关键词：诗经,宴会,写酒,小雅,南有嘉鱼之什',
     'chapters' => [
         [
             'spell' => [

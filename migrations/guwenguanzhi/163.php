@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十 宋文 梅圣俞诗集序',
-    'nameShort' => '梅圣俞诗集序',
-    'author' => '欧阳修',
-    'keyword' => '古文观止,宋文',
     'chapters' => [
         [
             'content' => [

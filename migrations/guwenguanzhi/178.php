@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十 宋文 范增论',
-    'nameShort' => '范增论',
-    'author' => '苏轼',
-    'keyword' => '古文观止,宋文',
     'chapters' => [
         [
             'content' => [

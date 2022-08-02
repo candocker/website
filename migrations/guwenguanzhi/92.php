@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷六 汉文 武帝求茂才异等诏',
-    'nameShort' => '武帝求茂才异等诏',
-    'author' => '贾谊',
-    'keyword' => '古文观止,汉文',
     'chapters' => [
         [
             'content' => [

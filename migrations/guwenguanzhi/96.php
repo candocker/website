@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷六 汉文 狱中上梁王书',
-    'nameShort' => '狱中上梁王书',
-    'author' => '李陵',
-    'keyword' => '古文观止,汉文',
     'chapters' => [
         [
             'content' => [

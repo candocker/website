@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '雍也',
-    'brief' => '记录孔子和弟子们的言行',
     'chapters' => [
         [
             'content' => [

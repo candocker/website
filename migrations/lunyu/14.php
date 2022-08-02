@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '宪问',
-    'brief' => '记录孔子和其弟子论修身为人之道，以及对古人的评价',
     'chapters' => [
         [
             'content' => [

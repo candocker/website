@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '长发·商颂',
-    'nameShort' => '长发',
-    'nameSpell' => ' cháng fà',
-    'brief' => '大禘也。(7章8、7、7、7、7、9、6句)',
-    'keyword' => '关键词：诗经,祭祀,乐歌,商颂',
     'chapters' => [
         [
             'spell' => [

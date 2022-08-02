@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '无将大车·谷风之什·小雅',
-    'nameShort' => '无将大车',
-    'nameSpell' => ' wú jiāng dà jū',
-    'brief' => '大夫悔将小人也。(3章4句)',
-    'keyword' => '关键词：诗经,伤怀,小雅,谷风之什',
     'chapters' => [
         [
             'spell' => [

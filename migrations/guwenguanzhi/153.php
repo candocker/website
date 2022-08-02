@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷九 唐宋文 贺进士王参元失火书',
-    'nameShort' => '贺进士王参元失火书',
-    'author' => '王禹偁',
-    'keyword' => '古文观止,唐宋文',
     'chapters' => [
         [
             'content' => [

@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '蒹葭·秦风·国风',
-    'nameShort' => '蒹葭',
-    'nameSpell' => ' jiān jiā',
-    'brief' => '刺襄公也。未能用周礼，将无以固其国焉。(3章8句)',
-    'keyword' => '关键词：古诗三百首,诗经,初中古诗,高中古诗,怀人,爱情',
     'chapters' => [
         [
             'spell' => [

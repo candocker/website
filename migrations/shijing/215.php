@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '桑扈·甫田之什·小雅',
-    'nameShort' => '桑扈',
-    'nameSpell' => ' sāng hù',
-    'brief' => '刺幽王也。君臣上下，动无礼文焉。(4章4句)',
-    'keyword' => '关键词：诗经,乐歌,小雅,甫田之什',
     'chapters' => [
         [
             'spell' => [

@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '不要自欺欺人',
-    'brief' => '第七章',
     'chapters' => [
         [
             'content' => [

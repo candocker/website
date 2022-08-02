@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '酌·闵予小子之什·周颂',
-    'nameShort' => '酌',
-    'nameSpell' => ' zhuó',
-    'brief' => '告成《大武》也。言能酌先祖之道，以养天下也。(1章9句)',
-    'keyword' => '关键词：诗经,乐舞,周颂,闵予小子之什',
     'chapters' => [
         [
             'spell' => [

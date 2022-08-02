@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十 宋文 送杨寘序',
-    'nameShort' => '送杨寘序',
-    'author' => '欧阳修',
-    'keyword' => '古文观止,宋文',
     'chapters' => [
         [
             'content' => [

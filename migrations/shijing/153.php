@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '下泉·曹风·国风',
-    'nameShort' => '下泉',
-    'nameSpell' => ' xià quán',
-    'brief' => '思治也。曹人疾共公侵刻下民，不得其所，忧而思明王贤伯也。(4章4句)',
-    'keyword' => '关键词：诗经,咏物,怀古,国风,曹风',
     'chapters' => [
         [
             'spell' => [

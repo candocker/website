@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十 宋文 醉翁亭记',
-    'nameShort' => '醉翁亭记',
-    'author' => '欧阳修',
-    'keyword' => '古文观止,宋文',
     'chapters' => [
         [
             'content' => [

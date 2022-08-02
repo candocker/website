@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷九 唐宋文 朋党论',
-    'nameShort' => '朋党论',
-    'author' => '欧阳修',
-    'keyword' => '古文观止,唐宋文',
     'chapters' => [
         [
             'content' => [

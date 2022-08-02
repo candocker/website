@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '里仁',
-    'brief' => '讲仁德的道理',
     'chapters' => [
         [
             'content' => [

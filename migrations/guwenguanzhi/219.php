@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十二 明文 徐文长传',
-    'nameShort' => '徐文长传',
-    'author' => '袁宏道',
-    'keyword' => '古文观止,明文',
     'chapters' => [
         [
             'content' => [

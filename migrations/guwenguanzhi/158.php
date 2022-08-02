@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷九 唐宋文 义田记',
-    'nameShort' => '义田记',
-    'author' => '钱公辅',
-    'keyword' => '古文观止,唐宋文',
     'chapters' => [
         [
             'content' => [

@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '頍弁·甫田之什·小雅',
-    'nameShort' => '頍弁',
-    'nameSpell' => ' kuǐ biàn',
-    'brief' => '诸公刺幽王也。暴戾无亲，不能宴乐同姓，亲睦九族，孤危将亡，故作是诗也。(3章12句)',
-    'keyword' => '关键词：诗经,宴会,小雅,甫田之什',
     'chapters' => [
         [
             'spell' => [

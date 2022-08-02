@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '素冠·桧风·国风',
-    'nameShort' => '素冠',
-    'nameSpell' => ' sù guān',
-    'brief' => '刺不能三年也。(3章3句)',
-    'keyword' => '关键词：诗经,写人,国风,桧风',
     'chapters' => [
         [
             'spell' => [

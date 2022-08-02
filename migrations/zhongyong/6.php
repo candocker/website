@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '大知-第六章',
-    'brief' => '隐恶扬善，执两用中',
     'chapters' => [
         [
             'content' => [

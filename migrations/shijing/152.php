@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '鸤鸠·曹风·国风',
-    'nameShort' => '鸤鸠',
-    'nameSpell' => ' shī jiū',
-    'brief' => '刺不壹也。在位无君子，用心之不壹也。(4章6句)',
-    'keyword' => '关键词：诗经,写鸟,国风,曹风',
     'chapters' => [
         [
             'spell' => [

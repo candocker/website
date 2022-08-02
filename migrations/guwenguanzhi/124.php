@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷八 唐文 师说',
-    'nameShort' => '师说',
-    'author' => '韩愈',
-    'keyword' => '古文观止,唐文',
     'chapters' => [
         [
             'content' => [

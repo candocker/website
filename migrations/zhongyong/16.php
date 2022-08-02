@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '鬼神-第十六章',
-    'brief' => '无所不在的道',
     'chapters' => [
         [
             'content' => [

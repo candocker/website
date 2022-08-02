@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十二 明文 稽山书院尊经阁记',
-    'nameShort' => '稽山书院尊经阁记',
-    'author' => '王守仁',
-    'keyword' => '古文观止,明文',
     'chapters' => [
         [
             'content' => [

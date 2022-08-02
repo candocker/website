@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '不行-第五章',
-    'brief' => '此道也非常道',
     'chapters' => [
         [
             'content' => [

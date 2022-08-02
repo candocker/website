@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '驷驖·秦风·国风',
-    'nameShort' => '驷驖',
-    'nameSpell' => ' sì tiě',
-    'brief' => '美襄公也。始命，有田狩之事，园囿之乐焉。(3章4句)',
-    'keyword' => '关键词：诗经,写马,狩猎,国风,秦风',
     'chapters' => [
         [
             'spell' => [

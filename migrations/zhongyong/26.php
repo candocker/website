@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '无息-第二十六章',
-    'brief' => '真诚是没有止息的',
     'chapters' => [
         [
             'content' => [

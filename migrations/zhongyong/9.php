@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '可均-第九章',
-    'brief' => '白刃可蹈，中庸难得',
     'chapters' => [
         [
             'content' => [

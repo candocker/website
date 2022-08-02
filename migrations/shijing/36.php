@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '式微·邶风·国风',
-    'nameShort' => '式微',
-    'nameSpell' => ' shì wēi',
-    'brief' => '黎侯寓于卫，其臣劝以归也。(2章4句)',
-    'keyword' => '关键词：诗经,国风,邶风',
     'chapters' => [
         [
             'spell' => [

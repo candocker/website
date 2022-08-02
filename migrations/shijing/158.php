@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '伐柯·豳风·国风',
-    'nameShort' => '伐柯',
-    'nameSpell' => ' fá kē',
-    'brief' => '美周公也。周大夫刺朝廷之不知也。(2章4句)',
-    'keyword' => '关键词：诗经,寓理,国风,豳风',
     'chapters' => [
         [
             'spell' => [

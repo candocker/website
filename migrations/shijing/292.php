@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '丝衣·闵予小子之什·周颂',
-    'nameShort' => '丝衣',
-    'nameSpell' => ' sī yī',
-    'brief' => '绎宾尸也。高子曰：“灵星之尸也。”。(1章9句)',
-    'keyword' => '关键词：诗经,祭祀,周颂,闵予小子之什',
     'chapters' => [
         [
             'spell' => [

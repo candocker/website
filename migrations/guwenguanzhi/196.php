@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十一 宋文 黄州快哉亭记',
-    'nameShort' => '黄州快哉亭记',
-    'author' => '苏辙',
-    'keyword' => '古文观止,宋文',
     'chapters' => [
         [
             'content' => [

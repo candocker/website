@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷八 唐文 送董邵南游河北序',
-    'nameShort' => '送董邵南游河北序',
-    'author' => '韩愈',
-    'keyword' => '古文观止,唐文',
     'chapters' => [
         [
             'content' => [

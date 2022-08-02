@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷二 周文 楚归晋知罃',
-    'nameShort' => '楚归晋知罃',
-    'author' => '左传',
-    'keyword' => '古文观止,周文',
     'chapters' => [
         [
             'content' => [

@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷三 周文 展禽论祀爰居',
-    'nameShort' => '展禽论祀爰居',
-    'author' => '国语',
-    'keyword' => '古文观止,周文',
     'chapters' => [
         [
             'content' => [

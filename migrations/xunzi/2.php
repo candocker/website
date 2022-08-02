@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '修身篇第二',
-    'keyword' => '关键词：荀子,修身',
     'chapters' => [
         [
             'content' => [

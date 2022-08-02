@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷六 汉文 高帝求贤诏',
-    'nameShort' => '高帝求贤诏',
-    'author' => '汉景帝',
-    'keyword' => '古文观止,汉文',
     'chapters' => [
         [
             'content' => [

@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '性恶篇第二十三',
-    'keyword' => '关键词：荀子,性恶',
     'chapters' => [
         [
             'content' => [

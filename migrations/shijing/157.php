@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '破斧·豳风·国风',
-    'nameShort' => '破斧',
-    'nameSpell' => ' pò fǔ',
-    'brief' => '美周公也。周大夫以恶四国焉。(3章6句)',
-    'keyword' => '关键词：诗经,赞美,国风,豳风',
     'chapters' => [
         [
             'spell' => [

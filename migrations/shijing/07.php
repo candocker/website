@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '兔罝·周南·国风',
-    'nameShort' => '兔罝',
-    'nameSpell' => 'tù jū',
-    'brief' => '后妃之化也。《关雎》之化行，则莫不好德，贤人众多也。(3章4句)',
-    'keyword' => '关键词：诗经,国风,周南',
     'chapters' => [
         [
             'spell' => [

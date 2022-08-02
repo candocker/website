@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷一 周文 石碏谏宠州吁',
-    'nameShort' => '石碏谏宠州吁',
-    'author' => '左传',
-    'keyword' => '古文观止,周文',
     'chapters' => [
         [
             'content' => [

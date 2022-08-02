@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十二 明文 信陵君救赵论',
-    'nameShort' => '信陵君救赵论',
-    'author' => '唐顺之',
-    'keyword' => '古文观止,明文',
     'chapters' => [
         [
             'content' => [

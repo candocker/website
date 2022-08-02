@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '丰年·臣工之什·周颂',
-    'nameShort' => '丰年',
-    'nameSpell' => ' fēng nián',
-    'brief' => '秋冬报也。(1章7句)',
-    'keyword' => '关键词：诗经,祭祀,颂歌,周颂,臣工之什',
     'chapters' => [
         [
             'spell' => [

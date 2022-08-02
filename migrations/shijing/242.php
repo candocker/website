@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '灵台·文王之什·大雅',
-    'nameShort' => '灵台',
-    'nameSpell' => ' líng tái',
-    'brief' => '民始附也。文王受命，而民乐其有灵德，以及鸟兽昆虫焉。(3章6句)',
-    'keyword' => '关键词：诗经,咏物,大雅,文王之什',
     'chapters' => [
         [
             'spell' => [

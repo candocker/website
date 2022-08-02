@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '致士篇第十四',
-    'keyword' => '关键词：荀子,致士',
     'chapters' => [
         [
             'content' => [

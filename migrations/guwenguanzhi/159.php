@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷九 唐宋文 袁州州学记',
-    'nameShort' => '袁州州学记',
-    'author' => '李觏',
-    'keyword' => '古文观止,唐宋文',
     'chapters' => [
         [
             'content' => [

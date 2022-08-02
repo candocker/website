@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '费引-第十二节',
-    'brief' => '君子之道费而隐',
     'chapters' => [
         [
             'content' => [

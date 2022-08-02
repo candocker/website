@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '我行其野·鸿雁之什·小雅',
-    'nameShort' => '我行其野',
-    'nameSpell' => ' wǒ xíng qí yě',
-    'brief' => '刺宣王也。(3章6句)',
-    'keyword' => '关键词：诗经,弃妇,小雅,鸿雁之什',
     'chapters' => [
         [
             'spell' => [

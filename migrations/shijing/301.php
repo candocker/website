@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '那·商颂',
-    'nameShort' => '那',
-    'nameSpell' => ' nuó',
-    'brief' => '祀高宗也。(1章22句)',
-    'keyword' => '关键词：诗经,祭祀,颂歌,商颂',
     'chapters' => [
         [
             'spell' => [

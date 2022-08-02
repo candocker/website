@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '北山·谷风之什·小雅',
-    'nameShort' => '北山',
-    'nameSpell' => ' běi shān',
-    'brief' => '大夫刺幽王也。役使不均，己劳于从事，而不得养其父母焉。(6章3:6,3:4句)',
-    'keyword' => '关键词：诗经,怨刺,小雅,谷风之什',
     'chapters' => [
         [
             'spell' => [

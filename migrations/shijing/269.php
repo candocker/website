@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '烈文·清庙之什·周颂',
-    'nameShort' => '烈文',
-    'nameSpell' => ' liè wén',
-    'brief' => '成王即政，诸侯助祭也。(1章13句)',
-    'keyword' => '关键词：诗经,赞颂,周颂,清庙之什',
     'chapters' => [
         [
             'spell' => [

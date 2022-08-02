@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷三 周文 晋献公杀世子申生',
-    'nameShort' => '晋献公杀世子申生',
-    'author' => '礼记·檀弓',
-    'keyword' => '古文观止,周文',
     'chapters' => [
         [
             'content' => [

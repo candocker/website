@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '东门之池·陈风·国风',
-    'nameShort' => '东门之池',
-    'nameSpell' => ' dōng mén zhī chí',
-    'brief' => '刺时也。疾其君之淫昬，而思贤女以配君子也。(3章4句)',
-    'keyword' => '关键词：诗经,劳动,国风,陈风',
     'chapters' => [
         [
             'spell' => [

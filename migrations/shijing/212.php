@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '大田·甫田之什·小雅',
-    'nameShort' => '大田',
-    'nameSpell' => ' dà tián',
-    'brief' => '刺幽王也。言矜寡不能自存焉。(4章2:8,2:9句)',
-    'keyword' => '关键词：诗经,祭祀,小雅,甫田之什',
     'chapters' => [
         [
             'spell' => [

@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷六 汉文 诫兄子严敦书',
-    'nameShort' => '诫兄子严敦书',
-    'author' => '诸葛亮',
-    'keyword' => '古文观止,汉文',
     'chapters' => [
         [
             'content' => [

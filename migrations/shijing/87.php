@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '褰裳·郑风·国风',
-    'nameShort' => '褰裳',
-    'nameSpell' => ' qiān cháng',
-    'brief' => '思见正也。狂童恣行，国人思大国之正己也。(2章5句)',
-    'keyword' => '关键词：诗经,民谣,女子,国风,郑风',
     'chapters' => [
         [
             'spell' => [

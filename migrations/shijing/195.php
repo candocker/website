@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '小旻·节南山之什·小雅',
-    'nameShort' => '小旻',
-    'nameSpell' => ' xiǎo mín',
-    'brief' => '大夫刺幽王也。(6章3:8,3:7句)',
-    'keyword' => '关键词：诗经,爱国,怨刺,小雅,节南山之什',
     'chapters' => [
         [
             'spell' => [

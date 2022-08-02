@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '载见·臣工之什·周颂',
-    'nameShort' => '载见',
-    'nameSpell' => ' zài jiàn',
-    'brief' => '诸侯始见乎武王庙也。(1章14句)',
-    'keyword' => '关键词：诗经,祭祀,周颂,臣工之什',
     'chapters' => [
         [
             'spell' => [

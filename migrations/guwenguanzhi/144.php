@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷九 唐宋文 桐叶封弟辨',
-    'nameShort' => '桐叶封弟辨',
-    'author' => '柳宗元',
-    'keyword' => '古文观止,唐宋文',
     'chapters' => [
         [
             'content' => [

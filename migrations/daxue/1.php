@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '三纲八目的追求',
-    'brief' => '第一章',
     'chapters' => [
         [
             'content' => [

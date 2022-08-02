@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '时迈·清庙之什·周颂',
-    'nameShort' => '时迈',
-    'nameSpell' => ' shí mài',
-    'brief' => '巡守告祭柴望也。(1章15句)',
-    'keyword' => '关键词：诗经,赞美,乐歌,周颂,清庙之什',
     'chapters' => [
         [
             'spell' => [

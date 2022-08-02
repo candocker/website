@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷六 汉文 报孙会宗书',
-    'nameShort' => '报孙会宗书',
-    'author' => '马援',
-    'keyword' => '古文观止,汉文',
     'chapters' => [
         [
             'content' => [

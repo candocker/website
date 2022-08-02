@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '泽陂·陈风·国风',
-    'nameShort' => '泽陂',
-    'nameSpell' => ' zé bēi',
-    'brief' => '刺时也。言灵公君臣淫于其国，男女相说，忧思感伤焉。(3章6句)',
-    'keyword' => '关键词：诗经,女子,怀人,国风,陈风',
     'chapters' => [
         [
             'spell' => [

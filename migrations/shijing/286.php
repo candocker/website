@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '闵予小子·闵予小子之什·周颂',
-    'nameShort' => '闵予小子',
-    'nameSpell' => ' mǐn yú xiǎo zǐ',
-    'brief' => '嗣王谋于庙也。(1章11句)',
-    'keyword' => '关键词：诗经,周颂,闵予小子之什',
     'chapters' => [
         [
             'spell' => [

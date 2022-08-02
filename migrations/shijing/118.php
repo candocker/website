@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '绸缪·唐风·国风',
-    'nameShort' => '绸缪',
-    'nameSpell' => ' chóu móu',
-    'brief' => '刺晋乱也。国乱则[女昬]姻不得其时焉。(3章6句)',
-    'keyword' => '关键词：诗经,婚姻,国风,唐风',
     'chapters' => [
         [
             'spell' => [

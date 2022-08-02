@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷六 汉文 答苏武书',
-    'nameShort' => '答苏武书',
-    'author' => '杨恽',
-    'keyword' => '古文观止,汉文',
     'chapters' => [
         [
             'content' => [

@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷三 周文 虞师晋师灭夏阳',
-    'nameShort' => '虞师晋师灭夏阳',
-    'author' => '谷梁传',
-    'keyword' => '古文观止,周文',
     'chapters' => [
         [
             'content' => [

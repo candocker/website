@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '狼跋·豳风·国风',
-    'nameShort' => '狼跋',
-    'nameSpell' => ' láng bá',
-    'brief' => '美周公也。周公摄政，远则四国流言，近则王不知。周大夫美其不失其圣也。(2章4句)',
-    'keyword' => '关键词：诗经,写人,国风,豳风',
     'chapters' => [
         [
             'spell' => [

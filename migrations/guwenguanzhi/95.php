@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷六 汉文 论贵粟疏',
-    'nameShort' => '论贵粟疏',
-    'author' => '司马相如',
-    'keyword' => '古文观止,汉文',
     'chapters' => [
         [
             'content' => [

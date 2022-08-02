@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十二 明文 报刘一丈书',
-    'nameShort' => '报刘一丈书',
-    'author' => '宗臣',
-    'keyword' => '古文观止,明文',
     'chapters' => [
         [
             'content' => [

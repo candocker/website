@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷三 周文 王孙圉论楚宝',
-    'nameShort' => '王孙圉论楚宝',
-    'author' => '国语',
-    'keyword' => '古文观止,周文',
     'chapters' => [
         [
             'content' => [

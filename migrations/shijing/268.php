@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '维清·清庙之什·周颂',
-    'nameShort' => '维清',
-    'nameSpell' => ' wéi qīng',
-    'brief' => '奏《象舞》也。(1章5句)',
-    'keyword' => '关键词：诗经,周颂,清庙之什',
     'chapters' => [
         [
             'spell' => [

@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '白驹·鸿雁之什·小雅',
-    'nameShort' => '白驹',
-    'nameSpell' => ' bái jū',
-    'brief' => '大夫刺宣王也。(4章6句)',
-    'keyword' => '关键词：诗经,友情,写马,小雅,鸿雁之什',
     'chapters' => [
         [
             'spell' => [

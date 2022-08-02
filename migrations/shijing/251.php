@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '泂酌·生民之什·大雅',
-    'nameShort' => '泂酌',
-    'nameSpell' => ' jiǒng zhuó',
-    'brief' => '召康公戒成王也。言皇天亲有德、飨有道也。(12章8句)',
-    'keyword' => '关键词：诗经,赞颂,大雅,生民之什',
     'chapters' => [
         [
             'spell' => [

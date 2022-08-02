@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '谷神不死',
-    'brief' => '道德经第六章',
     'chapters' => [
         [
             'name' => '白话',

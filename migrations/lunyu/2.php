@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '为政',
-    'brief' => '讲治理国家的道理和方法',
     'chapters' => [
         [
             'content' => [

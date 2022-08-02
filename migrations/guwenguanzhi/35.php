@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷三 周文 祭公谏征犬戎',
-    'nameShort' => '祭公谏征犬戎',
-    'author' => '国语',
-    'keyword' => '古文观止,周文',
     'chapters' => [
         [
             'content' => [

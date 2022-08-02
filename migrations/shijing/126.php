@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '车邻·秦风·国风',
-    'nameShort' => '车邻',
-    'nameSpell' => ' jū lín',
-    'brief' => '美秦仲也。秦仲始大，有车马礼乐侍御之好焉。(3章4,6,6句)',
-    'keyword' => '关键词：诗经,生活,国风,秦风',
     'chapters' => [
         [
             'spell' => [

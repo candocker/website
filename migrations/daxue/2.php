@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '弘扬光明的品德',
-    'brief' => '第二章',
     'chapters' => [
         [
             'content' => [

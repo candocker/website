@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷五 汉文 五帝本纪赞',
-    'nameShort' => '五帝本纪赞',
-    'author' => '史记',
-    'keyword' => '古文观止,汉文',
     'chapters' => [
         [
             'content' => [

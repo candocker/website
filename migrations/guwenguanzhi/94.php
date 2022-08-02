@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷六 汉文 治安策',
-    'nameShort' => '治安策',
-    'author' => '邹阳',
-    'keyword' => '古文观止,汉文',
     'chapters' => [
         [
             'content' => [

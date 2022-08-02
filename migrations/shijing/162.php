@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '四牡·鹿鸣之什·小雅',
-    'nameShort' => '四牡',
-    'nameSpell' => ' sì mǔ',
-    'brief' => '劳使臣之来也。有功而见知，则说矣。(5章5句)',
-    'keyword' => '关键词：诗经,思乡,怀人,小雅,鹿鸣之什',
     'chapters' => [
         [
             'spell' => [

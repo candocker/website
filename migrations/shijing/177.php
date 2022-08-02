@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '六月·南有嘉鱼之什·小雅',
-    'nameShort' => '六月',
-    'nameSpell' => ' liù yuè',
-    'brief' => '宣王北伐也。(6章8句)',
-    'keyword' => '关键词：诗经,战争,赞美,战士,小雅,南有嘉鱼之什',
     'chapters' => [
         [
             'spell' => [

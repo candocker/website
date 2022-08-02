@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '持而盈之',
-    'brief' => '道德经第九章',
     'chapters' => [
         [
             'name' => '白话',

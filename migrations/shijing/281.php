@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '潜·臣工之什·周颂',
-    'nameShort' => '潜',
-    'nameSpell' => ' qián',
-    'brief' => '嗣王谋于庙也。(1章6句)',
-    'keyword' => '关键词：诗经,祭祀,写鱼,周颂,臣工之什',
     'chapters' => [
         [
             'spell' => [

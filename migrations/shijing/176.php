@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '菁菁者莪·南有嘉鱼之什·小雅',
-    'nameShort' => '菁菁者莪',
-    'nameSpell' => ' jīng jīng zhě é',
-    'brief' => '乐育材也。君子能长育人材，则天下喜乐之矣。(4章4句)',
-    'keyword' => '关键词：诗经,写景,爱情,小雅,南有嘉鱼之什',
     'chapters' => [
         [
             'spell' => [

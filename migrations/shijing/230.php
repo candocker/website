@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '緜蛮·鱼藻之什·小雅',
-    'nameShort' => '緜蛮',
-    'nameSpell' => ' mián mán',
-    'brief' => '微臣刺乱也。大臣不用仁心，遗忘微贱，不肯饮食教载之，故作是诗也。(3章8句)',
-    'keyword' => '关键词：诗经,写人,生活,小雅,鱼藻之什',
     'chapters' => [
         [
             'spell' => [

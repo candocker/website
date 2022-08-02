@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '采蘩·召南·国风',
-    'nameShort' => '采蘩',
-    'nameSpell' => ' cǎi fán',
-    'brief' => '夫人不失职也。夫人可以奉祭祀，则不失职矣。(3章4句)',
-    'keyword' => '关键词：诗经,写人,女子,国风,召南',
     'chapters' => [
         [
             'spell' => [

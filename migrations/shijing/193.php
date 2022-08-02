@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '十月之交·节南山之什·小雅',
-    'nameShort' => '十月之交',
-    'nameSpell' => ' shí yuè zhī jiāo',
-    'brief' => '大夫刺幽王也。(8章8句)',
-    'keyword' => '关键词：诗经,山水,忧国忧民,小雅,节南山之什',
     'chapters' => [
         [
             'spell' => [

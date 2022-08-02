@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '公刘·生民之什·大雅',
-    'nameShort' => '公刘',
-    'nameSpell' => ' gōng liú',
-    'brief' => '召康公戒成王也。成王将莅政，戒以民事，美公刘之厚于民，而献是诗也。(6章10句)',
-    'keyword' => '关键词：诗经,赞颂,写人,大雅,生民之什',
     'chapters' => [
         [
             'spell' => [

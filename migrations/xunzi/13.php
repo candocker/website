@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '臣道篇第十三',
-    'keyword' => '关键词：荀子,臣道',
     'chapters' => [
         [
             'content' => [

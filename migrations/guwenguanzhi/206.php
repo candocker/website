@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十二 明文 卖柑者言',
-    'nameShort' => '卖柑者言',
-    'author' => '刘基',
-    'keyword' => '古文观止,明文',
     'chapters' => [
         [
             'content' => [

@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十二 明文 瘗旅文',
-    'nameShort' => '瘗旅文',
-    'author' => '王守仁',
-    'keyword' => '古文观止,明文',
     'chapters' => [
         [
             'content' => [

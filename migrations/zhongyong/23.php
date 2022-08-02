@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '致曲-第二十三章',
-    'brief' => '从一个方面下功夫',
     'chapters' => [
         [
             'content' => [

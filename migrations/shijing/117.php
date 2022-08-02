@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '椒聊·唐风·国风',
-    'nameShort' => '椒聊',
-    'nameSpell' => ' jiāo liáo',
-    'brief' => '剌晋昭公也。君子见沃之盛强，能修其政，知其蕃衍盛大，子孙将有晋国焉。(2章6句)',
-    'keyword' => '关键词：诗经,咏物,写人,国风,唐风',
     'chapters' => [
         [
             'spell' => [

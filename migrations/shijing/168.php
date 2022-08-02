@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '出车·鹿鸣之什·小雅',
-    'nameShort' => '出车',
-    'nameSpell' => ' chū jū',
-    'brief' => '劳还率也。(6章8句)',
-    'keyword' => '关键词：诗经,战争,小雅,鹿鸣之什',
     'chapters' => [
         [
             'spell' => [

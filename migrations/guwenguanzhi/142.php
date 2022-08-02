@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷八 唐文 柳子厚墓志铭',
-    'nameShort' => '柳子厚墓志铭',
-    'author' => '柳宗元',
-    'keyword' => '古文观止,唐文',
     'chapters' => [
         [
             'content' => [

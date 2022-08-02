@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷六 汉文 景帝令二千石修职诏',
-    'nameShort' => '景帝令二千石修职诏',
-    'author' => '贾谊',
-    'keyword' => '古文观止,汉文',
     'chapters' => [
         [
             'content' => [

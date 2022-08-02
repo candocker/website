@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '韩奕·荡之什·大雅',
-    'nameShort' => '韩奕',
-    'nameSpell' => ' hán yì',
-    'brief' => '尹吉甫美宣王也。能锡命诸侯。(6章12句)',
-    'keyword' => '关键词：诗经,赞颂,写人,大雅,荡之什',
     'chapters' => [
         [
             'spell' => [

@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '葛藟·王风·国风',
-    'nameShort' => '葛藟',
-    'nameSpell' => ' gé lěi',
-    'brief' => '王族刺平王也。周室道衰，弃其九族焉。(3章6句)',
-    'keyword' => '关键词：诗经,伤怀,国风,王风',
     'chapters' => [
         [
             'spell' => [

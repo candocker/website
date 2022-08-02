@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷一 周文 子鱼论战',
-    'nameShort' => '子鱼论战',
-    'author' => '左传',
-    'keyword' => '古文观止,周文',
     'chapters' => [
         [
             'content' => [

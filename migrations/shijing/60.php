@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '芄兰·卫风·国风',
-    'nameShort' => '芄兰',
-    'nameSpell' => ' wán lán',
-    'brief' => '刺惠公也。骄而无礼，大夫刺之。(2章6句)',
-    'keyword' => '关键词：诗经,讽刺,国风,卫风',
     'chapters' => [
         [
             'spell' => [

@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十二 明文 送天台陈庭学序',
-    'nameShort' => '送天台陈庭学序',
-    'author' => '宋濂',
-    'keyword' => '古文观止,明文',
     'chapters' => [
         [
             'content' => [

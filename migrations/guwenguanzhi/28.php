@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷二 周文 季札观周乐 / 季札观乐',
-    'nameShort' => '季札观周乐 / 季札观乐',
-    'author' => '左传',
-    'keyword' => '古文观止,周文',
     'chapters' => [
         [
             'content' => [

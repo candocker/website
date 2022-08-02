@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '找准自己的位置',
-    'brief' => '第四章',
     'chapters' => [
         [
             'content' => [

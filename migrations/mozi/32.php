@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '墨子32章 非乐(上)',
-    'keyword' => '关键词：墨子,非乐(上)',
     'chapters' => [
         [
             'content' => [

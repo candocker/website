@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '东门之枌·陈风·国风',
-    'nameShort' => '东门之枌',
-    'nameSpell' => ' dōng mén zhī fén',
-    'brief' => '疾乱也。幽公淫荒，风化之所行，男女弃其旧业，亟会于道路，歌舞于市井尔。(3章4句)',
-    'keyword' => '关键词：诗经,爱情,国风,陈风',
     'chapters' => [
         [
             'spell' => [

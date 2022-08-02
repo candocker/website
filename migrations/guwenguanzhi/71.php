@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷四 战国文 谏逐客书',
-    'nameShort' => '谏逐客书',
-    'author' => '宋玉',
-    'keyword' => '古文观止,战国文',
     'chapters' => [
         [
             'content' => [

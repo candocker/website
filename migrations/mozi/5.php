@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '墨子05章 七患',
-    'keyword' => '关键词：墨子,七患',
     'chapters' => [
         [
             'content' => [

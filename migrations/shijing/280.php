@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '有瞽·臣工之什·周颂',
-    'nameShort' => '有瞽',
-    'nameSpell' => ' yǒu gǔ',
-    'brief' => '季冬荐鱼，春献鲔也。(1章13句)',
-    'keyword' => '关键词：诗经,音乐,周颂,臣工之什',
     'chapters' => [
         [
             'spell' => [

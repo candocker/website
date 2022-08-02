@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '螽斯·周南·国风',
-    'nameShort' => '螽斯',
-    'nameSpell' => 'zhōng sī',
-    'brief' => '后妃子孙众多也。言若螽斯不妬忌，则子孙众多也。(3章4句)',
-    'keyword' => '关键词：诗经,写鸟,祝福,国风,周南',
     'chapters' => [
         [
             'spell' => [

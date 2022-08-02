@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '鲜能-第三章',
-    'brief' => '最高的道德标准',
     'chapters' => [
         [
             'content' => [

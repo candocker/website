@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷七 六朝唐文 吊古战场文',
-    'nameShort' => '吊古战场文',
-    'author' => '杜牧',
-    'keyword' => '古文观止,六朝唐文',
     'chapters' => [
         [
             'content' => [

@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十一 宋文 上枢密韩太尉书',
-    'nameShort' => '上枢密韩太尉书',
-    'author' => '苏辙',
-    'keyword' => '古文观止,宋文',
     'chapters' => [
         [
             'content' => [

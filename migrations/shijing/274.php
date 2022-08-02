@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '执竞·清庙之什·周颂',
-    'nameShort' => '执竞',
-    'nameSpell' => ' zhí jìng',
-    'brief' => '祀武王也。(1章14句)',
-    'keyword' => '关键词：诗经,祭祀,赞颂,写人,周颂,清庙之什',
     'chapters' => [
         [
             'spell' => [

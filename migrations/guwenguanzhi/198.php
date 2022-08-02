@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十一 宋文 赠黎安二生序',
-    'nameShort' => '赠黎安二生序',
-    'author' => '曾巩',
-    'keyword' => '古文观止,宋文',
     'chapters' => [
         [
             'content' => [

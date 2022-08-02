@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷三 周文 曾子易箦',
-    'nameShort' => '曾子易箦',
-    'author' => '礼记·檀弓',
-    'keyword' => '古文观止,周文',
     'chapters' => [
         [
             'content' => [

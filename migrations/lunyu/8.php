@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '泰伯',
-    'brief' => '记孔子和曾子的言论及其对古人的评论',
     'chapters' => [
         [
             'content' => [

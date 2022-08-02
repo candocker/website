@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '汾沮洳·魏风·国风',
-    'nameShort' => '汾沮洳',
-    'nameSpell' => ' fén jù rù',
-    'brief' => '刺俭也。其君俭以能勤，刺不得礼也。(3章6句)',
-    'keyword' => '关键词：诗经,赞美,写人,国风,魏风',
     'chapters' => [
         [
             'spell' => [

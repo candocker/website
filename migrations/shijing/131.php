@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '黄鸟·秦风·国风',
-    'nameShort' => '黄鸟',
-    'nameSpell' => ' huáng niǎo',
-    'brief' => '哀三良也。国人刺穆公以人从死，而作是诗也。(3章12句)',
-    'keyword' => '关键词：诗经,悼亡,国风,秦风',
     'chapters' => [
         [
             'spell' => [

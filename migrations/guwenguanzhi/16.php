@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷一 周文 展喜犒师',
-    'nameShort' => '展喜犒师',
-    'author' => '左传',
-    'keyword' => '古文观止,周文',
     'chapters' => [
         [
             'content' => [

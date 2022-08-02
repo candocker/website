@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '羔裘·郑风·国风',
-    'nameShort' => '羔裘',
-    'nameSpell' => ' gāo qiú',
-    'brief' => '刺朝也。言古之君子，以风其朝焉。(3章4句)',
-    'keyword' => '关键词：诗经,讽刺,国风,郑风',
     'chapters' => [
         [
             'spell' => [

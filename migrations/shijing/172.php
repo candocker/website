@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '南山有台·南有嘉鱼之什·小雅',
-    'nameShort' => '南山有台',
-    'nameSpell' => ' nán shān yǒutái',
-    'brief' => '乐得贤也。得贤则能为邦家立太平之基矣。(5章6句)',
-    'keyword' => '关键词：诗经,祝福,乐歌,小雅,南有嘉鱼之什',
     'chapters' => [
         [
             'spell' => [

@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十一 宋文 超然台记',
-    'nameShort' => '超然台记',
-    'author' => '苏轼',
-    'keyword' => '古文观止,宋文',
     'chapters' => [
         [
             'content' => [

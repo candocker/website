@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷二 周文 驹支不屈于晋',
-    'nameShort' => '驹支不屈于晋',
-    'author' => '左传',
-    'keyword' => '古文观止,周文',
     'chapters' => [
         [
             'content' => [

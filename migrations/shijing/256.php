@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '抑·荡之什·大雅',
-    'nameShort' => '抑',
-    'nameSpell' => ' yì',
-    'brief' => '卫武公刺厉王，亦以自警也。(8章3：8,9：10句)',
-    'keyword' => '关键词：诗经,大雅,荡之什',
     'chapters' => [
         [
             'spell' => [

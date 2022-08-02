@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷八 唐文 送温处士赴河阳军序',
-    'nameShort' => '送温处士赴河阳军序',
-    'author' => '韩愈',
-    'keyword' => '古文观止,唐文',
     'chapters' => [
         [
             'content' => [

@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '大叔于田·郑风·国风',
-    'nameShort' => '大叔于田',
-    'nameSpell' => ' dà shū yú tián',
-    'brief' => '刺庄公也。叔多才而好勇，不义而得众也。(3章10句)',
-    'keyword' => '关键词：诗经,写人,赞美,狩猎,国风,郑风',
     'chapters' => [
         [
             'spell' => [

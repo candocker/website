@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '硕人·卫风·国风',
-    'nameShort' => '硕人',
-    'nameSpell' => ' shuò rén',
-    'brief' => '闵庄姜也。庄公惑于嬖妾，使骄上僭。庄姜贤而不荅，终以无子，国人闵而忧之。(4章7句)',
-    'keyword' => '关键词：诗经,女子,国风,卫风',
     'chapters' => [
         [
             'spell' => [

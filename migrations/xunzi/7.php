@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '仲尼篇第七',
-    'keyword' => '关键词：荀子,仲尼',
     'chapters' => [
         [
             'content' => [

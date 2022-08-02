@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '吉日·南有嘉鱼之什·小雅',
-    'nameShort' => '吉日',
-    'nameSpell' => ' jí rì',
-    'brief' => '美宣王田也。能慎微接下，无不自尽以奉其上焉。(4章6句)',
-    'keyword' => '关键词：诗经,狩猎,小雅,南有嘉鱼之什',
     'chapters' => [
         [
             'spell' => [

@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '素位-第十四章',
-    'brief' => '素位而行，安分守己',
     'chapters' => [
         [
             'content' => [

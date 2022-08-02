@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '季氏',
-    'brief' => '记孔子论君子修身，以及如何用礼法治国',
     'chapters' => [
         [
             'content' => [

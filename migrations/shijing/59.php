@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '竹竿·卫风·国风',
-    'nameShort' => '竹竿',
-    'nameSpell' => ' zhú gān',
-    'brief' => '卫女思归也。适异国而不见荅，思而能以礼者也。(4章4句)',
-    'keyword' => '关键词：诗经,思乡,国风,卫风',
     'chapters' => [
         [
             'spell' => [

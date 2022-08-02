@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷三 周文 单子知陈必亡',
-    'nameShort' => '单子知陈必亡',
-    'author' => '国语',
-    'keyword' => '古文观止,周文',
     'chapters' => [
         [
             'content' => [

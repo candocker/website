@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '假乐·生民之什·大雅',
-    'nameShort' => '假乐',
-    'nameSpell' => ' xià lè',
-    'brief' => '嘉成王也。(12章8句)',
-    'keyword' => '关键词：诗经,赞颂,写人,大雅,生民之什',
     'chapters' => [
         [
             'spell' => [

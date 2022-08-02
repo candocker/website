@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '尽性-第二十二章',
-    'brief' => '至诚可参天地',
     'chapters' => [
         [
             'content' => [

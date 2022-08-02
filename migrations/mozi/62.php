@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '墨子62章 备穴',
-    'keyword' => '关键词：墨子,备穴',
     'chapters' => [
         [
             'content' => [

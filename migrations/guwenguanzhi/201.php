@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十一 宋文 游褒禅山记',
-    'nameShort' => '游褒禅山记',
-    'author' => '王安石',
-    'keyword' => '古文观止,宋文',
     'chapters' => [
         [
             'content' => [

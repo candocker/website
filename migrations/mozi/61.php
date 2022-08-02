@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '墨子61章 备突',
-    'keyword' => '关键词：墨子,备突',
     'chapters' => [
         [
             'content' => [

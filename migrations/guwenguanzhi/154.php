@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷九 唐宋文 待漏院记',
-    'nameShort' => '待漏院记',
-    'author' => '李格非',
-    'keyword' => '古文观止,唐宋文',
     'chapters' => [
         [
             'content' => [

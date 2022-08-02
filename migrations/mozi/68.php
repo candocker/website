@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '墨子68章 迎敌祠',
-    'keyword' => '关键词：墨子,迎敌祠',
     'chapters' => [
         [
             'content' => [

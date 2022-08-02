@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十二 明文 沧浪亭记',
-    'nameShort' => '沧浪亭记',
-    'author' => '归有光',
-    'keyword' => '古文观止,明文',
     'chapters' => [
         [
             'content' => [

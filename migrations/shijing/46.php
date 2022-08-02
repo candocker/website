@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '墙有茨·鄘风·国风',
-    'nameShort' => '墙有茨',
-    'nameSpell' => ' qiáng yǒu cí',
-    'brief' => '卫人刺其上也。公子顽通乎君母，国人疾之而不可道也。(3章6句)',
-    'keyword' => '关键词：诗经,国风,鄘风',
     'chapters' => [
         [
             'spell' => [

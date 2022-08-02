@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '狡童·郑风·国风',
-    'nameShort' => '狡童',
-    'nameSpell' => ' jiǎo tóng',
-    'brief' => '刺忽也。不能与贤人图事，权臣擅命也。(2章4句)',
-    'keyword' => '关键词：诗经,女子,国风,郑风',
     'chapters' => [
         [
             'spell' => [

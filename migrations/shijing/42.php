@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '静女·邶风·国风',
-    'nameShort' => '静女',
-    'nameSpell' => ' jìng nǚ',
-    'brief' => '刺虐也。卫国并为威虐，百姓不亲，莫不相携持而去焉。(3章4句)',
-    'keyword' => '关键词：诗经,爱情,民谣,国风,邶风',
     'chapters' => [
         [
             'spell' => [

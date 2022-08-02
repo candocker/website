@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '瞻卬·荡之什·大雅',
-    'nameShort' => '瞻卬',
-    'nameSpell' => ' zhān yǎng',
-    'brief' => '凡伯刺幽王大坏也。(7章10、8、10、8、8、8、10句)',
-    'keyword' => '关键词：诗经,忧国忧民,讽刺,大雅,荡之什',
     'chapters' => [
         [
             'spell' => [

@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '墨子08章 尚贤(上)',
-    'keyword' => '关键词：墨子,尚贤(上)',
     'chapters' => [
         [
             'content' => [

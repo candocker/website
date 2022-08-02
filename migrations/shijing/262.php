@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '江汉·荡之什·大雅',
-    'nameShort' => '江汉',
-    'nameSpell' => ' jiāng hàn',
-    'brief' => '尹吉甫美宣王也。能锡命诸侯。(12章8句)',
-    'keyword' => '关键词：诗经,赞颂,大雅,荡之什',
     'chapters' => [
         [
             'spell' => [

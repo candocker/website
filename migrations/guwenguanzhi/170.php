@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十 宋文 秋声赋',
-    'nameShort' => '秋声赋',
-    'author' => '欧阳修',
-    'keyword' => '欧阳修',
     'chapters' => [
         [
             'content' => [

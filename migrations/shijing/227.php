@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '黍苗·鱼藻之什·小雅',
-    'nameShort' => '黍苗',
-    'nameSpell' => ' shǔ miáo',
-    'brief' => '刺幽王也。不能膏润天下，卿士不能行召伯之职焉。(5章4句)',
-    'keyword' => '关键词：诗经,赞美,小雅,鱼藻之什',
     'chapters' => [
         [
             'spell' => [

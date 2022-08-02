@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '劝学篇第一',
-    'keyword' => '关键词：荀子,劝学',
     'chapters' => [
         [
             'content' => [

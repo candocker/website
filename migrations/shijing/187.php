@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '黄鸟·鸿雁之什·小雅',
-    'nameShort' => '黄鸟',
-    'nameSpell' => ' huáng niǎo',
-    'brief' => '刺宣王也。(3章7句)',
-    'keyword' => '关键词：诗经,写鸟,抒情,小雅,鸿雁之什',
     'chapters' => [
         [
             'spell' => [

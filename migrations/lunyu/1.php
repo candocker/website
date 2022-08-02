@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '学而篇',
-    'brief' => '讲“务本”的道理，引导初学者进入“道德之门”',
     'chapters' => [
         [
             'content' => [

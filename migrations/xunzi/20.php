@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '乐论篇第二十',
-    'keyword' => '关键词：荀子,乐论',
     'chapters' => [
         [
             'content' => [

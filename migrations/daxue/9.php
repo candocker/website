@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '齐家先修身',
-    'brief' => '第九章',
     'chapters' => [
         [
             'content' => [

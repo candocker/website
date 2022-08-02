@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '节南山·节南山之什·小雅',
-    'nameShort' => '节南山',
-    'nameSpell' => ' jié nán shān',
-    'brief' => '家父刺幽王也。(10章6:8，4:6句)',
-    'keyword' => '关键词：诗经,写山,小雅,节南山之什',
     'chapters' => [
         [
             'spell' => [

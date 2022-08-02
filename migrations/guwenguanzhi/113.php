@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷七 六朝唐文 滕王阁序',
-    'nameShort' => '滕王阁序',
-    'author' => '李白',
-    'keyword' => '古文观止,六朝唐文',
     'chapters' => [
         [
             'content' => [

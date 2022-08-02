@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '羔裘·唐风·国风',
-    'nameShort' => '羔裘',
-    'nameSpell' => ' gāo qiú',
-    'brief' => '刺时也。晋人刺其在位不恤其民也。(2章4句)',
-    'keyword' => '关键词：诗经,怨刺,唐风,国风',
     'chapters' => [
         [
             'spell' => [

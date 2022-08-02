@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷七 六朝唐文 与韩荆州书',
-    'nameShort' => '与韩荆州书',
-    'author' => '李华',
-    'keyword' => '古文观止,六朝唐文',
     'chapters' => [
         [
             'content' => [

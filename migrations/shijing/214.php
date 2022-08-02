@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '裳裳者华·甫田之什·小雅',
-    'nameShort' => '裳裳者华',
-    'nameSpell' => ' cháng cháng zhě huā',
-    'brief' => '刺幽王也。古之仕者世禄。小人在位则谗谄并进，弃贤者之类，绝功臣之世焉。(4章6句)',
-    'keyword' => '关键词：诗经,写花,赞美,写人,小雅,甫田之什',
     'chapters' => [
         [
             'spell' => [

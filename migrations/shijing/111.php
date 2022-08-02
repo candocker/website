@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '十亩之间·魏风·国风',
-    'nameShort' => '十亩之间',
-    'nameSpell' => ' shí mǔ zhī jiān',
-    'brief' => '刺时也。言其国削小，民无所居焉。(2章3句)',
-    'keyword' => '关键词：诗经,田园,国风,魏风',
     'chapters' => [
         [
             'spell' => [

@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '自用-第二十八章',
-    'brief' => '不要自以为是，独断专行',
     'chapters' => [
         [
             'content' => [

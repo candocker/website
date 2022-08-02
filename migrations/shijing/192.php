@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '正月·节南山之什·小雅',
-    'nameShort' => '正月',
-    'nameSpell' => ' zhēng yuè',
-    'brief' => '大夫刺幽王也。(13章8:8,5:6句)',
-    'keyword' => '关键词：诗经,抒情,怨刺,小雅,节南山之什',
     'chapters' => [
         [
             'spell' => [

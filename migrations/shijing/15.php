@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '采蘋·召南·国风',
-    'nameShort' => '采蘋',
-    'nameSpell' => ' cǎi pín',
-    'brief' => '大夫妻能循法度也。能循法度，则可以承先祖，共祭祀矣。(3章4句)',
-    'keyword' => '关键词：诗经,写人,女子,国风,召南',
     'chapters' => [
         [
             'spell' => [

@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷七 六朝唐文 桃花源记',
-    'nameShort' => '桃花源记',
-    'author' => '孔稚珪',
-    'keyword' => '古文观止,六朝唐文',
     'chapters' => [
         [
             'content' => [

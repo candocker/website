@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷一 周文 臧哀伯谏纳郜鼎',
-    'nameShort' => '臧哀伯谏纳郜鼎',
-    'author' => '左传',
-    'keyword' => '古文观止,周文',
     'chapters' => [
         [
             'content' => [

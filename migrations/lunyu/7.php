@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '述而',
-    'brief' => '记录孔子的容貌和言行',
     'chapters' => [
         [
             'content' => [

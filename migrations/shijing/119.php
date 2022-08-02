@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '杕杜·唐风·国风',
-    'nameShort' => '杕杜',
-    'nameSpell' => ' dì dù',
-    'brief' => '刺时也。君不能亲其宗族，骨肉离散，独居而无兄弟，将为沃所并尔。(2章9句)',
-    'keyword' => '关键词：诗经,写人,伤怀,唐风,国风',
     'chapters' => [
         [
             'spell' => [

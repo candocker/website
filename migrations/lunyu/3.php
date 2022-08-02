@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '八佾',
-    'brief' => '记录孔子谈论礼乐',
     'chapters' => [
         [
             'content' => [

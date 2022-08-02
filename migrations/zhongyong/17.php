@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '大德-第十七章',
-    'brief' => '天生我材必有用',
     'chapters' => [
         [
             'content' => [

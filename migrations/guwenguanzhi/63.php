@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷四 战国文 赵威后问齐使',
-    'nameShort' => '赵威后问齐使',
-    'author' => '战国策',
-    'keyword' => '古文观止,战国文',
     'chapters' => [
         [
             'content' => [

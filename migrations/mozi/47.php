@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '墨子47章 贵义',
-    'keyword' => '关键词：墨子,贵义',
     'chapters' => [
         [
             'content' => [

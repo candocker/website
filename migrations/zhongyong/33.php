@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '尚纲-第三十三章',
-    'brief' => '弘扬德行的最高境界',
     'chapters' => [
         [
             'content' => [

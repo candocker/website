@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '无忧-第十八章',
-    'brief' => '周公制定礼节规定',
     'chapters' => [
         [
             'content' => [

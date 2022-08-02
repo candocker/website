@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '晨风·秦风·国风',
-    'nameShort' => '晨风',
-    'nameSpell' => ' chén fēng',
-    'brief' => '刺康公也。忘穆公之业，始弃其贤臣焉。(3章6句)',
-    'keyword' => '关键词：诗经,弃妇,国风,秦风',
     'chapters' => [
         [
             'spell' => [

@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '鹊巢·召南·国风',
-    'nameShort' => '鹊巢',
-    'nameSpell' => ' què cháo',
-    'brief' => '夫人之德也。国君积行累功以致爵位，夫人起家而居有之，德如鸤鸠，乃可以配焉。(3章4句)',
-    'keyword' => '关键词：诗经,国风,召南',
     'chapters' => [
         [
             'spell' => [

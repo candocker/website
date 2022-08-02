@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '羔羊·召南·国风',
-    'nameShort' => '羔羊',
-    'nameSpell' => ' gāo yáng',
-    'brief' => '《鹊巢》之功致也。召南之国，化文王之政，在位皆节俭正直，德如羔羊也。(3章4句)',
-    'keyword' => '关键词：诗经,国风,召南',
     'chapters' => [
         [
             'spell' => [

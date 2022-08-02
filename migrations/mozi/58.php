@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '墨子58章 备水',
-    'keyword' => '关键词：墨子,备水',
     'chapters' => [
         [
             'content' => [

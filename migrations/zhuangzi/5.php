@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '德充符',
-    'brief' => '庄子第五篇',
     'chapters' => [
         [
             'name' => '第一节',

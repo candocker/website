@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '下武·文王之什·大雅',
-    'nameShort' => '下武',
-    'nameSpell' => ' xià wǔ',
-    'brief' => '继文也。武王有圣德，复受天命，能昭先人之功焉。(6章4句)',
-    'keyword' => '关键词：诗经,赞颂,写人,大雅,文王之什',
     'chapters' => [
         [
             'spell' => [

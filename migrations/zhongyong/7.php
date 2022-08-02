@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '予知-第七章',
-    'brief' => '聪明反被聪明误',
     'chapters' => [
         [
             'content' => [

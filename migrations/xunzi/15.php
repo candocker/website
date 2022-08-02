@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '议兵篇第十五',
-    'keyword' => '关键词：荀子,议兵',
     'chapters' => [
         [
             'content' => [

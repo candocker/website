@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '荡·荡之什·大雅',
-    'nameShort' => '荡',
-    'nameSpell' => ' dàng',
-    'brief' => '召穆公伤周室大坏也。厉王无道，天下荡荡，无纲纪文章，故作是诗也。(12章8句)',
-    'keyword' => '关键词：诗经,讽刺,大雅,荡之什',
     'chapters' => [
         [
             'spell' => [

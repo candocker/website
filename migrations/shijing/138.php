@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '衡门·陈风·国风',
-    'nameShort' => '衡门',
-    'nameSpell' => ' héng mén',
-    'brief' => '诱僖公也。愿而无立志，故作是诗以诱掖其君也。(3章4句)',
-    'keyword' => '关键词：诗经,爱情,哲理,国风,陈风',
     'chapters' => [
         [
             'spell' => [

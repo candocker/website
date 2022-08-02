@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷七 六朝唐文 五柳先生传',
-    'nameShort' => '五柳先生传',
-    'author' => '魏征',
-    'keyword' => '古文观止,六朝唐文',
     'chapters' => [
         [
             'content' => [

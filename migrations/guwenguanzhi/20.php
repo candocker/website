@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷二 周文 王孙满对楚子',
-    'nameShort' => '王孙满对楚子',
-    'author' => '左传',
-    'keyword' => '古文观止,周文',
     'chapters' => [
         [
             'content' => [

@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '甫田·甫田之什·小雅',
-    'nameShort' => '甫田',
-    'nameSpell' => ' fǔ tián',
-    'brief' => '刺幽王也。君子伤今而思古焉。(4章10句)',
-    'keyword' => '关键词：诗经,祭祀,乐歌,小雅,甫田之什',
     'chapters' => [
         [
             'spell' => [

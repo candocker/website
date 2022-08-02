@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '兔爰·王风·国风',
-    'nameShort' => '兔爰',
-    'nameSpell' => ' tù yuán',
-    'brief' => '闵周也。桓王失信，诸侯背叛，构怨连祸，王师伤败，君子不乐其生焉。(3章7句)',
-    'keyword' => '关键词：诗经,伤怀,国风,王风',
     'chapters' => [
         [
             'spell' => [

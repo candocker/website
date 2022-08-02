@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷五 汉文 货殖列传序',
-    'nameShort' => '货殖列传序',
-    'author' => '司马迁',
-    'keyword' => '古文观止,汉文',
     'chapters' => [
         [
             'content' => [

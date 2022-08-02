@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '墨子71章 杂守',
-    'keyword' => '关键词：墨子,杂守',
     'chapters' => [
         [
             'content' => [

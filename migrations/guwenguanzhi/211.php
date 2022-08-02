@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十二 明文 象祠记',
-    'nameShort' => '象祠记',
-    'author' => '王守仁',
-    'keyword' => '古文观止,明文',
     'chapters' => [
         [
             'content' => [

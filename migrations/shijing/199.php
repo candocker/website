@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '何人斯·节南山之什·小雅',
-    'nameShort' => '何人斯',
-    'nameSpell' => ' hé rén sī',
-    'brief' => '苏公刺暴公也。暴公为卿士而谮苏公焉，故苏公作是诗以绝之。(8章6句)',
-    'keyword' => '关键词：诗经,弃妇,小雅,节南山之什',
     'chapters' => [
         [
             'spell' => [

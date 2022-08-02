@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷一 周文 周郑交质',
-    'nameShort' => '周郑交质',
-    'author' => '左传',
-    'keyword' => '古文观止,周文',
     'chapters' => [
         [
             'content' => [

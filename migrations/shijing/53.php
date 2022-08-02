@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '干旄·鄘风·国风',
-    'nameShort' => '干旄',
-    'nameSpell' => ' gān máo',
-    'brief' => '美好善也。卫文公臣子多好善，贤者乐告以善道也。(3章6句)',
-    'keyword' => '关键词：诗经,国风,鄘风',
     'chapters' => [
         [
             'spell' => [

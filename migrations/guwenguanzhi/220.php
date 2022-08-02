@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十二 明文 五人墓碑记',
-    'nameShort' => '五人墓碑记',
-    'author' => '张溥',
-    'keyword' => '古文观止,明文',
     'chapters' => [
         [
             'content' => [

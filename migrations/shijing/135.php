@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '权舆·秦风·国风',
-    'nameShort' => '权舆',
-    'nameSpell' => ' quán yú',
-    'brief' => '刺康公也。忘先君之旧臣，与贤者有始而无终也。(2章5句)',
-    'keyword' => '关键词：诗经,生活,国风,秦风',
     'chapters' => [
         [
             'spell' => [

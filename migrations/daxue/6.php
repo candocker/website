@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '获得知识的途径',
-    'brief' => '第六章',
     'chapters' => [
         [
             'content' => [

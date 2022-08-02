@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '君子篇第二十四',
-    'keyword' => '关键词：荀子,君子',
     'chapters' => [
         [
             'content' => [

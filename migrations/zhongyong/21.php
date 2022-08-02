@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '诚明-第二十一章',
-    'brief' => '诚则明，明则诚',
     'chapters' => [
         [
             'content' => [

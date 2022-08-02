@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十一 宋文 石钟山记',
-    'nameShort' => '石钟山记',
-    'author' => '苏轼',
-    'keyword' => '古文观止,宋文',
     'chapters' => [
         [
             'content' => [

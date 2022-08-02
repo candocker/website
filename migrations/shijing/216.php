@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '鸳鸯·甫田之什·小雅',
-    'nameShort' => '鸳鸯',
-    'nameSpell' => ' yuān yāng',
-    'brief' => '诸公刺幽王也。暴戾无亲，不能宴乐同姓，亲睦九族，孤危将亡，故作是诗也。(4章4句)',
-    'keyword' => '关键词：诗经,婚姻,小雅,甫田之什',
     'chapters' => [
         [
             'spell' => [

@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '伯兮·卫风·国风',
-    'nameShort' => '伯兮',
-    'nameSpell' => ' bó xī',
-    'brief' => '刺时也。言君子行役，为王前驱，过时而不反焉。(4章4句)',
-    'keyword' => '关键词：诗经,闺怨,国风,卫风',
     'chapters' => [
         [
             'spell' => [

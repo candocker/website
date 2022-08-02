@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '隰桑·鱼藻之什·小雅',
-    'nameShort' => '隰桑',
-    'nameSpell' => ' xí sāng',
-    'brief' => '刺幽王也。小人在位，君子在野，思见君子，尽心以事之。(4章4句)',
-    'keyword' => '关键词：诗经,爱情,小雅,鱼藻之什',
     'chapters' => [
         [
             'spell' => [

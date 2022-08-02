@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷三 周文 叔向贺贫',
-    'nameShort' => '叔向贺贫',
-    'author' => '国语',
-    'keyword' => '古文观止,周文',
     'chapters' => [
         [
             'content' => [

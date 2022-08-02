@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '养生主',
-    'brief' => '庄子第三篇',
     'chapters' => [
         [
             'name' => '第一节',

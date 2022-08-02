@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '扬之水·郑风·国风',
-    'nameShort' => '扬之水',
-    'nameSpell' => ' yáng zhī shuǐ',
-    'brief' => '闵无臣也。君子闵忽之无忠臣良士，终以死亡，而作是诗也。(2章6句)',
-    'keyword' => '关键词：诗经,民谣,国风,郑风',
     'chapters' => [
         [
             'spell' => [

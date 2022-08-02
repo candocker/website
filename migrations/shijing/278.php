@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '振鹭·臣工之什·周颂',
-    'nameShort' => '振鹭',
-    'nameSpell' => ' zhèn lù',
-    'brief' => '二王之后来助祭也。(1章8句)',
-    'keyword' => '关键词：诗经,赞美,周颂,臣工之什',
     'chapters' => [
         [
             'spell' => [

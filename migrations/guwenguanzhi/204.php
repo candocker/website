@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十二 明文 阅江楼记',
-    'nameShort' => '阅江楼记',
-    'author' => '宋濂',
-    'keyword' => '古文观止,明文',
     'chapters' => [
         [
             'content' => [

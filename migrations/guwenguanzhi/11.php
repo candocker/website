@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷一 周文 齐桓下拜受胙',
-    'nameShort' => '齐桓下拜受胙',
-    'author' => '左传',
-    'keyword' => '古文观止,周文',
     'chapters' => [
         [
             'content' => [

@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷七 六朝唐文 北山移文',
-    'nameShort' => '北山移文',
-    'author' => '骆宾王',
-    'keyword' => '古文观止,六朝唐文',
     'chapters' => [
         [
             'content' => [

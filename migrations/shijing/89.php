@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '东门之墠·郑风·国风',
-    'nameShort' => '东门之墠',
-    'nameSpell' => ' dōng mén zhī shàn',
-    'brief' => '刺乱也。[女昬]姻之道缺，阳倡而阴不和，男行而女不随。(2章4句)',
-    'keyword' => '关键词：诗经,爱情,国风,郑风',
     'chapters' => [
         [
             'spell' => [

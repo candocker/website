@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '武·臣工之什·周颂',
-    'nameShort' => '武',
-    'nameSpell' => ' wǔ',
-    'brief' => '奏《大武》也。(1章7句)',
-    'keyword' => '关键词：诗经,赞美,写人,周颂,臣工之什',
     'chapters' => [
         [
             'spell' => [

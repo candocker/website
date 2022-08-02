@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷六 汉文 上书谏猎',
-    'nameShort' => '上书谏猎',
-    'author' => '路温舒',
-    'keyword' => '古文观止,汉文',
     'chapters' => [
         [
             'content' => [

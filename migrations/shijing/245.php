@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '生民·生民之什·大雅',
-    'nameShort' => '生民',
-    'nameSpell' => ' shēng mín',
-    'brief' => '尊祖也。后稷生于姜嫄，文武之功起于后稷，故推以配天焉。(8章10、8句)',
-    'keyword' => '关键词：诗经,咏史,赞美,写人,大雅,生民之什',
     'chapters' => [
         [
             'spell' => [

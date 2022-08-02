@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '彤弓·南有嘉鱼之什·小雅',
-    'nameShort' => '彤弓',
-    'nameSpell' => ' tóng gōng',
-    'brief' => '天子锡有功诸侯也。(7章8句)',
-    'keyword' => '关键词：诗经,宴会,小雅,南有嘉鱼之什',
     'chapters' => [
         [
             'spell' => [

@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '文王有声·文王之什·大雅',
-    'nameShort' => '文王有声',
-    'nameSpell' => ' wén wáng yǒu shēng',
-    'brief' => '继伐也。武王能广文王之声，卒其伐功也。(8章5句)',
-    'keyword' => '关键词：诗经,赞颂,写人,大雅,文王之什',
     'chapters' => [
         [
             'spell' => [

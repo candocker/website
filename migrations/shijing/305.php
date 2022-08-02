@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '殷武·商颂',
-    'nameShort' => '殷武',
-    'nameSpell' => ' yīn wǔ',
-    'brief' => '祀高宗也。 (6章6、7、5、6、6、7句)',
-    'keyword' => '关键词：诗经,祭祀,颂歌,商颂',
     'chapters' => [
         [
             'spell' => [

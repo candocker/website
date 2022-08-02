@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '天作·清庙之什·周颂',
-    'nameShort' => '天作',
-    'nameSpell' => ' tiān zuò',
-    'brief' => '祀先王先公也。(1章7句)',
-    'keyword' => '关键词：诗经,赞颂,写山,写人,周颂,清庙之什',
     'chapters' => [
         [
             'spell' => [

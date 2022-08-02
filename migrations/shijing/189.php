@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '斯干·鸿雁之什·小雅',
-    'nameShort' => '斯干',
-    'nameSpell' => ' sī gān',
-    'brief' => '宣王考室也。(9章7、5、5、5、5、7、5、7、7句)',
-    'keyword' => '关键词：诗经,赞美,小雅,鸿雁之什',
     'chapters' => [
         [
             'spell' => [

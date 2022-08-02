@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '绿衣·邶风·国风',
-    'nameShort' => '绿衣',
-    'nameSpell' => ' lǜ yī',
-    'brief' => '卫庄姜伤己也。妾上僭，夫人失位而作是诗也。(4章4句)',
-    'keyword' => '关键词：诗经,悼亡,国风,邶风',
     'chapters' => [
         [
             'spell' => [

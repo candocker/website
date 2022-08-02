@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '终南·秦风·国风',
-    'nameShort' => '终南',
-    'nameSpell' => ' zhōng nán',
-    'brief' => '戒襄公也。能取周地，始为诸侯，受显服，大夫美之，故作是诗以戒劝之。(2章6句)',
-    'keyword' => '关键词：诗经,赞美,国风,秦风',
     'chapters' => [
         [
             'spell' => [

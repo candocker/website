@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '采芑·南有嘉鱼之什·小雅',
-    'nameShort' => '采芑',
-    'nameSpell' => ' cǎi qǐ',
-    'brief' => '宣王南征也。(4章12句)',
-    'keyword' => '关键词：诗经,小雅,南有嘉鱼之什',
     'chapters' => [
         [
             'spell' => [

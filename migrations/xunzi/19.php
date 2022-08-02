@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '礼论篇第十九',
-    'keyword' => '关键词：荀子,礼论',
     'chapters' => [
         [
             'content' => [

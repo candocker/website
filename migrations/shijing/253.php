@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '民劳·生民之什·大雅',
-    'nameShort' => '民劳',
-    'nameSpell' => ' mín láo',
-    'brief' => '召穆公刺厉王也。(5章10句)',
-    'keyword' => '关键词：诗经,农民,大雅,生民之什',
     'chapters' => [
         [
             'spell' => [

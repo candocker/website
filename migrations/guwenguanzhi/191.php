@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十一 宋文 后赤壁赋',
-    'nameShort' => '后赤壁赋',
-    'author' => '苏轼',
-    'keyword' => '古文观止,宋文',
     'chapters' => [
         [
             'content' => [

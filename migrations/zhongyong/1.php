@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '天命-第一章',
-    'brief' => '中和是天下的根本',
     'chapters' => [
         [
             'content' => [

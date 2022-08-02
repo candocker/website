@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '君子阳阳·王风·国风',
-    'nameShort' => '君子阳阳',
-    'nameSpell' => ' jūn zǐ yáng yáng',
-    'brief' => '闵周也。君子遭乱，相招为禄仕，全身远害而已。(2章4句)',
-    'keyword' => '关键词：诗经,国风,王风',
     'chapters' => [
         [
             'spell' => [

@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '宛丘·陈风·国风',
-    'nameShort' => '宛丘',
-    'nameSpell' => ' wǎn qiū',
-    'brief' => '刺幽公也。淫荒昬乱，游荡无度焉。(3章4句)',
-    'keyword' => '关键词：诗经,国风,陈风',
     'chapters' => [
         [
             'spell' => [

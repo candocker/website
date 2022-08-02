@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '角弓·鱼藻之什·小雅',
-    'nameShort' => '角弓',
-    'nameSpell' => ' jiǎo gōng',
-    'brief' => '父兄刺幽王也。不亲九族而好谗佞，骨肉相怨，故作是诗也。(8章4句)',
-    'keyword' => '关键词：诗经,写人,寓理,小雅,鱼藻之什',
     'chapters' => [
         [
             'spell' => [

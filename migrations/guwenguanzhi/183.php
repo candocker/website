@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十一 宋文 喜雨亭记',
-    'nameShort' => '喜雨亭记',
-    'author' => '苏轼',
-    'keyword' => '古文观止,宋文',
     'chapters' => [
         [
             'content' => [

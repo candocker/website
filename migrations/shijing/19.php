@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '殷其雷·召南·国风',
-    'nameShort' => '殷其雷',
-    'nameSpell' => ' yǐn qí léi',
-    'brief' => '劝以义也。召南之大夫远行从政，不遑宁处。其室家能闵其勤劳，劝以义也。(3章6句)',
-    'keyword' => '关键词：诗经,写雷,国风,召南',
     'chapters' => [
         [
             'spell' => [

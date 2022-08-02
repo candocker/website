@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '大略篇第二十七',
-    'keyword' => '关键词：荀子,大略',
     'chapters' => [
         [
             'content' => [

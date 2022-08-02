@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '苟日新日日新',
-    'brief' => '第三章',
     'chapters' => [
         [
             'content' => [

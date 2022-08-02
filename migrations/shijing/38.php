@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '简兮·邶风·国风',
-    'nameShort' => '简兮',
-    'nameSpell' => ' jiǎn xī',
-    'brief' => '刺不用贤也。卫之贤者仕于伶官，皆可以承事王者也。(3章6句)',
-    'keyword' => '关键词：诗经,写人,国风,邶风',
     'chapters' => [
         [
             'spell' => [

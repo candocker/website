@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '东方未明·齐风·国风',
-    'nameShort' => '东方未明',
-    'nameSpell' => ' dōng fāng wèi míng',
-    'brief' => '刺无节也。朝廷兴居无节，号令不时，挈壶氏不能掌其职焉。(3章4句)',
-    'keyword' => '关键词：诗经,国风,齐风',
     'chapters' => [
         [
             'spell' => [

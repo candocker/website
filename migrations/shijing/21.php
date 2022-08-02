@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '小星·召南·国风',
-    'nameShort' => '小星',
-    'nameSpell' => ' xiǎo xīng',
-    'brief' => '惠及下也。夫人无妬忌之行，惠及贱妾，进御于君，知其命有贵贱，能尽其心矣。(2章5句)',
-    'keyword' => '关键词：诗经,写人,国风,召南',
     'chapters' => [
         [
             'spell' => [

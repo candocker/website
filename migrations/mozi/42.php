@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '墨子42章 经说(上)',
-    'keyword' => '关键词：墨子,经说(上)',
     'chapters' => [
         [
             'content' => [

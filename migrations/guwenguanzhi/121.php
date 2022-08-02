@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷七 六朝唐文 获麟解',
-    'nameShort' => '获麟解',
-    'author' => '韩愈',
-    'keyword' => '古文观止,六朝唐文',
     'chapters' => [
         [
             'content' => [

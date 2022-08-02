@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '新台·邶风·国风',
-    'nameShort' => '新台',
-    'nameSpell' => ' xīn tái',
-    'brief' => '刺卫宣公也。纳伋之妻，作新台于河上而要之。国人恶之，而作是诗也。(3章4句)',
-    'keyword' => '关键词：诗经,国风,邶风',
     'chapters' => [
         [
             'spell' => [

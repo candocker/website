@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '桑柔·荡之什·大雅',
-    'nameShort' => '桑柔',
-    'nameSpell' => ' sāng róu',
-    'brief' => '芮伯刺厉王也。(16章8:8,8:6句)',
-    'keyword' => '关键词：诗经,咏史怀古,大雅,荡之什',
     'chapters' => [
         [
             'spell' => [

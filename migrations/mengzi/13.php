@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '尽心上',
-    'brief' => '孟子',
     'chapters' => [
         [
             'name' => '第一节',

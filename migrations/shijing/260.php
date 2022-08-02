@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '烝民·荡之什·大雅',
-    'nameShort' => '烝民',
-    'nameSpell' => ' zhēng mín',
-    'brief' => '尹吉甫美宣王也。任贤使能，周室中兴焉。(8章8句)',
-    'keyword' => '关键词：诗经,离别,大雅,荡之什',
     'chapters' => [
         [
             'spell' => [

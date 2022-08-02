@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '小明·谷风之什·小雅',
-    'nameShort' => '小明',
-    'nameSpell' => ' xiǎo míng',
-    'brief' => '大夫悔仕于乱世也。(5章3:12,2:6句)',
-    'keyword' => '关键词：诗经,抒情,小雅,谷风之什',
     'chapters' => [
         [
             'spell' => [

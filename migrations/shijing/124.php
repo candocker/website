@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '葛生·唐风·国风',
-    'nameShort' => '葛生',
-    'nameSpell' => ' gé shēng',
-    'brief' => '刺晋献公也。好攻战，则国人多丧矣。(5章4句)',
-    'keyword' => '关键词：诗经,悼亡,唐风,国风',
     'chapters' => [
         [
             'spell' => [

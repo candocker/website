@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷二 周文 晏子不死君难',
-    'nameShort' => '晏子不死君难',
-    'author' => '左传',
-    'keyword' => '古文观止：卷二・周文',
     'chapters' => [
         [
             'content' => [

@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '墨子44章 大取',
-    'keyword' => '关键词：墨子,大取',
     'chapters' => [
         [
             'content' => [

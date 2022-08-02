@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '行远-第十五章',
-    'brief' => '行远自迩，登高自卑',
     'chapters' => [
         [
             'content' => [

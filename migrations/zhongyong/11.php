@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '素隐-第十一章',
-    'brief' => '正道直行，默默无闻也不后悔',
     'chapters' => [
         [
             'content' => [

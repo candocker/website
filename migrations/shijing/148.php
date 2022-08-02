@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '隰有苌楚·桧风·国风',
-    'nameShort' => '隰有苌楚',
-    'nameSpell' => ' xí yǒu cháng chǔ',
-    'brief' => '疾恣也。国人疾其君之淫恣，而思无情欲者也。(3章4句)',
-    'keyword' => '关键词：诗经,伤怀,国风,桧风',
     'chapters' => [
         [
             'spell' => [

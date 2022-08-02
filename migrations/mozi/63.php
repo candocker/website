@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '墨子63章 备蛾傅',
-    'keyword' => '关键词：墨子,备蛾傅',
     'chapters' => [
         [
             'content' => [

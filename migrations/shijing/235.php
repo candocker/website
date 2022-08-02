@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '文王·文王之什·大雅',
-    'nameShort' => '文王',
-    'nameSpell' => ' wén wáng',
-    'brief' => '文王受命作周也。(7章8句)',
-    'keyword' => '关键词：诗经,赞美,写人,大雅,文王之什',
     'chapters' => [
         [
             'spell' => [

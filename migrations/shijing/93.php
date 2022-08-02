@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '出其东门·郑风·国风',
-    'nameShort' => '出其东门',
-    'nameSpell' => ' chū qí dōng mén',
-    'brief' => '闵乱也。公子五争，兵革不息，男女相弃，民人思保其室家焉。(2章6句)',
-    'keyword' => '关键词：诗经,爱情,国风,郑风',
     'chapters' => [
         [
             'spell' => [

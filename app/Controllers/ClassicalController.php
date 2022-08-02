@@ -8,6 +8,7 @@ class ClassicalController extends AbstractController
 
     public function home()
     {
+        //$this->deal();exit();
         $datas = $this->getBookInfos(null, true);
         unset($datas['books']['yizhuan']);
         $datas['pageCode'] = 'home';

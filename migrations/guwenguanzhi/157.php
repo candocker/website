@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷九 唐宋文 谏院题名记',
-    'nameShort' => '谏院题名记',
-    'author' => '司马光',
-    'keyword' => '古文观止,唐宋文',
     'chapters' => [
         [
             'content' => [

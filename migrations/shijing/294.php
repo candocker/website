@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '桓·闵予小子之什·周颂',
-    'nameShort' => '桓',
-    'nameSpell' => ' huán',
-    'brief' => '讲武类禡也。(1章9句)',
-    'keyword' => '关键词：诗经,祷词,周颂,闵予小子之什',
     'chapters' => [
         [
             'spell' => [

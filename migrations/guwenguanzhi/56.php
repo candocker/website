@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷三 周文 晋献文子成室',
-    'nameShort' => '晋献文子成室',
-    'author' => '礼记·檀弓',
-    'keyword' => '古文观止,周文',
     'chapters' => [
         [
             'content' => [

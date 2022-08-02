@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '天长地久',
-    'brief' => '道德经第七章',
     'chapters' => [
         [
             'name' => '白话',

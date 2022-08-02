@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '行明-第四章',
-    'brief' => '谁能食而知其味',
     'chapters' => [
         [
             'content' => [

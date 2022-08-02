@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '常棣·鹿鸣之什·小雅',
-    'nameShort' => '常棣',
-    'nameSpell' => ' cháng dì',
-    'brief' => '燕兄弟也。闵管蔡之失道，故作《常棣》焉。(8章3句)',
-    'keyword' => '关键词：诗经,赞美,哲理,小雅,鹿鸣之什',
     'chapters' => [
         [
             'spell' => [

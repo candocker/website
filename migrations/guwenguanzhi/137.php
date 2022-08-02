@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷八 唐文 送杨少尹序',
-    'nameShort' => '送杨少尹序',
-    'author' => '韩愈',
-    'keyword' => '古文观止,唐文',
     'chapters' => [
         [
             'content' => [

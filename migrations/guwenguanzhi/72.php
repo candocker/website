@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷四 战国文 卜居',
-    'nameShort' => '卜居',
-    'author' => '史记',
-    'keyword' => '古文观止,战国文',
     'chapters' => [
         [
             'content' => [

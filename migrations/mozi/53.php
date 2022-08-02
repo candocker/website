@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '墨子53章 备高临',
-    'keyword' => '关键词：墨子,备高临',
     'chapters' => [
         [
             'content' => [

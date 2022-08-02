@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '解蔽篇第二十一',
-    'keyword' => '关键词：荀子,解蔽',
     'chapters' => [
         [
             'content' => [

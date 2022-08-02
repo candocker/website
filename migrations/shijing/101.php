@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '南山·齐风·国风',
-    'nameShort' => '南山',
-    'nameSpell' => ' nán shān',
-    'brief' => '刺襄公也。鸟兽之行，淫乎其妹，大夫遇是恶，作诗而去之。(4章6句)',
-    'keyword' => '关键词：诗经,怨刺,国风,齐风',
     'chapters' => [
         [
             'spell' => [

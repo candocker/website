@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '般·闵予小子之什·周颂',
-    'nameShort' => '般',
-    'nameSpell' => ' bān',
-    'brief' => '巡守而祀四岳河海也。(1章7句)',
-    'keyword' => '关键词：诗经,周颂,闵予小子之什',
     'chapters' => [
         [
             'spell' => [

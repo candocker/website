@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '草虫·召南·国风',
-    'nameShort' => '草虫',
-    'nameSpell' => ' cǎo chóng',
-    'brief' => '大夫妻能以礼自防也。(3章7句)',
-    'keyword' => '关键词：诗经,抒情,思念,国风,召南',
     'chapters' => [
         [
             'spell' => [

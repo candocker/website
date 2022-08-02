@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '有女同车·郑风·国风',
-    'nameShort' => '有女同车',
-    'nameSpell' => ' yǒu nǚ tóng jū',
-    'brief' => '刺不说德也。陈古义以刺今，不说德而好色也。(2章6句)',
-    'keyword' => '关键词：诗经,女子,国风,郑风',
     'chapters' => [
         [
             'spell' => [

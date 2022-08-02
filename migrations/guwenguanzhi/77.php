@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷五 汉文 高祖功臣侯者年表',
-    'nameShort' => '高祖功臣侯者年表',
-    'author' => '史记',
-    'keyword' => '古文观止,汉文',
     'chapters' => [
         [
             'content' => [

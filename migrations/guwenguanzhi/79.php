@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷五 汉文 外戚世家序',
-    'nameShort' => '外戚世家序',
-    'author' => '史记',
-    'keyword' => '古文观止,汉文',
     'chapters' => [
         [
             'content' => [

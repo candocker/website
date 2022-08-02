@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷六 汉文 后出师表',
-    'nameShort' => '后出师表',
-    'author' => '王羲之',
-    'keyword' => '古文观止,汉文',
     'chapters' => [
         [
             'content' => [

@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '功成弗居',
-    'brief' => '道德经第二节',
     'chapters' => [
         [
             'name' => '白话',

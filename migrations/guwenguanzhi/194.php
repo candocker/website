@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十一 宋文 六国论',
-    'nameShort' => '六国论',
-    'author' => '苏辙',
-    'keyword' => '古文观止,宋文',
     'chapters' => [
         [
             'content' => [

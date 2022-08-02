@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷九 唐宋文 黄冈竹楼记',
-    'nameShort' => '黄冈竹楼记',
-    'author' => '范仲淹',
-    'keyword' => '古文观止,唐宋文',
     'chapters' => [
         [
             'content' => [

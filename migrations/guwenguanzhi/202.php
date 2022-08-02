@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十一 宋文 泰州海陵县主簿许君墓志铭',
-    'nameShort' => '泰州海陵县主簿许君墓志铭',
-    'author' => '王安石',
-    'keyword' => '古文观止,宋文',
     'chapters' => [
         [
             'content' => [

@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '颜渊',
-    'brief' => '讲孔子教育弟子如何实行仁德，如何为政和处世',
     'chapters' => [
         [
             'content' => [

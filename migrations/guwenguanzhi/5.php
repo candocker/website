@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷一 周文 郑庄公戒饬守臣',
-    'nameShort' => '郑庄公戒饬守臣',
-    'author' => '左传',
-    'keyword' => '古文观止,周文',
     'chapters' => [
         [
             'content' => [

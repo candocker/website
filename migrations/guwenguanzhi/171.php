@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十 宋文 祭石曼卿文',
-    'nameShort' => '祭石曼卿文',
-    'author' => '欧阳修',
-    'keyword' => '古文观止,宋文',
     'chapters' => [
         [
             'content' => [

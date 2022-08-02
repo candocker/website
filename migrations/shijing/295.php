@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '赉·闵予小子之什·周颂',
-    'nameShort' => '赉',
-    'nameSpell' => ' lài',
-    'brief' => '大封于庙也，赉，予也，言所以锡予善人也。(1章6句)',
-    'keyword' => '关键词：诗经,周颂,闵予小子之什',
     'chapters' => [
         [
             'spell' => [

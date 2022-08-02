@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '常武·荡之什·大雅',
-    'nameShort' => '常武',
-    'nameSpell' => ' cháng wǔ',
-    'brief' => '召穆公美宣王也。有常德以立武事，因以为戒然。(6章8句)',
-    'keyword' => '关键词：诗经,战争,赞美,写人,大雅,荡之什',
     'chapters' => [
         [
             'spell' => [

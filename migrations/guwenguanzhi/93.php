@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷六 汉文 过秦论',
-    'nameShort' => '过秦论',
-    'author' => '晁错',
-    'keyword' => '古文观止,汉文',
     'chapters' => [
         [
             'content' => [

@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '墨子70章 号令',
-    'keyword' => '关键词：墨子,号令',
     'chapters' => [
         [
             'content' => [

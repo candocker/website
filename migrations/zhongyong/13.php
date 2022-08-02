@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '不远-第十三章',
-    'brief' => '道不远人，远人非道',
     'chapters' => [
         [
             'content' => [

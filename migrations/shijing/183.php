@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '沔水·鸿雁之什·小雅',
-    'nameShort' => '沔水',
-    'nameSpell' => ' miǎn shuǐ',
-    'brief' => '规宣王也。(3章8、8、6句)',
-    'keyword' => '关键词：诗经,忧国忧民,小雅,鸿雁之什',
     'chapters' => [
         [
             'spell' => [

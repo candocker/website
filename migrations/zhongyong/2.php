@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '时中-第二章',
-    'brief' => '君子中庸，小人反中庸',
     'chapters' => [
         [
             'content' => [

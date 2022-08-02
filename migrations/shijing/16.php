@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '甘棠·召南·国风',
-    'nameShort' => '甘棠',
-    'nameSpell' => ' gān táng',
-    'brief' => '美召伯也。召伯之教，明于南国。(3章3句)',
-    'keyword' => '关键词：诗经,怀人,国风,召南',
     'chapters' => [
         [
             'spell' => [

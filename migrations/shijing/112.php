@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '伐檀·魏风·国风',
-    'nameShort' => '伐檀',
-    'nameSpell' => ' fá tán',
-    'brief' => '刺贪也。在位贪鄙，无功而受禄，君子不得进仕尔。(3章9句)',
-    'keyword' => '关键词：古诗三百首,诗经,抒情,国风,魏风',
     'chapters' => [
         [
             'spell' => [

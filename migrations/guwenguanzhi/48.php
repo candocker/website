@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷三 周文 吴子使札来聘',
-    'nameShort' => '吴子使札来聘',
-    'author' => '公羊传',
-    'keyword' => '古文观止,周文',
     'chapters' => [
         [
             'content' => [

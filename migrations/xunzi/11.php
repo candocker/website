@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '王霸篇第十一',
-    'keyword' => '关键词：荀子,王霸',
     'chapters' => [
         [
             'content' => [

@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '园有桃·魏风·国风',
-    'nameShort' => '园有桃',
-    'nameSpell' => ' yuán yǒu táo',
-    'brief' => '刺时也。大夫忧其君小学而迫，而俭以啬，不能用其民，而无德教，日以侵削，故作是诗也。(2章12句)',
-    'keyword' => '关键词：诗经,国风,魏风',
     'chapters' => [
         [
             'spell' => [

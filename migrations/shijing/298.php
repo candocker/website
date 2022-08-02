@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '有駜·駉之什·鲁颂',
-    'nameShort' => '有駜',
-    'nameSpell' => ' yǒu bì',
-    'brief' => '颂僖公君臣之有道也。(3章9句)',
-    'keyword' => '关键词：诗经,宴饮,写马,鲁颂,駉之什',
     'chapters' => [
         [
             'spell' => [

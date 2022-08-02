@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '敬之·闵予小子之什·周颂',
-    'nameShort' => '敬之',
-    'nameSpell' => ' jìng zhī',
-    'brief' => '羣臣进戒嗣王也。(1章12句)',
-    'keyword' => '关键词：诗经,周颂,闵予小子之什',
     'chapters' => [
         [
             'spell' => [

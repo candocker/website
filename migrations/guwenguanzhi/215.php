@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十二 明文 吴山图记',
-    'nameShort' => '吴山图记',
-    'author' => '归有光',
-    'keyword' => '古文观止,明文',
     'chapters' => [
         [
             'content' => [

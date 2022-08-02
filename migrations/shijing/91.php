@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '子衿·郑风·国风',
-    'nameShort' => '子衿',
-    'nameSpell' => ' zǐ jīn',
-    'brief' => '刺学校废也。乱世则学校不修焉。(3章4句)',
-    'keyword' => '关键词：诗经,国风,郑风',
     'chapters' => [
         [
             'spell' => [

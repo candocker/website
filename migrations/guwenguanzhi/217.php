@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十二 明文 青霞先生文集序',
-    'nameShort' => '青霞先生文集序',
-    'author' => '茅坤',
-    'keyword' => '古文观止,明文',
     'chapters' => [
         [
             'content' => [

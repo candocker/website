@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷七 六朝唐文 陋室铭',
-    'nameShort' => '陋室铭',
-    'author' => '韩愈',
-    'keyword' => '刘禹锡',
     'chapters' => [
         [
             'content' => [

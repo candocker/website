@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '月出·陈风·国风',
-    'nameShort' => '月出',
-    'nameSpell' => ' yuè chū',
-    'brief' => '刺好色也。在位不好德，而说美色焉。(3章4句)',
-    'keyword' => '关键词：诗经,月亮,怀人,民谣,国风,陈风',
     'chapters' => [
         [
             'spell' => [

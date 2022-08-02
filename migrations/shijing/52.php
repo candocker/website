@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '相鼠·鄘风·国风',
-    'nameShort' => '相鼠',
-    'nameSpell' => ' xiàng shǔ',
-    'brief' => '刺无礼也。卫文公能正其羣臣，而刺在位承先君之化，无礼仪也。(3章4句)',
-    'keyword' => '关键词：古诗三百首,诗经,讽刺,国风,鄘风',
     'chapters' => [
         [
             'spell' => [

@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '荣辱篇第四',
-    'keyword' => '关键词：荀子,荣辱',
     'chapters' => [
         [
             'content' => [

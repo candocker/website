@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷三 周文 诸稽郢行成于吴',
-    'nameShort' => '诸稽郢行成于吴',
-    'author' => '国语',
-    'keyword' => '佚名',
     'chapters' => [
         [
             'content' => [

@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '溱洧·郑风·国风',
-    'nameShort' => '溱洧',
-    'nameSpell' => ' zhēn wěi',
-    'brief' => '刺乱也。兵革不息，男女相弃，淫风大行，莫之能救焉。(2章12句)',
-    'keyword' => '关键词：诗经,民谣,春天,爱情,国风,郑风',
     'chapters' => [
         [
             'spell' => [

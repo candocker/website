@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '鸡鸣·齐风·国风',
-    'nameShort' => '鸡鸣',
-    'nameSpell' => ' jī míng',
-    'brief' => '思贤妃也。哀公荒淫怠慢，故陈贤妃贞女夙夜警戒相成之道焉。(3章4句)',
-    'keyword' => '关键词：诗经,国风,齐风',
     'chapters' => [
         [
             'spell' => [

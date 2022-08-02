@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷三 周文 襄王不许请隧',
-    'nameShort' => '襄王不许请隧',
-    'author' => '国语',
-    'keyword' => '古文观止,周文',
     'chapters' => [
         [
             'content' => [

@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '墨子18章 非攻(中)',
-    'keyword' => '关键词：墨子,非攻(中)',
     'chapters' => [
         [
             'content' => [

@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '墨子31章 明鬼(下)',
-    'keyword' => '关键词：墨子,明鬼(下)',
     'chapters' => [
         [
             'content' => [

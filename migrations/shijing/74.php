@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '丘中有麻·王风·国风',
-    'nameShort' => '丘中有麻',
-    'nameSpell' => ' qiū zhōng yǒumá',
-    'brief' => '思贤也。庄王不明，贤人放逐，国人思之，而作是诗也。(3章4句)',
-    'keyword' => '关键词：诗经,爱情,国风,王风',
     'chapters' => [
         [
             'spell' => [

@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷五 汉文 太史公自序',
-    'nameShort' => '太史公自序',
-    'author' => '班固',
-    'keyword' => '古文观止,汉文',
     'chapters' => [
         [
             'content' => [

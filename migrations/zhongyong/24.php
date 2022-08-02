@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '前知-第二十四章',
-    'brief' => '国家兴亡，必有征兆',
     'chapters' => [
         [
             'content' => [

@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '臣工·臣工之什·周颂',
-    'nameShort' => '臣工',
-    'nameSpell' => ' chén gōng',
-    'brief' => '诸侯助祭遣于庙也。(1章15句)',
-    'keyword' => '关键词：诗经,农事,周颂,臣工之什',
     'chapters' => [
         [
             'spell' => [

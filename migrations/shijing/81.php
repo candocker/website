@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '遵大路·郑风·国风',
-    'nameShort' => '遵大路',
-    'nameSpell' => ' zūn dà lù',
-    'brief' => '思君子也。庄公失道，君子去之，国人思望焉。(2章4句)',
-    'keyword' => '关键词：诗经,抒情,国风,郑风',
     'chapters' => [
         [
             'spell' => [

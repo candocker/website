@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '雝·臣工之什·周颂',
-    'nameShort' => '雝',
-    'nameSpell' => ' yōng',
-    'brief' => '禘大祖也。(1章16句)',
-    'keyword' => '关键词：诗经,祭祀,父母,周颂,臣工之什',
     'chapters' => [
         [
             'spell' => [

@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '庭燎·鸿雁之什·小雅',
-    'nameShort' => '庭燎',
-    'nameSpell' => ' tíng liáo',
-    'brief' => '美宣王也。因以箴之。(3章5句)',
-    'keyword' => '关键词：诗经,写人,小雅,鸿雁之什',
     'chapters' => [
         [
             'spell' => [

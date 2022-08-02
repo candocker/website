@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '敝笱·齐风·国风',
-    'nameShort' => '敝笱',
-    'nameSpell' => ' bì gǒu',
-    'brief' => '刺文姜也。齐人恶鲁桓公微弱，不能防闲文姜，使至淫乱，为二国患焉。(3章4句)',
-    'keyword' => '关键词：诗经,国风,齐风',
     'chapters' => [
         [
             'spell' => [

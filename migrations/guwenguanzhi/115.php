@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷七 六朝唐文 春夜宴桃李园序 / 春夜宴从弟桃花园序',
-    'nameShort' => '春夜宴桃李园序 / 春夜宴从弟桃花园序',
-    'author' => '刘禹锡',
-    'keyword' => '古文观止,六朝唐文',
     'chapters' => [
         [
             'content' => [

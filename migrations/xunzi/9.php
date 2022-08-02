@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '王制篇第九',
-    'keyword' => '关键词：荀子,王制',
     'chapters' => [
         [
             'content' => [

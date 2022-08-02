@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十二 明文 深虑论',
-    'nameShort' => '深虑论',
-    'author' => '方孝孺',
-    'keyword' => '古文观止,明文',
     'chapters' => [
         [
             'content' => [

@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '葛屦·魏风·国风',
-    'nameShort' => '葛屦',
-    'nameSpell' => ' gé jù',
-    'brief' => '刺褊也。魏地陿隘，其民机巧趋利，其君俭啬褊急，而无德以将之。(3章4句)',
-    'keyword' => '关键词：诗经,怨刺,国风,魏风',
     'chapters' => [
         [
             'spell' => [

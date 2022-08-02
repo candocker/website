@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '蝃蝀·鄘风·国风',
-    'nameShort' => '蝃蝀',
-    'nameSpell' => ' dì dōng',
-    'brief' => '止奔也。卫文公能以道化其民，淫奔之耻，国人不齿也。(3章4句)',
-    'keyword' => '关键词：诗经,讽刺,国风,鄘风',
     'chapters' => [
         [
             'spell' => [

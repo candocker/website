@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '子道篇第二十九',
-    'keyword' => '关键词：荀子,子道',
     'chapters' => [
         [
             'content' => [

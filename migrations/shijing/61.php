@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '河广·卫风·国风',
-    'nameShort' => '河广',
-    'nameSpell' => ' hé guǎng',
-    'brief' => '宋襄公母归于卫，思而不止，故作是诗也。(2章4句)',
-    'keyword' => '关键词：古诗三百首,诗经,思乡,黄河,国风,卫风',
     'chapters' => [
         [
             'spell' => [

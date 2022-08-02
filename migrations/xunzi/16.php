@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '强国篇第十六',
-    'keyword' => '关键词：荀子,强国',
     'chapters' => [
         [
             'content' => [

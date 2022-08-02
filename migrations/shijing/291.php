@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '良耜·闵予小子之什·周颂',
-    'nameShort' => '良耜',
-    'nameSpell' => ' liáng sì',
-    'brief' => '秋报社稷也。(1章23句)',
-    'keyword' => '关键词：诗经,农事,周颂,闵予小子之什',
     'chapters' => [
         [
             'spell' => [

@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷十二 明文 蔺相如完璧归赵论',
-    'nameShort' => '蔺相如完璧归赵论',
-    'author' => '王世贞',
-    'keyword' => '古文观止,明文',
     'chapters' => [
         [
             'content' => [

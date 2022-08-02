@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷七 六朝唐文 阿房宫赋',
-    'nameShort' => '阿房宫赋',
-    'author' => '韩愈',
-    'keyword' => '古文观止,六朝唐文',
     'chapters' => [
         [
             'content' => [

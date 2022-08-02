@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '鸱鸮·豳风·国风',
-    'nameShort' => '鸱鸮',
-    'nameSpell' => ' chī xiāo',
-    'brief' => '周公救乱也。成王未知周公之志，公乃为诗以遗王，名之曰《鸱鸮》焉。(4章5句)',
-    'keyword' => '关键词：诗经,写鸟,寓理,哲理,国风,豳风',
     'chapters' => [
         [
             'spell' => [

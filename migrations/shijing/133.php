@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '无衣·秦风·国风',
-    'nameShort' => '无衣',
-    'nameSpell' => ' wú yī',
-    'brief' => '刺康公也。忘穆公之业，始弃其贤臣焉。(3章5句)',
-    'keyword' => '关键词：诗经,赞美,爱国,国风,秦风',
     'chapters' => [
         [
             'spell' => [

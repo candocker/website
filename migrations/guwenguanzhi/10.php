@@ -1,9 +1,5 @@
 <?php
 return [
-    'name' => '卷一 周文 宫之奇谏假道',
-    'nameShort' => '宫之奇谏假道',
-    'author' => '左传',
-    'keyword' => '古文观止',
     'chapters' => [
         [
             'content' => [

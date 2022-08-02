@@ -1,10 +1,5 @@
 <?php
 return [
-    'name' => '鹑之奔奔·鄘风·国风',
-    'nameShort' => '鹑之奔奔',
-    'nameSpell' => '',
-    'brief' => '刺卫宣姜也。卫人以为宣姜鹑鹊之不若也。(2章4句)',
-    'keyword' => '关键词：诗经,讽刺,国风,鄘风',
     'chapters' => [
         [
             'spell' => [
