@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '少司命',
-    'brief' => '',
     'chapters' => [
         [
             'content' => [

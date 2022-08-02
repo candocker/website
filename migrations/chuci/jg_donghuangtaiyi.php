@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '九歌-东皇太一',
-    'brief' => '',
     'chapters' => [
         [
             'content' => [

@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '九歌-国殇',
-    'brief' => '',
     'chapters' => [
         [
             'content' => [

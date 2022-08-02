@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '',
-    'brief' => '',
     'chapters' => [
         [
             'content' => [
@@ -112,7 +110,6 @@ return [
                 '昭质既设，大侯张只。',
                 '执弓挟矢，揖辞让只。',
                 '魂乎来归！尚三王只。',
-                '',
             ],
             'spell' => [
                 'qīng chūn shòu xiè, bái rì zhāo zhǐ.',

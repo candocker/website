@@ -1,5 +1,7 @@
 @php
 $rowCount = $mobileClass ? 3 : 4;
+$infos = $datas['infos'];
+$symbols = [0 => '■■■　■■■', 1 => '■■■■■■■'];
 @endphp
 @foreach ($datas['chapters'] as $pData)
 <table width="95%" border="1" align="center" cellspacing="0" class="indextable">
@@ -7,15 +9,15 @@ $rowCount = $mobileClass ? 3 : 4;
     <colgroup><col width="25%"><col width="25%"><col width="25%"><col></colgroup>
     <tbody>
     @php $i = 1; @endphp
-    @foreach ($pData['infos'] as $code => $pInfo)
+    @foreach ($pData['infos'] as $pCode)
     @if ($i % $rowCount == 1)<tr>@endif
     <td class="index_left_td">
         <span class="baguatu">
-        @foreach ($pInfo['symbols'] as $symbol) {{$symbol}}<br>@endforeach
+        @foreach ($infos[$pCode]['symbol'] as $symbol) {{$symbols[$symbol]}}<br>@endforeach
         </span>
         <span class="baguaname" style="text-align:center;margin-top: 20px;font-size:14pt;">
-            <a href="/show-zhouyi-{{$code}}">{{$pInfo['serial']}}-{{$pInfo['brief']}}</a>
-            @if (isset($pInfo['spell']) && $pInfo['spell'])<!--<br />(<span class="piny">{{$pInfo['spell']}}</span>)-->@endif
+            <a href="/show-zhouyi-{{$pCode}}">{{$infos[$pCode]['serial']}}-{{$infos[$pCode]['brief']}}</a>
+            @if (isset($infos[$pCode]['spell']) && $infos[$pCode]['spell'])<!--<br />(<span class="piny">{{$infos[$pCode]['spell']}}</span>)-->@endif
         </span>
     </td>
     @if ($i % $rowCount == $rowCount)</tr>@endif

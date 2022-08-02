@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '湘夫人',
-    'brief' => '',
     'chapters' => [
         [
             'content' => [

@@ -8,12 +8,45 @@ class ClassicalController extends AbstractController
 
     public function home()
     {
-        $cacheData = $this->request->input('cache_data');
+        /*$cacheData = $this->request->input('cache_data');
         if ($cacheData) {
             $this->dealDatas();exit();
-        }
+        }*/
 
         $datas = $this->getBookInfos(null, true);
+        /*$basePath = $this->getBasePath();
+        foreach ($datas['books'] as $bookCode => $data) {
+            //if (in_array($bookCode, ['zhouyi', 'shijing', 'yizhuan'])) {
+            if (in_array($bookCode, ['shijing', 'guwenguanzhi', 'daodejing', 'chuci', 'lunyu', 'daxue', 'mengzi', 'xunzi', 'zhuangzi', 'zhongyong', 'mozi', 'yizhuan'])) {
+                continue;
+            }
+            $file = $basePath . "book/{$bookCode}_catalogue.php";
+            $chapters = $this->getChapterInfos($bookCode);
+            //print_r($chapters);exit();
+            $keyValues = [];
+    
+            foreach ($chapters['chapters'] as $chapter) {
+                    foreach ($chapter['infos'] as $cCode => $data) {
+                        $keyValues[$cCode] = $data;
+                    }
+            }
+            //print_r($keyValues);exit();
+    
+                $str = "<?php\nreturn [\n";
+            foreach ($keyValues as $key => $value) {
+                //print_r($value);exit();
+                $spell = $value['spell'] ?? '';
+                $symbolStr = implode(',', $value['symbol']);
+                $rKey = $value['serial'] < 10 ? '0' . $value['serial'] . $key : $value['serial'] . $key;
+                echo "'" . $rKey . "', ";
+                $str .= "    '{$rKey}' => [\n        'code' => '{$rKey}', 'serial' => {$value['serial']}, 'binSerial' => {$value['binSerial']}, 'name' => '{$value['name']}', 'spell' => '{$spell}', 'brief' => '{$value['brief']}', \n        'down' => '{$value['down']}', 'up' => '{$value['up']}', 'downOther' => '{$value['downOther']}', 'upOther' => '{$value['upOther']}', 'symbol' => [{$symbolStr}],\n    ],\n";
+            }
+            $str .= "];";
+            echo $str;
+            //file_put_contents($file, $str);
+        }
+        echo $str;exit();
+        print_r($datas);exit();*/
         unset($datas['books']['yizhuan']);
         $datas['pageCode'] = 'home';
         return $this->customView('list', $datas);
@@ -35,21 +68,21 @@ class ClassicalController extends AbstractController
     public function show($bookCode, $chapterCode)
     {
         $bookData = $this->getBookInfos($bookCode);
-        if ($bookCode == 'zhouyi') {
+        /*if ($bookCode == 'zhouyi') {
             $datas = $this->getListZhou($chapterCode);
-        } else {
+        } else {*/
             $file = $this->getBasePath() . "{$bookCode}/{$chapterCode}.php";
             $datas = require($file);
             if (isset($bookData['noteType']) && $bookData['noteType'] == 'inner') {
                 $datas = $this->formatInnerNote($datas);
             }
-        }
+        //}
         $relateInfos = $this->getRelateInfo($bookCode, $chapterCode);
 
         $datas['bookData'] = $bookData;
         $datas['bookCode'] = $bookCode;
-        $datas['tdkData'] = $this->formatTdk($datas);
         $datas = array_merge($datas, $relateInfos);
+        $datas['tdkData'] = $this->formatTdk($datas);
 
         $pageCodes = [
             'zhouyi' => 'zhouyi',
@@ -64,30 +97,17 @@ class ClassicalController extends AbstractController
     protected function getRelateInfo($bookCode, $code, $types = ['pre', 'next'])
     {
         $chapters = $this->getChapterInfos($bookCode);
-        //print_r($chapters['chapters']);exit();
-        foreach ($chapters['chapters'] as $chapter) {
-            if ($bookCode == 'shijing') {
-                foreach ($chapter['elems'] as $tmp) {
-                    foreach ($tmp['infos'] as $data) {
-                        $keyValues[$data['code']] = $data;
-                    }
-                }
-            } else {
-                foreach ($chapter['infos'] as $data) {
-                    $keyValues[$data['code']] = $data;
-                }
-            }
-        }
-        $keys = array_keys($keyValues);
+        $infos = $chapters['infos'];
+        $keys = array_keys($infos);
         $cIndex = array_search($code, $keys);
-        $results = [];
+        $results = $infos[$code];
         foreach ($types as $type) {
             $index = $type == 'pre' ? $cIndex - 1 : $cIndex + 1;
 
             if ($index < 0 || $index > count($keys)) {
                 $results[$type] = ['code' => '', 'name' => '没有了'];
             } else {
-                $results[$type] = $keyValues[$keys[$index]];
+                $results[$type] = $infos[$keys[$index]];
             }
         }
         return $results;
@@ -138,13 +158,16 @@ class ClassicalController extends AbstractController
     protected function getChapterInfos($bookCode, $withTdk = false)
     {
         $bookData = $this->getBookInfos($bookCode);
-        if ($bookCode == 'zhouyi') {
+        /*if ($bookCode == 'zhouyi') {
             $chapterDatas = $this->getListZhou();
-        } else {
+        } else {*/
             $chapterFile = $this->getBasePath() . "book/{$bookCode}.php";
+            $chapterInfosFile = $this->getBasePath() . "book/{$bookCode}_catalogue.php";
             $chapterDatas = require($chapterFile);
-        }
+            $chapterDatas['infos'] = require($chapterInfosFile);
+        //}
 
+        //print_r($chapterDatas);exit();
         $chapterDatas['tdkData'] = $this->formatTdk($bookData);
         $chapterDatas = array_merge($bookData, $chapterDatas);
         $chapterDatas['bookCode'] = $bookCode;

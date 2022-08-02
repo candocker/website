@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '九辩-宋玉',
-    'brief' => '',
     'chapters' => [
         [
             'content' => [

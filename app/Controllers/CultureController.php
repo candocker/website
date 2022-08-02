@@ -20,7 +20,7 @@ class CultureController extends AbstractController
         return $this->customView('home', ['datas' => $datas]);
     }
 
-    public function graphic($sort = '', $extCode = null)
+    public function series($sort = '', $extcode = null)
     {
         //$datas = $this->getRepositoryObj('culture-bookPublish')->getCategoryDatas($sort);
         $datas = [];
@@ -38,7 +38,7 @@ class CultureController extends AbstractController
             'keywords' => '',
             'description' => '',
         ];
-        $datas['footerLinks'] = $graphicService->getFooterLinks();
+        //$datas['footerLinks'] = $graphicService->getFooterLinks();
         //protected function getGraphicDatas($graphicService, $code, $extcode, $params)
         return $this->customView('home', $datas);
         return $this->customView('table', $datas);

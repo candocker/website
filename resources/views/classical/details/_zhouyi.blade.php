@@ -10,11 +10,12 @@ $showElems = [
     'xiang' => ['class' => 'xiang xiangci daxiang', 'name' => '象曰', 'classPre' => 'xiangci'],
     'tuan' => ['class' => 'tuan', 'name' => '彖曰', 'classPre' => '']
 ];
+$symbols = [0 => '■■■　■■■', 1 => '■■■■■■■'];
 @endphp
 <h1 style="display:none;">《周易》第{{$datas['serial']}}卦 {{$datas['brief']}}</h1>
 <span class="title4">{{$datas['up']}}上<br>{{$datas['down']}}下</span>
 <span class="baguatu">
-@foreach ($datas['symbols'] as $symbol) {{$symbol}}<br>@endforeach
+@foreach ($datas['symbol'] as $symbol) {{$symbols[$symbol]}}<br>@endforeach
 </span>
 <center>
     <span class="title3">{{$datas['serial']}} {{$datas['brief']}} 

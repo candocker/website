@@ -1,7 +1,5 @@
 <?php
 return [
-    'name' => '远游',
-    'brief' => '',
     'chapters' => [
         [
             'content' => [
