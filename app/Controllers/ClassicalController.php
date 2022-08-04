@@ -31,11 +31,11 @@ class ClassicalController extends AbstractController
     public function show($bookCode, $chapterCode)
     {
         $bookData = $this->getBookInfos($bookCode);
-            $file = $this->getBasePath() . "{$bookCode}/{$chapterCode}.php";
-            $datas = require($file);
-            if (isset($bookData['noteType']) && $bookData['noteType'] == 'inner') {
-                $datas = $this->formatInnerNote($datas);
-            }
+        $file = $this->getBasePath() . "books/{$bookCode}/{$chapterCode}.php";
+        $datas = require($file);
+        if (isset($bookData['noteType']) && $bookData['noteType'] == 'inner') {
+            $datas = $this->formatInnerNote($datas);
+        }
         $relateInfos = $this->getRelateInfo($bookCode, $chapterCode);
 
         $datas['bookData'] = $bookData;
@@ -101,7 +101,7 @@ class ClassicalController extends AbstractController
 
     protected function getBookInfos($bookCode = null, $withTdk = false)
     {
-        $bookListFile = $this->getBasePath() . 'book/list.php';
+        $bookListFile = $this->getBasePath() . 'booklist/index.php';
         $bookDatas = require($bookListFile);
         if (!empty($bookCode)) {
             return $bookDatas['books'][$bookCode];
@@ -118,8 +118,8 @@ class ClassicalController extends AbstractController
     {
         $bookData = $this->getBookInfos($bookCode);
 
-        $chapterFile = $this->getBasePath() . "book/{$bookCode}.php";
-        $chapterInfosFile = $this->getBasePath() . "book/{$bookCode}_catalogue.php";
+        $chapterFile = $this->getBasePath() . "booklist/{$bookCode}.php";
+        $chapterInfosFile = $this->getBasePath() . "booklist/{$bookCode}_catalogue.php";
         $chapterDatas = require($chapterFile);
         $chapterDatas['infos'] = require($chapterInfosFile);
 

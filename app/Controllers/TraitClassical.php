@@ -2,6 +2,8 @@
 
 namespace ModuleWebsite\Controllers;
 
+use Overtrue\ChineseCalendar\Calendar;
+
 trait TraitClassical
 {
     protected function dealDatas()
@@ -56,6 +58,42 @@ trait TraitClassical
             'binSerial' => bindec(implode('', array_reverse($symbol))),
         ];
         return $data;
+    }
+
+    public function test()
+    {
+        $calendar = new Calendar();
+
+        $result = $calendar->solar(1881, 8, 3);
+        var_dump($result);exit();
+        $basePath = $this->getBasePath();
+        $elems = ['n9.php', 'a.php', 'n1.php', 'n9.php'];
+        $results = [];
+        foreach ($elems as $elem) {
+            $file = $basePath . "{$elem}";
+            $data = require($file);
+            foreach ($data as $key => $value) {
+                if (!isset($results[$key])) {
+                    $results[$key] = $value;
+                } else {
+                    $results[$key] = array_merge($results[$key], $value);
+                }
+                //echo $key . '<br />';
+            }
+        }
+        $str = "<?php\nreturn [\n";
+        foreach ($results as $rKey => $rValue) {
+            $str .= "'{$rKey}' => [\n";
+            foreach ($rValue as $rStr) {
+                $str .= "    '{$rStr}',\n";
+            }
+            $str .= "],\n";
+        }
+        $str .= "];";
+        $file = $basePath . 'luxun/resume.php';
+        file_put_contents($file, $str);
+        print_r($results);
+        echo $basePath;
     }
 
     public function deal()

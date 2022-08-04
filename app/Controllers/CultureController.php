@@ -26,7 +26,6 @@ class CultureController extends AbstractController
         $pointCodes = ['luxunquanji1938', 'luxunquanji2005', 'luxunquanji1958', 'luxunquanji1981', 'luxunmanuscript', 'luxunmanuall'];
         $datas = $repository->getSeriesDatas($pointCodes);
         return $this->success($datas);
-        echo 'sss';exit();
     }
 
     public function luxunWorks()
@@ -35,7 +34,6 @@ class CultureController extends AbstractController
         $pointCodes = ['luxunquanji1938', 'luxunquanji2005', 'luxunquanji1958', 'luxunquanji1981', 'luxunmanuscript', 'luxunmanuall'];
         $datas = $repository->getSeriesDatas($pointCodes);
         return $this->success($datas);
-        echo 'sss';exit();
     }
 
     public function series($sort = '', $extcode = null)
