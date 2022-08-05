@@ -1,5 +1,4 @@
 <meta charset="utf-8" />
-<title>Sample Page 1 - Uix Kit</title>
 <!-- Compatibility Settings -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -43,7 +42,6 @@
 <script src="{{$commonAssetUrl}}/website/assets/js/min/prefixfree.min.js?ver=1.0.7"></script>
 
 <!-- SEO -->
-<meta name="description" content="A free web kits for fast web design and development, compatible with Bootstrap v4.">
 <meta name="generator" content="Uix Kit" />  
 <meta name="author" content="UIUX Lab"> 
 <!-- SEO  end -->

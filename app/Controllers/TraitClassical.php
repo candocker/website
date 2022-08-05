@@ -62,6 +62,45 @@ trait TraitClassical
 
     public function test()
     {
+        //$basePath = $this->getBasePath();
+        //$file = $basePath . 'luxun/works.php';
+        //$datas = require($file);
+        $model = $this->getModelObj('culture-bookPublish');
+        $volumeModel = $this->getModelObj('culture-seriesVolume');
+        $pointCodes = ['luxunquanji1938', 'luxunquanji2005', 'luxunquanji1958', 'luxunquanji1981', 'luxunmanuscript', 'luxunyiwenji1958', 'luxunguji1999'];
+        $datas = $volumeModel->whereIn('series_code', $pointCodes)->get();
+        foreach ($datas as $key => $value) {
+            $description = $value['description'];
+            $description = str_replace('  ', ' ', $description);
+            $infos = array_filter(explode(' ', $description));
+            echo $value['series_code'] . '-' . $value['name'];
+            //print_r($infos);
+            $isTranslator = false;
+            $seriesCode = $value['series_code'];
+            if ($seriesCode == 'luxunyiwenji1958') {
+                $isTranslator = true;
+            } else if ($seriesCode == 'luxunquanji1938' && in_array($value['id'], [102, 103, 104, 105, 106, 107, 108, 109, 110, 111])) {
+                $isTranslator = true;
+            }
+            $i = 1;
+            foreach ($infos as $info) {
+                $data = [
+                    'series_code' => $seriesCode,
+                    'series_volume_id' => $value['id'],
+                    'serial' => $i,
+                    'name' => $info,
+                    'brief' => '',
+                    'translator' => $isTranslator ? '鲁迅' : '',
+                    'author' => $isTranslator ? '' : '鲁迅',
+                    'publish_at' => $value['publish_at'],
+                    'nationality' => $isTranslator ? '' : '中国',
+                ];
+                $i++;
+                //$model->create($data);
+                print_r($data);
+            }
+        }
+        exit();
         $calendar = new Calendar();
 
         $result = $calendar->solar(1881, 8, 3);

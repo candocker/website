@@ -11,6 +11,7 @@ $bodyClasses = [
 <!DOCTYPE html>
 <html lang="en-US" dir="{{$layoutElem}}">
 <head>
+@yield('dynamicMeta')
 @include('layouts.website._header', ['layoutElem' => $layoutElem])
 </head>  
 <body @yield('bodyClass')>

@@ -36,27 +36,23 @@ class CultureController extends AbstractController
         return $this->success($datas);
     }
 
-    public function series($sort = '', $extcode = null)
+    public function series($sort = '', $volumeId = null)
     {
         //$datas = $this->getRepositoryObj('culture-bookPublish')->getCategoryDatas($sort);
-        $datas = [];
+        //$datas = [];
 
         $params = $this->request->all();
         $graphicService = $this->getServiceObj('culture-graphic');
 
-        $sort = empty($sort) ? 'home' : $sort;
+        if (!empty($volumeId)) {
+            $datas = $graphicService->formatVolumeDatas($volumeId);
+        } else if (!empty($sort)) {
+            $datas = $graphicService->formatSeriesDatas($volumeId);
+        } else {
+            $datas = $graphicService->formatAllSeries();
+        }
 
-        $datas = $graphicService->formatResultDatas($sort, $extcode, $params);
-        $datas['graphics'] = $datas;
-
-        $datas['tdkData'] = [
-            'title' => '驾驭浩瀚的网络信息',
-            'keywords' => '',
-            'description' => '',
-        ];
-        //$datas['footerLinks'] = $graphicService->getFooterLinks();
-        //protected function getGraphicDatas($graphicService, $code, $extcode, $params)
-        return $this->customView('home', $datas);
+        //$datas = $graphicService->formatResultDatas($sort, $extcode, $params);
         return $this->customView('table', $datas);
     }
 
