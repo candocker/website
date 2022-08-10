@@ -1,65 +1,65 @@
 @extends('layouts.website')
 @section('bodyClass')class="page"@endsection
 @section('content')
-		<main id="uix-maincontent">
-			<!-- Title 
-			====================================================== -->
-			<section class="uix-spacing--s">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<h3>3D Liquid Scrollspy Slider</h3>
-							<p>Liquid transition effect during rolling.</p>
-							<hr>
-						</div>
-					</div>
-					<!-- .row end -->
-				</div>
-				<!-- .container end -->
-			</section>
-			<!-- Loader 
-			====================================================== -->
-			<div id="uix-3d-slider--liquid-scrollspy__loader" style="height: 5px; background: #A45CFB; position: absolute; z-index: 1; bottom: 0; left: 0; width: 0%;"></div>
-		   <!-- Content 
-			====================================================== -->
-		   <div role="banner" class="uix-3d-slider--liquid-scrollspy__wrapper">
-			   <div class="uix-3d-slider__outline uix-3d-slider--liquid-scrollspy" 
-				  data-draggable="false"
-				  data-draggable-cursor="move"	  
+        <main id="uix-maincontent">
+            <!-- Title 
+            ====================================================== -->
+            <section class="uix-spacing--s">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>3D Liquid Scrollspy Slider</h3>
+                            <p>Liquid transition effect during rolling.</p>
+                            <hr>
+                        </div>
+                    </div>
+                    <!-- .row end -->
+                </div>
+                <!-- .container end -->
+            </section>
+            <!-- Loader 
+            ====================================================== -->
+            <div id="uix-3d-slider--liquid-scrollspy__loader" style="height: 5px; background: #A45CFB; position: absolute; z-index: 1; bottom: 0; left: 0; width: 0%;"></div>
+           <!-- Content 
+            ====================================================== -->
+           <div role="banner" class="uix-3d-slider--liquid-scrollspy__wrapper">
+               <div class="uix-3d-slider__outline uix-3d-slider--liquid-scrollspy" 
+                  data-draggable="false"
+                  data-draggable-cursor="move"      
                   data-scrollspy="true"
-				  data-auto="true"
-				  data-loop="true"
-				  data-speed="800" 
-				  data-timing="10000" 
-				  data-count-total="false"
-				  data-count-now="false"
-				  data-filter-texture="../assets/images/dmaps/displacement/1.jpg"
-				  data-controls-pagination=".my-a-slider-pagination-2" 
-				  data-controls-arrows=".my-a-slider-arrows-2">
-				   <div class="uix-3d-slider--liquid-scrollspy__inner">
-					   <div class="uix-3d-slider--liquid-scrollspy__item">
-						   <img src="../assets/images/demo/spiral-galaxy-1920x1080.jpg" alt="Title 1" />
-					   </div>
-					   <div class="uix-3d-slider--liquid-scrollspy__item">
-						   <img src="../assets/images/demo/spiral-galaxy-1920x1080-2.jpg" alt="Title 2" />
-					   </div>
+                  data-auto="true"
+                  data-loop="true"
+                  data-speed="800" 
+                  data-timing="10000" 
+                  data-count-total="false"
+                  data-count-now="false"
+                  data-filter-texture="{{$commonAssetUrl}}/website/assets/images/dmaps/displacement/1.jpg"
+                  data-controls-pagination=".my-a-slider-pagination-2" 
+                  data-controls-arrows=".my-a-slider-arrows-2">
+                   <div class="uix-3d-slider--liquid-scrollspy__inner">
+                       <div class="uix-3d-slider--liquid-scrollspy__item">
+                           <img src="{{$commonAssetUrl}}/website/assets/images/demo/spiral-galaxy-1920x1080.jpg" alt="Title 1" />
+                       </div>
+                       <div class="uix-3d-slider--liquid-scrollspy__item">
+                           <img src="{{$commonAssetUrl}}/website/assets/images/demo/spiral-galaxy-1920x1080-2.jpg" alt="Title 2" />
+                       </div>
                        <div class="uix-3d-slider--liquid-scrollspy__item">
                               <div class="uix-video__slider" data-embed-video-width="auto" data-embed-video-height="auto" data-embed-video-controls="false" data-embed-video-autoplay="true" data-embed-video-loop="false">
-                                  <video id="video-demo-1" class="video-js vjs-default-skin" controls poster="../assets/videos/1440x1050/demo.jpg">
-                                      <source src="../assets/videos/1440x1050/demo.mp4" type="video/mp4">
+                                  <video id="video-demo-1" class="video-js vjs-default-skin" controls poster="{{$commonAssetUrl}}/website/assets/videos/1440x1050/demo.jpg">
+                                      <source src="{{$commonAssetUrl}}/website/assets/videos/1440x1050/demo.mp4" type="video/mp4">
                                   </video>
                               </div>
                        </div>  
-				   </div>
-				  <!-- /.uix-3d-slider--liquid-scrollspy__inner -->
-				</div>
-			   <!-- /.uix-advanced-slider__outline -->  
-		   </div>
-		   <!-- /.uix-3d-slider--liquid-scrollspy__wrapper -->   
-		   <div class="uix-3d-slider--liquid-scrollspy__pagination my-a-slider-pagination-2"></div>
-		   <div class="uix-3d-slider--liquid-scrollspy__arrows my-a-slider-arrows-2">
-				<a href="#" class="uix-3d-slider--liquid-scrollspy__arrows--prev"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
-				<a href="#" class="uix-3d-slider--liquid-scrollspy__arrows--next"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-		   </div>    
-		</main>
+                   </div>
+                  <!-- /.uix-3d-slider--liquid-scrollspy__inner -->
+                </div>
+               <!-- /.uix-advanced-slider__outline -->  
+           </div>
+           <!-- /.uix-3d-slider--liquid-scrollspy__wrapper -->   
+           <div class="uix-3d-slider--liquid-scrollspy__pagination my-a-slider-pagination-2"></div>
+           <div class="uix-3d-slider--liquid-scrollspy__arrows my-a-slider-arrows-2">
+                <a href="#" class="uix-3d-slider--liquid-scrollspy__arrows--prev"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
+                <a href="#" class="uix-3d-slider--liquid-scrollspy__arrows--next"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+           </div>    
+        </main>
 @endsection

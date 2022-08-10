@@ -1,28 +1,28 @@
 @extends('layouts.website')
 @section('bodyClass')class="page"@endsection
 @section('content')
-		<main id="uix-maincontent">
-			<!-- Content 
-			====================================================== -->
-			<section class="uix-spacing--s uix-spacing--no-bottom">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<h3>Form Layout</h3>
-							<hr>
-						</div>
-					</div>
-					<!-- .row end -->
-				</div>
-				<!-- .container end -->
-			</section>
-		   <!-- Content 
-			====================================================== -->
-			<section class="uix-spacing--s">
-				<div class="container">
-						<div class="row">
-							<div class="col-12">
-									 <form method="post" action="#" id="app-my-form">
+        <main id="uix-maincontent">
+            <!-- Content 
+            ====================================================== -->
+            <section class="uix-spacing--s uix-spacing--no-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Form Layout</h3>
+                            <hr>
+                        </div>
+                    </div>
+                    <!-- .row end -->
+                </div>
+                <!-- .container end -->
+            </section>
+           <!-- Content 
+            ====================================================== -->
+            <section class="uix-spacing--s">
+                <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                     <form method="post" action="#" id="app-my-form">
                                         <div class="uix-controls-layout">
                                             <div class="uix-controls-layout__content">
                                                 <div class="uix-controls-layout__content__inner">
@@ -164,12 +164,12 @@
                                                 </div>
                                             </div>
                                         </div>          
-									</form>
-							</div>     
-						</div>
-						<!-- .row end -->  
-				</div>
-				<!-- .container end -->
-			</section>
-		</main>
+                                    </form>
+                            </div>     
+                        </div>
+                        <!-- .row end -->  
+                </div>
+                <!-- .container end -->
+            </section>
+        </main>
 @endsection

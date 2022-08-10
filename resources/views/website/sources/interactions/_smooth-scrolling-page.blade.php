@@ -1,7 +1,7 @@
 @extends('layouts.website')
 @section('bodyClass')class="page"@endsection
 @section('content')
-		<main id="uix-maincontent">
+        <main id="uix-maincontent">
             <div id="uix-scrollspy-area">
                 <!-- Scrolling Progress 
                 ====================================================== -->           
@@ -31,83 +31,83 @@
                     <div class="container">
                             <div class="row">
                                 <div class="col-12">
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>							
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>							
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<div class="uix-scrollspy-animate--parallax__wrapper" data-scrollspy-speed="0.1">
-										<div class="uix-scrollspy-animate--parallax">
-										   <img src="../assets/images/demo/cool-slider-3.jpg" alt="null">            
-										</div>                        
-									</div>
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>                      
-									<p>
-									   <img src="../assets/images/demo/test-img-big-1.jpg" width="300" alt="null" class="uix-scrollspy-animate--transparency" data-scrollspy-speed="0.1"> 
-									   <img src="../assets/images/demo/test-img-big-2.jpg" width="300" alt="null" class="uix-scrollspy-animate--transparency" data-scrollspy-speed="0.4">    
-									   <img src="../assets/images/demo/test-img-big-3.jpg" width="300" alt="null" class="uix-scrollspy-animate--transparency" data-scrollspy-speed="0.8">      
-									</p>                           
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<h3>scroll spy set element animation from HTML <code>data-uix-anim</code> attribute</h3>       
-									<p style="transition: .1s ease-in-out;" class="uix-el--transparent" data-uix-anim='{"viewport":"60%","from":{"opacity":0,"y":150},"to":{"opacity":1,"y":0},"ease":"Power2.easeOut","duration":0.5,"delay":0,"infinite":true}'><img src="../assets/images/demo/cool-slider-1.jpg" alt=""></p>
-									<p style="transition: .1s ease-in-out;" class="uix-el--transparent" data-uix-anim='{"viewport":"90%","from":{"opacity":0},"to":{"opacity":1},"ease":"Power2.easeOut","duration":0.5,"delay":0.3,"infinite":false}'>
-										<h2 class="uix-typo--style-bold" data-text-eff="letters-eff-flyInOut-b1" data-text-eff-speed="500">We're Visual Design Studio</h2>                        
-									</p>                                    
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<div class="uix-scrollspy-animate--parallax__wrapper" data-scrollspy-speed="0.2">
-										<div class="uix-scrollspy-animate--parallax">
-										   <img src="../assets/images/demo/cool-slider-2.jpg" alt="null">            
-										</div>                        
-									</div> 
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<p>
-									   <img src="../assets/images/demo/test-img-big-1.jpg" width="300" alt="null" class="uix-scrollspy-animate--transparency" data-scrollspy-speed="0.1" data-scrollspy-reverse="true"> 
-									   <img src="../assets/images/demo/test-img-big-2.jpg" width="300" alt="null" class="uix-scrollspy-animate--transparency" data-scrollspy-speed="0.4" data-scrollspy-reverse="true">    
-									   <img src="../assets/images/demo/test-img-big-3.jpg" width="300" alt="null" class="uix-scrollspy-animate--transparency" data-scrollspy-speed="0.8" data-scrollspy-reverse="true">       
-									</p>   
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>                   
-									<p>Scene 1 progress demo.</p>
-									<p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>                            
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>                            
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <div class="uix-scrollspy-animate--parallax__wrapper" data-scrollspy-speed="0.1">
+                                        <div class="uix-scrollspy-animate--parallax">
+                                           <img src="{{$commonAssetUrl}}/website/assets/images/demo/cool-slider-3.jpg" alt="null">            
+                                        </div>                        
+                                    </div>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>                      
+                                    <p>
+                                       <img src="{{$commonAssetUrl}}/website/assets/images/demo/test-img-big-1.jpg" width="300" alt="null" class="uix-scrollspy-animate--transparency" data-scrollspy-speed="0.1"> 
+                                       <img src="{{$commonAssetUrl}}/website/assets/images/demo/test-img-big-2.jpg" width="300" alt="null" class="uix-scrollspy-animate--transparency" data-scrollspy-speed="0.4">    
+                                       <img src="{{$commonAssetUrl}}/website/assets/images/demo/test-img-big-3.jpg" width="300" alt="null" class="uix-scrollspy-animate--transparency" data-scrollspy-speed="0.8">      
+                                    </p>                           
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <h3>scroll spy set element animation from HTML <code>data-uix-anim</code> attribute</h3>       
+                                    <p style="transition: .1s ease-in-out;" class="uix-el--transparent" data-uix-anim='{"viewport":"60%","from":{"opacity":0,"y":150},"to":{"opacity":1,"y":0},"ease":"Power2.easeOut","duration":0.5,"delay":0,"infinite":true}'><img src="{{$commonAssetUrl}}/website/assets/images/demo/cool-slider-1.jpg" alt=""></p>
+                                    <p style="transition: .1s ease-in-out;" class="uix-el--transparent" data-uix-anim='{"viewport":"90%","from":{"opacity":0},"to":{"opacity":1},"ease":"Power2.easeOut","duration":0.5,"delay":0.3,"infinite":false}'>
+                                        <h2 class="uix-typo--style-bold" data-text-eff="letters-eff-flyInOut-b1" data-text-eff-speed="500">We're Visual Design Studio</h2>                        
+                                    </p>                                    
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <div class="uix-scrollspy-animate--parallax__wrapper" data-scrollspy-speed="0.2">
+                                        <div class="uix-scrollspy-animate--parallax">
+                                           <img src="{{$commonAssetUrl}}/website/assets/images/demo/cool-slider-2.jpg" alt="null">            
+                                        </div>                        
+                                    </div> 
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>
+                                       <img src="{{$commonAssetUrl}}/website/assets/images/demo/test-img-big-1.jpg" width="300" alt="null" class="uix-scrollspy-animate--transparency" data-scrollspy-speed="0.1" data-scrollspy-reverse="true"> 
+                                       <img src="{{$commonAssetUrl}}/website/assets/images/demo/test-img-big-2.jpg" width="300" alt="null" class="uix-scrollspy-animate--transparency" data-scrollspy-speed="0.4" data-scrollspy-reverse="true">    
+                                       <img src="{{$commonAssetUrl}}/website/assets/images/demo/test-img-big-3.jpg" width="300" alt="null" class="uix-scrollspy-animate--transparency" data-scrollspy-speed="0.8" data-scrollspy-reverse="true">       
+                                    </p>   
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>                   
+                                    <p>Scene 1 progress demo.</p>
+                                    <p>Scene 1 progress demo.</p>
                                 </div>
                             </div>
                             <!-- .row end -->
@@ -120,24 +120,24 @@
                     <div class="container">
                             <div class="row">
                                 <div class="col-12">
-									<p>Scene 2 progress demo.</p>
-									<p>Scene 2 progress demo.</p>
-									<p>Scene 2 progress demo.</p>
-									<p>Scene 2 progress demo.</p>
-									<p>Scene 2 progress demo.</p>
-									<p>Scene 2 progress demo.</p>							
-									<p>Scene 2 progress demo.</p>
-									<p>Scene 2 progress demo.</p>
-									<p>Scene 2 progress demo.</p>
-									<p>Scene 2 progress demo.</p>
-									<p>Scene 2 progress demo.</p>
-									<p>Scene 2 progress demo.</p>
-									<p>Scene 2 progress demo.</p>
-									<p>Scene 2 progress demo.</p>
-									<p>Scene 2 progress demo.</p>
-									<p>Scene 2 progress demo.</p>
-									<p>Scene 2 progress demo.</p>
-									<p>Scene 2 progress demo.</p>							
+                                    <p>Scene 2 progress demo.</p>
+                                    <p>Scene 2 progress demo.</p>
+                                    <p>Scene 2 progress demo.</p>
+                                    <p>Scene 2 progress demo.</p>
+                                    <p>Scene 2 progress demo.</p>
+                                    <p>Scene 2 progress demo.</p>                            
+                                    <p>Scene 2 progress demo.</p>
+                                    <p>Scene 2 progress demo.</p>
+                                    <p>Scene 2 progress demo.</p>
+                                    <p>Scene 2 progress demo.</p>
+                                    <p>Scene 2 progress demo.</p>
+                                    <p>Scene 2 progress demo.</p>
+                                    <p>Scene 2 progress demo.</p>
+                                    <p>Scene 2 progress demo.</p>
+                                    <p>Scene 2 progress demo.</p>
+                                    <p>Scene 2 progress demo.</p>
+                                    <p>Scene 2 progress demo.</p>
+                                    <p>Scene 2 progress demo.</p>                            
                                 </div>
                             </div>
                             <!-- .row end -->
@@ -150,14 +150,14 @@
                     <div class="container">
                             <div class="row">
                                 <div class="col-12">
-									<p>Scene 3 progress demo.</p>
-									<p>Scene 3 progress demo.</p>
-									<p>Scene 3 progress demo.</p>
-									<p>Scene 3 progress demo.</p>								
-									<p>Scene 3 progress demo.</p>
-									<p>Scene 3 progress demo.</p>
-									<p>Scene 3 progress demo.</p>
-									<p>Scene 3 progress demo.</p>							
+                                    <p>Scene 3 progress demo.</p>
+                                    <p>Scene 3 progress demo.</p>
+                                    <p>Scene 3 progress demo.</p>
+                                    <p>Scene 3 progress demo.</p>                                
+                                    <p>Scene 3 progress demo.</p>
+                                    <p>Scene 3 progress demo.</p>
+                                    <p>Scene 3 progress demo.</p>
+                                    <p>Scene 3 progress demo.</p>                            
                                 </div>
                             </div>
                             <!-- .row end -->

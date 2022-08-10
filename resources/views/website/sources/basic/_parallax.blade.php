@@ -1,97 +1,97 @@
 @extends('layouts.website')
 @section('bodyClass')class="page"@endsection
 @section('content')
-		<main id="uix-maincontent">
-			<!-- Parallax & Overlay 
-			============================================= --> 
-			<section>
-				<div class="uix-parallax uix-height--100" data-fully-visible="false" data-offset-top="0" data-overlay-bg="false" data-skew="0" data-speed="0.1">
-					<img class="uix-parallax__img" src="../assets/images/demo/spiral-galaxy-1920x1080.jpg" alt="">
-					<div class="uix-v-align--absolute uix-t-c">
-						<h2>Fulscreen + Vertically Centered Text</h2>
-					</div>
-				</div>
-			</section>
-			<section class="uix-spacing--s">
-				<div class="uix-parallax uix-height--100" data-fully-visible="false" data-offset-top="150" data-overlay-bg="false" data-skew="0" data-speed="0.2">
-					<img class="uix-parallax__img" src="../assets/images/demo/spiral-galaxy-1920x1080.jpg" alt="">
-					<div class="uix-v-align--absolute uix-t-c">
-						<h2>The top offset is 150px.</h2>
-					</div>
-				</div>
-			</section>
-			<section class="uix-spacing--s">
-				<div class="uix-parallax uix-height--100 uix-typo--color-white" data-fully-visible="false" data-offset-top="0" data-overlay-bg="rgba(0,0,0,.6)" data-skew="0" data-speed="0.4">
-					<img class="uix-parallax__img" src="../assets/images/demo/spiral-galaxy-1920x1080.jpg" alt="">
-					<div class="uix-v-align--absolute uix-t-c">
-						<h2 class="uix-parallax--el" data-transition="all 0.4s cubic-bezier(0, 0, 0.34, 0.96) 0s"  data-speed="-0.4">
-							Fulscreen + Parallax Element
-							<p class="uix-typo--h4">Has Overlay Background</p>
-						</h2>
-					</div>
-				</div>
-			</section>
-			<section class="uix-spacing--s">
-				<div class="uix-height--100 is-mobile-still" data-bg='{"src":"../assets/images/demo/spiral-galaxy-1920x1080.jpg","position":"top left","size":"cover","repeat":"no-repeat","fill":false,"offsetTop":0,"parallax":-0.3}'>
-					<div class="uix-v-align--absolute uix-t-c">
-						<div class="row">
-							<div class="col-12">
-								<h2>
-									Use the <code>data-bg</code> attribute to set the parallax.
-								</h2>
+        <main id="uix-maincontent">
+            <!-- Parallax & Overlay 
+            ============================================= --> 
+            <section>
+                <div class="uix-parallax uix-height--100" data-fully-visible="false" data-offset-top="0" data-overlay-bg="false" data-skew="0" data-speed="0.1">
+                    <img class="uix-parallax__img" src="{{$commonAssetUrl}}/website/assets/images/demo/spiral-galaxy-1920x1080.jpg" alt="">
+                    <div class="uix-v-align--absolute uix-t-c">
+                        <h2>Fulscreen + Vertically Centered Text</h2>
+                    </div>
+                </div>
+            </section>
+            <section class="uix-spacing--s">
+                <div class="uix-parallax uix-height--100" data-fully-visible="false" data-offset-top="150" data-overlay-bg="false" data-skew="0" data-speed="0.2">
+                    <img class="uix-parallax__img" src="{{$commonAssetUrl}}/website/assets/images/demo/spiral-galaxy-1920x1080.jpg" alt="">
+                    <div class="uix-v-align--absolute uix-t-c">
+                        <h2>The top offset is 150px.</h2>
+                    </div>
+                </div>
+            </section>
+            <section class="uix-spacing--s">
+                <div class="uix-parallax uix-height--100 uix-typo--color-white" data-fully-visible="false" data-offset-top="0" data-overlay-bg="rgba(0,0,0,.6)" data-skew="0" data-speed="0.4">
+                    <img class="uix-parallax__img" src="{{$commonAssetUrl}}/website/assets/images/demo/spiral-galaxy-1920x1080.jpg" alt="">
+                    <div class="uix-v-align--absolute uix-t-c">
+                        <h2 class="uix-parallax--el" data-transition="all 0.4s cubic-bezier(0, 0, 0.34, 0.96) 0s"  data-speed="-0.4">
+                            Fulscreen + Parallax Element
+                            <p class="uix-typo--h4">Has Overlay Background</p>
+                        </h2>
+                    </div>
+                </div>
+            </section>
+            <section class="uix-spacing--s">
+                <div class="uix-height--100 is-mobile-still" data-bg='{"src":"{{$commonAssetUrl}}/website/assets/images/demo/spiral-galaxy-1920x1080.jpg","position":"top left","size":"cover","repeat":"no-repeat","fill":false,"offsetTop":0,"parallax":-0.3}'>
+                    <div class="uix-v-align--absolute uix-t-c">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>
+                                    Use the <code>data-bg</code> attribute to set the parallax.
+                                </h2>
                                 <p>Do not change height on mobile devices.</p>
-							</div>
-						</div>
-						<!-- .row end -->
-					</div>
-				</div>
-			</section>
-			<section class="uix-spacing--s">
-				<div class="uix-parallax uix-height--30" data-fully-visible="false" data-offset-top="0" data-overlay-bg="false" data-skew="0" data-speed="0.1">
-					<img class="uix-parallax__img" src="../assets/images/demo/spiral-galaxy-1920x1080.jpg" alt="">
-					<div class="uix-v-align--absolute uix-t-c">
-						<h2>Has class "uix-height--30"</h2>
-					</div>
-				</div>
-			</section>
-			<section class="uix-spacing--s">
-				<div class="uix-height--30 uix-relative--inline uix-relative--inline-clip">
-					<img class="uix-parallax--el" data-transition="all 0.4s cubic-bezier(0, 0, 0.34, 0.96) 0s"  data-speed="-0.07" src="../assets/images/demo/spiral-galaxy-1920x600.jpg" alt="" style="margin-top: -20px;">
-					<div class="uix-v-align--absolute uix-t-c">
-						<div class="row">
-							<div class="col-12">
-								<h2>
-									Parallax only works on inline image 1920 x 600
-								</h2>
-							</div>
-						</div>
-						<!-- .row end -->
-					</div>
-				</div>
-			</section>
-			<section class="uix-spacing--s">
-				<div class="uix-parallax uix-typo--color-white" data-fully-visible="false" data-offset-top="0" data-overlay-bg="rgba(0,0,0,.6)" data-skew="0" data-speed="0.3">
-					<img class="uix-parallax__img" src="../assets/images/demo/spiral-galaxy-1920x309.jpg" alt="">
-					<div class="uix-v-align--absolute uix-t-c">
-						<div class="row">
-							<div class="col-12">
-								<h2>
-									Small Image 1920 x 309
-									<p class="uix-typo--h4">Has Overlay Background</p>
-								</h2>
-							</div>
-						</div>
-						<!-- .row end -->
-					</div>
-				</div>
-			</section>
-			<section class="uix-spacing--s">
-				<div class="uix-parallax" data-fully-visible="false" data-offset-top="0" data-overlay-bg="false" data-skew="-3" data-speed="0.3">
-					<img class="uix-parallax__img" src="../assets/images/demo/spiral-galaxy-1920x309.jpg" alt="">
-					<div class="uix-v-align--absolute uix-t-c">
-						<h2 class="uix-el--skew">Skew Parallax Effect</h2>
-					</div>
-				</div>
-			</section>
-		</main>
+                            </div>
+                        </div>
+                        <!-- .row end -->
+                    </div>
+                </div>
+            </section>
+            <section class="uix-spacing--s">
+                <div class="uix-parallax uix-height--30" data-fully-visible="false" data-offset-top="0" data-overlay-bg="false" data-skew="0" data-speed="0.1">
+                    <img class="uix-parallax__img" src="{{$commonAssetUrl}}/website/assets/images/demo/spiral-galaxy-1920x1080.jpg" alt="">
+                    <div class="uix-v-align--absolute uix-t-c">
+                        <h2>Has class "uix-height--30"</h2>
+                    </div>
+                </div>
+            </section>
+            <section class="uix-spacing--s">
+                <div class="uix-height--30 uix-relative--inline uix-relative--inline-clip">
+                    <img class="uix-parallax--el" data-transition="all 0.4s cubic-bezier(0, 0, 0.34, 0.96) 0s"  data-speed="-0.07" src="{{$commonAssetUrl}}/website/assets/images/demo/spiral-galaxy-1920x600.jpg" alt="" style="margin-top: -20px;">
+                    <div class="uix-v-align--absolute uix-t-c">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>
+                                    Parallax only works on inline image 1920 x 600
+                                </h2>
+                            </div>
+                        </div>
+                        <!-- .row end -->
+                    </div>
+                </div>
+            </section>
+            <section class="uix-spacing--s">
+                <div class="uix-parallax uix-typo--color-white" data-fully-visible="false" data-offset-top="0" data-overlay-bg="rgba(0,0,0,.6)" data-skew="0" data-speed="0.3">
+                    <img class="uix-parallax__img" src="{{$commonAssetUrl}}/website/assets/images/demo/spiral-galaxy-1920x309.jpg" alt="">
+                    <div class="uix-v-align--absolute uix-t-c">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>
+                                    Small Image 1920 x 309
+                                    <p class="uix-typo--h4">Has Overlay Background</p>
+                                </h2>
+                            </div>
+                        </div>
+                        <!-- .row end -->
+                    </div>
+                </div>
+            </section>
+            <section class="uix-spacing--s">
+                <div class="uix-parallax" data-fully-visible="false" data-offset-top="0" data-overlay-bg="false" data-skew="-3" data-speed="0.3">
+                    <img class="uix-parallax__img" src="{{$commonAssetUrl}}/website/assets/images/demo/spiral-galaxy-1920x309.jpg" alt="">
+                    <div class="uix-v-align--absolute uix-t-c">
+                        <h2 class="uix-el--skew">Skew Parallax Effect</h2>
+                    </div>
+                </div>
+            </section>
+        </main>
 @endsection

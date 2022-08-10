@@ -1,15 +1,15 @@
 @extends('layouts.website')
 @section('bodyClass')class="page"@endsection
 @section('content')
-		<main id="uix-maincontent">
-			<!-- Content   
-			====================================================== -->
-			<section class="uix-spacing--s uix-spacing--no-bottom">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<h3>Modal Dialog Automatically Open</h3>
-							<p>Trigger with a simple JavaScript</p>
+        <main id="uix-maincontent">
+            <!-- Content   
+            ====================================================== -->
+            <section class="uix-spacing--s uix-spacing--no-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Modal Dialog Automatically Open</h3>
+                            <p>Trigger with a simple JavaScript</p>
 <pre class="uix-precode uix-t-l"><label>HTML</label><code>&lt;template id="modal-open-1"&gt;
     &lt;div class=&quot;uix-modal-box&quot; role=&quot;dialog&quot; tabindex=&quot;-1&quot; aria-hidden=&quot;true&quot;&gt;
     &#x9;&lt;button type=&quot;button&quot; class=&quot;uix-modal-box__close&quot; data-modal-close-trigger=&quot;true&quot;&gt;&lt;/button&gt;
@@ -28,27 +28,27 @@
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/template&gt;</code>
-</pre>	
+</pre>    
 <pre class="uix-precode uix-t-l"><label>JS</label><code>$( document ).ready( function() {
-	$(document).UixFireModalDialog({
-		id: 'modal-open-1',
-		height: false,
-		width: false,
-		speed: 500,
-		lightbox  : true,
-		autoClose : false //If the value is 2000, it will automatically close after 2 seconds.
-	});
+    $(document).UixFireModalDialog({
+        id: 'modal-open-1',
+        height: false,
+        width: false,
+        speed: 500,
+        lightbox  : true,
+        autoClose : false //If the value is 2000, it will automatically close after 2 seconds.
+    });
 } );</code>
-</pre>					
-							<hr>
-						</div>
-					</div>
-					<!-- .row end -->
-				</div>
-				<!-- .container end -->
-			</section>
-			<!-- Modals
-			============================================= --> 
+</pre>                    
+                            <hr>
+                        </div>
+                    </div>
+                    <!-- .row end -->
+                </div>
+                <!-- .container end -->
+            </section>
+            <!-- Modals
+            ============================================= --> 
             <template id="modal-open-1">
                 <div class="uix-modal-box" role="dialog" tabindex="-1" aria-hidden="true">
                     <button type="button" class="uix-modal-box__close" data-modal-close-trigger="true"></button>
@@ -67,5 +67,5 @@
                     </div>
                 </div>  
             </template>
-		</main>  
+        </main>  
 @endsection

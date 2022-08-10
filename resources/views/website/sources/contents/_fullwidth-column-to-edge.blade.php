@@ -1,29 +1,29 @@
 @extends('layouts.website')
 @section('bodyClass')class="page"@endsection
 @section('content')
-		<main id="uix-maincontent">
-			<!-- Content 
-			====================================================== -->
-			<section class="uix-spacing--s uix-spacing--no-bottom">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<h3>Full Width Column to Edge</h3>
+        <main id="uix-maincontent">
+            <!-- Content 
+            ====================================================== -->
+            <section class="uix-spacing--s uix-spacing--no-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Full Width Column to Edge</h3>
                             <p>You also have a choice of whether the row's content is full width or fixed width.</p>
-							<hr>
-						</div>
-					</div>
-					<!-- .row end -->
-				</div>
-				<!-- .container end -->
-			</section>
-		   <!-- Content 
-			====================================================== -->
-			 <section class="uix-spacing--s">
+                            <hr>
+                        </div>
+                    </div>
+                    <!-- .row end -->
+                </div>
+                <!-- .container end -->
+            </section>
+           <!-- Content 
+            ====================================================== -->
+             <section class="uix-spacing--s">
                 <div class="row js-uix-common-height">
                     <div class="col-lg-6 col-md-6">
                         <div class="uix-filter-hover--color">
-                            <img src="../assets/images/demo/test-img-big-1.jpg" alt=""> 
+                            <img src="{{$commonAssetUrl}}/website/assets/images/demo/test-img-big-1.jpg" alt=""> 
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
@@ -52,34 +52,34 @@
                     </div>  
                     <div class="col-lg-6 col-md-6">
                         <div class="uix-filter-hover--color">
-                            <img src="../assets/images/demo/test-img-big-2.jpg" alt=""> 
+                            <img src="{{$commonAssetUrl}}/website/assets/images/demo/test-img-big-2.jpg" alt=""> 
                         </div>
                     </div>
                 </div>
                 <!-- /.row -->
-			</section>
-			<!-- Content 
-			====================================================== -->
-			<section class="uix-spacing--s uix-spacing--no-bottom">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<h3>Full Width Column to Edge Inside Container</h3>
+            </section>
+            <!-- Content 
+            ====================================================== -->
+            <section class="uix-spacing--s uix-spacing--no-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Full Width Column to Edge Inside Container</h3>
                             <p>Add this class <code>.js-uix-fullwidth-column-to-edge--extend-right</code> or <code>.js-uix-fullwidth-column-to-edge--extend-left</code> to the <code>.row</code> of Bootstrap Grid system to create the column to edge.</p>
-							<hr>
-						</div>
-					</div>
-					<!-- .row end -->
-				</div>
-				<!-- .container end -->
-			</section>
-		   <!-- Content 
-			====================================================== -->
-			 <section class="uix-spacing--s">
-				<div class="container">
+                            <hr>
+                        </div>
+                    </div>
+                    <!-- .row end -->
+                </div>
+                <!-- .container end -->
+            </section>
+           <!-- Content 
+            ====================================================== -->
+             <section class="uix-spacing--s">
+                <div class="container">
                     <div class="row js-uix-fullwidth-column-to-edge--extend-left">
                         <div class="col-sm-8">
-                            <img src="../assets/images/demo/cool-slider-2.jpg" alt=""> 
+                            <img src="{{$commonAssetUrl}}/website/assets/images/demo/cool-slider-2.jpg" alt=""> 
                         </div>     
                         <div class="col-sm-4">
                             <br><br>
@@ -96,30 +96,30 @@
                             <p>Duis nisi orci, pretium eu tincidunt vitae, tincidunt sed augue.</p>
                         </div>
                         <div class="col-sm-8">
-                             <img src="../assets/images/demo/cool-slider-1.jpg" alt="">
+                             <img src="{{$commonAssetUrl}}/website/assets/images/demo/cool-slider-1.jpg" alt="">
                         </div>
                     </div>   
                     <!-- .row end -->
-				</div>
-				<!-- .container end -->       
-			</section>
-			<!-- Content 
-			====================================================== -->
-			<section class="uix-spacing--s uix-spacing--no-bottom">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<h3>Full Width (Fixed &amp; Variable) Column to Edge</h3>
+                </div>
+                <!-- .container end -->       
+            </section>
+            <!-- Content 
+            ====================================================== -->
+            <section class="uix-spacing--s uix-spacing--no-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Full Width (Fixed &amp; Variable) Column to Edge</h3>
                             <p>The goal is to have a fixed width column and a variable width column but to be able to define at what size the variable-width column breaks down to the next line.</p>
-							<hr>
-						</div>
-					</div>
-					<!-- .row end -->
-				</div>
-				<!-- .container end -->
-			</section>
-		   <!-- Content 
-			====================================================== -->
+                            <hr>
+                        </div>
+                    </div>
+                    <!-- .row end -->
+                </div>
+                <!-- .container end -->
+            </section>
+           <!-- Content 
+            ====================================================== -->
             <section class="uix-spacing--s">
                 <div class="uix-fullwidth-column-to-edge--fixed-and-variable">
                     <div class="uix-fullwidth-column-to-edge--fixed-and-variable__fixed uix-outer-shadow--regular">
@@ -131,6 +131,6 @@
                         </p>
                     </div>
                 </div>
-			</section>
-		</main>
+            </section>
+        </main>
 @endsection

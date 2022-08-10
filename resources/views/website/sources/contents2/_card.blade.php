@@ -1,35 +1,35 @@
 @extends('layouts.website')
 @section('bodyClass')class="page"@endsection
 @section('content')
-		<main id="uix-maincontent">
-			<!-- Content   
-			====================================================== -->
-			<section class="uix-spacing--s uix-spacing--no-bottom">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<h3>Thumbnail Card</h3>
-							<p>The following is a Thumbnail style card using flex.</p>
-							<hr>
-						</div>
-					</div>
-					<!-- .row end -->
-				</div>
-				<!-- .container end -->
-			</section>
-		   <!-- Content  
-			====================================================== -->
-			<section class="uix-spacing--s">
-				<div class="container">
-						<div class="row">
-							<div class="col-12">
-								<div class="row">
-									<div class="col-lg-4 col-md-4">
+        <main id="uix-maincontent">
+            <!-- Content   
+            ====================================================== -->
+            <section class="uix-spacing--s uix-spacing--no-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Thumbnail Card</h3>
+                            <p>The following is a Thumbnail style card using flex.</p>
+                            <hr>
+                        </div>
+                    </div>
+                    <!-- .row end -->
+                </div>
+                <!-- .container end -->
+            </section>
+           <!-- Content  
+            ====================================================== -->
+            <section class="uix-spacing--s">
+                <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4">
                                         <div class="uix-card--thumb">
                                             <div class="uix-card--thumb__header">
                                                 <div class="uix-card--thumb__preview" style="flex-basis: 50px;">
                                                     <!-- image begin -->
-                                                    <img src="../assets/images/demo/avatar.jpg" alt="" class="uix-border--circle">
+                                                    <img src="{{$commonAssetUrl}}/website/assets/images/demo/avatar.jpg" alt="" class="uix-border--circle">
                                                     <!-- image end -->
                                                 </div>
                                                 <div class="uix-card--thumb__content">
@@ -59,13 +59,13 @@
                                                 <!-- content end -->
                                             </div>
                                         </div>      
-									</div>     
-									<div class="col-lg-4 col-md-4">
+                                    </div>     
+                                    <div class="col-lg-4 col-md-4">
                                         <div class="uix-card--thumb">
                                             <div class="uix-card--thumb__header">
                                                 <div class="uix-card--thumb__preview" style="flex-basis: 50px;">
                                                     <!-- image begin -->
-                                                    <img src="../assets/images/demo/avatar.jpg" alt="" class="uix-border--circle">
+                                                    <img src="{{$commonAssetUrl}}/website/assets/images/demo/avatar.jpg" alt="" class="uix-border--circle">
                                                     <!-- image end -->
                                                 </div>
                                                 <div class="uix-card--thumb__content">
@@ -96,13 +96,13 @@
                                                 <!-- content end -->
                                             </div>
                                         </div>       
-									</div>    
-									<div class="col-lg-4 col-md-4">
+                                    </div>    
+                                    <div class="col-lg-4 col-md-4">
                                         <div class="uix-card--thumb">
                                             <div class="uix-card--thumb__header">
                                                 <div class="uix-card--thumb__preview" style="flex-basis: 50px;">
                                                     <!-- image begin -->
-                                                    <img src="../assets/images/demo/avatar.jpg" alt="" class="uix-border--circle">
+                                                    <img src="{{$commonAssetUrl}}/website/assets/images/demo/avatar.jpg" alt="" class="uix-border--circle">
                                                     <!-- image end -->
                                                 </div>
                                                 <div class="uix-card--thumb__content">
@@ -133,42 +133,42 @@
                                                 <!-- content end -->
                                             </div>
                                         </div>       
-									</div>    
-								</div>
-								<!-- .row end -->	
-							</div>
-						</div>
-						<!-- .row end -->
-				</div>
-				<!-- .container end -->
-			</section>   
-			<!-- Content   
-			====================================================== -->
-			<section class="uix-spacing--s uix-spacing--no-bottom">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<h3>Gallery Card</h3>
-							<p>The following is a gallery style card using flex.</p>
-							<hr>
-						</div>
-					</div>
-					<!-- .row end -->
-				</div>
-				<!-- .container end -->
-			</section>
-		   <!-- Content  
-			====================================================== -->
-			<section class="uix-spacing--s">
-				<div class="container">
-						<div class="row">
-							<div class="col-12">
-								<div class="row">
-									<div class="col-lg-5 col-md-5">
+                                    </div>    
+                                </div>
+                                <!-- .row end -->    
+                            </div>
+                        </div>
+                        <!-- .row end -->
+                </div>
+                <!-- .container end -->
+            </section>   
+            <!-- Content   
+            ====================================================== -->
+            <section class="uix-spacing--s uix-spacing--no-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Gallery Card</h3>
+                            <p>The following is a gallery style card using flex.</p>
+                            <hr>
+                        </div>
+                    </div>
+                    <!-- .row end -->
+                </div>
+                <!-- .container end -->
+            </section>
+           <!-- Content  
+            ====================================================== -->
+            <section class="uix-spacing--s">
+                <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5">
                                         <div class="uix-card--gallery" role="figure">
                                             <div class="uix-card--gallery__preview">
                                                 <!-- image begin -->
-                                                <img src="../assets/images/demo/spiral-galaxy-1920x1080.jpg" alt="">
+                                                <img src="{{$commonAssetUrl}}/website/assets/images/demo/spiral-galaxy-1920x1080.jpg" alt="">
                                                 <!-- image end -->
                                             </div>
                                             <div class="uix-card--gallery__body">
@@ -187,12 +187,12 @@
                                                 </div>
                                             </div>
                                         </div>      
-									</div>     
-									<div class="col-lg-4 col-md-4">
+                                    </div>     
+                                    <div class="col-lg-4 col-md-4">
                                         <div class="uix-card--gallery" role="figure">
                                             <div class="uix-card--gallery__preview">
                                                 <!-- image begin -->
-                                                <img src="../assets/images/demo/spiral-galaxy-1920x1080.jpg" alt="">
+                                                <img src="{{$commonAssetUrl}}/website/assets/images/demo/spiral-galaxy-1920x1080.jpg" alt="">
                                                 <!-- image end -->
                                             </div>
                                             <div class="uix-card--gallery__body">
@@ -211,12 +211,12 @@
                                                 </div>
                                             </div>
                                         </div>       
-									</div>  
-									<div class="col-lg-3 col-md-3">
+                                    </div>  
+                                    <div class="col-lg-3 col-md-3">
                                         <div class="uix-card--gallery" role="figure">
                                             <div class="uix-card--gallery__preview">
                                                 <!-- image begin -->
-                                                <img src="../assets/images/demo/spiral-galaxy-1920x1080.jpg" alt="">
+                                                <img src="{{$commonAssetUrl}}/website/assets/images/demo/spiral-galaxy-1920x1080.jpg" alt="">
                                                 <!-- image end -->
                                             </div>
                                             <div class="uix-card--gallery__body">
@@ -235,12 +235,12 @@
                                                 </div>
                                             </div>
                                         </div>              
-									</div>     
-								</div>
-								<!-- .row end -->	
+                                    </div>     
+                                </div>
+                                <!-- .row end -->    
                                 <hr>
-								<div class="row">
-									<div class="col-lg-3 col-md-3">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-3">
                                        <div class="uix-card--gallery uix-card--gallery--horizontal is-mobile-still" role="figure">
                                             <div class="uix-card--gallery__preview" style="padding: 25px; background: #EAEAEA;">
                                                 <!-- image begin -->
@@ -268,8 +268,8 @@
                                                 </div>
                                             </div>
                                         </div>       
-									</div>   
- 									<div class="col-lg-3 col-md-3">
+                                    </div>   
+                                     <div class="col-lg-3 col-md-3">
                                         <div class="uix-card--gallery uix-card--gallery--horizontal is-mobile-still" role="figure">
                                             <div class="uix-card--gallery__preview" style="padding: 25px; background: #EAEAEA;">
                                                 <!-- image begin -->
@@ -297,8 +297,8 @@
                                                 </div>
                                             </div>
                                         </div>        
-									</div>                                      
-									<div class="col-lg-3 col-md-3">
+                                    </div>                                      
+                                    <div class="col-lg-3 col-md-3">
                                         <div class="uix-card--gallery uix-card--gallery--horizontal is-mobile-still" role="figure">
                                             <div class="uix-card--gallery__preview" style="padding: 25px; background: #EAEAEA;">
                                                 <!-- image begin -->
@@ -331,8 +331,8 @@
                                                 </div>
                                             </div>
                                         </div>       
-									</div>   
- 									<div class="col-lg-3 col-md-3">
+                                    </div>   
+                                     <div class="col-lg-3 col-md-3">
                                         <div class="uix-card--gallery uix-card--gallery--horizontal is-mobile-still" role="figure">
                                             <div class="uix-card--gallery__preview" style="padding: 25px; background: #EAEAEA;">
                                                 <!-- image begin -->
@@ -365,12 +365,12 @@
                                                 </div>
                                             </div>
                                         </div>        
-									</div>                                           
-								</div>
-								<!-- .row end -->	
+                                    </div>                                           
+                                </div>
+                                <!-- .row end -->    
                                 <hr>
-								<div class="row">
-									<div class="col-lg-6 col-md-6">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
                                         <div class="uix-card--gallery uix-card--gallery--horizontal is-mobile-still" role="figure">
                                             <div class="uix-card--gallery__preview" style="padding: 25px; background: #EAEAEA;">
                                                 <!-- image begin -->
@@ -411,8 +411,8 @@
                                                 </div>
                                             </div>
                                         </div>       
-									</div>   
- 									<div class="col-lg-6 col-md-6">
+                                    </div>   
+                                     <div class="col-lg-6 col-md-6">
                                         <div class="uix-card--gallery uix-card--gallery--horizontal is-mobile-still" role="figure">
                                             <div class="uix-card--gallery__preview" style="padding: 25px; background: #EAEAEA;">
                                                 <!-- image begin -->
@@ -453,16 +453,16 @@
                                                 </div>
                                             </div>    
                                         </div>        
-									</div>                                           
-								</div>
-								<!-- .row end -->	
+                                    </div>                                           
+                                </div>
+                                <!-- .row end -->    
                                 <hr>
-								<div class="row">
- 									<div class="col-12">
+                                <div class="row">
+                                     <div class="col-12">
                                         <div class="uix-card--gallery uix-card--gallery--horizontal" role="figure">
-                                            <div class="uix-card--gallery__preview uix-core-grid__col-8 uix-core-grid__mobile-stack" data-bg='{"src":"../assets/images/demo/spiral-galaxy-1920x1080.jpg","position":"center center","size":"cover","repeat":"no-repeat","fill":false,"offsetTop":0,"parallax":0}'>
+                                            <div class="uix-card--gallery__preview uix-core-grid__col-8 uix-core-grid__mobile-stack" data-bg='{"src":"{{$commonAssetUrl}}/website/assets/images/demo/spiral-galaxy-1920x1080.jpg","position":"center center","size":"cover","repeat":"no-repeat","fill":false,"offsetTop":0,"parallax":0}'>
                                                 <!-- image begin -->
-                                                <img src="../assets/images/demo/spiral-galaxy-1920x1080.jpg" alt="">
+                                                <img src="{{$commonAssetUrl}}/website/assets/images/demo/spiral-galaxy-1920x1080.jpg" alt="">
                                                 <!-- image end -->
                                             </div>
                                             <div class="uix-card--gallery__body">
@@ -479,16 +479,16 @@
                                                 </div>
                                             </div>
                                         </div>        
-									</div>                                      
-								</div>
-								<!-- .row end -->	
+                                    </div>                                      
+                                </div>
+                                <!-- .row end -->    
                                 <hr>
-								<div class="row">
- 									<div class="col-12">
+                                <div class="row">
+                                     <div class="col-12">
                                         <div class="uix-card--gallery uix-card--gallery--horizontal" role="figure">
-                                            <div class="uix-card--gallery__preview uix-core-grid__col-4 uix-core-grid__mobile-stack" data-bg='{"src":"../assets/images/demo/spiral-galaxy-1920x600.jpg","position":"center center","size":"cover","repeat":"no-repeat","fill":false,"offsetTop":0,"parallax":0}'>
+                                            <div class="uix-card--gallery__preview uix-core-grid__col-4 uix-core-grid__mobile-stack" data-bg='{"src":"{{$commonAssetUrl}}/website/assets/images/demo/spiral-galaxy-1920x600.jpg","position":"center center","size":"cover","repeat":"no-repeat","fill":false,"offsetTop":0,"parallax":0}'>
                                                 <!-- image begin -->
-                                                <img src="../assets/images/demo/spiral-galaxy-1920x600.jpg">
+                                                <img src="{{$commonAssetUrl}}/website/assets/images/demo/spiral-galaxy-1920x600.jpg">
                                                 <!-- image end -->
                                             </div>
                                             <div class="uix-card--gallery__body">
@@ -505,16 +505,16 @@
                                                 </div>
                                             </div>
                                         </div>        
-									</div>                                      
-								</div>
-								<!-- .row end -->	
+                                    </div>                                      
+                                </div>
+                                <!-- .row end -->    
                                 <hr>
-								<div class="row">
- 									<div class="col-lg-6 col-md-6">
+                                <div class="row">
+                                     <div class="col-lg-6 col-md-6">
                                         <div class="uix-card--gallery" role="figure">
                                             <div class="uix-card--gallery__preview uix-core-grid__col-12 uix-core-grid__mobile-stack">
                                                 <!-- image begin -->
-                                                <img src="../assets/images/demo/spiral-galaxy-1920x600.jpg" alt="">
+                                                <img src="{{$commonAssetUrl}}/website/assets/images/demo/spiral-galaxy-1920x600.jpg" alt="">
                                                 <!-- image end -->
                                             </div>
                                             <div class="uix-card--gallery__body">
@@ -531,12 +531,12 @@
                                                 </div>
                                             </div>
                                         </div>        
-									</div>                        
- 									<div class="col-lg-6 col-md-6">
+                                    </div>                        
+                                     <div class="col-lg-6 col-md-6">
                                         <div class="uix-card--gallery uix-card--gallery--overlay" role="figure">
                                             <div class="uix-card--gallery__preview uix-core-grid__col-12 uix-core-grid__mobile-stack">
                                                 <!-- image begin -->
-                                                <img src="../assets/images/demo/spiral-galaxy-1920x1080.jpg" alt="">
+                                                <img src="{{$commonAssetUrl}}/website/assets/images/demo/spiral-galaxy-1920x1080.jpg" alt="">
                                                 <!-- image end -->
                                             </div>
                                             <div class="uix-card--gallery__body">
@@ -553,16 +553,16 @@
                                                 </div>
                                             </div>
                                         </div>        
-									</div>               
-								</div>
-								<!-- .row end -->	
+                                    </div>               
+                                </div>
+                                <!-- .row end -->    
                                 <hr>
-								<div class="row">
- 									<div class="col-12">
+                                <div class="row">
+                                     <div class="col-12">
                                         <div class="uix-card--gallery" role="figure">
                                             <div class="uix-card--gallery__preview uix-core-grid__col-12 uix-core-grid__mobile-stack">
                                                 <!-- image begin -->
-                                                <img src="../assets/images/demo/spiral-galaxy-1920x309.jpg" alt="">
+                                                <img src="{{$commonAssetUrl}}/website/assets/images/demo/spiral-galaxy-1920x309.jpg" alt="">
                                                 <!-- image end -->
                                                 <!-- icons begin -->
                                                 <div class="uix-card--gallery__status">
@@ -598,16 +598,16 @@
                                                 </div>
                                             </div>
                                         </div>        
-									</div>               
-								</div>
-								<!-- .row end -->	
+                                    </div>               
+                                </div>
+                                <!-- .row end -->    
                                 <hr>
-								<div class="row">
- 									<div class="col-12">
+                                <div class="row">
+                                     <div class="col-12">
                                         <div class="uix-card--gallery" role="figure">
                                             <div class="uix-card--gallery__preview uix-core-grid__col-12 uix-core-grid__mobile-stack">
                                                 <!-- image begin -->
-                                                <img src="../assets/images/demo/spiral-galaxy-1920x309.jpg" alt="">
+                                                <img src="{{$commonAssetUrl}}/website/assets/images/demo/spiral-galaxy-1920x309.jpg" alt="">
                                                 <!-- image end -->
                                             </div>
                                             <div class="uix-card--gallery__body">
@@ -617,7 +617,7 @@
                                                         <!-- menu group begin -->
                                                         <div class="uix-card--gallery__menu">
                                                             <div class="uix-card--gallery__menu__avatar">
-                                                                <img src="../assets/images/demo/avatar.jpg" alt="" class="uix-border--circle">
+                                                                <img src="{{$commonAssetUrl}}/website/assets/images/demo/avatar.jpg" alt="" class="uix-border--circle">
                                                                 <span>UIUX Lab</span>
                                                             </div>
                                                             <div class="uix-card--gallery__menu__items">
@@ -637,16 +637,16 @@
                                                 </div>
                                             </div>
                                         </div>        
-									</div>               
-								</div>
-								<!-- .row end -->	
+                                    </div>               
+                                </div>
+                                <!-- .row end -->    
                                 <hr>
-								<div class="row">
- 									<div class="col-12">
+                                <div class="row">
+                                     <div class="col-12">
                                         <div class="uix-card--gallery uix-card--gallery--overlay" role="figure">
                                             <div class="uix-card--gallery__preview uix-core-grid__col-12 uix-core-grid__mobile-stack">
                                                 <!-- image begin -->
-                                                <img src="../assets/images/demo/spiral-galaxy-1920x1080.jpg" alt="">
+                                                <img src="{{$commonAssetUrl}}/website/assets/images/demo/spiral-galaxy-1920x1080.jpg" alt="">
                                                 <!-- image end -->
                                             </div>
                                             <div class="uix-card--gallery__body uix-core-grid__col-5 uix-core-grid__mobile-stack">
@@ -663,16 +663,16 @@
                                                 </div>
                                             </div>
                                         </div>        
-									</div>               
-								</div>
-								<!-- .row end -->	
+                                    </div>               
+                                </div>
+                                <!-- .row end -->    
                                 <hr>
-								<div class="row">
- 									<div class="col-12">
+                                <div class="row">
+                                     <div class="col-12">
                                         <div class="uix-card--gallery uix-card--gallery--overlay" role="figure">
                                             <div class="uix-card--gallery__preview uix-core-grid__col-12 uix-core-grid__mobile-stack">
                                                 <!-- image begin -->
-                                                <img src="../assets/images/demo/spiral-galaxy-1920x1080.jpg" alt="">
+                                                <img src="{{$commonAssetUrl}}/website/assets/images/demo/spiral-galaxy-1920x1080.jpg" alt="">
                                                 <!-- image end -->
                                             </div>
                                             <div class="uix-card--gallery__body uix-card--gallery__body--verticalCenter uix-core-grid__col-5 uix-core-grid__mobile-stack">
@@ -689,93 +689,93 @@
                                                 </div>
                                             </div>
                                         </div>        
-									</div>               
-								</div>
-								<!-- .row end -->	                       
-							</div>
-						</div>
-						<!-- .row end -->
-				</div>
-				<!-- .container end -->
-			</section>   
-			<!-- Content   
-			====================================================== -->
-			<section class="uix-spacing--s uix-spacing--no-bottom">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<h3>Author Card</h3>
-							<p>Author Card is a very popular used web page element that can display a lot of key information.</p>
-							<hr>
-						</div>
-					</div>
-					<!-- .row end -->
-				</div>
-				<!-- .container end -->
-			</section>
-		   <!-- Content  
-			====================================================== -->
-			<section class="uix-spacing--s">
-				<div class="container">
-						<div class="row">
-							<div class="col-12">
-								<div class="uix-card--author">
-									<div class="uix-card--author__header">
-										<div class="uix-card--author__text uix-f-l">
-											<h3>Full-stack Designer</h3> <a href="https://uiux.cc" target="_blank">@https://uiux.cc</a> 
-										</div>
-										<div class="uix-card--author__preview uix-border--circle uix-border--circle-only-img uix-f-r"> <img src="../assets/images/demo/avatar.jpg" alt="" class="uix-border--circle"> </div>
-									</div>
-									<div class="uix-card--author__content"> Hi. I'm a full-stack designer on the way of pursuing the dream. Focus on user interface, user experience, awesome websites, front-end and WordPress development. I want to build things I can be proud of. I approach some awesome design challenges with an eye on the latest trends and strive to align my work the industry current best practices, while leveraging the acquired experience on the field. I have been working so hard to build up self. My personal website: https://uiux.cc </div> 
-									<a class="uix-card--author__jump" href="#" rel="author"><i class="fa fa-external-link" aria-hidden="true"></i></a> 
-								</div>
-								<hr>
-								<div class="row">
-									<div class="col-lg-6 col-md-6">
-										<div class="uix-card--author uix-card--author--noborder uix-t-c">
-											<div class="uix-card--author__header">
-												<div class="uix-card--author__preview uix-border--circle uix-border--circle-only-img"> 
-                                                    <img src="../assets/images/demo/avatar.jpg" alt="" class="uix-border--circle"> 
+                                    </div>               
+                                </div>
+                                <!-- .row end -->                           
+                            </div>
+                        </div>
+                        <!-- .row end -->
+                </div>
+                <!-- .container end -->
+            </section>   
+            <!-- Content   
+            ====================================================== -->
+            <section class="uix-spacing--s uix-spacing--no-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Author Card</h3>
+                            <p>Author Card is a very popular used web page element that can display a lot of key information.</p>
+                            <hr>
+                        </div>
+                    </div>
+                    <!-- .row end -->
+                </div>
+                <!-- .container end -->
+            </section>
+           <!-- Content  
+            ====================================================== -->
+            <section class="uix-spacing--s">
+                <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="uix-card--author">
+                                    <div class="uix-card--author__header">
+                                        <div class="uix-card--author__text uix-f-l">
+                                            <h3>Full-stack Designer</h3> <a href="https://uiux.cc" target="_blank">@https://uiux.cc</a> 
+                                        </div>
+                                        <div class="uix-card--author__preview uix-border--circle uix-border--circle-only-img uix-f-r"> <img src="{{$commonAssetUrl}}/website/assets/images/demo/avatar.jpg" alt="" class="uix-border--circle"> </div>
+                                    </div>
+                                    <div class="uix-card--author__content"> Hi. I'm a full-stack designer on the way of pursuing the dream. Focus on user interface, user experience, awesome websites, front-end and WordPress development. I want to build things I can be proud of. I approach some awesome design challenges with an eye on the latest trends and strive to align my work the industry current best practices, while leveraging the acquired experience on the field. I have been working so hard to build up self. My personal website: https://uiux.cc </div> 
+                                    <a class="uix-card--author__jump" href="#" rel="author"><i class="fa fa-external-link" aria-hidden="true"></i></a> 
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="uix-card--author uix-card--author--noborder uix-t-c">
+                                            <div class="uix-card--author__header">
+                                                <div class="uix-card--author__preview uix-border--circle uix-border--circle-only-img"> 
+                                                    <img src="{{$commonAssetUrl}}/website/assets/images/demo/avatar.jpg" alt="" class="uix-border--circle"> 
                                                 </div>
-											</div>
-											<div class="uix-card--author__content uix-card--author__content--rounded"> 
-												<h4 class="uix-t-c">Full-stack Designer</h4>
-												<div class="uix-equal-width-divs uix-equal-width-divs--no-break">
-													<ul>
-														<li><h3>223</h3><span>Web Design</span></li>
-														<li><h3>13</h3><span>UI</span></li>
-														<li><h3>5</h3><span>SEO</span></li>
-													</ul>
-												</div>
-												<!-- .uix-equal-width-divs  end -->
-												<p>
-													Hi. I'm a full-stack designer on the way of pursuing the dream. Focus on user interface, user experience, awesome websites, front-end and WordPress development.
-												</p>
-											</div>
-										</div>
-									</div>     
-									<div class="col-lg-6 col-md-6">
-										<div class="uix-card--author uix-card--author--noborder uix-card--author--stats">
-											<div class="uix-card--author__header">
-												<div class="uix-card--author__preview uix-card--author__preview--rounded uix-card--author__preview--jumpOut"> 
-                                                    <img src="../assets/images/demo/avatar.jpg" alt=""> 
+                                            </div>
+                                            <div class="uix-card--author__content uix-card--author__content--rounded"> 
+                                                <h4 class="uix-t-c">Full-stack Designer</h4>
+                                                <div class="uix-equal-width-divs uix-equal-width-divs--no-break">
+                                                    <ul>
+                                                        <li><h3>223</h3><span>Web Design</span></li>
+                                                        <li><h3>13</h3><span>UI</span></li>
+                                                        <li><h3>5</h3><span>SEO</span></li>
+                                                    </ul>
                                                 </div>
-											</div>
-											<div class="uix-card--author__content uix-card--author__content--rounded  uix-t-r"> 
-												<div class="uix-card--author__tagline">Revenue</div>
-												<h4 class="uix-typo--style-normal">$34,245</h4>
-												<hr>
-												<i class="fa fa-calendar" aria-hidden="true"></i> Last 24 Hours
-											</div>
-										</div>
-									</div>     
-								</div>
-								<!-- .row end -->	
-							</div>
-						</div>
-						<!-- .row end -->
-				</div>
-				<!-- .container end -->
-			</section>   
-		</main>
+                                                <!-- .uix-equal-width-divs  end -->
+                                                <p>
+                                                    Hi. I'm a full-stack designer on the way of pursuing the dream. Focus on user interface, user experience, awesome websites, front-end and WordPress development.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>     
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="uix-card--author uix-card--author--noborder uix-card--author--stats">
+                                            <div class="uix-card--author__header">
+                                                <div class="uix-card--author__preview uix-card--author__preview--rounded uix-card--author__preview--jumpOut"> 
+                                                    <img src="{{$commonAssetUrl}}/website/assets/images/demo/avatar.jpg" alt=""> 
+                                                </div>
+                                            </div>
+                                            <div class="uix-card--author__content uix-card--author__content--rounded  uix-t-r"> 
+                                                <div class="uix-card--author__tagline">Revenue</div>
+                                                <h4 class="uix-typo--style-normal">$34,245</h4>
+                                                <hr>
+                                                <i class="fa fa-calendar" aria-hidden="true"></i> Last 24 Hours
+                                            </div>
+                                        </div>
+                                    </div>     
+                                </div>
+                                <!-- .row end -->    
+                            </div>
+                        </div>
+                        <!-- .row end -->
+                </div>
+                <!-- .container end -->
+            </section>   
+        </main>
 @endsection

@@ -1,44 +1,44 @@
 @extends('layouts.website')
 @section('bodyClass')class="page"@endsection
 @section('content')
-		<main id="uix-maincontent">
-			<!-- Content 
-			====================================================== -->
-			<section class="uix-spacing--s uix-spacing--no-bottom">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<h3>Uix Grid Masonry( With AJAX )</h3>
-							<hr>
-						</div>
-					</div>
-					<!-- .row end -->
-				</div>
-				<!-- .container end -->
-			</section>
-		   <!-- Content 
-			====================================================== -->
-			<section>
-				<div class="container uix-t-c">
-						<div class="row">
-							<div class="col-12">
-								<div class="uix-nav uix-nav--separation">
-									<ul>
-										<li  class="current-cat"><a data-group="web-design" href="#">Web Design</a></li>
-										<li><a data-group="ui" href="#">UI</a></li>
-										<li><a data-group="seo" href="#">SEO</a></li>  
-									</ul>
-								</div>
-							</div>
-						</div>
-						<!-- .row end -->
-				</div>
-				<!-- .container end -->
-			</section>     
-		   <!-- Content 
-			====================================================== -->
-			<div class="uix-spacing--s">
-				<div class="container uix-t-c">
+        <main id="uix-maincontent">
+            <!-- Content 
+            ====================================================== -->
+            <section class="uix-spacing--s uix-spacing--no-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Uix Grid Masonry( With AJAX )</h3>
+                            <hr>
+                        </div>
+                    </div>
+                    <!-- .row end -->
+                </div>
+                <!-- .container end -->
+            </section>
+           <!-- Content 
+            ====================================================== -->
+            <section>
+                <div class="container uix-t-c">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="uix-nav uix-nav--separation">
+                                    <ul>
+                                        <li  class="current-cat"><a data-group="web-design" href="#">Web Design</a></li>
+                                        <li><a data-group="ui" href="#">UI</a></li>
+                                        <li><a data-group="seo" href="#">SEO</a></li>  
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .row end -->
+                </div>
+                <!-- .container end -->
+            </section>     
+           <!-- Content 
+            ====================================================== -->
+            <div class="uix-spacing--s">
+                <div class="container uix-t-c">
                     <div class="uix-gallery" data-show-type="masonry" data-filter-id="">
                         <!-- 
                             Note: Recommended to enter the total number of attribute "data-ajax-list-page-total".
@@ -57,7 +57,7 @@
                             * @param  {String} data-ajax-list-field-{str}             - Customize the fields to be transferred to the server.
                          -->
                         <div class="uix-gallery__tiles"
-                             data-ajax-list-json="../assets/json/content-posts.php" 
+                             data-ajax-list-json="{{$commonAssetUrl}}/website/assets/json/content-posts.php" 
                              data-ajax-list-method="POST" 
                              data-ajax-list-render="before" 
                              data-ajax-list-temp-id="list-topic-ajax-template-1" 
@@ -77,7 +77,7 @@
                                 <div>
                                     <a href="#" class="uix-gallery__image" >
                                         <div class="uix-gallery__image-cover">
-                                            <img src="../assets/images/demo/test-img-big-1.jpg" height="300" alt="" />
+                                            <img src="{{$commonAssetUrl}}/website/assets/images/demo/test-img-big-1.jpg" height="300" alt="" />
                                         </div>
                                     </a>
                                     <h3>
@@ -93,7 +93,7 @@
                                 <div>
                                     <a href="#" class="uix-gallery__image" >
                                         <div class="uix-gallery__image-cover">
-                                            <img src="../assets/images/demo/test-img-big-2.jpg" height="120" alt="" />
+                                            <img src="{{$commonAssetUrl}}/website/assets/images/demo/test-img-big-2.jpg" height="120" alt="" />
                                         </div>
                                     </a>
                                     <h3>
@@ -109,7 +109,7 @@
                                 <div>
                                     <a href="#" class="uix-gallery__image" >
                                         <div class="uix-gallery__image-cover">
-                                            <img src="../assets/images/demo/test-img-big-3.jpg" alt="" />
+                                            <img src="{{$commonAssetUrl}}/website/assets/images/demo/test-img-big-3.jpg" alt="" />
                                         </div>
                                     </a>
                                     <h3>
@@ -125,7 +125,7 @@
                                 <div>
                                     <a href="#" class="uix-gallery__image" >
                                         <div class="uix-gallery__image-cover">
-                                            <img src="../assets/images/demo/test-img-big-4.jpg" height="220" alt="" />
+                                            <img src="{{$commonAssetUrl}}/website/assets/images/demo/test-img-big-4.jpg" height="220" alt="" />
                                         </div>
                                     </a>
                                     <h3>
@@ -133,7 +133,7 @@
                                         <span class="uix-gallery__title">Commerce Theme</span>
                                         <span class="uix-gallery__cat"><a href="#">Free</a></span>
                                     </h3>
-                                </div>			
+                                </div>            
                             </article>
                             <!--  .uix-gallery__item  end -->  
                             <!-- Item  -->
@@ -170,11 +170,11 @@
                         <!-- .uix-gallery__tiles end -->
                     </div>
                     <!-- .uix-gallery end -->
-					<p class="uix-t-c">
-						<a id="ajax-loadmore-btn-1" href="javascript:void(0)" class="uix-btn uix-btn__border--thin uix-btn__size--s uix-btn__bg--primary is-pill">Load More</a>
-					</p>
-				</div>
-				<!-- .container end -->
-			</div>
-		</main>
+                    <p class="uix-t-c">
+                        <a id="ajax-loadmore-btn-1" href="javascript:void(0)" class="uix-btn uix-btn__border--thin uix-btn__size--s uix-btn__bg--primary is-pill">Load More</a>
+                    </p>
+                </div>
+                <!-- .container end -->
+            </div>
+        </main>
 @endsection
