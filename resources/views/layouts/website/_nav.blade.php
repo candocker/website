@@ -1,84 +1,25 @@
 <nav class="uix-menu__container">
 <!--<nav class="uix-menu__container uix-trans">-->
     <div class="uix-menu__inner">
-        <span class="uix-brand--mobile"><img src="{{$commonAssetUrl}}/website/assets/images/logo-colorful.png" alt="Uix Kit"></span>
+        <span class="uix-brand--mobile">
+            <a class="navbar-brand" href="/"><span>融会贯通</span></a>
+        </span>
         <ul class="uix-menu"> 
-            <li class="multi-column current-menu-item is-active"><a href="/series">经典丛书系列</a>
+            @foreach ($datas['navDatas'] as $navCode => $navData)
+            <li class="@if (isset($navData['subNavs'])) multi-column current-menu-item @endif @if ($navCode == $datas['currentNav']) is-active @endif"><a href="/{{$navCode}}">{{$navData['name']}}</a>
+                @if (isset($navData['subNavs']))
                 <ul class="sub-menu">
                     <li>
-                        <span class="multi-column-title">Web Elements (Basic)</span>
                         <ul class="sub-menu">
-                            <li><a href="basic_equal-height-columns">Equal-height Columns</a></li>
-                            <li><a href="3D-filmic-effects">3D Filmic Effects</a><span class="uix-bubble">new</span></li>
-                            <li><a href="basic_align-wide-and-full-element">Align </a><span class="uix-bubble">new</span></li>
+                    @foreach ($navData['subNavs'] as $subCode => $subData)
+                            <li><a href="/{{$navCode}}-{{$subCode}}">{{$subData['name']}}</a></li>
+                    @endforeach
                         </ul>
-                    </li>
-                    <li>
-                        <span class="multi-column-title">Web Elements (Part 2)</span>
-                        <ul class="sub-menu">
-                            <li><a href="flexslider">Flexslider<small style="font-size: 10px;background: #51B801; color:#fff; border-radius: 5px;padding: 2px 3px;display: inline-block;margin-left: 3px;">Third-party plugin</small></a></li>
-                            <li><a href="swiper">Swiper<small style="font-size: 10px;background: #51B801; color:#fff; border-radius: 5px;padding: 2px 3px;display: inline-block;margin-left: 3px;">Third-party plugin</small></a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span class="multi-column-title">Column 1</span>
-                        <ul class="sub-menu">
-                            <li><a href="#">Sub Menu Title</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span class="multi-column-title">Column 2</span>
-                        <ul class="sub-menu">
-                            <li><a href="#">Sub Menu Title</a></li>
-                        </ul>
-                        <!-- .sub-menu  end -->
-                    </li>
-                    <li>
-                        <span class="multi-column-title">Column 3</span>
-                        <ul class="sub-menu">
-                        </ul>
-                        <!-- .sub-menu  end -->
                     </li>
                 </ul>
+                @endif
             </li>
-
-            <li class="multi-column"><a href="#">Mega Menu Two</a>
-                <ul class="sub-menu">
-                    <li><a>iooo</a><span class="uix-bubble">new</span></li>
-                    <li>
-                        <ul class="sub-menu">
-                            <li><a href="#">Sub Menu Title</a></li>
-                        </ul>
-                        <!-- .sub-menu  end -->
-                    </li>
-                    <li>
-                        <span class="multi-column-title">Column 2</span>
-                        <ul class="sub-menu">
-                            <li><a href="#">Sub Menu Title</a></li>
-                        </ul>
-                        <!-- .sub-menu  end -->
-                    </li>
-                </ul>
-            </li>                            
-
-            <li><a href="#">Dropdown</a>
-                <ul class="sub-menu">
-                    <li><a href="#">Dropdown 1</a>
-                        <ul class="sub-menu">
-                            <li><a href="#">Title 3</a>
-                                <ul class="sub-menu">
-                                    <li><a href="#">Title 3</a></li>
-                                </ul>
-                                <!-- .sub-menu  end -->
-                            </li>
-                        </ul>
-                        <!-- .sub-menu  end -->
-                    </li>
-                    <li><a href="#">Dropdown 3</a></li>
-                </ul>
-                <!-- .sub-menu  end -->
-            </li>
-            <li><a href="#">Placeholder</a></li>
+            @endforeach
         </ul>
         @include('layouts.website._nav-share', ['data' => []])
     </div>

@@ -10,8 +10,7 @@
     padding: 0 0 15px;
 }
 </style>
-<!--<header class="uix-header__container uix-header__container--overlay">-->
-<header class="uix-header__container">
+<header class="uix-header__container @if (isset($datas['navOverlay'])) uix-header__container--overlay @endif">
     <div class="uix-header">
         <div class="container">
             <div class="uix-brand">
@@ -22,6 +21,6 @@
         <div class="uix-clearfix"></div>
     </div>
 </header>
-{{--@if ($nav == 'fixed')--}}
+@if (!isset($datas['navAuto']))
 <div class="uix-header__placeholder js-uix-header__placeholder-autoheight"></div>
-{{--@endif--}}
+@endif

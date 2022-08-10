@@ -64,6 +64,7 @@ abstract class AbstractController extends AbstractControllerBase
 			'keywords' => 'keywords',
 			'description' => 'description'
         ], $datas);*/
+        $datas['navDatas'] = $this->getNavDatas();
         $datas = $this->formatResultDatas($datas);
         //print_r($datas);exit();
 		return view($view, ['datas' => $datas]);

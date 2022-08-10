@@ -45,6 +45,7 @@ class CultureController extends AbstractController
             $view = 'series';
             $datas = $graphicService->formatAllSeries();
         }
+        $datas['currentNav'] = 'series';
         //return $this->success($datas);
 
         //$datas = $graphicService->formatResultDatas($sort, $extcode, $params);
@@ -55,14 +56,6 @@ class CultureController extends AbstractController
     {
         $datas = [];//$this->getRepositoryObj('culture-bookPublish')->getCategoryDatas($sort);
         return $this->customView('timeline', $datas);
-    }
-
-    public function view($code = '')
-    {
-        $code = empty($code) ? 'home' : $code;
-        $view = 'dealed/' . $code;
-        //echo $view;exit();
-        return $this->customView($view);
     }
 
 	protected function viewPath()
@@ -83,12 +76,54 @@ class CultureController extends AbstractController
         return [
             'series' => [
                 'name' => '经典图书系列',
-                'subnav' => [
+                'subNavs' => [
                     'luxun' => ['name' => '鲁迅图书'],
                     'swxueshu' => ['name' => '商务学术翻译'],
                     'jdguji' => ['name' => '经典古籍'],
                 ],
             ],
+            'human' => [
+                'name' => '名人堂',
+            ],
+            'book' => [
+                'name' => '经典著作',
+            ],
         ];
+    }
+
+    public function view()
+    {
+        $path = request()->input('path', '');
+        $filepath = request()->input('filepath', '');
+        if (empty($path)) {
+            $path = '/data/htmlwww/laravel-system/vendor/candocker/website/resources/views/website/dealed/';
+            $files = CommonTool::getPathFiles($path);
+            foreach ($files as $file) {
+                if (in_array($file, ['bak', 'home.blade.php'])) {
+                    continue;
+                }
+                $subPath = $path . $file;
+                $subFiles = CommonTool::getPathFiles($subPath);
+                foreach ($subFiles as $subFile) {
+                    if (is_dir($subPath . '/' . $subFile)) {
+                        continue;
+                    }
+                    $subFile = str_replace('.blade.php', '', $subFile);
+                    echo "<a href='/dev-view?path={$file}&filepath={$subFile}' target='_blank'>{$file}-{$subFile}</a><br />";
+                }
+            }
+            exit();
+        }
+        $view = 'dealed/home';
+        $datas = [
+            'path' => $path,
+            'file' => $filepath,
+            'currentNav' => '',
+        ];
+        if (in_array($filepath, ['_sample-page-1'])) {
+            $datas['navAuto'] = true;
+            $datas['navOverlay'] = true;
+        }
+        return $this->customView('dealed/home', $datas);
     }
 }
