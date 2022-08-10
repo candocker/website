@@ -1,9 +1,4 @@
-@extends('layouts.website')
-@section('bodyClass')class="page"@endsection
-@section('content')
-		<main id="uix-maincontent">
-		   <!-- Content 
-			====================================================== -->
+		   <!-- Content basic-_heading -->
 			<section class="uix-spacing--s">
 				<div class="container">
 						<div class="row">
@@ -28,9 +23,6 @@
 								  <h2 class="uix-heading--placeholder-line">Placeholder Line Heading</h2>  
 							</div>
 						</div>
-						<!-- .row end -->
 				</div>
-				<!-- .container end -->
 			</section>   
-		</main>
-@endsection
+

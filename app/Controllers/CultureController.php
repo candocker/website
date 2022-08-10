@@ -5,15 +5,6 @@ use Swoolecan\Foundation\Helpers\CommonTool;
 
 class CultureController extends AbstractController
 {
-    public function view($code = '')
-    {
-        $datas = [];
-        $elems = explode('_', $code);
-        $view = 'sources/' . $elems[0] . '/_' . $elems[1];
-        //echo $view;exit();
-        return $this->customView($view);
-    }
-
     public function home($sort = 'pingtai')
     {
         $datas = [];
@@ -45,21 +36,33 @@ class CultureController extends AbstractController
         $graphicService = $this->getServiceObj('culture-graphic');
 
         if (!empty($volumeId)) {
+            $view = 'series-book';
             $datas = $graphicService->formatVolumeDatas($volumeId);
         } else if (!empty($sort)) {
-            $datas = $graphicService->formatSeriesDatas($volumeId);
+            $view = 'series-volume';
+            $datas = $graphicService->formatSeriesDatas($sort);
         } else {
+            $view = 'series';
             $datas = $graphicService->formatAllSeries();
         }
+        //return $this->success($datas);
 
         //$datas = $graphicService->formatResultDatas($sort, $extcode, $params);
-        return $this->customView('table', $datas);
+        return $this->customView($view, $datas);
     }
 
     public function timeline($sort = '')
     {
         $datas = [];//$this->getRepositoryObj('culture-bookPublish')->getCategoryDatas($sort);
         return $this->customView('timeline', $datas);
+    }
+
+    public function view($code = '')
+    {
+        $code = empty($code) ? 'home' : $code;
+        $view = 'dealed/' . $code;
+        //echo $view;exit();
+        return $this->customView($view);
     }
 
 	protected function viewPath()
@@ -74,4 +77,18 @@ class CultureController extends AbstractController
         }
         return parent::isMobile($force);
 	}
+
+    public function getNavDatas()
+    {
+        return [
+            'series' => [
+                'name' => '经典图书系列',
+                'subnav' => [
+                    'luxun' => ['name' => '鲁迅图书'],
+                    'swxueshu' => ['name' => '商务学术翻译'],
+                    'jdguji' => ['name' => '经典古籍'],
+                ],
+            ],
+        ];
+    }
 }

@@ -1,28 +1,25 @@
-<div class="uix-table uix-table--noborder is-horizontal is-responsive js-uix-table--responsive">
+@php
+@endphp
+<div class="uix-table uix-table--bordered is-responsive js-uix-table--responsive uix-table--alternant-row">
     <table>
         <thead>
             <tr>
-                <th>Head 1<span class="js-uix-table-responsive__hidden"> | hidden on mobile</span></th>
-                <th>Head 2</th>
-                <th>Head 3</th>
+                @foreach ($headers as $header => $hName)
+                <th>{{$hName}}</th>
+                @endforeach
+                <!--<th>base<span class="js-uix-table-responsive__hidden"> | hidden on mobile</span></th>-->
             </tr>
         </thead>
         <tbody class="uix-t-l--md">
+            @foreach ($data as $pData)
             <tr>
-                <td>1.</td>
-                <td>Content 1</td>
-                <td>Remark 1</td>
+                @foreach ($headers as $header => $hName)
+                <td>
+                    @if ($header != 'pointOperation') {{$pData[$header]}} @else @include('website.modules.table._table-operation', ['type' => $type, 'info' => $pData]) @endif
+                </td>
+                @endforeach
             </tr>
-            <tr>
-                <td>2.</td>
-                <td>Content 2</td>
-                <td>Remark 2</td>
-            </tr>
-            <tr>
-                <td>3.</td>
-                <td>Content 3</td>
-                <td>Remark 3</td>
-            </tr>
+            @endforeach
          </tbody>
     </table>    
 </div>            

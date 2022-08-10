@@ -3,7 +3,7 @@
     <div class="uix-menu__inner">
         <span class="uix-brand--mobile"><img src="{{$commonAssetUrl}}/website/assets/images/logo-colorful.png" alt="Uix Kit"></span>
         <ul class="uix-menu"> 
-            <li class="multi-column current-menu-item is-active"><a href="#">aaaaa</a>
+            <li class="multi-column current-menu-item is-active"><a href="/series">经典丛书系列</a>
                 <ul class="sub-menu">
                     <li>
                         <span class="multi-column-title">Web Elements (Basic)</span>

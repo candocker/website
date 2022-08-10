@@ -7,6 +7,7 @@ namespace ModuleWebsite\Controllers;
 use Illuminate\Support\Facades\View;
 use Illuminate\View\FileViewFinder;
 use Illuminate\Support\Facades\App;
+use Illuminate\Http\JsonResponse;
 use Framework\Baseapp\Controllers\AbstractController as AbstractControllerBase;
 
 abstract class AbstractController extends AbstractControllerBase
@@ -63,6 +64,8 @@ abstract class AbstractController extends AbstractControllerBase
 			'keywords' => 'keywords',
 			'description' => 'description'
         ], $datas);*/
+        $datas = $this->formatResultDatas($datas);
+        //print_r($datas);exit();
 		return view($view, ['datas' => $datas]);
 	}
 
@@ -88,5 +91,11 @@ abstract class AbstractController extends AbstractControllerBase
     protected function getAppcode()
     {
         return 'website';
+    }
+
+    protected function formatResultDatas($datas)
+    {
+        $r = new JsonResponse($datas);
+        return $r->getData(true);
     }
 }
