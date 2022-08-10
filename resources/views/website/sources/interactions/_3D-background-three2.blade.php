@@ -3,7 +3,7 @@
 @section('content')
         <main id="uix-maincontent">
            <!-- Content 
-            ====================================================== -->
-            <canvas id="3D-background-three-canvas2" data-filter-texture="{{$commonAssetUrl}}/website/assets/images/dmaps/displacement/4.png"></canvas>
+====================================================== -->
+<canvas id="3D-background-three-canvas2" data-filter-texture="{{$commonAssetUrl}}/website/assets/images/dmaps/displacement/4.png"></canvas>
         </main>
 @endsection

@@ -1,3 +1,6 @@
+@php
+$classes = ['s', 'm', 'l', 'no-top', 'no-bottom', 'googlemap', 'no'];
+@endphp
 <section class="uix-spacing--s">
     <div class="container">
         <div class="row">
