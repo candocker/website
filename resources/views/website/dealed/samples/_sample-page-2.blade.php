@@ -1,9 +1,3 @@
-@extends('layouts.website')
-@section('bodyClass')class="page"@endsection
-@section('content')
-        <main id="uix-maincontent">
-           <!-- Parallax
-====================================================== -->
 <section>
     <div class="uix-parallax uix-height--70" data-fully-visible="false" data-offset-top="0" data-overlay-bg="false" data-skew="0" data-speed="0.4">
         <img class="uix-parallax__img" src="{{$commonAssetUrl}}/website/assets/images/demo/spiral-galaxy-1920x1080.jpg" alt="">
@@ -14,8 +8,6 @@
         </div>
     </div>
 </section>     
-           <!-- Section
-====================================================== -->
 <section>
     <div class="container">
         <div class="uix-container__bg uix-container__bg--white uix-container__bg--shadow uix-container__bg--totop-small uix-container__bg--rounded-medium uix-t-c">
@@ -54,8 +46,6 @@
     </div>
     <!-- .container end -->
 </section>
-<!-- Content
-====================================================== -->
 <section class="uix-spacing--s">
     <div class="container uix-t-c">
             <div class="row uix-el--transparent" data-uix-anim='{"viewport":"100%","from":{"opacity":0,"y":150},"to":{"opacity":1,"y":0},"ease":"Power2.easeOut","duration":0.4,"delay":0,"infinite":false}'>
@@ -126,8 +116,6 @@
     </div>
     <!-- .container end -->
 </section>
-           <!-- Section Title
-====================================================== -->
 <section>
     <div class="container uix-t-c">
             <div class="row uix-el--transparent" data-uix-anim='{"viewport":"100%","from":{"opacity":0,"y":150},"to":{"opacity":1,"y":0},"ease":"Power2.easeOut","duration":0.4,"delay":0,"infinite":false}'>
@@ -139,8 +127,6 @@
     </div>
     <!-- .container end -->
 </section>
-<!-- Content
-====================================================== -->
 <section class="uix-spacing--s">
     <div class="container">
             <div class="row uix-el--transparent" data-uix-anim='{"viewport":"100%","from":{"opacity":0,"y":150},"to":{"opacity":1,"y":0},"ease":"Power2.easeOut","duration":0.4,"delay":0,"infinite":false}'>
@@ -198,8 +184,6 @@
     </div>
     <!-- .container end -->
 </section>
-           <!-- Section Title
-====================================================== -->
 <section>
     <div class="container uix-t-c">
             <div class="row uix-el--transparent" data-uix-anim='{"viewport":"100%","from":{"opacity":0,"y":150},"to":{"opacity":1,"y":0},"ease":"Power2.easeOut","duration":0.4,"delay":0,"infinite":false}'>
@@ -211,8 +195,6 @@
     </div>
     <!-- .container end -->
 </section>
-<!-- Content
-====================================================== -->
 <div class="uix-spacing--s uix-spacing--no-top">
     <div class="container">
             <div class="row uix-el--transparent" data-uix-anim='{"viewport":"100%","from":{"opacity":0,"y":150},"to":{"opacity":1,"y":0},"ease":"Power2.easeOut","duration":0.4,"delay":0,"infinite":false}'>
@@ -325,9 +307,5 @@
                         </div>
                 </div>
             </div>
-            <!-- .row end -->
     </div>
-    <!-- .container end -->
 </div>    
-        </main>
-@endsection

@@ -65,10 +65,16 @@ abstract class AbstractController extends AbstractControllerBase
 			'description' => 'description'
         ], $datas);*/
         $datas['navDatas'] = $this->getNavDatas();
+        $datas['currentNav'] = isset($datas['currentNav']) ?? '';
         $datas = $this->formatResultDatas($datas);
         //print_r($datas);exit();
 		return view($view, ['datas' => $datas]);
 	}
+
+    protected function getNavDatas()
+    {
+        return [];
+    }
 
     protected function viewPre()
     {

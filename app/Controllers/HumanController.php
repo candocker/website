@@ -4,10 +4,12 @@ namespace ModuleWebsite\Controllers;
 
 class HumanController extends AbstractController
 {
+    use TraitCulture;
+
     public function home()
     {
-        $this->getHuman();
-        return $this->customView('human');
+        $data = $this->getHuman();
+        return $this->customView('human', ['info' => $data]);
     }
 
     public function view()
@@ -41,7 +43,8 @@ class HumanController extends AbstractController
 
     public function getHuman()
     {
-        $human = $this->getRouteParam('human');
-        return $human;
+        $code = $this->getRouteParam('code');
+        $humanData = $this->getRepositoryObj('culture-figure')->getDetail($code);
+        return $humanData;
     }
 }

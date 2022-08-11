@@ -5,6 +5,8 @@ use Swoolecan\Foundation\Helpers\CommonTool;
 
 class CultureController extends AbstractController
 {
+    use TraitCulture;
+
     public function home($sort = 'pingtai')
     {
         $datas = [];
@@ -70,26 +72,6 @@ class CultureController extends AbstractController
         }
         return parent::isMobile($force);
 	}
-
-    public function getNavDatas()
-    {
-        return [
-            'series' => [
-                'name' => '经典图书系列',
-                'subNavs' => [
-                    'luxun' => ['name' => '鲁迅图书'],
-                    'swxueshu' => ['name' => '商务学术翻译'],
-                    'jdguji' => ['name' => '经典古籍'],
-                ],
-            ],
-            'human' => [
-                'name' => '名人堂',
-            ],
-            'book' => [
-                'name' => '经典著作',
-            ],
-        ];
-    }
 
     public function view()
     {
