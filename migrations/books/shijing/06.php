@@ -3,12 +3,12 @@ return [
     'chapters' => [
         [
             'spell' => [
-                'táozhīyāoyāo，zhuózhuó qí huā。',
-                'zhī zǐ yúguī，yí qí shì jiā 。',
-                'táozhīyāoyāo， yǒu fén qí shí。',
-                'zhī zǐ yúguī，yí qí jiā shì。',
-                'táozhīyāoyāo， qí yè zhēnzhēn。',
-                'zhī zǐ yúguī，yí qí jiā rén。',
+                'táo zhī yāo yāo，zhuó zhuó qí huā。',
+                'zhī zǐ yú guī，yí qí shì jiā。',
+                'táo zhī yāo yāo，yǒu fén qí shí。',
+                'zhī zǐ yú guī，yí qí jiā shì。',
+                'táo zhī yāo yāo，qí yè zhēn zhēn。',
+                'zhī zǐ yú guī，yí qí jiā rén。',
             ],
             'content' => [
                 '桃之夭夭，灼灼其华。',

@@ -3,12 +3,12 @@ return [
     'chapters' => [
         [
             'spell' => [
-                'nán yǒu jiūmù， gé lěi léi zhī。',
-                'lè zhī jūn zǐ ，fúlǚsuízhī。',
-                'nán yǒu jiūmù， gé lěihuāngzhī。',
-                'lè zhī jūn zǐ ，fúlǚ jiāng zhī。',
-                'nán yǒu jiūmù， gé lěiyíngzhī。',
-                'lè zhī jūn zǐ ，fúlǚchéngzhī。',
+                'nán yǒu jiū mù，gé lěi léi zhī。',
+                'lè zhī jūn zǐ，fú lǚ suí zhī。',
+                'nán yǒu jiū mù，gé lěi huāng zhī。',
+                'lè zhī jūn zǐ，fú lǚ jiāng zhī。',
+                'nán yǒu jiū mù，gé lěi yíng zhī。',
+                'lè zhī jūn zǐ，fú lǚ chéng zhī。',
             ],
             'content' => [
                 '南有樛木，葛藟累之。',

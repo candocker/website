@@ -3,12 +3,12 @@ return [
     'chapters' => [
         [
             'spell' => [
-                'cǎi cǎi fúyǐ， bó yán cǎi zhī。',
-                'cǎi cǎi fúyǐ， bó yán yǒu zhī。',
-                'cǎi cǎi fúyǐ， bó yánduōzhī。',
-                'cǎi cǎi fúyǐ， bó yán luō zhī。',
-                'cǎi cǎi fúyǐ， bó yánjiézhī。',
-                'cǎi cǎi fúyǐ， bó yánxiézhī。',
+                'cǎi cǎi fú yǐ，bó yán cǎi zhī。',
+                'cǎi cǎi fú yǐ，bó yán yǒu zhī。',
+                'cǎi cǎi fú yǐ，bó yán duō zhī。',
+                'cǎi cǎi fú yǐ，bó yán luō zhī。',
+                'cǎi cǎi fú yǐ，bó yán jié zhī。',
+                'cǎi cǎi fú yǐ，bó yán xié zhī。',
             ],
             'content' => [
                 '采采芣苢，薄言采之。',

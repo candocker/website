@@ -3,13 +3,13 @@ return [
     'chapters' => [
         [
             'spell' => [
-                'gézhītánxī，yìyúzhōnɡɡǔ，wéiyèqīqī。',
-                'huánɡniǎoyúfēi，jíyúɡuànmù，qímínɡjiējiē。',
-                'gézhītánxī，yìyúzhōnɡɡǔ，wéiyèmòmò。',
-                'shìyìshìhuò，wéichīwéixì，fúzhīwúyì。',
-                'yánɡàoshīshì，yánɡàoyánɡuī。',
-                'bówūwǒsī，bóhuànwǒyī。',
-                'hé huànhé fǒu，ɡuīnínɡfùmǔ。',
+                'gé zhī tán xī，yì yú zhōnɡ ɡǔ，wéi yè qī qī。',
+                'huánɡ niǎo yú fēi，jí yú ɡuàn mù，qí mínɡ jiē jiē。',
+                'gé zhī tán xī，yì yú zhōnɡ ɡǔ，wéi yè mò mò。',
+                'shì yì shì huò，wéi chī wéi xì，fú zhī wú yì。',
+                'yán ɡào shī shì，yán ɡào yán ɡuī。',
+                'bó wū wǒ sī，bó huàn wǒ yī。',
+                'hé huàn hé fǒu，ɡuī nínɡ fù mǔ。',
             ],
             'content' => [
                 '葛之覃兮，施于中谷，维叶萋萋。',

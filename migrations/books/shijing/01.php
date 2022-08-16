@@ -3,11 +3,11 @@ return [
     'chapters' => [
         [
             'spell' => [
-                'guān guān jū jiū ， zài hé zhī zhōu 。yǎo tiǎo shū nǚ ， jūn zǐ hǎo qiú 。',
-                'cēn cī xìng cài ， zuǒ yòu liú zhī 。yǎo tiǎo shū nǚ ， wù mèi qiú zhī 。',
-                'qiú zhī bù dé ， wù mèi sī fú 。yōu zāi yōu zāi ， zhǎn zhuǎn fǎn cè 。',
-                'cēn cī xìng cài ， zuǒ yòu cǎi zhī 。yǎo tiǎo shū nǚ ， qín sè yǒu zhī 。',
-                'cēn cī xìng cài ， zuǒ yòu mào zhī 。yǎo tiǎo shū nǚ ， zhōng gǔ lè zhī 。',
+                'guān guān jū jiū，zài hé zhī zhōu。yǎo tiǎo shū nǚ，jūn zǐ hǎo qiú。',
+                'cēn cī xìng cài，zuǒ yòu liú zhī。yǎo tiǎo shū nǚ，wù mèi qiú zhī。',
+                'qiú zhī bù dé，wù mèi sī fú。yōu zāi yōu zāi，zhǎn zhuǎn fǎn cè。',
+                'cēn cī xìng cài，zuǒ yòu cǎi zhī。yǎo tiǎo shū nǚ，qín sè yǒu zhī。',
+                'cēn cī xìng cài，zuǒ yòu mào zhī。yǎo tiǎo shū nǚ，zhōng gǔ lè zhī。',
             ],
             'content' => [
                 '关关雎鸠，在河之洲。窈窕淑女，君子好逑。',

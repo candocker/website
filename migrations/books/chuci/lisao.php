@@ -195,7 +195,7 @@ return [
                 '国无人莫我知兮，又何怀乎故都！',
                 '既莫足与为美政兮，吾将从彭咸之所居！',
             ],
-            'spells' => [
+            'spell' => [
                 'dì gāo yáng zhī miáo yì xī, zhèn huáng kǎo yuē bó yōng.',
                 'shè tí zhēn yú mèng zōu xī, wéi gēng yín wú yǐ jiàng.',
                 'huáng lǎn kuí yú chū dù xī, zhào xī yú yǐ jiā míng:',

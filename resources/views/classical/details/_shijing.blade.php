@@ -4,18 +4,18 @@
     <span class="button width6em" onclick="disp('yiwen');">译文</span>
     <span class="button width6em" onclick="disp('jiedu');">解读</span></div>
 <h1>@if (isset($datas['nameSpell']))<span class="spellclass" style="display: none;"> ( {{$datas['nameSpell']}} )</span>@endif{{$datas['name']}}</h1>
-@if (isset($datas['nameSpell']))<h5 style="font-size: 14pt; font-weight: bold; text-align: center; padding: 4px; color: green;">{{$datas['brief']}}</h5>@endif
+@if (isset($datas['brief']))<h5 style="font-size: 14pt; font-weight: bold; text-align: center; padding: 4px; color: green;">{{$datas['brief']}}</h5>@endif
 <hr />
-@php $i = 1; @endphp
+@php $j = 1; @endphp
 @foreach ($datas['chapters'] as $chapter)
-@if (count($datas['chapters']) > 1)<div class="b_center"><span class="button width6em">@if (isset($chapter['name'])){{$chapter['name']}}@else 第{{$i}} 节 @endif</span></div>@endif
+@if (count($datas['chapters']) > 1)<div class="b_center"><span class="button width6em">@if (isset($chapter['name'])){{$chapter['name']}}@else 第{{$j}} 节 @endif</span></div>@endif
 @foreach ((array) $chapter['content'] as $key => $cContent)
 @if (isset($datas['bookData']['spell']) && isset($chapter['spell']))
 <div class="jingwen spellclass" style="display: none;">{{$chapter['spell'][$key]}}</div>
 @endif
 <div class="jingwen">{{$cContent}}</div>
-@php $i++; @endphp
 @endforeach
+@php $j++; @endphp
 <div id="comment1" class="comment" style="display: none;">
     @if (isset($chapter['notes']) && $chapter['notes'])
     @foreach ((array) $chapter['notes'] as $i => $note)

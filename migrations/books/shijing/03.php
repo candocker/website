@@ -3,14 +3,14 @@ return [
     'chapters' => [
         [
             'spell' => [
-                'cǎi cǎi juǎn ěr， bù yíngqīngkuāng；',
-                'jiēwǒhuáirén，zhìbǐzhōu háng ！',
-                'zhìbǐcuīwéi，wǒmǎhuītuí；',
-                'wǒgūzhuóbǐjīnléi，wéiyǐ bù yǒnghuái！',
-                'zhìbǐgāogāng，wǒmǎxuánhuáng；',
-                'wǒgūzhuóbǐsìgōng，wéiyǐ bù yǒngshāng！',
-                'zhìbǐjūyǐ，wǒmǎtúyǐ；',
-                'wǒ pú pūyǐ，yúnhé xū yǐ！',
+                'cǎi cǎi juǎn ěr，bù yíng qīng kuāng；',
+                'jiē wǒ huái rén，zhì bǐ zhōu háng！',
+                'zhì bǐ cuī wéi，wǒ mǎ huī tuí；',
+                'wǒ gū zhuó bǐ jīn léi，wéi yǐ bù yǒng huái！',
+                'zhì bǐ gāo gāng，wǒ mǎ xuán huáng；',
+                'wǒ gū zhuó bǐ sì gōng，wéi yǐ bù yǒng shāng！',
+                'zhì bǐ jū yǐ，wǒ mǎ tú yǐ；',
+                'wǒ pú pū yǐ，yún hé xū yǐ！',
             ],
             'content' => [
                 '采采卷耳，不盈顷筐。',

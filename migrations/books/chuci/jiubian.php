@@ -7,14 +7,30 @@ return [
                 '萧瑟兮草木摇落而变衰。',
                 '憭栗兮若在远行，登山临水兮送将归。',
                 '泬漻兮天高而气清，寂寥兮收潦而水清。',
-                '憯悽增欷兮，薄寒之中人，怆怳懭悢兮，去故而就新。',
-                '坎廪兮贫士失职而志不平，廓落兮羁旅而无友生，惆怅兮而私自怜！',
+                '憯悽增欷兮，薄寒之中人，',
+                '怆怳懭悢兮，去故而就新。',
+                '坎廪兮贫士失职而志不平，',
+                '廓落兮羁旅而无友生，',
+                '惆怅兮而私自怜！',
                 '燕翩翩其辞归兮，蝉寂漠而无声。',
                 '雁廱廱而南游兮，鹍鸡啁哳而悲鸣。',
                 '独申旦而不寐兮，哀蟋蟀之宵征。',
                 '时亹亹而过中兮，蹇淹留而无成。',
             ],
             'spell' => [
+                'bēi zāi, qiū zhī wèi qì yě!',
+                'xiāo sè xī cǎo mù yáo luò ér biàn shuāi.',
+                'liǎo lì xī ruò zài yuǎn xíng, dēng shān lín shuǐ xī sòng jiāng guī.',
+                'jué liáo xī tiān gāo ér qì qīng, jì liáo xī shōu lǎo ér shuǐ qīng.',
+                'cǎn qī zēng xī xī, báo hán zhī zhōng rén,',
+                'chuàng huǎng kuǎng liàng xī, qù gù ér jiù xīn.',
+                'kǎn lǐn xī pín shì shī zhí ér zhì bù píng,',
+                'kuò luò xī jī lǚ ér wú yǒu shēng,',
+                'chóu chàng xī ér sī zì lián!',
+                'yàn piān piān qí cí guī xī, chán jì mò ér wú shēng.',
+                'yàn yōng yōng ér nán yóu xī, kūn jī zhāo zhā ér bēi míng.',
+                'dú shēn dàn ér bù mèi xī, āi xī shuài zhī xiāo zhēng.',
+                'shí wěi wěi ér guò zhōng xī, jiǎn yān liú ér wú chéng.',
             ],
             'vernacular' => [
             ],
@@ -22,11 +38,9 @@ return [
             ],
             'unscramble' => [
             ],
-
         ],
         [
             'content' => [
-
                 '悲忧穷戚兮独处廓，有美一人兮心不绎。',
                 '去乡离家兮来远客，超逍遥兮今焉薄！',
                 '专思君兮不可化，君不知兮可奈何！',
@@ -36,6 +50,112 @@ return [
                 '倚结軨兮长太息，涕潺湲兮下霑轼。',
                 '忼慨绝兮不得，中瞀乱兮迷惑。',
                 '私自怜兮何极？心怦怦兮谅直。',
+            ],
+            'spell' => [
+                'bēi yōu qióng qī xī dú chǔ kuò, yǒu měi yī rén xī xīn bù yì.',
+                'qù xiāng lí jiā xī lái yuǎn kè, chāo xiāo yáo xī jīn yān báo!',
+                'zhuān sī jūn xī bù kě huà, jūn bù zhī xī kě nài hé!',
+                'xù yuàn xī jī sī, xīn fán dàn xī wàng shí shì.',
+                'yuán yī jiàn xī dào yú yì, jūn zhī xīn xī yǔ yú yì.',
+                'chē jì jià xī qiè ér guī, bù dé jiàn xī xīn shāng bēi.',
+                'yǐ jié líng xī zhǎng tài xī, tì chán yuán xī xià zhān shì.',
+                'kāng kǎi jué xī bù dé, zhōng mào luàn xī mí huò.',
+                'sī zì lián xī hé jí? xīn pēng pēng xī liàng zhí.',
+            ],
+            'vernacular' => [
+            ],
+            'notes' => [
+            ],
+            'unscramble' => [
+            ],
+        ],
+        [
+            'content' => [
+            ],
+            'spell' => [
+            ],
+            'vernacular' => [
+            ],
+            'notes' => [
+            ],
+            'unscramble' => [
+            ],
+        ],
+        [
+            'content' => [
+            ],
+            'spell' => [
+            ],
+            'vernacular' => [
+            ],
+            'notes' => [
+            ],
+            'unscramble' => [
+            ],
+        ],
+        [
+            'content' => [
+            ],
+            'spell' => [
+            ],
+            'vernacular' => [
+            ],
+            'notes' => [
+            ],
+            'unscramble' => [
+            ],
+        ],
+        [
+            'content' => [
+            ],
+            'spell' => [
+            ],
+            'vernacular' => [
+            ],
+            'notes' => [
+            ],
+            'unscramble' => [
+            ],
+        ],
+        [
+            'content' => [
+            ],
+            'spell' => [
+            ],
+            'vernacular' => [
+            ],
+            'notes' => [
+            ],
+            'unscramble' => [
+            ],
+        ],
+        [
+            'content' => [
+            ],
+            'spell' => [
+            ],
+            'vernacular' => [
+            ],
+            'notes' => [
+            ],
+            'unscramble' => [
+            ],
+        ],
+        [
+            'content' => [
+            ],
+            'spell' => [
+            ],
+            'vernacular' => [
+            ],
+            'notes' => [
+            ],
+            'unscramble' => [
+            ],
+        ],
+        [
+            'content' => [
+
                 '皇天平分四时兮，窃独悲此凛秋。',
                 '白露既下百草兮，奄离披此梧楸。',
                 '去白日之昭昭兮，袭长夜之悠悠。',
@@ -52,6 +172,7 @@ return [
                 '澹容与而独倚兮，蟋蟀鸣此西堂。',
                 '心怵惕而震荡兮，何所忧之多方。',
                 '卬明月而太息兮，步列星而极明。',
+
                 '窃悲夫蕙华之曾敷兮，纷旖旎乎都房。',
                 '何曾华之无实兮，从风雨而飞飏！',
                 '以为君独服此蕙兮，羌无以异于众芳。',
@@ -62,6 +183,7 @@ return [
                 '猛犬狺狺而迎吠兮，关梁闭而不通。',
                 '皇天淫溢而秋霖兮，后土何时而得漧？',
                 '塊独守此无泽兮，仰浮云而永叹！',
+
                 '何时俗之工巧兮？背绳墨而改错！郤骐骥而不乘兮，策驽骀而取路。',
                 '当世岂无骐骥兮，诚莫之能善御。',
                 '见执辔者非其人兮，故駶跳而远去。',
@@ -78,6 +200,7 @@ return [
                 '君弃远而不察兮，虽原忠其焉得？',
                 '欲寂漠而绝端兮，窃不敢忘初之厚德。',
                 '独悲愁其伤人兮，冯郁郁其何极？',
+
                 '霜露惨悽而交下兮，心尚幸其弗济。',
                 '霰雪雰糅其增加兮，乃知遭命之将至。',
                 '原徼幸而有待兮，泊莽莽与野草同死。',
@@ -94,6 +217,7 @@ return [
                 '窃慕诗人之遗风兮，原讬志乎素餐。',
                 '蹇充倔而无端兮，泊莽莽而无垠。',
                 '无衣裘以御冬兮，恐溘死不得见乎阳春。',
+
                 '靓杪秋之遥夜兮，心缭悷而有哀。',
                 '春秋逴逴而日高兮，然惆怅而自悲。',
                 '四时递来而卒岁兮，阴阳不可与俪偕。',
@@ -103,6 +227,7 @@ return [
                 '中憯恻之悽怆兮，长太息而增欷。',
                 '年洋洋以日往兮，老嵺廓而无处。',
                 '事亹亹而觊进兮，蹇淹留而踌躇。',
+
                 '何氾滥之浮云兮？猋壅蔽此明月。',
                 '忠昭昭而原见兮，然霠曀而莫达。',
                 '原皓日之显行兮，云蒙蒙而蔽之。',
@@ -121,6 +246,7 @@ return [
                 '今修饰而窥镜兮，後尚可以竄藏。',
                 '愿寄言夫流星兮，羌倏忽而难当。',
                 '卒壅蔽此浮云，下暗漠而无光。',
+
                 '尧舜皆有所举任兮，故高枕而自适。',
                 '谅无怨于天下兮，心焉取此怵惕？',
                 '乘骐骥之浏浏兮，驭安用夫强策？',
@@ -146,28 +272,6 @@ return [
                 '赖皇天之厚德兮，还及君之无恙！',
             ],
             'spell' => [
-                'bēi zāi, qiū zhī wèi qì yě!',
-                'xiāo sè xī cǎo mù yáo luò ér biàn shuāi.',
-                'liǎo lì xī ruò zài yuǎn xíng, dēng shān lín shuǐ xī sòng jiāng guī.',
-                'jué liáo xī tiān gāo ér qì qīng, jì liáo xī shōu lǎo ér shuǐ qīng.',
-                'cǎn qī zēng xī xī, báo hán zhī zhōng rén,',
-                'chuàng huǎng kuǎng liàng xī, qù gù ér jiù xīn.',
-                'kǎn lǐn xī pín shì shī zhí ér zhì bù píng,',
-                'kuò luò xī jī lǚ ér wú yǒu shēng,',
-                'chóu chàng xī ér sī zì lián!',
-                'yàn piān piān qí cí guī xī, chán jì mò ér wú shēng.',
-                'yàn yōng yōng ér nán yóu xī, kūn jī zhāo zhā ér bēi míng.',
-                'dú shēn dàn ér bù mèi xī, āi xī shuài zhī xiāo zhēng.',
-                'shí wěi wěi ér guò zhōng xī, jiǎn yān liú ér wú chéng.',
-                'bēi yōu qióng qī xī dú chǔ kuò, yǒu měi yī rén xī xīn bù yì.',
-                'qù xiāng lí jiā xī lái yuǎn kè, chāo xiāo yáo xī jīn yān báo!',
-                'zhuān sī jūn xī bù kě huà, jūn bù zhī xī kě nài hé!',
-                'xù yuàn xī jī sī, xīn fán dàn xī wàng shí shì.',
-                'yuán yī jiàn xī dào yú yì, jūn zhī xīn xī yǔ yú yì.',
-                'chē jì jià xī qiè ér guī, bù dé jiàn xī xīn shāng bēi.',
-                'yǐ jié líng xī zhǎng tài xī, tì chán yuán xī xià zhān shì.',
-                'kāng kǎi jué xī bù dé, zhōng mào luàn xī mí huò.',
-                'sī zì lián xī hé jí? xīn pēng pēng xī liàng zhí.',
                 'huáng tiān píng fēn sì shí xī, qiè dú bēi cǐ lǐn qiū.',
                 'bái lù jì xià bǎi cǎo xī, yǎn lí pī cǐ wú qiū.',
                 'qù bái rì zhī zhāo zhāo xī, xí cháng yè zhī yōu yōu.',
@@ -381,6 +485,7 @@ return [
                 '何时俗之工巧兮？背绳墨而改错！',
                 '为何时俗这样善于取巧?背离规矩并且抛弃法度。',
                 '却骐骥而不乘兮，策驽骀而取路。',
+
                 '拒绝乘坐那优良的骏马，却一定要鞭策劣马让它上路。',
                 '当世岂无骐骥兮，诚莫之能善御。',
                 '难道当今世上再无骏马，其实是没车夫可以将它驾驭。',
@@ -481,6 +586,7 @@ return [
                 '被荷裯之晏晏兮，然潢洋而不可带。',
                 '穿上柔和的荷叶衣裳真好看，可是宽大空荡又不能系带子。',
                 '既骄美而伐武兮，负左右之耿介。',
+
                 '您总是夸耀自己美好又勇武，自负左右亲信都是耿介之士。',
                 '憎愠惀之修美兮，好夫人之慷慨。',
                 '美德之人总被你憎恶，装腔作势的小人却总让你喜。',
@@ -822,27 +928,4 @@ return [
             ],
         ],
     ],
-        [
-            'content' => [
-                '悲哉，秋之为气也！',
-                '萧瑟兮草木摇落而变衰。',
-                '憭栗兮若在远行，登山临水兮送将归。',
-                '泬漻兮天高而气清，寂寥兮收潦而水清。',
-                '憯悽增欷兮，薄寒之中人，怆怳懭悢兮，去故而就新。',
-                '坎廪兮贫士失职而志不平，廓落兮羁旅而无友生，惆怅兮而私自怜！',
-                '燕翩翩其辞归兮，蝉寂漠而无声。',
-                '雁廱廱而南游兮，鹍鸡啁哳而悲鸣。',
-                '独申旦而不寐兮，哀蟋蟀之宵征。',
-                '时亹亹而过中兮，蹇淹留而无成。',
-            ],
-            'spell' => [
-            ],
-            'vernacular' => [
-            ],
-            'notes' => [
-            ],
-            'unscramble' => [
-            ],
-
-        ],
 ];

@@ -13,22 +13,6 @@ class CultureController extends AbstractController
         return $this->customView('home', ['datas' => $datas]);
     }
 
-    public function luxunResume()
-    {
-        $repository = $this->getRepositoryObj('culture-series');
-        $pointCodes = ['luxunquanji1938', 'luxunquanji2005', 'luxunquanji1958', 'luxunquanji1981', 'luxunmanuscript', 'luxunmanuall'];
-        $datas = $repository->getSeriesDatas($pointCodes);
-        return $this->success($datas);
-    }
-
-    public function luxunWorks()
-    {
-        $repository = $this->getRepositoryObj('culture-series');
-        $pointCodes = ['luxunquanji1938', 'luxunquanji2005', 'luxunquanji1958', 'luxunquanji1981', 'luxunmanuscript', 'luxunmanuall'];
-        $datas = $repository->getSeriesDatas($pointCodes);
-        return $this->success($datas);
-    }
-
     public function series($sort = '', $volumeId = null)
     {
         //$datas = $this->getRepositoryObj('culture-bookPublish')->getCategoryDatas($sort);
@@ -54,10 +38,26 @@ class CultureController extends AbstractController
         return $this->customView($view, $datas);
     }
 
-    public function timeline($sort = '')
+    public function human()
     {
-        $datas = [];//$this->getRepositoryObj('culture-bookPublish')->getCategoryDatas($sort);
-        return $this->customView('timeline', $datas);
+        $code = $this->getRouteParam('code');
+        $data = $this->getRepositoryObj('culture-figure')->getDetail($code);
+        return $this->customView('human', ['info' => $data]);
+    }
+
+    public function dynasty()
+    {
+        $code = $this->getRouteParam('code');
+        $data = $this->getRepositoryObj('culture-dynasty')->getDetail($code);
+        return $this->success($data);
+        return $this->customView('dynasty', ['info' => $data]);
+    }
+
+    public function book()
+    {
+        $code = $this->getRouteParam('code');
+        $data = $this->getRepositoryObj('culture-book')->getDetail($code);
+        return $this->customView('book', ['info' => $data]);
     }
 
 	protected function viewPath()
@@ -107,5 +107,29 @@ class CultureController extends AbstractController
             $datas['navOverlay'] = true;
         }
         return $this->customView('dealed/home', $datas);
+    }
+
+	/*public function isMobile($force = false)
+	{
+        if (empty($force)) {
+		    return null;
+        }
+        return parent::isMobile($force);
+    }*/
+
+    public function luxunResume()
+    {
+        $repository = $this->getRepositoryObj('culture-series');
+        $pointCodes = ['luxunquanji1938', 'luxunquanji2005', 'luxunquanji1958', 'luxunquanji1981', 'luxunmanuscript', 'luxunmanuall'];
+        $datas = $repository->getSeriesDatas($pointCodes);
+        return $this->success($datas);
+    }
+
+    public function luxunWorks()
+    {
+        $repository = $this->getRepositoryObj('culture-series');
+        $pointCodes = ['luxunquanji1938', 'luxunquanji2005', 'luxunquanji1958', 'luxunquanji1981', 'luxunmanuscript', 'luxunmanuall'];
+        $datas = $repository->getSeriesDatas($pointCodes);
+        return $this->success($datas);
     }
 }

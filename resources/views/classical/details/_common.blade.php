@@ -10,7 +10,6 @@
 @if (count($datas['chapters']) > 1)<div class="b_center"><span class="button width6em">@if (isset($chapter['name'])){{$chapter['name']}}@else 第 {{$j}} 节 @endif</span></div>@endif
 @foreach ((array) $chapter['content'] as $cContent)
 <div class="jingwen">{!!$cContent!!}</div>
-@php $j++; @endphp
 @endforeach
 <div id="comment1" class="comment" style="display: none;">
     @if (isset($chapter['notes']) && $chapter['notes'])
@@ -33,6 +32,7 @@
     @endforeach
     @endif
 </div>
+@php $j++; @endphp
 @endforeach
 <div id="yiwen1" class="yiwen">
     @if (isset($datas['notes']))

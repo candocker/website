@@ -3,9 +3,9 @@ return [
     'chapters' => [
         [
             'spell' => [
-                'zhōngsīyǔ，shēnshēnxī。yíěr zǐ sūn ，zhènzhènxī。',
-                'zhōngsīyǔ，hōnghōngxī。yíěr zǐ sūn 。 shéng shéng xī。',
-                'zhōngsīyǔ，jíjí xī。yíěr zǐ sūn ，zhézhéxī。',
+                'zhōng sī yǔ，shēn shēn xī。yí ěr zǐ sūn，zhèn zhèn xī。',
+                'zhōng sī yǔ，hōng hōng xī。yí ěr zǐ sūn。shéng shéng xī。',
+                'zhōng sī yǔ，jí jí xī。yí ěr zǐ sūn，zhé zhé xī。',
             ],
             'content' => [
                 '螽斯羽，诜诜兮。宜尔子孙，振振兮。',

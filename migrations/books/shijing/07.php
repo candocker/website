@@ -3,12 +3,12 @@ return [
     'chapters' => [
         [
             'spell' => [
-                'sùsùtùjū，zhuózhī zhēng zhēng 。',
-                'jiūjiūwǔ fū ，gōng hóu gān chéng。',
-                'sùsùtùjū，shīyú zhōng kuí。',
-                'jiūjiūwǔ fū ，gōng hóu hǎo qiú 。',
-                'sùsùtùjū，shīyú zhōng lín。',
-                'jiūjiūwǔ fū ，gōng hóu fùxīn。',
+                'sù sù tù jū，zhuó zhī zhēng zhēng。',
+                'jiū jiū wǔ fū，gōng hóu gān chéng。',
+                'sù sù tù jū，shī yú zhōng kuí。',
+                'jiū jiū wǔ fū，gōng hóu hǎo qiú 。',
+                'sù sù tù jū，shī yú zhōng lín。',
+                'jiū jiū wǔ fū，gōng hóu fù xīn。',
             ],
             'content' => [
                 '肃肃兔罝，椓之丁丁。',

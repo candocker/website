@@ -1,20 +1,9 @@
-<section class="uix-spacing--s">
+<section class="uix-spacing--s uix-spaceing--no-bottom">
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-4 col-sm-6">
                 <div class="uix-el--transparent uix-border--rounded uix-border--rounded-img" data-uix-anim='{"viewport":"100%","from":{"opacity":0,"y":150},"to":{"opacity":1,"y":0},"ease":"Power2.easeOut","duration":0.4,"delay":0.2,"infinite":false}' > 
-                    <img src="{{$datas['info']['photoUrl']}}?x-oss-process=image/resize,m_pad,h_475,w_475" alt="">
-                </div>
-            </div>
-            <div class="col-12 col-lg-4 col-sm-12">
-                <div class="uix-el--transparent" data-uix-anim='{"viewport":"100%","from":{"opacity":0,"y":150},"to":{"opacity":1,"y":0},"ease":"Power2.easeOut","duration":0.4,"delay":0,"infinite":false}' >
-                    <h3 class="uix-t-l uix-t-c--md">{!!$datas['info']['name']!!}</h3>
-                    <p class="uix-t-l uix-t-c--md">
-                        {{$datas['info']['description']}}
-                    </p> 
-                    <!--<p class="uix-t-l uix-t-c--md">
-                        <a href="#" class="uix-btn uix-btn__border--thin uix-btn__size--s uix-btn__bg--primary uix-btn__icon uix-btn__icon--left"><span><i class="fa fa-cogs" aria-hidden="true"></i></span>Free Download</a>
-                    </p>-->
+                    <img src="{{$info[$relateFields['pictureField']]}}?x-oss-process=image/resize,m_pad,h_475,w_475" alt="">
                 </div>
             </div>
             <div class="col-12 col-lg-4 col-sm-6">
@@ -59,6 +48,17 @@
                             <i class="fa fa-github"></i>
                         </a> 
                     </p>                            
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-sm-12">
+                <div class="uix-el--transparent" data-uix-anim='{"viewport":"100%","from":{"opacity":0,"y":150},"to":{"opacity":1,"y":0},"ease":"Power2.easeOut","duration":0.4,"delay":0,"infinite":false}' >
+                    <h3 class="uix-t-l uix-t-c--md">{!!$datas['info']['name']!!}</h3>
+                    <p class="uix-t-l uix-t-c--md">
+                        {{$info[$relateFields['descriptionField']]}}
+                    </p> 
+                    <!--<p class="uix-t-l uix-t-c--md">
+                        <a href="#" class="uix-btn uix-btn__border--thin uix-btn__size--s uix-btn__bg--primary uix-btn__icon uix-btn__icon--left"><span><i class="fa fa-cogs" aria-hidden="true"></i></span>Free Download</a>
+                    </p>-->
                 </div>
             </div>
         </div>
