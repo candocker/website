@@ -12,7 +12,10 @@ $infos = $datas['infos'];
     @if ($i % $rowCount == 1)<tr>@endif
     <td class="index_left_td">
         <span style="text-align:center;margin-top: 20px;font-size:14pt;">
-            <a href="/show-{{$datas['bookCode']}}-{{$pCode}}">{{$infos[$pCode]['name']}}</a>
+            <a href="/show-{{$datas['bookCode']}}-{{$pCode}}">
+                {{$infos[$pCode]['name']}}
+                @if (isset($datas['bookData']['withAuthor'])) ( {{$infos[$pCode]['author']}} )@endif
+            </a>
         </span>
     </td>
     @if ($i % $rowCount == $rowCount)</tr>@endif

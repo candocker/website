@@ -13,7 +13,7 @@
 @if (isset($datas['bookData']['spell']) && isset($chapter['spell']))
 @if (isset($chapter['spell'][$key]))<div class="jingwen spellclass" style="display: none;">{{$chapter['spell'][$key]}}</div>@endif
 @endif
-<div class="jingwen">{{$cContent}}</div>
+<div class="jingwen">{!!$cContent!!}</div>
 @endforeach
 @php $j++; @endphp
 <div id="comment1" class="comment" style="display: none;">

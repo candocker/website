@@ -64,6 +64,7 @@ return [
         'guwenguanzhi' => [
             //'rowspan' => 10,
             'name' => '古文观止',
+            'withAuthor' => 1,
             'brief' => '古文观止',
             'rowCount' => 3,
             'rowCountMobile' => 2,

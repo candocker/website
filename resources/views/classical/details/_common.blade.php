@@ -3,7 +3,7 @@
     <span class="button width6em" onclick="disp('comment');">注释</span>
     <span class="button width6em" onclick="disp('yiwen');">译文</span>
     <span class="button width6em" onclick="disp('jiedu');">解读</span></div>
-<h1>{{$datas['name']}}</h1>
+<h1>{{$datas['name']}} @if (isset($datas['bookData']['withAuthor'])) ( {{$datas['author']}} ) @endif</h1>
 <hr />
 @php $j = 1; @endphp
 @foreach ($datas['chapters'] as $chapter)

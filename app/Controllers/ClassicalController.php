@@ -24,6 +24,8 @@ class ClassicalController extends AbstractController
             'shijing' => 'shijing',
             //'guwenguanzhi' => 'shijing'
         ];
+        $bookData = $this->getBookInfos($code);
+        $datas['bookData'] = $bookData;
         $datas['pageCode'] = $pageCodes[$code] ?? 'common';//in_array($code, ['zhouyi', 'shijing']) ? $code : 'common';
         return $this->customView('list', $datas);
     }
@@ -63,7 +65,7 @@ class ClassicalController extends AbstractController
         foreach ($types as $type) {
             $index = $type == 'pre' ? $cIndex - 1 : $cIndex + 1;
 
-            if ($index < 0 || $index > count($keys)) {
+            if ($index < 0 || $index >= count($keys)) {
                 $results[$type] = ['code' => '', 'name' => '没有了'];
             } else {
                 $results[$type] = $infos[$keys[$index]];
