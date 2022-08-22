@@ -13,3 +13,29 @@ cp migrations/daodejing/2.php migrations/daodejing/36.php
 cp migrations/daodejing/2.php migrations/daodejing/37.php
 cp migrations/daodejing/2.php migrations/daodejing/38.php
 cp migrations/daodejing/3.php migrations/daodejing/39.php
+        [
+            'content' => [
+            ],
+            'spell' => [
+            ],
+            'notes' => [
+            ],
+            'vernacular' => [
+            ],
+        ],
+return [
+    'chapters' => [
+        [
+            'content' => [
+            ],
+            'spell' => [
+            ],
+            'vernacular' => [
+            ],
+            'notes' => [
+            ],
+            'unscramble' => [
+            ],
+        ],
+    ],
+];

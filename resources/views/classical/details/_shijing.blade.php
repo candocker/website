@@ -11,7 +11,7 @@
 @if (count($datas['chapters']) > 1)<div class="b_center"><span class="button width6em">@if (isset($chapter['name'])){{$chapter['name']}}@else 第{{$j}} 节 @endif</span></div>@endif
 @foreach ((array) $chapter['content'] as $key => $cContent)
 @if (isset($datas['bookData']['spell']) && isset($chapter['spell']))
-<div class="jingwen spellclass" style="display: none;">{{$chapter['spell'][$key]}}</div>
+@if (isset($chapter['spell'][$key]))<div class="jingwen spellclass" style="display: none;">{{$chapter['spell'][$key]}}</div>@endif
 @endif
 <div class="jingwen">{{$cContent}}</div>
 @endforeach
@@ -38,14 +38,14 @@
     @endif
 </div>
 @endforeach
-<div id="yiwen1" class="yiwen">
+<div id="yiwen1" class="yiwen" style="display: none;">
     @if (isset($datas['notes']))
     @foreach ((array) $datas['notes'] as $i => $note)
     <p>【译文】 {{$note}}</p>
     @endforeach
     @endif
 </div>
-<div id="jiedu1" class="jiedu">
+<div id="jiedu1" class="jiedu" style="display: none;">
     @if (isset($datas['unscramble']))
     @foreach ((array) $datas['unscramble'] as $i => $unscramble)
     <p>【解读】 {{$unscramble}}</p>

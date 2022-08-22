@@ -62,7 +62,7 @@ $buttons = ['success', 'warning', 'default', 'danger', 'info'];
 </ul>
 <div class="top"></div>
 <div class="logos">
-    <img src="{{$commonAssetUrl}}/images/search.png" title="输入关键词，点击搜索框下方按钮/回车即可搜索">
+    <img src="{{$commonAssetUrl}}/common/images/search.png" title="输入关键词，点击搜索框下方按钮/回车即可搜索">
 </div>
 <div class="jumbotron">
     <div class="container">
