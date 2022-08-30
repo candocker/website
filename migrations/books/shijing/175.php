@@ -2,14 +2,6 @@
 return [
     'chapters' => [
         [
-            'spell' => [
-                'tónggōngchāoxī！shòuyán cáng zhī。wǒ yǒu jiābīn，',
-                'zhōng xīnkuàngzhī。zhōnggǔjìshè， yì zhāo xiǎngzhī。',
-                'tónggōngchāoxī！shòuyán zài zhī。wǒ yǒu jiābīn，',
-                'zhōng xīnxǐzhī。zhōnggǔjìshè， yì zhāo yòuzhī。',
-                'tónggōngchāoxī！shòuyángāozhī。wǒ yǒu jiābīn，',
-                'zhōng xīn hào zhī。zhōnggǔjìshè， yì zhāo chóuzhī。',
-            ],
             'content' => [
                 '彤弓弨兮！受言藏之。我有嘉宾，',
                 '中心贶之。钟鼓既设，一朝飨之。',
@@ -17,6 +9,14 @@ return [
                 '中心喜之。钟鼓既设，一朝右之。',
                 '彤弓弨兮！受言櫜之。我有嘉宾，',
                 '中心好之。钟鼓既设，一朝酬之。',
+            ],
+            'spell' => [
+                'tóng gōng chāo xī！shòu yán cáng zhī。wǒ yǒu jiā bīn，',
+                'zhōng xīn kuàng zhī。zhōng gǔ jì shè，yì zhāo xiǎng zhī。',
+                'tóng gōng chāo xī！shòu yán zài zhī。wǒ yǒu jiā bīn，',
+                'zhōng xīn xǐ zhī。zhōng gǔ jì shè，yì zhāo yòu zhī。',
+                'tóng gōng chāo xī！shòu yán gāo zhī。wǒ yǒu jiā bīn，',
+                'zhōng xīn hào zhī。zhōng gǔ jì shè，yì zhāo chóu zhī。',
             ],
             'vernacular' => [
                 '红漆雕弓弦松弛，功臣接过珍重藏。我有这些尊贵客，心中实在很欢畅。钟鼓乐器陈列好，一早设宴摆酒飨。',
