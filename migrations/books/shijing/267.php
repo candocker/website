@@ -12,7 +12,7 @@ return [
                 'wéi tiān zhī mìng，wū mù bù yǐ！',
                 'wū hū pī xiǎn，wén wáng zhī dé zhī chún！',
                 'jiǎ yǐ yì wǒ，wǒ qí shōu zhī。',
-                'jùn huì wǒ wén wáng，zēng sūn dǔz hī。',
+                'jùn huì wǒ wén wáng，zēng sūn dǔ zhī。',
             ],
             'vernacular' => [
                 '想那天道的运行，美好肃穆永不停。',
