@@ -36,6 +36,7 @@ return [
         'mengzi' => [
             'name' => '孟子',
             'brief' => '孟子描述',
+            'noteType' => 'inner',
             'rowCount' => 4,
             'rowCountMobile' => 2,
         ],
