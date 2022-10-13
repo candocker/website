@@ -22,6 +22,7 @@ class ClassicalController extends AbstractController
         $pageCodes = [
             'zhouyi' => 'zhouyi',
             'shijing' => 'shijing',
+            'mengzi' => 'shijing',
             //'guwenguanzhi' => 'shijing'
         ];
         $bookData = $this->getBookInfos($code);
@@ -79,7 +80,7 @@ class ClassicalController extends AbstractController
     {
         foreach ($datas['chapters'] as & $chapter) {
             $i = 0;
-            $notes = $chapter['notes'];
+            $notes = $chapter['notes'] ?? [];
             $contents = $chapter['content'];
             foreach ($contents as & $content) {
                 $mids = explode(')', $content);

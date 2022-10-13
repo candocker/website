@@ -3,11 +3,13 @@
     <span class="button width6em" onclick="disp('comment');">注释</span>
     <span class="button width6em" onclick="disp('yiwen');">译文</span>
     <span class="button width6em" onclick="disp('jiedu');">解读</span></div>
-<h1>{{$datas['name']}} @if (isset($datas['bookData']['withAuthor'])) ( {{$datas['author']}} ) @endif</h1>
+<h1>@if (isset($datas['nameFull'])) {{$datas['nameFull']}}@else{{$datas['name']}}@endif @if (isset($datas['bookData']['withAuthor'])) ( {{$datas['author']}} ) @endif</h1>
 <hr />
 @php $j = 1; @endphp
 @foreach ($datas['chapters'] as $chapter)
-@if (count($datas['chapters']) > 1)<div class="b_center"><span class="button width6em">@if (isset($chapter['name'])){{$chapter['name']}}@else 第 {{$j}} 节 @endif</span></div>@endif
+@php $cUnit = $datas['bookData']['cUnit'] ?? '节'; @endphp
+@php $cName = isset($chapter['name']) ? $chapter['name'] : "第 {$j}  {$cUnit}"; @endphp
+@if (count($datas['chapters']) > 1)<div class="b_center"><span class="button width6em">{{$cName}}</span></div>@endif
 @foreach ((array) $chapter['content'] as $cContent)
 <div class="jingwen">{!!$cContent!!}</div>
 @endforeach

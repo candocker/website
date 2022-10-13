@@ -36,9 +36,13 @@ return [
         'mengzi' => [
             'name' => '孟子',
             'brief' => '孟子描述',
+            'rowspan' => 43,
+            'onlyName' => true,
             'noteType' => 'inner',
-            'rowCount' => 4,
-            'rowCountMobile' => 2,
+            'chapterList' => true,
+            'cUnit' => '段',
+            'rowCount' => 10,
+            'rowCountMobile' => 5,
         ],
         'zhuangzi' => [
             'name' => '庄子',

@@ -14,7 +14,7 @@ $infos = $datas['infos'];
             {{$elem['name']}}<!--<br/>{{$elem['spell']}}-->
         </td>
         @endif
-        <td class="index_left_td"><a @if (!isset($infos[$pCode]['isLost']))href="/show-{{$datas['bookCode']}}-{{$pCode}}"@endif>{{$pCode}} {{$infos[$pCode]['name']}}</a></td>
+        <td class="index_left_td"><a @if (!isset($infos[$pCode]['isLost']))href="/show-{{$datas['bookCode']}}-{{$pCode}}"@endif>@if (!isset($datas['bookData']['onlyName'])){{$pCode}}@endif {{$infos[$pCode]['name']}}</a></td>
         @if ($pIndex % $rowCount == $rowCount - 1)</tr>@endif
         @endforeach
         @if ($pIndex % $rowCount != $rowCount - 1)</tr>@endif

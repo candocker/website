@@ -16,6 +16,9 @@ $infos = $datas['infos'];
                 {{$infos[$pCode]['name']}}
                 @if (isset($datas['bookData']['withAuthor'])) ( {{$infos[$pCode]['author']}} )@endif
             </a>
+            @if (isset($datas['bookData']['chapterList'])) 
+                <a href="/show-{{$datas['bookCode']}}-{{$pCode}}">  列表</a>
+            @endif
         </span>
     </td>
     @if ($i % $rowCount == $rowCount)</tr>@endif
