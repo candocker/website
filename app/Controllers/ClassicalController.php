@@ -22,7 +22,7 @@ class ClassicalController extends AbstractController
         $pageCodes = [
             'zhouyi' => 'zhouyi',
             'shijing' => 'shijing',
-            'mengzi' => 'shijing',
+            //'mengzi' => 'shijing',
             //'guwenguanzhi' => 'shijing'
         ];
         $bookData = $this->getBookInfos($code);
@@ -54,6 +54,56 @@ class ClassicalController extends AbstractController
         $datas['pageCode'] = $pageCodes[$bookCode] ?? 'common';
         //$datas['pageCode'] = in_array($bookCode, ['shijing', 'zhouyi']) ? $bookCode : 'common';
         return $this->customView('detail', $datas);
+    }
+
+    public function newhome()
+    {
+        //$this->deal();exit();
+        $datas = $this->getBookInfos(null, true);
+        unset($datas['books']['yizhuan']);
+        $datas['pageCode'] = 'home';
+        return $this->customView('newlist', $datas);
+    }
+
+    public function newbookCatalogue($code = null)
+    {
+        $datas = $this->getChapterInfos($code, true);
+
+        $pageCodes = [
+            'zhouyi' => 'zhouyi',
+            'shijing' => 'shijing',
+            'mengzi' => 'shijing',
+            //'guwenguanzhi' => 'shijing'
+        ];
+        $bookData = $this->getBookInfos($code);
+        $datas['bookData'] = $bookData;
+        $datas['pageCode'] = $pageCodes[$code] ?? 'common';//in_array($code, ['zhouyi', 'shijing']) ? $code : 'common';
+        return $this->customView('newlist', $datas);
+    }
+
+    public function newshow($bookCode, $chapterCode)
+    {
+        $bookData = $this->getBookInfos($bookCode);
+        $file = $this->getBasePath() . "books/{$bookCode}/{$chapterCode}.php";
+        $datas = require($file);
+        if (isset($bookData['noteType']) && $bookData['noteType'] == 'inner') {
+            $datas = $this->formatInnerNote($datas);
+        }
+        $relateInfos = $this->getRelateInfo($bookCode, $chapterCode);
+
+        $datas['bookData'] = $bookData;
+        $datas['bookCode'] = $bookCode;
+        $datas = array_merge($datas, $relateInfos);
+        $datas['tdkData'] = $this->formatTdk($datas);
+
+        $pageCodes = [
+            'zhouyi' => 'zhouyi',
+            'shijing' => 'shijing',
+            'chuci' => 'shijing'
+        ];
+        $datas['pageCode'] = $pageCodes[$bookCode] ?? 'common';
+        //$datas['pageCode'] = in_array($bookCode, ['shijing', 'zhouyi']) ? $bookCode : 'common';
+        return $this->customView('newdetail', $datas);
     }
 
     protected function getRelateInfo($bookCode, $code, $types = ['pre', 'next'])
