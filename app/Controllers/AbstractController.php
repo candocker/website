@@ -66,6 +66,13 @@ abstract class AbstractController extends AbstractControllerBase
         ], $datas);*/
         $datas['navDatas'] = $this->getNavDatas();
         $datas['currentNav'] = isset($datas['currentNav']) ?? '';
+        if (!isset($datas['tdkData'])) {
+            $datas['tdkData'] = [
+                'title' => 'title',
+                'keywords' => 'keywords',
+                'description' => 'description',
+            ];
+        }
         $datas = $this->formatResultDatas($datas);
         //print_r($datas);exit();
 		return view($view, ['datas' => $datas]);

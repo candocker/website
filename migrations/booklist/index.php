@@ -19,6 +19,7 @@ return [
             'name' => '道德经',
             'brief' => '道德经描述',
             'rowCount' => 4,
+            'noteType' => 'inner',
             'rowCountMobile' => 4,
         ],
         'daxue' => [
