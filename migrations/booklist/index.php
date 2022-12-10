@@ -80,6 +80,7 @@ return [
             'name' => '墨子',
             'brief' => '墨子描述',
             'rowCount' => 5,
+            'noteType' => 'inner',
             'rowCountMobile' => 3,
         ],
         'xunzi' => [
