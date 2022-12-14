@@ -7,8 +7,10 @@ class CssController extends AbstractController
 {
     public function home($sort = 'pingtai')
     {
-        $datas = [];
-        return $this->customView('home', ['datas' => $datas]);
+        $elem = $this->request->input('elem');
+        $elem = empty($elem) ? 'home' : $elem;
+        $datas = ['elem' => $elem];
+        return $this->customView('home', $datas);
     }
 
 	protected function viewPath()

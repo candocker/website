@@ -1,7 +1,3 @@
-@php
-$rand = time();
-@endphp
-<link rel="stylesheet" href="{{$commonAssetUrl}}/study/css/background.css?v={{$rand}}" type="text/css">
 <div class="backbase">
     <h1>我的 CSS web 页!</h1>
     <h2>sss</h2>
