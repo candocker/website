@@ -12,8 +12,8 @@ $bodyClasses = [
 <html lang="en-US" dir="{{$layoutElem}}">
 <head>
 @yield('dynamicMeta')
-@yield('header')
 @include('layouts.website._header', ['layoutElem' => $layoutElem])
+@yield('header')
 </head>  
 <body @yield('bodyClass')>
     @include('layouts.website._loader-mobile', ['layoutElem' => $layoutElem])

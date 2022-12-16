@@ -1,5 +1,6 @@
-@extends('layouts.website')
+@extends('layouts.website-mini')
 @section('dynamicMeta')@include('modules._meta', $datas['tdkData'])@endsection
+@section('header')@include('classical.modules._jcnew', ['view' => 'home'])@endsection
 @section('bodyClass')class="page"@endsection
 @section('content')
 <section class="uix-spacing--s uix-spacing--no-bottom">
@@ -23,10 +24,8 @@
         </a>
     </div>-->
     
-    @include('classical.lists._' . $datas['pageCode'], ['datas' => $datas])
+    @include('classical.newlists._' . $datas['pageCode'], ['datas' => $datas])
 </div>
 </div>
-<hr />
-@include('classical.modules._footer', ['data' => ''])
 </section>   
 @endsection

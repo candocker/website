@@ -1,6 +1,6 @@
 @extends('layouts.website-mini')
 @section('dynamicMeta')@include('modules._meta', $datas['tdkData'])@endsection
-@section('header')@include('classical.modules._jscss', ['view' => 'detail'])@endsection
+@section('header')@include('classical.modules._jcnew', ['view' => 'detail'])@endsection
 @section('content')
 
 <script>genNavigator("LEFT");</script>
