@@ -1,8 +1,3 @@
-<div class="b_center">
-    @if (isset($datas['bookData']['noteType']) && $datas['bookData']['noteType'] == 'inner')<span class="button width6em" onclick="disp('commentinner');">行内注释</span>@endif
-    <span class="button width6em" onclick="disp('comment');">注释</span>
-    <span class="button width6em" onclick="disp('yiwen');">译文</span>
-    <span class="button width6em" onclick="disp('jiedu');">解读</span></div>
 <h1>@if (isset($datas['nameFull'])) {{$datas['nameFull']}}@else{{$datas['name']}}@endif @if (isset($datas['bookData']['withAuthor'])) ( {{$datas['author']}} ) @endif</h1>
 <hr />
 @php $j = 1; @endphp
