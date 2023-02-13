@@ -11,8 +11,8 @@
                     <div class="uix-footer__menu">
                         <ul>
                             <li><a href="http://book.91zuiai.com" target="_blank">书屋</a></li>
-                            <li><a href="http://wiki.canliang.wang" target="_blank">Wiki</a></li>
-                            <li><a href="http://www.91zuiai.com" target="_blank">导航</a></li>
+                            <li><a href="http://blog.91zuiai.com" target="_blank">Blog</a></li>
+                            <li><a href="http://nav.91zuiai.com" target="_blank">导航</a></li>
                             <li><a href="http://wjob.canliang.wang" target="_blank">支持</a></li>
                         </ul>
                     </div>

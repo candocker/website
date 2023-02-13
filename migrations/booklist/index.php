@@ -87,6 +87,7 @@ return [
             'name' => '荀子',
             'brief' => '荀子描述',
             'rowCount' => 5,
+            'noteType' => 'inner',
             'rowCountMobile' => 3,
         ],
         'yizhuan' => [
