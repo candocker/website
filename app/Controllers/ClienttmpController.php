@@ -2,16 +2,9 @@
 
 namespace ModuleWebsite\Controllers;
 
-class ClientController extends AbstractController
+class ClienttmpController extends AbstractController
 {
     use TraitClient;
-    use TraitApplet;
-
-    public function settingHome()
-    {
-        $datas['data'] = $this->settingDatas();
-        return $this->successCustom($datas);
-    }
 
     public function home($module = null, $action = null)
     {
@@ -25,7 +18,10 @@ class ClientController extends AbstractController
 
     protected function testTmp($pre, $module, $action)
     {
-        $file = "/data/backup/dealdata/{$pre}/{$module}-{$action}.json";
+        $file = $file = base_path() . "/storage/tmpdata/zhuigenew/{$module}-{$action}";
+        if (!file_exists($file)) {
+            $file = base_path() . "/storage/tmpdata/zhuige/{$module}-{$action}.json";
+        }
         $text = file($file);
         $data = json_decode($text[0], true);
         return $this->successCustom($data);
