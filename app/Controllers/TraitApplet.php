@@ -11,7 +11,7 @@ trait TraitApplet
     public function settingDatas()
     {
         $navsortInfos = $this->getServiceObj('infocms-fetchData')->getNavsortInfos('zhuigroup');
-        $topicInfos = $this->getServiceObj('infocms-fetchData')->getTopicInfos();
+        $topicInfos = $this->getServiceObj('infocms-fetchData')->getTopicInfos([]);
         return [
             'title' => 'ssss追格小程序（免费开源）',
             'desc' => '一个积木式小程序搭建框架',

@@ -25,6 +25,7 @@ return [
         'daxue' => [
             'name' => '大学',
             'brief' => '大学描述',
+            'noteType' => 'inner',
             'rowCount' => 4,
             'rowCountMobile' => 2,
         ],
