@@ -195,7 +195,7 @@ class ClassicalController extends AbstractController
 
     public function getBasePath()
     {
-        return base_path() . "/vendor/candocker/website/migrations/";
+        return config('culture.material_path'); //base_path() . "/vendor/candocker/website/migrations/";
     }
 
 	protected function viewPath()

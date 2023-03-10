@@ -7,7 +7,6 @@ use Swoolecan\Foundation\Helpers\CommonTool;
 
 trait TraitApplet
 {
-
     public function settingDatas()
     {
         $navsortInfos = $this->getServiceObj('infocms-fetchData')->getNavsortInfos('zhuigroup');

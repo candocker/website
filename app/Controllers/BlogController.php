@@ -83,4 +83,32 @@ class BlogController extends AbstractController
         return $this->successCustom($result);
         echo json_encode($result);exit();
     }
+
+    public function webResource()
+    {
+        $infos = \DB::connection('infocms')->select("SELECT * FROM `wp_network_resource`");
+        $domainDatas = $this->domainDatas();
+        //print_R($infos);
+        foreach ($infos as $info) {
+            if (empty($info->domain)) {
+                $parts = parse_url($info->url);
+                \DB::connection('infocms')->select("UPDATE `wp_network_resource` SET `domain` = '{$parts['host']}' WHERE `id` = {$info->id};");
+                $info->domain = $parts['host'];
+            }
+
+            $domainName = $domainDatas[$info->domain] ?? $info->domain;
+            echo "{$info->id}-<a href='{$info->url}' target='_blank'>{$info->name}</a> = {$domainName} == {$info->author}<br />";
+        }
+        exit();
+    }
+
+    protected function domainDatas($key = null)
+    {
+        $datas = [
+            'www.71.cn' => '宣讲家网',
+            'baijiahao.baidu.com' => '百家号',
+            'baike.baidu.com' => '百度百科',
+        ];
+        return $datas;
+    }
 }
