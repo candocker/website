@@ -1,10 +1,12 @@
-<h1>@if (isset($datas['nameFull'])) {{$datas['nameFull']}}@else{{$datas['name']}}@endif @if (isset($datas['bookData']['withAuthor'])) ( {{$datas['author']}} ) @endif</h1>
-<hr />
 @php $j = 1; @endphp
 @foreach ($datas['chapters'] as $chapter)
 @php $cUnit = $datas['bookData']['cUnit'] ?? '节'; @endphp
 @php $cName = isset($chapter['name']) ? $chapter['name'] : "第 {$j}  {$cUnit}"; @endphp
-@if (count($datas['chapters']) > 1)<div class="b_center"><span class="button width6em">{{$cName}}</span></div>@endif
+@if (count($datas['chapters']) > 1)
+<div class="uix-nav uix-nav uix-t-c" style="padding-bottom:5px;padding-top:5px">
+    <ul><li class="is-activ"><a style="background-color:#eceff1;color:#a1887f;">{{$cName}}</a></li></ul>
+</div>
+@endif
 @foreach ((array) $chapter['content'] as $cContent)
 <div class="jingwen">{!!$cContent!!}</div>
 @endforeach

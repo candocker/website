@@ -1,5 +1,5 @@
 @php
-$rand = time();
+$rand = 1;//time();
 @endphp
 <meta http-equiv="imagetoolbar" content="no">
 <link rel="stylesheet" href="{{$commonAssetUrl}}/classical/css/base.css?v={{$rand}}" type="text/css">

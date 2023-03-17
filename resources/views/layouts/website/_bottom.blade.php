@@ -29,5 +29,5 @@ var REVISION     = "4.6.5",
  */
 window.$ = window.jQuery;
 </script>  
-<script defer src={{$commonAssetUrl}}/website/js/uix-kit.min.js?ver=qXJ1d1suw95dRqLHFWpI"></script>
+<script defer src={{$commonAssetUrl}}/website/js/uix-kit.js?ver=qXJ1d1suw95dRqLHFWpI16"></script>
 <!-- Your Plugins & Theme Scripts  end -->

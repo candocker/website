@@ -22,7 +22,8 @@ $bodyClasses = [
         <main id="uix-maincontent">
         @yield('content')
         </main>
-        @include('layouts.website._footer-simple', ['data' => []])
+        @include('layouts.website._footer-simple', ['classical' => true])
+
     </div>
     <!-- .uix-wrapper end -->
     @include('layouts.website._bottom')

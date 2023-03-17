@@ -12,7 +12,8 @@ class ClassicalController extends AbstractController
         $datas = $this->getBookInfos(null, true);
         unset($datas['books']['yizhuan']);
         $datas['pageCode'] = 'home';
-        return $this->customView('list', $datas);
+        return $this->customView('newlist', $datas);
+        //return $this->customView('list', $datas);
     }
 
     public function bookCatalogue($code = null)
@@ -28,6 +29,7 @@ class ClassicalController extends AbstractController
         $bookData = $this->getBookInfos($code);
         $datas['bookData'] = $bookData;
         $datas['pageCode'] = $pageCodes[$code] ?? 'common';//in_array($code, ['zhouyi', 'shijing']) ? $code : 'common';
+        return $this->customView('newlist', $datas);
         return $this->customView('list', $datas);
     }
 
@@ -54,31 +56,6 @@ class ClassicalController extends AbstractController
         $datas['pageCode'] = $pageCodes[$bookCode] ?? 'common';
         //$datas['pageCode'] = in_array($bookCode, ['shijing', 'zhouyi']) ? $bookCode : 'common';
         return $this->customView('detail', $datas);
-    }
-
-    public function newhome()
-    {
-        //$this->deal();exit();
-        $datas = $this->getBookInfos(null, true);
-        unset($datas['books']['yizhuan']);
-        $datas['pageCode'] = 'home';
-        return $this->customView('newlist', $datas);
-    }
-
-    public function newbookCatalogue($code = null)
-    {
-        $datas = $this->getChapterInfos($code, true);
-
-        $pageCodes = [
-            'zhouyi' => 'zhouyi',
-            'shijing' => 'shijing',
-            'mengzi' => 'shijing',
-            //'guwenguanzhi' => 'shijing'
-        ];
-        $bookData = $this->getBookInfos($code);
-        $datas['bookData'] = $bookData;
-        $datas['pageCode'] = $pageCodes[$code] ?? 'common';//in_array($code, ['zhouyi', 'shijing']) ? $code : 'common';
-        return $this->customView('newlist', $datas);
     }
 
     public function newshow($bookCode, $chapterCode)
