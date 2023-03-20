@@ -13,7 +13,7 @@
                             @foreach ($datas['books'] as $bCode => $pInfo)
                             @if ($i % $rowCount == 1)<tr>@endif
                             <td style="text-align:center;padding-left:3px;padding-right:1px;padding-bottom:3px; padding-top:5px;">
-                                <span style="margin: 0px;font-size:@if ($mobileClass) 9pt @else 14pt @endif;">
+                                <span style="margin: 0px;font-size:@if ($mobileClass) 10pt @else 14pt @endif;">
                                     <a href="/book-{{$bCode}}">{{$pInfo['name']}}</a>
                                 </span>
                             </td>

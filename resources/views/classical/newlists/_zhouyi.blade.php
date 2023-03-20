@@ -14,6 +14,7 @@ $rand = time();
     float:left;
     margin-top:10px;
     margin-bottom:10px;
+    padding-right: 5px;
     @if ($mobileClass)
     margin-left:25%;
     margin-right:10%;
@@ -25,7 +26,6 @@ $rand = time();
     font-family: "宋体";
 }
 </style>
-{{--<link rel="stylesheet" href="{{$commonAssetUrl}}/classical/css/list.css?v={{$rand}}" type="text/css">--}}
 
 <div class="{{$mobileClass}}">
 @foreach ($datas['chapters'] as $pData)

@@ -3,8 +3,9 @@
 @php $cUnit = $datas['bookData']['cUnit'] ?? '节'; @endphp
 @php $cName = isset($chapter['name']) ? $chapter['name'] : "第 {$j}  {$cUnit}"; @endphp
 @if (count($datas['chapters']) > 1)
-<div class="uix-nav uix-nav uix-t-c" style="padding-bottom:5px;padding-top:5px">
-    <ul><li class="is-activ"><a style="background-color:#eceff1;color:#a1887f;">{{$cName}}</a></li></ul>
+<div class="uix-nav uix-nav--separation uix-t-c" style="padding: 0px">
+    <ul><li class="current-cat"><a style="color:#a1887f;">{{$cName}}</a></li></ul>
+    <!--<ul><li class="is-activ"><a style="background-color:#eceff1;color:#a1887f;">{{$cName}}</a></li></ul>-->
 </div>
 @endif
 @foreach ((array) $chapter['content'] as $cContent)

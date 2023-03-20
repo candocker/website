@@ -2,10 +2,8 @@
 @foreach ($datas['chapters'] as $chapter)
 
 @if (count($datas['chapters']) > 1)
-<div class="uix-nav uix-nav uix-t-c" style="padding-bottom:5px;padding-top:5px">
-    <ul><li class="is-activ">
-    <a style="background-color:#eceff1;color:#a1887f;">@if (isset($chapter['name'])) {{$chapter['name']}} @else 第{{$j}} 节 @endif </a>
-</li></ul>
+<div class="uix-nav uix-nav--separation uix-t-c" style="padding: 0px">
+    <ul><li class=""><a style="color:#a1887f;">@if (isset($chapter['name'])) {{$chapter['name']}} @else 第{{$j}} 节 @endif </a></li></ul>
 </div>
 @endif
 
