@@ -1,13 +1,15 @@
+<div class="b_center">
+    @if (isset($datas['bookData']['noteType']) && $datas['bookData']['noteType'] == 'inner')<span class="button width6em" onclick="disp('commentinner');">行内注释</span>@endif
+    <span class="button width6em" onclick="disp('comment');">注释</span>
+    <span class="button width6em" onclick="disp('yiwen');">译文</span>
+    <span class="button width6em" onclick="disp('jiedu');">解读</span></div>
+<h1>@if (isset($datas['nameFull'])) {{$datas['nameFull']}}@else{{$datas['name']}}@endif @if (isset($datas['bookData']['withAuthor'])) ( {{$datas['author']}} ) @endif</h1>
+<hr />
 @php $j = 1; @endphp
 @foreach ($datas['chapters'] as $chapter)
 @php $cUnit = $datas['bookData']['cUnit'] ?? '节'; @endphp
 @php $cName = isset($chapter['name']) ? $chapter['name'] : "第 {$j}  {$cUnit}"; @endphp
-@if (count($datas['chapters']) > 1)
-<div class="uix-nav uix-nav--separation uix-t-c" style="padding: 0px">
-    <ul><li class="current-cat"><a style="color:#a1887f;">{{$cName}}</a></li></ul>
-    <!--<ul><li class="is-activ"><a style="background-color:#eceff1;color:#a1887f;">{{$cName}}</a></li></ul>-->
-</div>
-@endif
+@if (count($datas['chapters']) > 1)<div class="b_center"><span class="button width6em">{{$cName}}</span></div>@endif
 @foreach ((array) $chapter['content'] as $cContent)
 <div class="jingwen">{!!$cContent!!}</div>
 @endforeach

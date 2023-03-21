@@ -6,48 +6,51 @@ $authors = [
     'vernacular' => ['name' => '译文', 'nameFull' => '译文'],
 ];
 $showElems = [
-    'gua' => ['class' => 'tuan', 'name' => '卦辞', 'classPre' => ''], 
-    'xiang' => ['class' => 'xiang xiangci daxiang', 'name' => '象曰', 'classPre' => 'xiangci'],
-    'tuan' => ['class' => 'tuan', 'name' => '彖曰', 'classPre' => '']
+    'gua' => ['class' => 'guaci', 'name' => '卦辞'], 
+    'tuan' => ['class' => 'tuan', 'name' => '彖曰'],
+    'xiang' => ['class' => 'daxiang', 'name' => '象曰'],
 ];
-$symbols = [0 => '■■■　■■■', 1 => '■■■■■■■'];
+$symbols = [0 => '■■■■　■■■■', 1 => '■■■■■■■■■'];
 @endphp
-<h1 style="display:none;">《周易》第{{$datas['serial']}}卦 {{$datas['brief']}}</h1>
-<span class="title4">{{$datas['up']}}上<br>{{$datas['down']}}下</span>
-<span class="baguatu">
-@foreach (array_reverse($datas['symbol']) as $symbol) {{$symbols[$symbol]}}<br>@endforeach
-</span>
-<center>
-    <span class="title3">{{$datas['serial']}} {{$datas['brief']}} 
-    @if (isset($datas['description']))——{{$datas['description']}} @endif
-    </span><br clear="left">
-</center>
-<hr />
-<div class="b_center">
-    @foreach ($authors as $aCode => $author)
-    <span class="button width6em" onclick="showElems('{{$aCode}}');">{{$author['nameFull']}}</span>
-    @endforeach
-    <span class="button width6em" onclick="showElems('simple');">原文</span>
-    <!--<span class="button width4em" onclick="showElems('comment');">注释</span>
-    <span class="button width4em" onclick="showElems('jiedu');">解读</span>-->
+
+<div class="col-12 uix-spacing--no-bottom uix-t-c" style="padding-top:20px;padding-bottom:0px;font-size:10px">
+    <div class="col-12 uix-spacing--no">
+        <h4 class="uix-heading--pinline uix-t-c title" style="padding-top:5px;">{{$datas['serial']}} {{$datas['brief']}}</h4>
+        @if (isset($datas['brief']))
+        <h6 class=" uix-spacing--no" style="text-align: center; padding: 0px; color: green;">{{$datas['name']}}: {{$datas['gua']}}</h6>
+        @endif
+        @if (isset($datas['description']))
+        <p class=" uix-spacing--no" style="text-align: center; padding: 0px; color: green;">{{$datas['description']}}</p>
+        @endif
+    </div>
+    <hr>
 </div>
-<div class="guaci">{{$datas['name']}}: {{$datas['gua']}}</div>
+@if (in_array($datas['serial'], [1, 2]))
+@php $topYao = array_pop($datas['yao']); @endphp
+<div style="text-align:center;margin: 0 auto; color:red;padding:0px;">{{$topYao}}</div>
+@endif
+<div style="margin: 0 auto;">
+<span class="baguatext" >{{$datas['up']}}上<br>{{$datas['down']}}下</span>
+<span class="baguatu">
+    @foreach (array_reverse($datas['symbol']) as $symbol) {{$symbols[$symbol]}}<br>@endforeach
+</span>
 <pre class="yaoci">
-@foreach ($datas['yao'] as $elem)
+@foreach (array_reverse($datas['yao']) as $elem)
 {{$elem}}
 @endforeach
 </pre>
+</div>
 <hr />
 
 @foreach ($showElems as $pointKey => $pointElem)
-<p class="{{$pointElem['class']}}" style=""><big>{{$pointElem['name']}}</big><span>{{$datas[$pointKey]}}</span></p>
-@foreach ($authors as $aCode => $author)
-@if (isset($datas[$aCode]) && isset($datas[$aCode][$pointKey]) && !empty($datas[$aCode][$pointKey]))
-@foreach ((array) $datas[$aCode][$pointKey] as $i => $elemStr)
-<div class="yiwen {{$aCode}} {{$pointElem['classPre']}}"><p>【{{$author['name']}}】{!!$elemStr!!}</p></div>
-@endforeach
-@endif
-@endforeach
+    <p class="{{$pointElem['class']}}" style="margin-bottom:3px;"><big>{{$pointElem['name']}}</big><span>{{$datas[$pointKey]}}</span></p>
+    @foreach ($authors as $aCode => $author)
+        @if (isset($datas[$aCode]) && isset($datas[$aCode][$pointKey]) && !empty($datas[$aCode][$pointKey]))
+            @foreach ((array) $datas[$aCode][$pointKey] as $i => $elemStr)
+            <div class="yiwen {{$aCode}} "><p>【{{$author['name']}}】{!!$elemStr!!}</p></div>
+            @endforeach
+        @endif
+    @endforeach
 @endforeach
 
 <hr />
@@ -60,7 +63,7 @@ $symbols = [0 => '■■■　■■■', 1 => '■■■■■■■'];
     @endif
     @endforeach
 
-    <span class="xiangci"><big>象曰</big> <span style="color: #0099FF;">{{$datas['xiaoxiang'][$key]}}</span><br /></span>
+    <span class="xiaoxiang"><big>象曰</big> <span style="">{{$datas['xiaoxiang'][$key]}}</span><br /></span>
     @foreach ($authors as $aCode => $author)
     @if (isset($datas[$aCode]['xiaoxiang']) && isset($datas[$aCode]['xiaoxiang'][$key]) && !empty($datas[$aCode]['xiaoxiang'][$key]))
     <div class="yiwen {{$aCode}}"><p>【{{$author['name']}}】{!!$datas[$aCode]['xiaoxiang'][$key]!!}</p></div>
@@ -74,9 +77,3 @@ $symbols = [0 => '■■■　■■■', 1 => '■■■■■■■'];
     <div id="comment1" class="comment"><p>【注释】{{$note}}</p></div>
     @endforeach
 @endif
-@if (isset($datas['vernacular']) && isset($datas['vernacular']['unscramble']))
-    @foreach ((array) $datas['vernacular']['unscramble'] as $unscramble)
-    <div id="comment1" class="comment"><p>【注释】{{$unscramble}}</p></div>
-    @endforeach
-@endif
-<hr />
