@@ -46,7 +46,7 @@ if (isset($datas['bookData']['tabs'])) {
                 <div class="col-12 uix-spacing--no">
                     <h4 class="uix-heading--pinline uix-t-c title" style="padding-top:5px;">{{$currentName}}</h4>
                     @if (isset($datas['brief']))
-                    <h5 class=" uix-spacing--no" style="text-align: center; padding: 0px; color: green;">{{$datas['brief']}}</h5>
+                    <h5 class=" uix-spacing--no" style="text-align: center; padding: 0px; color: grey;font-size:14px;">{{$datas['brief']}}</h5>
                     @endif
                 </div>
                 <hr>

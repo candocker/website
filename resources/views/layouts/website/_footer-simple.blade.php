@@ -3,10 +3,6 @@
         <div class="container .uix-spacing--no">
             <hr>
             <div class="row">
-                <div class="col-lg-6 col-md-6 uix-t-l uix-t-c--md">
-                    <a href="{{$currentDomain}}">acanstudio</a> All Rights Reserved.
-                    <a href="http://beian.miit.gov.cn/" target="_blank">{{$currentIcp}}</a>
-                </div>
                 <div class="col-lg-6 col-md-6 uix-t-r uix-t-c--md">
                     <div class="uix-footer__menu">
                         <ul>
@@ -20,6 +16,10 @@
                             @endif
                         </ul>
                     </div>
+                </div>
+                <div class="col-lg-6 col-md-6 uix-t-l uix-t-c--md">
+                    <!--<a href="{{$currentDomain}}">acanstudio</a> All Rights Reserved. <br />-->
+                    <a href="http://beian.miit.gov.cn/" target="_blank">{{$currentIcp}}</a>
                 </div>
             </div>
         </div><!-- .container  end -->

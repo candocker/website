@@ -1,3 +1,6 @@
+@php
+$siteName = $data['siteName'] ?? '融会贯通';
+@endphp
 <style>
 .navbar-brand {
     color: #dddcdc;
@@ -14,7 +17,7 @@
     <div class="uix-header">
         <div class="container">
             <div class="uix-brand">
-                <a class="navbar-brand" href="/"><span>融会贯通</span></a>
+                <a class="navbar-brand" href="/"><span>{{$siteName}}</span></a>
             </div>
             @include('layouts.website._nav', ['data' => []])
         </div>

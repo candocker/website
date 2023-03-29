@@ -73,7 +73,7 @@ abstract class AbstractController extends AbstractControllerBase
                 'description' => 'description',
             ];
         }
-        $datas = $this->formatResultDatas($datas);
+        //$datas = $this->formatResultDatas($datas);
         //print_r($datas);exit();
 		return view($view, ['datas' => $datas]);
 	}

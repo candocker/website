@@ -43,7 +43,7 @@ class ClassicalController extends AbstractController
 
         $datas['bookData'] = $bookData;
         $datas['bookCode'] = $bookCode;
-        $datas = array_merge($datas, $relateInfos);
+        $datas = array_merge($relateInfos, $datas);
         $datas['tdkData'] = $this->formatTdk($datas);
 
         $pageCodes = [

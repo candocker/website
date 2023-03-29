@@ -12,6 +12,7 @@ $infos = $datas['infos'];
                     @if (isset($pData['name']))
                     <div class="col-12" style="">
                         <h5 class="uix-heading--pinline">{{$pData['name']}}</h5>
+                        @if ($pData['brief'])<p class="uix-heading--pinline" style="color: green;font-size:14px;">{{$pData['brief']}}</p>@endif
                     </div>
                     @endif
                     <table>

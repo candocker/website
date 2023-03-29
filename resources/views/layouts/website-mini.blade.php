@@ -18,7 +18,7 @@ $bodyClasses = [
 <body @yield('bodyClass')>
     @include('layouts.website._loader-mobile', ['layoutElem' => $layoutElem])
     <div class="uix-wrapper">
-        @include('layouts.website._top', ['data' => []])
+        @include('layouts.website._top', ['data' => ['siteName' => '经典古籍']])
         <main id="uix-maincontent">
         @yield('content')
         </main>
