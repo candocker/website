@@ -6,6 +6,7 @@
                 <div class="col-lg-6 col-md-6 uix-t-r uix-t-c--md">
                     <div class="uix-footer__menu">
                         <ul>
+                            <li><a href="http://gj.91zuiai.com" target="_blank">古籍</a></li>
                             <li><a href="http://book.91zuiai.com" target="_blank">书屋</a></li>
                             <li><a href="http://blog.91zuiai.com" target="_blank">Blog</a></li>
                             <li><a href="http://nav.91zuiai.com" target="_blank">导航</a></li>

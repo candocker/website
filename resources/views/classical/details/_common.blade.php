@@ -41,8 +41,9 @@
     @endforeach
     @endif
 </div>
-<div id="jiedu1" class="jiedu">
+<div id="jiedu1" class="jiedu" style="display:none;">
     @if (isset($datas['unscramble']))
+    <hr />
     @foreach ((array) $datas['unscramble'] as $i => $unscramble)
     <p>【解读】 {{$unscramble}}</p>
     @endforeach

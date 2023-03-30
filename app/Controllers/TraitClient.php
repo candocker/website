@@ -17,7 +17,7 @@ trait TraitClient
         $urls = $this->$method();
 
         $urlPre = $urlPres[$type];
-        $pathBase = '/data/htmlwww/laravel-system/storage/tmpdata/';
+        $pathBase = '/data/htmlwww/laravel-system/storage/tmp/';
         foreach ($urls as $url) {
             $url = str_replace('{id}', 100, $url);
             $rUrl = $urlPre . $url;

@@ -7,6 +7,12 @@ class CultureController extends AbstractController
 {
     use TraitCulture;
 
+    public function timeline($sort = 'pingtai')
+    {
+        $datas = [];
+        return $this->customView('timeline', ['datas' => $datas]);
+    }
+
     public function home($sort = 'pingtai')
     {
         $datas = [];

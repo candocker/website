@@ -18,9 +18,9 @@ class ClienttmpController extends AbstractController
 
     protected function testTmp($pre, $module, $action)
     {
-        $file = $file = base_path() . "/storage/tmpdata/zhuigenew/{$module}-{$action}";
+        $file = $file = base_path() . "/storage/tmp/zhuigenew/{$module}-{$action}";
         if (!file_exists($file)) {
-            $file = base_path() . "/storage/tmpdata/zhuige/{$module}-{$action}.json";
+            $file = base_path() . "/storage/tmp/zhuige/{$module}-{$action}.json";
         }
         $text = file($file);
         $data = json_decode($text[0], true);

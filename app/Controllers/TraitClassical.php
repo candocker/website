@@ -6,6 +6,26 @@ use Overtrue\ChineseCalendar\Calendar;
 
 trait TraitClassical
 {
+    public function dealZhouyi()
+    {
+        $infos = require($this->getBasePath() . '/booklist/zhouyi_catalogue.php');
+        $str = "<?php\n";
+        $str .= "return [\n";
+        foreach ($infos as $key => $info) {
+            $detail = $this->dealDivination($info['symbol']);
+            $symbolStr = implode(',', $info['symbol']);
+            $str .= "    '{$key}' => [\n";
+            $str .= "        'code' => '{$info['code']}', 'serial' => {$info['serial']}, 'binSerial' => {$info['binSerial']}, 'name' => '{$info['name']}', 'spell' => '{$info['spell']}', 'brief' => '{$info['brief']}',\n";
+            $str .= "        'down' => '{$detail['down']}', 'up' => '{$detail['up']}', 'downOther' => '{$detail['downOther']}', 'upOther' => '{$detail['upOther']}', 'symbol' => [{$symbolStr}],\n";
+            $str .= "    ],\n";
+        }
+        $str .= "];";
+        file_put_contents('/data/database/material/booklist/zhouyi_catalogue.php', $str);
+        
+        print_r($infos);exit();
+
+    }
+
     protected function dealDatas()
     {
         $divinations = [
@@ -47,8 +67,8 @@ trait TraitClassical
         $divinations = ['坤', '震', '坎', '兑', '艮', '离', '巽', '乾'];
         $divinationOthers = ['地', '雷', '水', '泽', '山', '火', '风', '天'];
         $split = array_chunk($symbol, 3);
-        $downIndex = bindec(implode('', $split[0]));
-        $upIndex = bindec(implode('', $split[1]));
+        $downIndex = bindec(implode('', array_reverse($split[0])));
+        $upIndex = bindec(implode('', array_reverse($split[1])));
 
         $data = [
             'down' => $divinations[$downIndex],
@@ -62,6 +82,7 @@ trait TraitClassical
 
     public function test()
     {
+        $this->dealZhouyi();exit();
         //$basePath = $this->getBasePath();
         //$file = $basePath . 'luxun/works.php';
         //$datas = require($file);
