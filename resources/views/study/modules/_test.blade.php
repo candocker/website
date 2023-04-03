@@ -118,24 +118,6 @@
 			}
 			
 		</style>
-<section class="uix-spacing--s uix-spacing--no-bottom">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h3>Table Series</h3>
-                <p>Provides some common styles of table.</p>
-                <hr>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="uix-spacing--s">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="uix-table uix-table--bordered">
-<div style="height:500px; color:read">
-</div>
 		<div class="a1">
 @foreach ([1, 2, 3, 4] as $elem)
 @endforeach
@@ -155,29 +137,3 @@
 				<p>#links</p>
 			</div>
 		</div>
-                    <table>
-                        <tbody>
-                            <tr>
-                                @foreach ($infos['headers'] as $header)
-                                <th>{{$header}}</th>
-                                @endforeach
-                            </tr>
-                            @foreach ($infos['infos'] as $subInfos)
-                            <tr class="odd">
-                                @foreach ($subInfos as $info)
-                                <td>{{$info}}</td>
-                                @endforeach
-                            </tr>
-                            @endforeach
-                            <tr class="even">
-                                <td><a href="#">Tom McFarlin</a></td>
-                                <td>$100K</td>
-                                <td>For all the blogging he does.</td>
-                            </tr>
-                        </tbody>
-                    </table>           
-                </div>
-            </div>
-        </div>
-    </div>
-</section>

@@ -9,7 +9,7 @@ class CssController extends AbstractController
     {
         $elem = $this->request->input('elem');
         $elem = empty($elem) ? 'home' : $elem;
-        $datas = ['elem' => $elem];
+        $datas = ['elem' => $elem, 'elems' => $this->getElemDatas()];
         return $this->customView('home', $datas);
     }
 
@@ -26,15 +26,37 @@ class CssController extends AbstractController
         return parent::isMobile($force);
 	}
 
-    public function getNavDatas()
+    public function getElemDatas()
     {
         return [
-            'base' => [
-                'name' => '基础',
-            ],
-            'senior' => [
-                'name' => '进阶',
-            ],
+            'flex',
+            'position',
+            'test',
+            'test1',
+            'align',
+            'attrselect',
+            'background',
+            'base',
+            'border',
+            'box',
+            'dimension',
+            'display',
+            'float',
+            'font',
+            'group',
+            'home',
+            'image',
+            'jscss',
+            'list',
+            'media',
+            'nav1',
+            'nav',
+            'outline',
+            'padding',
+            'pseudo',
+            'select',
+            'table',
+            'text',
         ];
     }
 }
