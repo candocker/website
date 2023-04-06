@@ -13,35 +13,20 @@ class GatherController extends AbstractController
 	public function home()
 	{
         $view = $this->request->input('view');
-        $datas['comparison'] = $this->comparison();
-        $datas['view'] = $view ?? 'test';
+        $datas = [
+            'title' => '知识汇编',
+            'description' => '书籍、历史、人物知识大荟萃',
+        ];
         return $this->customView('home', $datas);
 	}
 
     public function series($bigsort = '', $sort = '')
     {
-        //$datas = $this->getRepositoryObj('culture-bookPublish')->getCategoryDatas($sort);
-        $datas = [];
+        $graphicService = $this->getServiceObj('culture-graphic');
+        $datas = $this->getGatherService()->getSeriesDatas($bigsort, $sort);
+        $datas['currentNav'] = 'series';
         $view = 'series';
 
-        $params = $this->request->all();
-        $graphicService = $this->getServiceObj('culture-graphic');
-        return $this->customView($view, $datas);
-
-        if (!empty($volumeId)) {
-            $view = 'series-book';
-            $datas = $graphicService->formatVolumeDatas($volumeId);
-        } else if (!empty($sort)) {
-            $view = 'series-volume';
-            $datas = $graphicService->formatSeriesDatas($sort);
-        } else {
-            $view = 'series';
-            $datas = $graphicService->formatAllSeries();
-        }
-        $datas['currentNav'] = 'series';
-        //return $this->success($datas);
-
-        //$datas = $graphicService->formatResultDatas($sort, $extcode, $params);
         return $this->customView($view, $datas);
     }
 
@@ -57,21 +42,6 @@ class GatherController extends AbstractController
         }
         return parent::isMobile($force);
 	}
-
-    protected function comparison()
-    {
-        $headers = ['年份', '鲁国', '孔子'];
-        $startYear = -1000;
-        $endYear = -400;
-        $step = 10;
-        $infos = [];
-
-        for ($i = $startYear; $i <= $endYear; $i++) {
-            $j = 0;
-            //$infos[] = [$i, 'l', 'k'];
-        }
-        return ['headers' => $headers, 'infos' => $infos];
-    }
 
     public function getNavDatas()
     {
@@ -108,5 +78,10 @@ class GatherController extends AbstractController
                 ],
             ],
         ];
+    }
+
+    protected function getGatherService()
+    {
+        return $this->getServiceObj('gather');
     }
 }
