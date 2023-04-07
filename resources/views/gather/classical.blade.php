@@ -17,7 +17,7 @@ $rowCount = $mobileClass ? 2 : 4;
 </section>
 
 @php $serial = 1; @endphp
-@foreach ($datas['infos']['volumes'] as $pData)
+@foreach ($datas['infos']['series'] as $pData)
 <section class="uix-spacing--s" style="padding-top:0px; padding-bottom:25px">
   <div class="container" style="padding-left:5px;padding-right:3px;">
     <div class="row">
@@ -29,21 +29,26 @@ $rowCount = $mobileClass ? 2 : 4;
           </div>
           <table>
             <tbody class="uix-t-l--md">
-              @php $i = 1; @endphp
-              @foreach ($pData['books'] as $subData)
-              @php $jsonStr = json_encode($subData); @endphp
-              @if ($i % $rowCount == 1)<tr>@endif
-              <td style="text-align:center;padding-left:3px;padding-right:1px;padding-bottom:3px; padding-top:5px;">
-                <span style="margin: 0px;font-size:@if ($mobileClass) 10pt @else 14pt @endif;">
-                  <a href="javascript:void(0);" onclick="fillElem({{$subData['jsonStr']}});" tabindex="0" data-modal-id="modal-open-detail" data-modal-close-onlybtn="false"  data-modal-height="70%" data-modal-width="90%" >
-                    {{$subData['name']}}
-                  </a>
-                </span>
+
+              @foreach ($pData['volumes'] as $key => $elem)
+              <tr>
+              <td style="vertical-align: middle;text-align:center; width=30%" rowspan="{{max(ceil(count($elem['books']) / $rowCount), 1)}}">
+                  {{$elem['name']}} ( {{$elem['book_num']}} )
               </td>
-              @if ($i % $rowCount == $rowCount)</tr>@endif
-              @php $i += 1; @endphp
+              @foreach ($elem['books'] as $pIndex => $subData)
+
+              @if ($pIndex != 0 && $pIndex % $rowCount == 0)<tr>@endif
+              <td style="text-align:center;padding-left:3px;padding-right:1px;padding-bottom:3px; padding-top:5px;">
+                  <span style="margin: 0px;font-size:@if ($mobileClass) 9pt @else 14pt @endif;">
+                      <a href="">
+                          {{$subData['name']}}
+                      </a>
+                  </span>
+              </td>
+              @if ($pIndex % $rowCount == $rowCount - 1)</tr>@endif
               @endforeach
-              @if ($i % $rowCount != $rowCount)</tr>@endif
+              @if ($pIndex % $rowCount != $rowCount - 1)</tr>@endif
+              @endforeach
             </tbody>
           </table>  
         </div>      

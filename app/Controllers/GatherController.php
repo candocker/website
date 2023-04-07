@@ -25,7 +25,7 @@ class GatherController extends AbstractController
         $graphicService = $this->getServiceObj('culture-graphic');
         $datas = $this->getGatherService()->getSeriesDatas($bigsort, $sort);
         $datas['currentNav'] = 'series';
-        $view = 'series';
+        $view = $datas['view'];
 
         return $this->customView($view, $datas);
     }
@@ -49,12 +49,12 @@ class GatherController extends AbstractController
             'series-translation' => [
                 'name' => '汉译学术名著',
                 'subNavs' => [
-                    'philosophy' => ['name' => '哲学'],
-                    'history' => ['name' => '历史·地理'],
-                    'politics' => ['name' => '政治·法律·社会'],
-                    'economics' => ['name' => '经济'],
-                    'language' => ['name' => '语言·文艺理论'],
-                    'otheracademic' => ['name' => '学术补编'],
+                    'philosophy' => ['name' => '哲学 (285)'],
+                    'history' => ['name' => '历史·地理 (172)'],
+                    'politics' => ['name' => '政治·法律·社会 (202)'],
+                    'economics' => ['name' => '经济 (166)'],
+                    'language' => ['name' => '语言·文艺理论 (25)'],
+                    'otheracademic' => ['name' => '学术补编 (100)'],
                 ],
             ],
             'series-classical' => [
@@ -62,6 +62,7 @@ class GatherController extends AbstractController
                 'subNavs' => [
                     'jdguji' => ['name' => '经典古籍'],
                     'luxun' => ['name' => '鲁迅图书'],
+                    'goodwork' => ['name' => '名家名作'],
                 ],
             ],
             'history-graphic' => [
