@@ -50,6 +50,9 @@ abstract class AbstractController extends AbstractControllerBase
 
     public function isMobile($force = false)
     {
+        if (empty($force)) {
+		    return null;
+        }
         return $this->resource->isMobile();
     }
 

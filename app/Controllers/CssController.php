@@ -59,14 +59,6 @@ class CssController extends AbstractController
 		return 'study';
 	}
 
-	public function isMobile($force = false)
-	{
-        if (empty($force)) {
-		    return null;
-        }
-        return parent::isMobile($force);
-	}
-
     public function getElemDatas()
     {
         return [

@@ -14,6 +14,6 @@
     </div>
   </div>
 </section>
-@include('classical.lists._' . $datas['pageCode'], ['datas' => $datas])
+@include('read.lists._' . $datas['pageCode'], ['datas' => $datas])
 
 @endsection

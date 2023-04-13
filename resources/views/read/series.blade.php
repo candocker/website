@@ -56,5 +56,5 @@ $rowCount = $mobileClass ? 2 : 4;
   </div>
 </section>  
 @endforeach
-@include('gather.modules._pop', ['data' => ''])
+@include('read.modules._pop', ['data' => ''])
 @endsection

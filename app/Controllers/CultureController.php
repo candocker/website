@@ -55,7 +55,7 @@ class CultureController extends AbstractController
     {
         $code = $this->getRouteParam('code');
         $data = $this->getRepositoryObj('culture-dynasty')->getDetail($code);
-        return $this->success($data);
+        //return $this->success($data);
         return $this->customView('dynasty', ['info' => $data]);
     }
 
@@ -69,14 +69,6 @@ class CultureController extends AbstractController
 	protected function viewPath()
 	{
 		return 'website';
-	}
-
-	public function isMobile($force = false)
-	{
-        if (empty($force)) {
-		    return null;
-        }
-        return parent::isMobile($force);
 	}
 
     public function view()

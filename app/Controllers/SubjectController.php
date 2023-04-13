@@ -2,20 +2,18 @@
 
 namespace ModuleWebsite\Controllers;
 
-class GatherController extends AbstractController
+class SubjectController extends AbstractController
 {
-	public function actionNavDatas()
-	{
-		$where = ['status' => 'nav'];
-		return ['status' => 200, 'message' => 'OK', 'datas' => $this->model->getBookDatas($where)];
-	}
-
 	public function home()
 	{
-        $view = $this->request->input('view');
         $datas = [
-            'title' => '知识汇编',
-            'description' => '书籍、历史、人物知识大荟萃',
+            'title' => '专题系列',
+            'description' => '专题系列',
+            'tdkData' => [
+                'title' => '专题系列',
+                'description' => '专题系列',
+                'keywords' => '',
+            ],
         ];
         return $this->customView('home', $datas);
 	}
@@ -50,48 +48,22 @@ class GatherController extends AbstractController
 
 	protected function viewPath()
 	{
-		return 'gather';
-	}
-
-	public function isMobile($force = false)
-	{
-        if (empty($force)) {
-		    return null;
-        }
-        return parent::isMobile($force);
+		return 'info';
 	}
 
     public function getNavDatas()
     {
         return [
-            'series-translation' => [
-                'name' => '汉译学术名著',
-                'subNavs' => [
-                    'philosophy' => ['name' => '哲学 (285)'],
-                    'history' => ['name' => '历史·地理 (172)'],
-                    'politics' => ['name' => '政治·法律·社会 (202)'],
-                    'economics' => ['name' => '经济 (166)'],
-                    'language' => ['name' => '语言·文艺理论 (25)'],
-                    'otheracademic' => ['name' => '学术补编 (100)'],
-                ],
-            ],
-            'series-classical' => [
-                'name' => '经典图书系列',
-                'subNavs' => [
-                    'jdguji' => ['name' => '经典古籍'],
-                    'luxun' => ['name' => '鲁迅图书'],
-                    'goodwork' => ['name' => '名家名作'],
-                ],
-            ],
-            'history-graphic' => [
+            'history' => [
                 'name' => '历史图谱',
                 'subNavs' => [
                     'luguo' => ['name' => '鲁国'],
                 ],
             ],
-            'human-graphic' => [
+            'human' => [
                 'name' => '人物图谱',
                 'subNavs' => [
+                    'luxun' => ['name' => '鲁迅'],
                     'zhuzibaijia' => ['name' => '诸子百家'],
                     'kongdizi' => ['name' => '孔门弟子'],
                 ],

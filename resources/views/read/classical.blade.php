@@ -17,7 +17,6 @@ $rowCount = $mobileClass ? 3 : 5;
 </section>
 <hr />
 
-@php $serial = 1; @endphp
 @foreach ($datas['infos']['series'] as $pData)
 <section class="uix-spacing--s" style="padding-top:0px; padding-bottom:25px">
   <div class="container" style="padding-left:5px;padding-right:3px;">
@@ -25,7 +24,7 @@ $rowCount = $mobileClass ? 3 : 5;
       <div class="col-12">
         <div class="uix-table uix-table--bordered">
           <div class="col-12" style="">
-            <h5 class="uix-heading--pinline">{{$serial}} - {{$pData['name']}} ({{$pData['book_num']}})</h5>
+            <h5 class="uix-heading--pinline">{{$pData['name']}} ({{$pData['book_num']}})</h5>
             <p class="uix-heading--pinline" style="color: green;font-size:14px;">{{$pData['brief']}}</p>
           </div>
             @foreach ($pData['volumes'] as $key => $elem)
@@ -62,5 +61,5 @@ $rowCount = $mobileClass ? 3 : 5;
 </section>  
 <hr />
 @endforeach
-@include('gather.modules._pop', ['data' => ''])
+@include('read.modules._pop', ['data' => ''])
 @endsection

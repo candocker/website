@@ -2,7 +2,7 @@
 
 namespace ModuleWebsite\Controllers;
 
-class ClassicalController extends AbstractController
+class ReadController extends AbstractController
 {
     use TraitClassical;
 
@@ -13,6 +13,25 @@ class ClassicalController extends AbstractController
         //unset($datas['books']['yizhuan']);
         $datas['pageCode'] = 'home';
         return $this->customView('list', $datas);
+    }
+
+    public function series($bigsort = '', $sort = '')
+    {
+        $graphicService = $this->getServiceObj('culture-graphic');
+        $datas = $this->getReadService()->getSeriesDatas($bigsort, $sort);
+        $datas = $this->formatNav($datas);
+        $view = $datas['view'];
+
+        return $this->customView($view, $datas);
+    }
+
+    protected function formatNav($datas)
+    {
+        $path = $this->request->path();
+        $pos = strrpos($path, '-');
+        $datas['bigNav'] = $pos !== false ? substr($path, 0, $pos) : $path;
+        $datas['currentNav'] = $pos !== false ? substr($path, $pos + 1) : $path;
+        return $datas;
     }
 
     public function bookCatalogue($code = null)
@@ -73,7 +92,6 @@ class ClassicalController extends AbstractController
             }
         }
         return $results;
-        print_r($results);exit();
     }
 
     protected function formatInnerNote($datas)
@@ -149,19 +167,48 @@ class ClassicalController extends AbstractController
 
     public function getBasePath()
     {
-        return config('culture.material_path'); //base_path() . "/vendor/candocker/website/migrations/";
+        return config('culture.material_path');
     }
 
 	protected function viewPath()
 	{
-		return 'classical';
+		return 'read';
 	}
 
-	public function isMobile($force = false)
-	{
-        if (empty($force)) {
-		    return null;
-        }
-        return parent::isMobile($force);
-	}
+    protected function getReadService()
+    {
+        return $this->getServiceObj('read');
+    }
+
+    public function getNavDatas()
+    {
+        return [
+            '' => [
+                'name' => '阅读经典',
+            ],
+            'series-translation' => [
+                'name' => '汉译学术名著',
+                'subNavs' => [
+                    'philosophy' => ['name' => '哲学 (285)'],
+                    'history' => ['name' => '历史·地理 (172)'],
+                    'politics' => ['name' => '政治·法律·社会 (202)'],
+                    'economics' => ['name' => '经济 (166)'],
+                    'language' => ['name' => '语言·文艺理论 (25)'],
+                    'otheracademic' => ['name' => '学术补编 (100)'],
+                ],
+            ],
+            'series-classical' => [
+                'name' => '经典图书系列',
+                'subNavs' => [
+                    'jdguji' => ['name' => '经典古籍'],
+                    'luxun' => ['name' => '鲁迅图书'],
+                    'goodwork' => ['name' => '名家名作'],
+                ],
+            ],
+            'book' => [
+                'name' => '王灿书屋',
+                'url' => 'http://book.91zuiai.com/',
+            ],
+        ];
+    }
 }

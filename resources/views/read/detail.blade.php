@@ -51,7 +51,7 @@ if (isset($datas['bookData']['tabs'])) {
         </div>
         <hr>
         @endif
-        @include('classical.details._' . $datas['pageCode'], ['datas' => $datas])
+        @include('read.details._' . $datas['pageCode'], ['datas' => $datas])
       </div>
     </div>  
     <div class="uix-entry__box uix-entry__box--top uix-entry__box--mark uix-spacing--no">
