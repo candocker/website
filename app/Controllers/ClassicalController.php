@@ -10,7 +10,7 @@ class ClassicalController extends AbstractController
     {
         //$this->deal();exit();
         $datas = $this->getBookInfos(null, true);
-        unset($datas['books']['yizhuan']);
+        //unset($datas['books']['yizhuan']);
         $datas['pageCode'] = 'home';
         return $this->customView('list', $datas);
     }
@@ -107,7 +107,11 @@ class ClassicalController extends AbstractController
         $bookListFile = $this->getBasePath() . 'booklist/index.php';
         $bookDatas = require($bookListFile);
         if (!empty($bookCode)) {
-            return $bookDatas['books'][$bookCode];
+            foreach ($bookDatas['chapters'] as $chapter) {
+                if (isset($chapter['books'][$bookCode])) {
+                    return $chapter['books'][$bookCode];
+                }
+            }
         }
 
         if ($withTdk) {
