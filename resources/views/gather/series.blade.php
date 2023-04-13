@@ -5,7 +5,7 @@ $rowCount = $mobileClass ? 2 : 4;
 @section('dynamicMeta')@include('modules._meta', $datas['tdkData'])@endsection
 @section('bodyClass')class="page"@endsection
 @section('content')
-<section class="uix-spacing--s uix-spacing--no-bottom">
+<section class="uix-spacing--s uix-spacing--no-bottom uix-t-c">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -24,11 +24,14 @@ $rowCount = $mobileClass ? 2 : 4;
     <div class="row">
       <div class="col-12">
         <div class="uix-table uix-table--bordered">
-          <div class="col-12" style="">
-            <h5 class="uix-heading--pinline">{{$serial}} - {{$pData['name']}} ({{$pData['book_num']}})</h5>
-            <p class="uix-heading--pinline" style="color: green;font-size:14px;">{{$pData['brief']}}</p>
-          </div>
-          <table>
+          <table style="border:2px solid #ADD8E6;">
+            <thead>
+              <tr>
+              <th style="vertical-align: middle;text-align:center; color:#4fc3f7; font-size:14px;" colspan="{{$rowCount}}">
+                  {{$serial}} - {{$pData['name']}} ( {{$pData['book_num']}} ) {{$pData['brief']}}
+              </th>
+              </tr>
+            </thead>
             <tbody class="uix-t-l--md">
               @php $i = 1; @endphp
               @foreach ($pData['books'] as $subData)

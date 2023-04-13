@@ -24,7 +24,7 @@ trait SeriesTrait
     public function _classicalSeriesDatas($sort)
     {
         if ($sort == 'luxun') {
-            $pointCodes = ['luxunsingle', 'luxunquanji1938', 'luxunquanji2005', 'luxunquanji1958', 'luxunquanji1981', 'luxunguji1999', 'luxunquanji2005', 'luxunmanuscript', 'luxunmanuall', 'luxunyanjiu'];
+            $pointCodes = ['luxunsingle', 'luxunquanji1938', 'luxunquanji1958', 'luxunyiwenji1958', 'luxunquanji1981', 'luxunguji1999', 'luxunquanji2005', 'luxunmanuscript', 'luxunmanuall', 'luxunyanjiu'];
             $infos = $this->getRepositoryObj('culture-series')->getSeriesDatas($pointCodes);
             $datas['name'] = '鲁迅作品';
             $datas['brief'] = '鲁迅全集';

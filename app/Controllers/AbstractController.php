@@ -64,7 +64,7 @@ abstract class AbstractController extends AbstractControllerBase
 			'description' => 'description'
         ], $datas);*/
         $datas['navDatas'] = $this->getNavDatas();
-        $datas['currentNav'] = isset($datas['currentNav']) ?? '';
+        $datas['currentNav'] = $datas['currentNav'] ?? '';
         if (!isset($datas['tdkData'])) {
             $datas['tdkData'] = [
                 'title' => 'title',

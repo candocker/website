@@ -5,17 +5,17 @@ $rowCount = $mobileClass ? 3 : 5;
 @section('dynamicMeta')@include('modules._meta', $datas['tdkData'])@endsection
 @section('bodyClass')class="page"@endsection
 @section('content')
-<section class="uix-spacing--s uix-spacing--no-bottom">
+<section class="uix-spacing--s uix-spacing--no-bottom uix-t-c">
   <div class="container">
     <div class="row">
       <div class="col-12">
         <h3>{{$datas['infos']['name']}}</h3>
         <p>{{$datas['infos']['brief']}}</p>
-        <hr>
       </div>
     </div>
   </div>
 </section>
+<hr />
 
 @php $serial = 1; @endphp
 @foreach ($datas['infos']['series'] as $pData)
@@ -28,8 +28,8 @@ $rowCount = $mobileClass ? 3 : 5;
             <h5 class="uix-heading--pinline">{{$serial}} - {{$pData['name']}} ({{$pData['book_num']}})</h5>
             <p class="uix-heading--pinline" style="color: green;font-size:14px;">{{$pData['brief']}}</p>
           </div>
-          <table>
             @foreach ($pData['volumes'] as $key => $elem)
+          <table style="border:2px solid #ADD8E6;">
             <thead>
               <tr>
               <th style="vertical-align: middle;text-align:center; color:#4fc3f7; font-size:14px;" colspan="{{$rowCount}}">
@@ -53,13 +53,14 @@ $rowCount = $mobileClass ? 3 : 5;
               @endforeach
               @if ($pIndex % $rowCount != $rowCount - 1)</tr>@endif
             </tbody>
-            @endforeach
           </table>  
+            @endforeach
         </div>      
       </div>
     </div>
   </div>
 </section>  
+<hr />
 @endforeach
 @include('gather.modules._pop', ['data' => ''])
 @endsection
