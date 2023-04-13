@@ -2,6 +2,7 @@
 $rowCount = $mobileClass ? 2 : 4;
 @endphp
 @extends('layouts.website')
+@section('dynamicMeta')@include('modules._meta', $datas['tdkData'])@endsection
 @section('bodyClass')class="page"@endsection
 @section('content')
 <section class="uix-spacing--s uix-spacing--no-bottom">

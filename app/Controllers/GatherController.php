@@ -20,6 +20,15 @@ class GatherController extends AbstractController
         return $this->customView('home', $datas);
 	}
 
+    public function graphic($code = '')
+    {
+        $graphicService = $this->getServiceObj('culture-graphic');
+        $datas = [];
+        $view = 'graphic';
+
+        return $this->customView($view, $datas);
+    }
+
     public function series($bigsort = '', $sort = '')
     {
         $graphicService = $this->getServiceObj('culture-graphic');

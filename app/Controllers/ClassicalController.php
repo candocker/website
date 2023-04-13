@@ -20,14 +20,14 @@ class ClassicalController extends AbstractController
         $datas = $this->getChapterInfos($code, true);
 
         $pageCodes = [
-            'zhouyi' => 'zhouyi',
+            'yijing' => 'yijing',
             'shijing' => 'shijing',
             //'mengzi' => 'shijing',
             //'guwenguanzhi' => 'shijing'
         ];
         $bookData = $this->getBookInfos($code);
         $datas['bookData'] = $bookData;
-        $datas['pageCode'] = $pageCodes[$code] ?? 'common';//in_array($code, ['zhouyi', 'shijing']) ? $code : 'common';
+        $datas['pageCode'] = $pageCodes[$code] ?? 'common';//in_array($code, ['yijing', 'shijing']) ? $code : 'common';
         return $this->customView('list', $datas);
     }
 
@@ -47,12 +47,12 @@ class ClassicalController extends AbstractController
         $datas['tdkData'] = $this->formatTdk($datas);
 
         $pageCodes = [
-            'zhouyi' => 'zhouyi',
+            'yijing' => 'yijing',
             'shijing' => 'shijing',
             'chuci' => 'shijing'
         ];
         $datas['pageCode'] = $pageCodes[$bookCode] ?? 'common';
-        //$datas['pageCode'] = in_array($bookCode, ['shijing', 'zhouyi']) ? $bookCode : 'common';
+        //$datas['pageCode'] = in_array($bookCode, ['shijing', 'yijing']) ? $bookCode : 'common';
         return $this->customView('detail', $datas);
     }
 

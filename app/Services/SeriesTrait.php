@@ -13,7 +13,12 @@ trait SeriesTrait
         //$volumes = $seriesInfo->volumes;
         //$infos = $this->getCollectionObj($volumes, 'frontInfo', 'culture-seriesVolume');
         //print_r($this->resource->formatResultDatas($datas));exit();
-        return ['infos' => $datas, 'view' => 'series'];
+        $tdkData = [
+            'title' => $datas['name'],
+            'keywords' => $datas['name'],
+            'description' => $datas['brief'],
+        ];
+        return ['infos' => $datas, 'view' => 'series', 'tdkData' => $tdkData];
     }
 
     public function _classicalSeriesDatas($sort)
@@ -35,7 +40,12 @@ trait SeriesTrait
             $datas['brief'] = '经典古籍';
         }
         $datas['series'] = $infos;
-        return ['infos' => $datas, 'view' => 'classical'];
+        $tdkData = [
+            'title' => $datas['name'],
+            'keywords' => $datas['name'],
+            'description' => $datas['brief'],
+        ];
+        return ['infos' => $datas, 'view' => 'classical', 'tdkData' => $tdkData];
         //print_r($this->resource->formatResultDatas($datas));exit();
     }
 }

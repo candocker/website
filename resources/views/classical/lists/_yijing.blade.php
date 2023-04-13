@@ -48,7 +48,7 @@ $rand = time();
                                 </div>
 <br />
                                 <div style="clear:both;text-align:center;font-size:@if ($mobileClass) 11pt @else 14pt @endif;">
-                                    <a href="/show-zhouyi-{{$pCode}}">
+                                    <a href="/show-yijing-{{$pCode}}">
                                         {{$infos[$pCode]['serial']}}-{{$infos[$pCode]['brief']}}
                                         @if (isset($datas['bookData']['withAuthor'])) ( {{$infos[$pCode]['author']}} )@endif
                                     </a>

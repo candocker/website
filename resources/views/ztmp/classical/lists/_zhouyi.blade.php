@@ -16,7 +16,7 @@ $symbols = [0 => '■■■　■■■', 1 => '■■■■■■■'];
         @foreach (array_reverse($infos[$pCode]['symbol']) as $symbol) {{$symbols[$symbol]}}<br>@endforeach
         </span>
         <span class="baguaname" style="text-align:center;margin-top: 20px;font-size:14pt;">
-            <a href="/show-zhouyi-{{$pCode}}">{{$infos[$pCode]['serial']}}-{{$infos[$pCode]['brief']}}</a>
+            <a href="/show-yijing-{{$pCode}}">{{$infos[$pCode]['serial']}}-{{$infos[$pCode]['brief']}}</a>
             @if (isset($infos[$pCode]['spell']) && $infos[$pCode]['spell'])<!--<br />(<span class="piny">{{$infos[$pCode]['spell']}}</span>)-->@endif
         </span>
     </td>

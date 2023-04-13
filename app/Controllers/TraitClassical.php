@@ -6,9 +6,9 @@ use Overtrue\ChineseCalendar\Calendar;
 
 trait TraitClassical
 {
-    public function dealZhouyi()
+    public function dealYijing()
     {
-        $infos = require($this->getBasePath() . '/booklist/zhouyi_catalogue.php');
+        $infos = require($this->getBasePath() . '/booklist/yijing_catalogue.php');
         $str = "<?php\n";
         $str .= "return [\n";
         foreach ($infos as $key => $info) {
@@ -20,7 +20,7 @@ trait TraitClassical
             $str .= "    ],\n";
         }
         $str .= "];";
-        file_put_contents('/data/database/material/booklist/zhouyi_catalogue.php', $str);
+        file_put_contents('/data/database/material/booklist/yijing_catalogue.php', $str);
         
         print_r($infos);exit();
 
@@ -45,7 +45,7 @@ trait TraitClassical
         foreach ($divinations as $key => $elem) {
             $filePath = $key < 9 ? '0' . ($key + 1) : $key + 1;
             $filePath .= $elem . '.php';
-            $file = $basePath . '/vendor/candocker/website/migrations/zhouyi/' . $filePath;
+            $file = $basePath . '/vendor/candocker/website/migrations/yijing/' . $filePath;
             $baseInfo = require($file);
             $divinationData = $this->dealDivination($baseInfo['symbol']);
             $baseInfo['symbols'] = [];
@@ -55,7 +55,7 @@ trait TraitClassical
 
             $tmp[$elem] = array_merge($baseInfo, $divinationData);
         }
-        $targetFile = $basePath . '/vendor/candocker/website/migrations/cachedata/zhouyi.php';
+        $targetFile = $basePath . '/vendor/candocker/website/migrations/cachedata/yijing.php';
         $fp = fopen($targetFile,'w+');
         fwrite($fp,'<?php return ' . var_export($tmp, true) . ';');
         fclose($fp);
@@ -82,7 +82,7 @@ trait TraitClassical
 
     public function test()
     {
-        $this->dealZhouyi();exit();
+        $this->dealYijing();exit();
         //$basePath = $this->getBasePath();
         //$file = $basePath . 'luxun/works.php';
         //$datas = require($file);
@@ -163,7 +163,7 @@ trait TraitClassical
         $cancels = ['name', 'brief', 'nameShort', 'author', 'keyword', 'nameSpell'];
         foreach ($datas['books'] as $bookCode => $bData) {
             if (!in_array($bookCode, ['shijing'])) {
-            //if (in_array($bookCode, ['zhouyi', 'yizhuan'])) {
+            //if (in_array($bookCode, ['yijing', 'yizhuan'])) {
             //if (in_array($bookCode, ['shijing', 'guwenguanzhi', 'daodejing', 'chuci', 'lunyu', 'daxue', 'mengzi', 'xunzi', 'zhuangzi', 'zhongyong', 'mozi', 'yizhuan'])) {
                 continue;
             }

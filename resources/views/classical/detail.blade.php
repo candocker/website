@@ -42,7 +42,7 @@ if (isset($datas['bookData']['tabs'])) {
     <div class="container " >
         <div class="offset-md-1 @if ($mobileClass != 'mobile') col-md-10 @endif " style="margin-color: green">
             <div class="{{$mobileClass}} uix-spacing--no">
-                @if ($datas['pageCode'] != 'zhouyi')
+                @if ($datas['pageCode'] != 'yijing')
                 <div class="col-12 uix-spacing--no">
                     <h4 class="uix-heading--pinline uix-t-c title" style="padding-top:5px;">{{$currentName}}</h4>
                     @if (isset($datas['brief']))
