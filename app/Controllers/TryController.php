@@ -5,6 +5,10 @@ use Swoolecan\Foundation\Helpers\CommonTool;
 
 class TryController extends AbstractController
 {
+    public function test()
+    {
+    }
+
     public function timeline($sort = 'pingtai')
     {
         $datas = [];
@@ -40,21 +44,6 @@ class TryController extends AbstractController
 
         //$datas = $graphicService->formatResultDatas($sort, $extcode, $params);
         return $this->customView($view, $datas);
-    }
-
-    public function human()
-    {
-        $code = $this->getRouteParam('code');
-        $data = $this->getRepositoryObj('culture-figure')->getDetail($code);
-        return $this->customView('human', ['info' => $data]);
-    }
-
-    public function dynasty()
-    {
-        $code = $this->getRouteParam('code');
-        $data = $this->getRepositoryObj('culture-dynasty')->getDetail($code);
-        //return $this->success($data);
-        return $this->customView('dynasty', ['info' => $data]);
     }
 
     public function book()
@@ -98,30 +87,6 @@ class TryController extends AbstractController
             $datas['navOverlay'] = true;
         }
         return $this->customView('dealed/home', $datas);
-    }
-
-	/*public function isMobile($force = false)
-	{
-        if (empty($force)) {
-		    return null;
-        }
-        return parent::isMobile($force);
-    }*/
-
-    public function luxunResume()
-    {
-        $repository = $this->getRepositoryObj('culture-series');
-        $pointCodes = ['luxunquanji1938', 'luxunquanji2005', 'luxunquanji1958', 'luxunquanji1981', 'luxunmanuscript', 'luxunmanuall'];
-        $datas = $repository->getSeriesDatas($pointCodes);
-        return $this->success($datas);
-    }
-
-    public function luxunWorks()
-    {
-        $repository = $this->getRepositoryObj('culture-series');
-        $pointCodes = ['luxunquanji1938', 'luxunquanji2005', 'luxunquanji1958', 'luxunquanji1981', 'luxunmanuscript', 'luxunmanuall'];
-        $datas = $repository->getSeriesDatas($pointCodes);
-        return $this->success($datas);
     }
 
     public function testcss($sort = 'pingtai')

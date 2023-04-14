@@ -28,6 +28,12 @@ class InfoController extends AbstractController
         return $this->customView('list', $datas);
     }
 
+    public function show($id)
+    {
+        $data = [];
+        return $this->customView('show', ['data' => $data]);
+    }
+
     protected function formatNav($datas)
     {
         $path = $this->request->path();
