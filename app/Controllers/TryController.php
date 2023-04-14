@@ -3,10 +3,8 @@ namespace ModuleWebsite\Controllers;
 
 use Swoolecan\Foundation\Helpers\CommonTool;
 
-class CultureController extends AbstractController
+class TryController extends AbstractController
 {
-    use TraitCulture;
-
     public function timeline($sort = 'pingtai')
     {
         $datas = [];
@@ -66,17 +64,12 @@ class CultureController extends AbstractController
         return $this->customView('book', ['info' => $data]);
     }
 
-	protected function viewPath()
-	{
-		return 'website';
-	}
-
     public function view()
     {
         $path = request()->input('path', '');
         $filepath = request()->input('filepath', '');
         if (empty($path)) {
-            $path = '/data/htmlwww/laravel-system/vendor/candocker/website/resources/views/website/dealed/';
+            $path = '/data/htmlwww/new-laravel/vendor/candocker/website/resources/views/website/dealed/';
             $files = CommonTool::getPathFiles($path);
             foreach ($files as $file) {
                 if (in_array($file, ['bak', 'home.blade.php'])) {
@@ -129,5 +122,68 @@ class CultureController extends AbstractController
         $pointCodes = ['luxunquanji1938', 'luxunquanji2005', 'luxunquanji1958', 'luxunquanji1981', 'luxunmanuscript', 'luxunmanuall'];
         $datas = $repository->getSeriesDatas($pointCodes);
         return $this->success($datas);
+    }
+
+    public function testcss($sort = 'pingtai')
+    {
+        $elem = $this->request->input('elem');
+        $elem = empty($elem) ? 'home' : $elem;
+        $datas = ['elem' => $elem, 'elems' => $this->getElemDatas()];
+        return $this->customView('css', $datas);
+    }
+
+    public function checkPackage()
+    {
+        $json = file_get_contents(base_path() . '/composer.lock');
+        $arr = json_decode($json, true);
+        $packages = [];
+        $serial = 1;
+        foreach ($arr['packages'] as $info) {
+            $packages[$info['name']] = ['url' => $info['source']['url'], 'version' => $info['version'], 'serial' => $serial];
+            $serial++;
+        }
+
+        $newArr = json_decode(file_get_contents('/data/opensource/myself/swoolecan/foundation/composer.lock'), true);
+        $newArr2 = json_decode(file_get_contents('/data/opensource/myself/swoolecan/laravel-baseapp/composer.lock'), true);
+
+        foreach ($newArr['packages'] as $info) {
+            $name = $info['name'];
+            $data = ['url' => $info['source']['url'], 'version' => $info['version'], 'serial' => $serial];
+            if (in_array($name, array_keys($packages))) {
+                $packages[$name]['new'] = $data;
+            } else {
+                $packages[$name] = $data;
+            }
+            $serial++;
+        }
+
+        foreach ($newArr2['packages'] as $info) {
+            $name = $info['name'];
+            $data = ['url' => $info['source']['url'], 'version' => $info['version'], 'serial' => $serial];
+            if (in_array($name, array_keys($packages))) {
+                $packages[$name]['new1'] = $data;
+            } else {
+                $packages[$name] = $data;
+            }
+            $serial++;
+        }
+        $datas['infos'] = $packages;
+        return $this->customView('package', $datas);
+        print_r($packages);exit();
+        exit();
+    }
+
+	protected function viewPath()
+	{
+		return 'website';
+	}
+
+    public function getElemDatas()
+    {
+        return [
+            'flex', 'position', 'test', 'test1', 'align', 'attrselect', 'background', 'base', 'border',
+            'box', 'dimension', 'display', 'float', 'font', 'group', 'home', 'image', 'jscss',
+            'list', 'media', 'nav1', 'nav', 'outline', 'padding', 'pseudo', 'select', 'table', 'text',
+        ];
     }
 }

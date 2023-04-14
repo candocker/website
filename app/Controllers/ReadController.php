@@ -4,7 +4,6 @@ namespace ModuleWebsite\Controllers;
 
 class ReadController extends AbstractController
 {
-    use TraitClassical;
 
     public function home()
     {
@@ -50,7 +49,7 @@ class ReadController extends AbstractController
         return $this->customView('list', $datas);
     }
 
-    public function show($bookCode, $chapterCode)
+    public function bookShow($bookCode, $chapterCode)
     {
         $bookData = $this->getBookInfos($bookCode);
         $file = $this->getBasePath() . "books/{$bookCode}/{$chapterCode}.php";

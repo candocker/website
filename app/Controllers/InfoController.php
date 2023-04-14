@@ -21,7 +21,6 @@ class InfoController extends AbstractController
     public function categoryList($bigsort = '', $sort = '')
     {
         $graphicService = $this->getServiceObj('culture-graphic');
-        //$datas = $this->getGatherService()->getSeriesDatas($bigsort, $sort);
         $datas = [];
         $datas['bigNav'] = $bigsort;
         $datas['currentNav'] = $sort;
@@ -57,8 +56,8 @@ class InfoController extends AbstractController
         return $navDatas;
     }
 
-    protected function getGatherService()
+    protected function getInfocmsService()
     {
-        return $this->getServiceObj('gather');
+        return $this->getServiceObj('infocms');
     }
 }
