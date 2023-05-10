@@ -183,7 +183,12 @@ class ReadController extends AbstractController
     {
         return [
             '' => [
-                'name' => '阅读经典',
+                'name' => '经典古籍',
+                'subNavs' => [
+                    '' => ['name' => '古籍原本'],
+                    'knowledge' => ['name' => '古典知识'],
+                    'note' => ['name' => '阅读笔记'],
+                ],
             ],
             'series-translation' => [
                 'name' => '汉译学术名著',

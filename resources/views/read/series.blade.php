@@ -40,7 +40,7 @@ $rowCount = $mobileClass ? 2 : 4;
               <td style="text-align:center;padding-left:3px;padding-right:1px;padding-bottom:3px; padding-top:5px;">
                 <span style="margin: 0px;font-size:@if ($mobileClass) 10pt @else 14pt @endif;">
                   <a href="javascript:void(0);" onclick="fillElem({{$subData['jsonStr']}});" tabindex="0" data-modal-id="modal-open-detail" data-modal-close-onlybtn="false"  data-modal-height="70%" data-modal-width="90%" >
-                    {{$subData['name']}}
+                    {{$subData['name']}} <br /><span style="color:#303f9f; font-size:14px;">( {{$subData['author']}} )</span>
                   </a>
                 </span>
               </td>

@@ -11,6 +11,11 @@
 @foreach ((array) $chapter['content'] as $cContent)
 <div class="jingwen">{!!$cContent!!}</div>
 @endforeach
+@if (isset($datas['bookData']['spell']) && isset($chapter['spell']))
+@foreach ((array) $chapter['spell'] as $spellStr)
+<div class="jingwen spellclass" style="display: none;">{{$spellStr}}</div>
+@endforeach
+@endif
 <div id="comment1" class="comment" style="display: none;">
   @if (isset($chapter['notes']) && $chapter['notes'])
   @foreach ((array) $chapter['notes'] as $i => $note)

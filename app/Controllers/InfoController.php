@@ -30,7 +30,10 @@ class InfoController extends AbstractController
 
     public function show($id)
     {
-        $data = [];
+        $data = $this->getModelObj('infocms-article')->find($id);
+        $parsedown = new \Parsedown();
+        $data['content'] = $parsedown->text($data['content']);
+
         return $this->customView('show', ['data' => $data]);
     }
 

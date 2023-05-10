@@ -13,7 +13,7 @@
             <div class="uix-el--transparent" data-uix-anim='{"viewport":"100%","from":{"opacity":0,"y":150},"to":{"opacity":1,"y":0},"ease":"Power2.easeOut","duration":0.4,"delay":0.4,"infinite":false}' >
               <p>
                 <h3 id="elem_name"></h3>
-                @foreach (['author' => '作者', 'nationality' => '国籍', 'translator' => '译者'] as $elem => $elemName)
+                @foreach (['authorWiki' => '作者', 'nationality' => '国籍', 'translator' => '译者'] as $elem => $elemName)
                 <dl class="uix-list-abreast uix-list-abreast--icon">
                   <dt><p>{{$elemName}}</p></dt>
                   <dd>
@@ -44,6 +44,7 @@ function fillElem(jsonStr)
   $('#elem_nationality').html(jsonStr.nationality);
   $('#elem_translator').html(jsonStr.translator);
   $('#elem_author').html(jsonStr.author);
+  $('#elem_authorWiki').html(jsonStr.authorWiki);
   $('#elem_publish_at').html(jsonStr.publish_at);
 }
 </script>
