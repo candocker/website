@@ -18,6 +18,20 @@ class SubjectController extends AbstractController
         return $this->customView('home', $datas);
 	}
 
+    public function chineseClassics()
+    {
+        $code = $this->getRouteParam('code');
+        $data = [];//$this->getRepositoryObj('culture-figure')->getDetail('luxun');
+        return $this->customView('chinese-classics.' . $code, ['info' => $data]);
+    }
+
+    public function humanLuxun()
+    {
+        $code = $this->getRouteParam('code');
+        $data = $this->getRepositoryObj('culture-figure')->getDetail('luxun');
+        return $this->customView('human-luxun.' . $code, ['info' => $data]);
+    }
+
     public function human()
     {
         $code = $this->getRouteParam('code');
@@ -50,18 +64,41 @@ class SubjectController extends AbstractController
     public function getNavDatas()
     {
         return [
-            'dynasty-graphic' => [
-                'name' => '王朝/帝国',
+            'human-luxun' => [
+                'name' => '鲁迅专栏',
+                'subNavs' => [
+                    'works' => ['name' => '作品'],
+                    'graphic' => ['name' => '图说'],
+                ],
+            ],
+            'chinese-classics' => [
+                'name' => '中华经典',
+                'subNavs' => [
+                    'yijing' => ['name' => '易经'],
+                    'kong' => ['name' => '孔子'],
+                    'shisanjing' => ['name' => '十三经'],
+                    'ruxue' => ['name' => '儒学'],
+                    'zhuzibaijia' => ['name' => '诸子百家'],
+                ],
+            ],
+            'chinese-history' => [
+                'name' => '中国历史',
                 'subNavs' => [
                     'luguo' => ['name' => '鲁国'],
                 ],
             ],
-            'human-graphic' => [
-                'name' => '人物图谱',
+            'foreign-history' => [
+                'name' => '外国历史',
                 'subNavs' => [
-                    'luxun' => ['name' => '鲁迅'],
-                    'zhuzibaijia' => ['name' => '诸子百家'],
-                    'kongdizi' => ['name' => '孔门弟子'],
+                    'america' => ['name' => '美国'],
+                    'ancient-greek' => ['name' => '古希腊'],
+                    'ancient-rome' => ['name' => '古罗马'],
+                ],
+            ],
+            'foreign-academic' => [
+                'name' => '外国学术',
+                'subNavs' => [
+                    'philosophy-history' => ['name' => '哲学史'],
                 ],
             ],
         ];

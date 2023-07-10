@@ -13,7 +13,7 @@
           <li>
             <ul class="sub-menu">
               @foreach ($navData['subNavs'] as $subCode => $subData)
-              @php $pUrl = $navData['url'] ?? (isset($navData['noUrl']) ? 'javascript: void(0)' : "/{$navCode}-{$subCode}"); @endphp
+              @php $pUrl = $subData['url'] ?? (isset($subData['noUrl']) ? 'javascript: void(0)' : "/{$navCode}-{$subCode}"); @endphp
               <li><a href="{{$pUrl}}" style="@if ($subCode == $datas['currentNav']) color:blue; @endif">{{$subData['name']}}</a></li> 
               @endforeach
             </ul>

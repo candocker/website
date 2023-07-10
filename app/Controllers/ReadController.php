@@ -4,14 +4,67 @@ namespace ModuleWebsite\Controllers;
 
 class ReadController extends AbstractController
 {
+	public function home()
+	{
+        $datas = [
+            'title' => '碎片知识',
+            'description' => '碎片化知识、碎片化学系',
+            'tdkData' => [
+                'title' => '碎片知识',
+                'description' => '碎片化知识、碎片化学系',
+                'keywords' => '',
+            ],
+        ];
+        return $this->customView('home', $datas);
+	}
 
-    public function home()
+    public function readClassical()
     {
-        //$this->deal();exit();
-        $datas = $this->getBookInfos(null, true);
+        $datas = $this->getBookInfos('book', null, true);
         //unset($datas['books']['yizhuan']);
         $datas['pageCode'] = 'home';
+        $datas = $this->formatNav($datas);
         return $this->customView('list', $datas);
+    }
+
+    public function readJoin($sort)
+    {
+        $datas = $this->getBookInfos($sort, null, true);
+        $datas['pageCode'] = 'join';
+        $datas['sort'] = $sort;
+        $datas = $this->formatNav($datas);
+        return $this->customView('listjoin', $datas);
+    }
+
+    public function readJoinList($sort, $code = null)
+    {
+        $datas = $this->getChapterInfos($sort, $code, true);
+
+        $bookData = $this->getBookInfos($sort, $code);
+        $datas['bookData'] = $bookData;
+        $datas['pageCode'] = 'joinlist';
+        $datas['sort'] = $sort;
+        return $this->customView('listjoin', $datas);
+    }
+
+    public function readJoinShow($sort, $bookCode, $chapterCode)
+    {
+        $bookData = $this->getBookInfos($sort, $bookCode);
+        $file = $this->getBasePath() . "{$sort}s/{$bookCode}/{$chapterCode}.php";
+        $datas = require($file);
+        if (isset($bookData['noteType']) && $bookData['noteType'] == 'inner') {
+            $datas = $this->formatInnerNote($datas);
+        }
+        $relateInfos = $this->getRelateInfo($sort, $bookCode, $chapterCode);
+
+        $datas['bookData'] = $bookData;
+        $datas['bookCode'] = $bookCode;
+        $datas = array_merge($relateInfos, $datas);
+        $datas['tdkData'] = $this->formatTdk($datas);
+        $datas['sort'] = $sort;
+
+        $datas['pageCode'] = 'commonjoin';
+        return $this->customView('detailjoin', $datas);
     }
 
     public function series($bigsort = '', $sort = '')
@@ -35,7 +88,7 @@ class ReadController extends AbstractController
 
     public function bookCatalogue($code = null)
     {
-        $datas = $this->getChapterInfos($code, true);
+        $datas = $this->getChapterInfos('book', $code, true);
 
         $pageCodes = [
             'yijing' => 'yijing',
@@ -43,7 +96,7 @@ class ReadController extends AbstractController
             //'mengzi' => 'shijing',
             //'guwenguanzhi' => 'shijing'
         ];
-        $bookData = $this->getBookInfos($code);
+        $bookData = $this->getBookInfos('book', $code);
         $datas['bookData'] = $bookData;
         $datas['pageCode'] = $pageCodes[$code] ?? 'common';//in_array($code, ['yijing', 'shijing']) ? $code : 'common';
         return $this->customView('list', $datas);
@@ -51,13 +104,13 @@ class ReadController extends AbstractController
 
     public function bookShow($bookCode, $chapterCode)
     {
-        $bookData = $this->getBookInfos($bookCode);
+        $bookData = $this->getBookInfos('book', $bookCode);
         $file = $this->getBasePath() . "books/{$bookCode}/{$chapterCode}.php";
         $datas = require($file);
         if (isset($bookData['noteType']) && $bookData['noteType'] == 'inner') {
             $datas = $this->formatInnerNote($datas);
         }
-        $relateInfos = $this->getRelateInfo($bookCode, $chapterCode);
+        $relateInfos = $this->getRelateInfo('book', $bookCode, $chapterCode);
 
         $datas['bookData'] = $bookData;
         $datas['bookCode'] = $bookCode;
@@ -74,9 +127,9 @@ class ReadController extends AbstractController
         return $this->customView('detail', $datas);
     }
 
-    protected function getRelateInfo($bookCode, $code, $types = ['pre', 'next'])
+    protected function getRelateInfo($sort, $bookCode, $code, $types = ['pre', 'next'])
     {
-        $chapters = $this->getChapterInfos($bookCode);
+        $chapters = $this->getChapterInfos($sort, $bookCode);
         $infos = $chapters['infos'];
         $keys = array_keys($infos);
         $cIndex = array_search($code, $keys);
@@ -119,9 +172,9 @@ class ReadController extends AbstractController
         return $datas;
     }
 
-    protected function getBookInfos($bookCode = null, $withTdk = false)
+    protected function getBookInfos($sort, $bookCode = null, $withTdk = false)
     {
-        $bookListFile = $this->getBasePath() . 'booklist/index.php';
+        $bookListFile = $this->getBasePath() . $sort . 'list/index.php';
         $bookDatas = require($bookListFile);
         if (!empty($bookCode)) {
             foreach ($bookDatas['chapters'] as $chapter) {
@@ -138,12 +191,12 @@ class ReadController extends AbstractController
         return $bookDatas;
     }
 
-    protected function getChapterInfos($bookCode, $withTdk = false)
+    protected function getChapterInfos($sort, $bookCode, $withTdk = false)
     {
-        $bookData = $this->getBookInfos($bookCode);
+        $bookData = $this->getBookInfos($sort, $bookCode);
 
-        $chapterFile = $this->getBasePath() . "booklist/{$bookCode}.php";
-        $chapterInfosFile = $this->getBasePath() . "booklist/{$bookCode}_catalogue.php";
+        $chapterFile = $this->getBasePath() . $sort . "list/{$bookCode}.php";
+        $chapterInfosFile = $this->getBasePath() . $sort . "list/{$bookCode}_catalogue.php";
         $chapterDatas = require($chapterFile);
         $chapterDatas['infos'] = require($chapterInfosFile);
 
@@ -182,16 +235,17 @@ class ReadController extends AbstractController
     public function getNavDatas()
     {
         return [
-            '' => [
-                'name' => '经典古籍',
+            'read' => [
+                'name' => '有效阅读',
                 'subNavs' => [
-                    '' => ['name' => '古籍原本'],
-                    'knowledge' => ['name' => '古典知识'],
-                    'note' => ['name' => '阅读笔记'],
+                    'classical' => ['name' => '古籍原本'],
+                    'annotation' => ['name' => '读书札记'],
+                    'reference' => ['name' => '工具书'],
                 ],
             ],
             'series-translation' => [
                 'name' => '汉译学术名著',
+                'noUrl' => true,
                 'subNavs' => [
                     'philosophy' => ['name' => '哲学 (285)'],
                     'history' => ['name' => '历史·地理 (172)'],
@@ -203,6 +257,7 @@ class ReadController extends AbstractController
             ],
             'series-classical' => [
                 'name' => '经典图书系列',
+                'noUrl' => true,
                 'subNavs' => [
                     'jdguji' => ['name' => '经典古籍'],
                     'luxun' => ['name' => '鲁迅图书'],
