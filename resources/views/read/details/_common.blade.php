@@ -30,6 +30,15 @@
   @endforeach
   @endif
 </div>
+<div class="zhuxi" style="display: none;">
+<div id="jiedu1" class="jiedu">
+  @if (isset($chapter['zhuxi']) && $chapter['zhuxi'])
+  @foreach ((array) $chapter['zhuxi'] as $i => $zhuxi)
+  <p>【朱熹】 {!!$zhuxi!!}</p>
+  @endforeach
+  @endif
+</div>
+</div>
 <div id="jiedu1" class="jiedu" style="display: none;">
   @if (isset($chapter['unscramble']) && $chapter['unscramble'])
   @foreach ((array) $chapter['unscramble'] as $i => $unscramble)

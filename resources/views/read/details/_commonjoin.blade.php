@@ -23,14 +23,14 @@
   @endforeach
   @endif
 </div>
-<div id="yiwen1" class="yiwen" style="display: ;">
+<div id="yiwen1" class="yiwen" style="display: none;">
   @if (isset($chapter['vernacular']) && $chapter['vernacular'])
   @foreach ((array) $chapter['vernacular'] as $i => $vernacular)
   <p>{{$vernacular}}</p>
   @endforeach
   @endif
 </div>
-<div id="jiedu1" class="jiedu" style="display: none;">
+<div id="jiedu1" class="jiedu" style="display: ;">
   @if (isset($chapter['unscramble']) && $chapter['unscramble'])
   @foreach ((array) $chapter['unscramble'] as $i => $unscramble)
   <p>【解读】 {{$unscramble}}</p>
@@ -39,13 +39,6 @@
 </div>
 @php $j++; @endphp
 @endforeach
-<div id="yiwen1" class="yiwen">
-  @if (isset($datas['notes']))
-  @foreach ((array) $datas['notes'] as $i => $note)
-  <p>【译文】 {{$note}}</p>
-  @endforeach
-  @endif
-</div>
 <div id="jiedu1" class="jiedu" style="display:none;">
   @if (isset($datas['unscramble']))
   <hr />
@@ -54,3 +47,18 @@
   @endforeach
   @endif
 </div>
+<hr />
+@if (isset($datas['expound']))
+@foreach ((array) $datas['expound'] as $i => $expoundData)
+<hr />
+<div class="uix-nav uix-nav--separation uix-t-c" style="padding: 0px">
+  <!--<ul><li class="current-cat"><a style="color:#a1887f;">{{$expoundData['title']}}</a></li></ul>-->
+  <ul><li class="is-activ"><a style="background-color:#eceff1;color:#a1887f;font-size:20px">{{$expoundData['title']}}</a></li></ul>
+</div>
+<div id="yiwen1" class="yiwen">
+  @foreach ((array) $expoundData['content'] as $i => $content)
+  <p>{{$content}}</p>
+  @endforeach
+</div>
+  @endforeach
+  @endif

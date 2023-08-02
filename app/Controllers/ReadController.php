@@ -236,6 +236,7 @@ class ReadController extends AbstractController
     {
         return [
             'read' => [
+                'noUrl' => true,
                 'name' => '有效阅读',
                 'subNavs' => [
                     'classical' => ['name' => '古籍原本'],
