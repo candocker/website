@@ -217,11 +217,6 @@ class ReadController extends AbstractController
         return $tdkData;
     }
 
-    public function getBasePath()
-    {
-        return config('culture.material_path');
-    }
-
 	protected function viewPath()
 	{
 		return 'read';
@@ -267,7 +262,7 @@ class ReadController extends AbstractController
             ],
             'book' => [
                 'name' => '王灿书屋',
-                'url' => 'http://book.91zuiai.com/',
+                'url' => 'http://book.canliang.wang/',
             ],
         ];
     }

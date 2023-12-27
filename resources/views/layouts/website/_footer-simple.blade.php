@@ -6,10 +6,10 @@
                 <div class="col-lg-6 col-md-6 uix-t-r uix-t-c--md">
                     <div class="uix-footer__menu">
                         <ul>
-                            <li><a href="http://read.91zuiai.com" target="_blank">书库</a></li>
-                            <li><a href="http://book.91zuiai.com" target="_blank">电子书</a></li>
-                            <li><a href="http://blog.91zuiai.com" target="_blank">Blog</a></li>
-                            <li><a href="http://nav.91zuiai.com" target="_blank">导航</a></li>
+                            <li><a href="http://read.canliang.wang" target="_blank">书库</a></li>
+                            <li><a href="http://book.canliang.wang" target="_blank">电子书</a></li>
+                            <li><a href="http://blog.canliang.wang" target="_blank">Blog</a></li>
+                            <li><a href="http://nav.canliang.wang" target="_blank">导航</a></li>
                             <li><a href="http://wjob.canliang.wang" target="_blank">支持</a></li>
                             @if (isset($classical))
                             <li><a href="javascript:zh_tran('s');$('.showelem').toggle();" id="zh_click_s"><span>简体</span></a></li>

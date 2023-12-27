@@ -77,6 +77,7 @@ abstract class AbstractController extends AbstractControllerBase
             ];
         }
         $datas = $this->resource->formatResultDatas($datas);
+        //print_r($datas);exit();
 		return view($view, ['datas' => $datas]);
 	}
 
@@ -102,6 +103,11 @@ abstract class AbstractController extends AbstractControllerBase
         $paths = [$viewBasePath . $path];
         $finder = new FileViewFinder(App::make ('files'), $paths);
         View::setFinder ($finder);
+    }
+
+    public function getBasePath()
+    {
+        return config('culture.material_path');
     }
 
     protected function getAppcode()
