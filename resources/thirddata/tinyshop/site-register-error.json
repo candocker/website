@@ -1,0 +1,1 @@
+{"code":422,"message":"该手机号码已注册","data":{"name":"Unprocessable entity","message":"该手机号码已注册","code":0,"status":422,"type":"yii\\web\\UnprocessableEntityHttpException"},"timestamp":1706411660,"req_id":"56435488ca93917049a3b9c599f4a86b"}

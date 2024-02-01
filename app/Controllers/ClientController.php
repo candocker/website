@@ -6,6 +6,7 @@ class ClientController extends AbstractController
 {
     use TraitClient;
     use TraitApplet;
+    use TraitUnidata;
 
     public function settingHome()
     {

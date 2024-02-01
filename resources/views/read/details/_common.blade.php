@@ -48,13 +48,13 @@
 </div>
 @php $j++; @endphp
 @endforeach
-<div id="yiwen1" class="yiwen">
+<!--<div id="yiwen1" class="yiwen">
   @if (isset($datas['notes']))
   @foreach ((array) $datas['notes'] as $i => $note)
   <p>【译文】 {{$note}}</p>
   @endforeach
   @endif
-</div>
+</div>-->
 <div id="jiedu1" class="jiedu" style="display:none;">
   @if (isset($datas['unscramble']))
   <hr />
