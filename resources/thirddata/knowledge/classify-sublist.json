@@ -1,0 +1,200 @@
+{
+    "code": 0,
+    "msg": "获取子分类列表页数据成功",
+    "count": 0,
+    "time": "1711626917",
+    "data": [
+        {
+            "id": "178",
+            "acid": "1",
+            "title": "心理",
+            "status": "1",
+            "pid": "177",
+            "sort": "0",
+            "create_time": "1598499079",
+            "update_time": "1681740635",
+            "css": "0",
+            "name": null
+        },
+        {
+            "id": "182",
+            "acid": "1",
+            "title": "情感",
+            "status": "1",
+            "pid": "177",
+            "sort": "1",
+            "create_time": "1598515449",
+            "update_time": "1598515449",
+            "css": "0",
+            "name": null
+        }
+    ]
+}
+{
+    "code": 0,
+    "msg": "获取子分类列表页数据成功",
+    "count": 0,
+    "time": "1711626964",
+    "data": [
+        {
+            "id": "186",
+            "acid": "1",
+            "title": "VR全脑",
+            "status": "1",
+            "pid": "180",
+            "sort": "0",
+            "create_time": "1598515556",
+            "update_time": "1598515556",
+            "css": "0",
+            "name": null
+        },
+        {
+            "id": "187",
+            "acid": "1",
+            "title": "阅读",
+            "status": "1",
+            "pid": "180",
+            "sort": "1",
+            "create_time": "1598515576",
+            "update_time": "1598515576",
+            "css": "0",
+            "name": null
+        },
+        {
+            "id": "188",
+            "acid": "1",
+            "title": "亲子教育",
+            "status": "1",
+            "pid": "180",
+            "sort": "2",
+            "create_time": "1598515607",
+            "update_time": "1679834854",
+            "css": "0",
+            "name": null
+        },
+        {
+            "id": "198",
+            "acid": "1",
+            "title": "家庭教育",
+            "status": "1",
+            "pid": "180",
+            "sort": "4",
+            "create_time": "1599011949",
+            "update_time": "1599011949",
+            "css": "0",
+            "name": null
+        },
+        {
+            "id": "200",
+            "acid": "1",
+            "title": "在线教育",
+            "status": "1",
+            "pid": "180",
+            "sort": "5",
+            "create_time": "1611911333",
+            "update_time": "1611911333",
+            "css": "0",
+            "name": null
+        }
+    ]
+}
+{
+    "code": 0,
+    "msg": "获取子分类列表页数据成功",
+    "count": 0,
+    "time": "1711626977",
+    "data": [
+        {
+            "id": "203",
+            "acid": "1",
+            "title": "JAVA",
+            "status": "1",
+            "pid": "190",
+            "sort": "1",
+            "create_time": "1681309818",
+            "update_time": "1681309818",
+            "css": "0",
+            "name": null
+        },
+        {
+            "id": "204",
+            "acid": "1",
+            "title": "PHP",
+            "status": "1",
+            "pid": "190",
+            "sort": "2",
+            "create_time": "1681309827",
+            "update_time": "1681309827",
+            "css": "0",
+            "name": null
+        },
+        {
+            "id": "205",
+            "acid": "1",
+            "title": "GO",
+            "status": "1",
+            "pid": "190",
+            "sort": "3",
+            "create_time": "1681309835",
+            "update_time": "1681309835",
+            "css": "0",
+            "name": null
+        },
+        {
+            "id": "206",
+            "acid": "1",
+            "title": "Python",
+            "status": "1",
+            "pid": "190",
+            "sort": "4",
+            "create_time": "1681309850",
+            "update_time": "1681309850",
+            "css": "0",
+            "name": null
+        },
+        {
+            "id": "207",
+            "acid": "1",
+            "title": "JAVASCRIPT",
+            "status": "1",
+            "pid": "190",
+            "sort": "5",
+            "create_time": "1681309868",
+            "update_time": "1681309868",
+            "css": "0",
+            "name": null
+        }
+    ]
+}
+{
+    "code": 0,
+    "msg": "获取子分类列表页数据成功",
+    "count": 0,
+    "time": "1711626987",
+    "data": [
+        {
+            "id": "208",
+            "acid": "1",
+            "title": "直播带货",
+            "status": "1",
+            "pid": "194",
+            "sort": "1",
+            "create_time": "1681309893",
+            "update_time": "1681309893",
+            "css": "0",
+            "name": null
+        },
+        {
+            "id": "209",
+            "acid": "1",
+            "title": "IP塑造",
+            "status": "1",
+            "pid": "194",
+            "sort": "2",
+            "create_time": "1681309921",
+            "update_time": "1681309921",
+            "css": "0",
+            "name": null
+        }
+    ]
+}
