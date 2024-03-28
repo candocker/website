@@ -1,0 +1,56 @@
+{
+    "code": 0,
+    "msg": "获取主分类列表页数据成功",
+    "count": 0,
+    "time": "1711617933",
+    "data": [
+        {
+            "id": "177",
+            "acid": "1",
+            "title": "情感",
+            "status": "1",
+            "pid": "0",
+            "sort": "1",
+            "create_time": "1598499065",
+            "update_time": "1681740597",
+            "css": "0",
+            "name": null
+        },
+        {
+            "id": "180",
+            "acid": "1",
+            "title": "教育",
+            "status": "1",
+            "pid": "0",
+            "sort": "3",
+            "create_time": "1598509200",
+            "update_time": "1598509200",
+            "css": "0",
+            "name": null
+        },
+        {
+            "id": "190",
+            "acid": "1",
+            "title": "软件培训",
+            "status": "1",
+            "pid": "0",
+            "sort": "4",
+            "create_time": "1598515744",
+            "update_time": "1609928319",
+            "css": "0",
+            "name": null
+        },
+        {
+            "id": "194",
+            "acid": "1",
+            "title": "网红",
+            "status": "1",
+            "pid": "0",
+            "sort": "8",
+            "create_time": "1598515893",
+            "update_time": "1598515893",
+            "css": "0",
+            "name": null
+        }
+    ]
+}

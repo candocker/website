@@ -7,6 +7,7 @@ class ClientController extends AbstractController
     use TraitClient;
     use TraitApplet;
     use TraitUnidata;
+    use TraitKnowledge;
 
     public function settingHome()
     {
@@ -50,6 +51,14 @@ class ClientController extends AbstractController
         $file = "/data/backup/dealdata/{$pre}/{$module}-{$action}.json";
         $text = file($file);
         $data = json_decode($text[0], true);
+        return $this->successCustom($data);
+    }
+
+    protected function getContentData($app, $module, $action)
+    {
+        $file = $file = base_path() . "/vendor/candocker/website/resources/thirddata/{$app}/{$module}-{$action}.json";
+        $text = file_get_contents($file);
+        $data = json_decode(trim($text), true);
         return $this->successCustom($data);
     }
 }
