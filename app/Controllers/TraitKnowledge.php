@@ -7,6 +7,52 @@ use Swoolecan\Foundation\Helpers\CommonTool;
 
 trait TraitKnowledge
 {
+    public function courseList()
+    {
+        $id = rand(1, 80);
+        $infos = $this->getModelObj('infocms-course')->where('id', '>=', $id)->limit(20)->get();
+        $cData = require(base_path() . '/vendor/candocker/website/resources/knowledge/courseData.php');
+        $results = [];
+        //print_r($cData);
+        foreach ($infos as $info) {
+            $data = $this->formatCourseData($info, $cData['course'], $cData);
+            $results[] = $data;
+        }
+
+        return $this->success($results);
+    }
+
+    public function courseDetail()
+    {
+        $id = $this->request->input('id');
+        $userId = $this->request->input('uid');
+
+        $result = [];
+        $info = $this->getModelObj('infocms-course')->where(['id' => $id])->first();
+        if (empty($info)) {
+            $this->resource->throwException('参数有误');
+        }
+        $cData = require(base_path() . '/vendor/candocker/website/resources/knowledge/courseData.php');
+        //print_r($cData);
+        $result = [
+            'menuinfo' => $this->formatCourseData('course', $info, $cData),
+            'lessonInfos' => $this->formatCourseData('lesson', $info, $cData),
+            'teacherInfo' => $this->formatCourseData('teacher', $info, $cData),
+            'commentInfos' => $this->formatCourseData('comment', $info, $cData),
+            'fileInfos' => $this->formatCourseData('file', $info, $cData),
+            'homeworkInfos' => $this->formatCourseData('dianping', $info, $cData),
+            'is_dingyue' => rand(0, 1),
+        ];
+
+        /*$file = base_path() . '/vendor/candocker/website/resources/thirddata/knowledge/course-detail.json';
+        $text = file_get_contents($file);
+        $datas = json_decode(trim($text), true);
+        $result = $datas[$id] ?? $datas[3];*/
+        //print_r($result);
+
+        return $this->success($result);
+    }
+
     public function knowledgeData($module, $action)
     {
         return $this->getContentData('knowledge', $module, $action);
@@ -25,18 +71,32 @@ trait TraitKnowledge
     public function homeDataMobile()
     {
         $result = $this->getContentData('knowledge', 'home-data', 'mobile', 'array');
-        $result['data']['classify'] = $this->_classifyDatas(0);
+        $result['data']['classify'] = $this->_classifyDatas('');
         return $this->successCustom($result);
     }
 
     public function classifyDatas()
     {
-        $pid = $this->request->input('pid', 0);
-        $result = $this->_classifyDatas($pid);
+        $parentCode = $this->request->input('parent_code', '');
+        $result = $this->_classifyDatas($parentCode);
         return $this->success($result);
     }
 
-    public function _classifyDatas($pid = null)
+    public function _classifyDatas($parentCode = null)
+    {
+        $results = [];
+        $infos = $this->getModelObj('infocms-category')->where(['parent_code' => $parentCode])->orderBy('orderlist', 'desc')->get();
+        foreach ($infos as $info) {
+            //print_r($info->toArray());exit();
+            $results[] = [
+                'name' => $info->name,
+                'code' => $info->code,
+            ];
+        }
+        return $results;
+    }
+
+    /*public function _classifyDatas($pid = null)
     {
         $datas = [
             ['id' => '177', 'title' => '儒家', 'pid' => '0', 'sort' => '1'],
@@ -77,5 +137,123 @@ trait TraitKnowledge
             $result[] = $data;
         }
         return $result;
+    }*/
+
+    public function createCourses()
+    {
+        $fInfos = $this->getModelObj('infocms-category')->where(['parent_code' => ''])->orderBy('orderlist', 'desc')->get();
+        foreach ($fInfos as $fInfo) {
+            $infos = $this->getModelObj('infocms-category')->where(['parent_code' => $fInfo['parent_code']])->orderBy('orderlist', 'desc')->get();
+            foreach ($infos as $info) {
+                $cNum = rand(3, 6);
+                for ($i = 1; $i <= $cNum; $i++) {
+                    $title = $fInfo['name'] . '-' . $info['name'];
+                    $data = [
+                        'category_code' => $info['code'],
+                        'name' => $title,
+                        'title' => $title,
+                    ];
+                    $course = $this->getModelObj('infocms-course')->create($data);
+                    $course->createSectionLessons();
+                }
+            }
+        }
     }
+
+    public function formatCourseData($type, $info, $courseData)
+    {
+        if ($type == 'course') {
+            $data = $courseData['course'];
+            $data['new_yxqdata'] = $courseData['new_yxqdata'];
+    
+            $data['id'] = $info['id'];
+            $data['title'] = $info['id'] . '-' . $info['title'];
+            $data['thumb'] = $courseData['thumbs'][rand(0, 13)];
+            return $data;
+        }
+        if ($type == 'lesson') {
+            $lInfos = $this->getModelObj('infocms-lesson')->where(['course_id' => $info['id']])->get();
+            $results = [];
+            foreach ($lInfos as $lInfo) {
+                $lData = $courseData['lesson'];
+                $lData['id'] = $lInfo['id'];
+                $lData['name'] = $lInfo['name'];
+                $results[] = $lData;
+            }
+            return $results;
+        }
+        if ($type == 'teacher') {
+            //$lInfos = $this->getModelObj('infocms-teacher')->where(['course_id' => $info['id']])->get();
+            $tData = $courseData['teacher'];
+            return $tData;
+        }
+        if ($type == 'file') {
+            $cInfos = [];//$this->getModelObj('infocms-comment')->where(['course_id' => $info['id']])->get();
+            $results = [];
+            $randNum = rand(5, 10);
+            //foreach ($lInfos as $lInfo) {
+            for ($i = 1; $i <= $randNum; $i++) {
+                $fData = $courseData['file'];
+                $results[] = $fData;
+            }
+            return $results;
+        }
+        if ($type == 'comment') {
+            $cInfos = [];//$this->getModelObj('infocms-comment')->where(['course_id' => $info['id']])->get();
+            $results = [];
+            $randNum = rand(5, 10);
+            //foreach ($lInfos as $lInfo) {
+            for ($i = 1; $i <= $randNum; $i++) {
+                $cData = $courseData['comment'];
+                $results[] = $cData;
+            }
+            return $results;
+        }
+        if ($type == 'dianping') {
+            $dInfos = [];//$this->getModelObj('infocms-comment')->where(['course_id' => $info['id']])->get();
+            $results = [];
+            $randNum = rand(5, 10);
+            //foreach ($lInfos as $lInfo) {
+            for ($i = 1; $i <= $randNum; $i++) {
+                $dData = $courseData['dianping'];
+                $results[] = $dData;
+            }
+            return $results;
+        }
+    }
+
+    public function createCourseData()
+    {
+        $courseElems = [];
+
+        $detailFile = base_path() . '/vendor/candocker/website/resources/thirddata/knowledge/course-detail.json';
+        $detailText = file_get_contents($detailFile);
+        $detailDatas = json_decode(trim($detailText), true);
+        $detailData = $detailDatas[3];
+        $courseElems['new_yxqdata'] = $detailData['menuinfo']['new_yxqdata'];
+        $courseElems['lesson'] = $detailData['courses'][0];
+        $courseElems['teacher'] = $detailData['teacher'];
+        $courseElems['comment'] = $detailData['comment'][0];
+        $courseElems['file'] = $detailData['files'][0];
+        $courseElems['dianping'] = $detailData['dianpings'][0];
+
+        $thumbs = [];
+        $descs = [];
+        $id = $this->request->input('id');
+        $userId = $this->request->input('uid');
+        $file = base_path() . '/vendor/candocker/website/resources/thirddata/knowledge/course-all.json';
+        $text = file_get_contents($file);
+        $datas = json_decode(trim($text), true);
+        foreach ($datas['data'] as $data) {
+            $descs[] = $data['introduce'];
+            $thumbs[] = $data['thumb'];
+            //print_r($data);exit();
+        }
+        $courseElems['course'] = $data;
+        $courseElems['thumbs'] = $thumbs;
+        $courseElems['descs'] = $descs;
+        var_export($courseElems);
+        exit();
+    }
+
 }
