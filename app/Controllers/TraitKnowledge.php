@@ -9,17 +9,29 @@ trait TraitKnowledge
 {
     public function courseList()
     {
-        $id = rand(1, 80);
-        $infos = $this->getModelObj('infocms-course')->where('id', '>=', $id)->limit(20)->get();
+        //$this->createCourses();exit();
+        $query = $this->getModelObj('infocms-course');
+        $query = $this->formatParams($query, $this->request->all());
+        $infos = $query->limit(20)->get();
         $cData = require(base_path() . '/vendor/candocker/website/resources/knowledge/courseData.php');
         $results = [];
         //print_r($cData);
         foreach ($infos as $info) {
-            $data = $this->formatCourseData($info, $cData['course'], $cData);
+            $data = $this->formatCourseData('course', $info, $cData);
             $results[] = $data;
         }
 
         return $this->success($results);
+    }
+
+    public function formatParams($query, $params)
+    {
+        $categoryCode = $params['category_code'] ?? '';
+        if (!empty($categoryCode)) {
+            $cDatas = $this->getModelObj('infocms-category')->where(['code' => $categoryCode])->orWhere(['parent_code' => $categoryCode])->pluck('code');
+            $query = $query->whereIn('category_code', $cDatas);
+        }
+        return $query;
     }
 
     public function courseDetail()
@@ -30,7 +42,7 @@ trait TraitKnowledge
         $result = [];
         $info = $this->getModelObj('infocms-course')->where(['id' => $id])->first();
         if (empty($info)) {
-            $this->resource->throwException('参数有误');
+            $this->resource->throwException(400, '参数有误');
         }
         $cData = require(base_path() . '/vendor/candocker/website/resources/knowledge/courseData.php');
         //print_r($cData);
@@ -141,23 +153,62 @@ trait TraitKnowledge
 
     public function createCourses()
     {
+        /*$courses = $this->getModelObj('infocms-course')->get();
+        $str = '';
+        foreach ($courses as $course) {
+            $courseId = $course['id'];
+            $courseSql = "UPDATE `wp_course` SET `name` = '', `title` = '', `cover_url` = '', `description` = '' WHERE `wp_course`.`id` = {$courseId}; // {$course['name']}\n";
+            $str .= $courseSql;
+            $sections = $this->getModelObj('infocms-section')->where(['course_id' => $courseId])->get();
+            foreach ($sections as $section) {
+                $sectionId = $section['id'];
+                $sectionSql = "UPDATE `wp_section` SET `name` = '', `description` = '' WHERE `wp_section`.`id` = {$sectionId}; // {$section['name']}\n";
+                $str .= $sectionSql;
+                $lessons = $this->getModelObj('infocms-lesson')->where(['section_id' => $sectionId])->get();
+                foreach ($lessons as $lesson) {
+                    $lessonSql = "UPDATE `wp_lesson` SET `name` = '' WHERE `wp_lesson`.`id` = {$lesson['id']}; // {$lesson['name']}\n";
+                    $str .= $lessonSql;
+                }
+                $str .= "\n\n";
+            }
+            $str .= "\n\n";
+        }
+        echo $str;exit();*/
+        $sqlPre = "INSERT INTO `wp_course` (`category_code`, `name`, `title`, `cover_url`, `description`, `created_at`, `updated_at`) VALUES \n";
+        $lsqlPre = "INSERT INTO `wp_lesson` (`course_id`, `name`, `orderlist`, `created_at`, `updated_at`) VALUES \n";
         $fInfos = $this->getModelObj('infocms-category')->where(['parent_code' => ''])->orderBy('orderlist', 'desc')->get();
+        $sql = '';
         foreach ($fInfos as $fInfo) {
-            $infos = $this->getModelObj('infocms-category')->where(['parent_code' => $fInfo['parent_code']])->orderBy('orderlist', 'desc')->get();
+            $infos = $this->getModelObj('infocms-category')->where(['parent_code' => $fInfo['code']])->orderBy('orderlist', 'desc')->get();
             foreach ($infos as $info) {
-                $cNum = rand(3, 6);
+                $sql .= "-- {$fInfo['name']}-{$info['name']}\n";
+                $sql .= "{$sqlPre} ('{$info['code']}', '', '', '', '', NOW(), NOW());\n";
+                $sql .= "{$lsqlPre} ('', '', '1', NOW(), NOW());\n";
+                //echo $sql;exit();
+            }
+        }
+        echo $sql;
+        exit();
+        /*$fInfos = $this->getModelObj('infocms-category')->where(['parent_code' => ''])->orderBy('orderlist', 'desc')->get();
+        foreach ($fInfos as $fInfo) {
+            $infos = $this->getModelObj('infocms-category')->where(['parent_code' => $fInfo['code']])->orderBy('orderlist', 'desc')->get();
+            foreach ($infos as $info) {
+                $cNum = rand(3, 5);
+                echo $cNum;
                 for ($i = 1; $i <= $cNum; $i++) {
-                    $title = $fInfo['name'] . '-' . $info['name'];
+                    $title = $i . '_' . $fInfo['name'] . '-' . $info['name'];
                     $data = [
                         'category_code' => $info['code'],
                         'name' => $title,
                         'title' => $title,
                     ];
+                    //print_r($data);
                     $course = $this->getModelObj('infocms-course')->create($data);
                     $course->createSectionLessons();
                 }
             }
         }
+        print_r($datas);*/
     }
 
     public function formatCourseData($type, $info, $courseData)
@@ -167,8 +218,12 @@ trait TraitKnowledge
             $data['new_yxqdata'] = $courseData['new_yxqdata'];
     
             $data['id'] = $info['id'];
-            $data['title'] = $info['id'] . '-' . $info['title'];
-            $data['thumb'] = $courseData['thumbs'][rand(0, 13)];
+            $data['courseName'] = $info['name'];
+            $data['courseTitle'] = $info['title'];
+            $data['lessonNum'] = $info['lesson_num'];
+            $data['categoryName'] = '鲁迅作品';
+            //$data['menuname'] = $info['id'] . '-' . $info['title'];
+            $data['thumb'] = $info['cover_url'] ?: 'http://upfile.canliang.wang/course/cover/common.jpg';
             return $data;
         }
         if ($type == 'lesson') {
@@ -177,7 +232,7 @@ trait TraitKnowledge
             foreach ($lInfos as $lInfo) {
                 $lData = $courseData['lesson'];
                 $lData['id'] = $lInfo['id'];
-                $lData['name'] = $lInfo['name'];
+                $lData['coursename'] = $lInfo['name'];
                 $results[] = $lData;
             }
             return $results;
