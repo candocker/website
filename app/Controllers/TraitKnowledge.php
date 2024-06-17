@@ -218,8 +218,8 @@ trait TraitKnowledge
             $data['new_yxqdata'] = $courseData['new_yxqdata'];
     
             $data['id'] = $info['id'];
-            $data['courseName'] = $info['name'];
-            $data['courseTitle'] = $info['title'];
+            $data['menuname'] = $info['name'];
+            $data['jianjie'] = $info['title'];
             $data['lessonNum'] = $info['lesson_num'];
             $data['categoryName'] = '鲁迅作品';
             //$data['menuname'] = $info['id'] . '-' . $info['title'];
