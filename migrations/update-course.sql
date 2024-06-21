@@ -1,121 +1,45 @@
-
--- 外国历史-古文明帝国
+-- 外国历史-历史专题
 INSERT INTO `wp_course` (`category_code`, `name`, `title`, `cover_url`, `description`, `created_at`, `updated_at`) VALUES
- ('guwenmingdiguo', '古埃及', '', '', '', NOW(), NOW());
+ ('waiguoshihuibian', '安纳托利亚小亚细亚半岛', '', '', '', NOW(), NOW());
 INSERT INTO `wp_lesson` (`course_id`, `name`, `orderlist`, `created_at`, `updated_at`) VALUES
- ('113', '古风时代(1-2王朝，前4000-前2700)', '1', NOW(), NOW()),
- ('113', '古典时代-古王国(3-8王朝，前2700-前2180)', '1', NOW(), NOW()),
- ('113', '古典时代-第一中间期(9-10王朝，前2180-前2040)', '1', NOW(), NOW()),
- ('113', '古典时代-中王国时期(11-12王朝，前2040-前1786)', '1', NOW(), NOW()),
- ('113', '古典时代-第二中间期(13-17王朝，前1786-前1550)', '1', NOW(), NOW()),
- ('113', '帝国时代-新王国时期(18-20王朝，前1550-前1069)', '1', NOW(), NOW()),
- ('113', '帝国时代-第三中间期(21-25王朝，前1069-前664)', '1', NOW(), NOW()),
- ('113', '帝国时代-晚王国时期(26-31王朝，前664-前332)', '1', NOW(), NOW()),
- ('113', '希腊化时代-托勒密(31-32王朝，前330-前30)', '1', NOW(), NOW()),
- ('113', '罗马时代(埃及行省，前30-639年)', '1', NOW(), NOW());
+ ('122', '赫梯文明阶段', '1', NOW(), NOW()),
+ ('122', '波斯阶段', '1', NOW(), NOW()),
+ ('122', '希腊阶段', '1', NOW(), NOW()),
+ ('122', '罗马阶段', '1', NOW(), NOW()),
+ ('122', '突厥阶段', '1', NOW(), NOW()),
+ ('122', '今天的土耳其', '1', NOW(), NOW());
 
--- 外国历史-古文明帝国
+-- 外国历史-历史专题
 INSERT INTO `wp_course` (`category_code`, `name`, `title`, `cover_url`, `description`, `created_at`, `updated_at`) VALUES
- ('guwenmingdiguo', '美索不达米亚', '', '', '', NOW(), NOW());
+ ('waiguoshihuibian', '文艺复兴和启蒙运动', '', '', '', NOW(), NOW());
 INSERT INTO `wp_lesson` (`course_id`, `name`, `orderlist`, `created_at`, `updated_at`) VALUES
- ('114', '阿卡德王国', '1', NOW(), NOW()),
- ('114', '乌尔王朝', '1', NOW(), NOW()),
- ('114', '古巴比伦王国', '1', NOW(), NOW()),
- ('114', '亚述帝国', '1', NOW(), NOW()),
- ('114', '新巴比伦王国', '1', NOW(), NOW());
+ ('123', '文艺复兴的起源', '1', NOW(), NOW()),
+ ('123', '文艺复兴的爆发', '1', NOW(), NOW()),
+ ('123', '文艺复兴代表人物', '1', NOW(), NOW()),
+ ('123', '文艺复兴的影响', '1', NOW(), NOW()),
+ ('123', '启蒙运动的发展历程', '1', NOW(), NOW()),
+ ('123', '启蒙运动代表人物', '1', NOW(), NOW()),
+ ('123', '启蒙运动的影响', '1', NOW(), NOW());
 
--- 外国历史-古文明帝国
+-- 外国历史-历史专题
 INSERT INTO `wp_course` (`category_code`, `name`, `title`, `cover_url`, `description`, `created_at`, `updated_at`) VALUES
- ('guwenmingdiguo', '波斯帝国', '', '', '', NOW(), NOW());
+ ('waiguoshihuibian', '资产阶级大革命和社会主义革命', '', '', '', NOW(), NOW());
 INSERT INTO `wp_lesson` (`course_id`, `name`, `orderlist`, `created_at`, `updated_at`) VALUES
- ('115', '从米底王国到波斯帝国', '1', NOW(), NOW()),
- ('115', '统一两河流域', '1', NOW(), NOW()),
- ('115', '希波战争', '1', NOW(), NOW()),
- ('115', '亚历山大终结波斯帝国', '1', NOW(), NOW()),
- ('115', '波斯帝国国王图谱', '1', NOW(), NOW());
-
--- 外国历史-古文明帝国
-INSERT INTO `wp_course` (`category_code`, `name`, `title`, `cover_url`, `description`, `created_at`, `updated_at`) VALUES
- ('guwenmingdiguo', '古希腊', '', '', '', NOW(), NOW());
-INSERT INTO `wp_lesson` (`course_id`, `name`, `orderlist`, `created_at`, `updated_at`) VALUES
- ('116', '爱琴文明，克里特岛文明与迈锡尼文明', '1', NOW(), NOW()),
- ('116', '前776年的奥林匹克运动会', '1', NOW(), NOW()),
- ('116', '雅典和斯巴达', '1', NOW(), NOW()),
- ('116', '希波战争', '1', NOW(), NOW()),
- ('116', '伯罗奔尼撒战争', '1', NOW(), NOW()),
- ('116', '马其顿的崛起和希腊的灭亡', '1', NOW(), NOW()),
- ('116', '希腊化时代', '1', NOW(), NOW());
-
--- 外国历史-古文明帝国
-INSERT INTO `wp_course` (`category_code`, `name`, `title`, `cover_url`, `description`, `created_at`, `updated_at`) VALUES
- ('guwenmingdiguo', '亚历山大帝国', '', '', '', NOW(), NOW());
-INSERT INTO `wp_lesson` (`course_id`, `name`, `orderlist`, `created_at`, `updated_at`) VALUES
- ('117', '马其顿王国的崛起', '1', NOW(), NOW()),
- ('117', '腓力征服希腊', '1', NOW(), NOW()),
- ('117', '亚历山大和他的战功', '1', NOW(), NOW()),
- ('117', '昙花一现的亚历山大帝国', '1', NOW(), NOW()),
- ('117', '托勒密王国', '1', NOW(), NOW()),
- ('117', '塞琉西王国', '1', NOW(), NOW()),
- ('117', '马其顿王国', '1', NOW(), NOW());
-
--- 外国历史-古文明帝国
-INSERT INTO `wp_course` (`category_code`, `name`, `title`, `cover_url`, `description`, `created_at`, `updated_at`) VALUES
- ('guwenmingdiguo', '罗马帝国', '', '', '', NOW(), NOW());
-INSERT INTO `wp_lesson` (`course_id`, `name`, `orderlist`, `created_at`, `updated_at`) VALUES
- ('118', '', '1', NOW(), NOW()),
- ('118', '', '1', NOW(), NOW()),
- ('118', '', '1', NOW(), NOW()),
- ('118', '', '1', NOW(), NOW()),
- ('118', '', '1', NOW(), NOW()),
- ('118', '', '1', NOW(), NOW()),
-
--- 外国历史-古文明帝国
-INSERT INTO `wp_course` (`category_code`, `name`, `title`, `cover_url`, `description`, `created_at`, `updated_at`) VALUES
- ('guwenmingdiguo', '拜占庭帝国', '', '', '', NOW(), NOW());
-INSERT INTO `wp_lesson` (`course_id`, `name`, `orderlist`, `created_at`, `updated_at`) VALUES
- ('118', '', '1', NOW(), NOW()),
-
--- 外国历史-古文明帝国
-INSERT INTO `wp_course` (`category_code`, `name`, `title`, `cover_url`, `description`, `created_at`, `updated_at`) VALUES
- ('guwenmingdiguo', '阿拉伯帝国', '', '', '', NOW(), NOW());
-INSERT INTO `wp_lesson` (`course_id`, `name`, `orderlist`, `created_at`, `updated_at`) VALUES
- ('119', '', '1', NOW(), NOW()),
-
--- 外国历史-古文明帝国
-INSERT INTO `wp_course` (`category_code`, `name`, `title`, `cover_url`, `description`, `created_at`, `updated_at`) VALUES
- ('guwenmingdiguo', '阿巴斯王朝', '', '', '', NOW(), NOW());
-INSERT INTO `wp_lesson` (`course_id`, `name`, `orderlist`, `created_at`, `updated_at`) VALUES
- ('120', '', '1', NOW(), NOW()),
-
--- 外国历史-古文明帝国
-INSERT INTO `wp_course` (`category_code`, `name`, `title`, `cover_url`, `description`, `created_at`, `updated_at`) VALUES
- ('guwenmingdiguo', '奥斯曼帝国', '', '', '', NOW(), NOW());
-INSERT INTO `wp_lesson` (`course_id`, `name`, `orderlist`, `created_at`, `updated_at`) VALUES
- ('121', '', '1', NOW(), NOW()),
-
--- 外国历史-古文明帝国
-INSERT INTO `wp_course` (`category_code`, `name`, `title`, `cover_url`, `description`, `created_at`, `updated_at`) VALUES
- ('guwenmingdiguo', '', '', '', '', NOW(), NOW());
-INSERT INTO `wp_lesson` (`course_id`, `name`, `orderlist`, `created_at`, `updated_at`) VALUES
- ('120', '', '1', NOW(), NOW()),
-
--- 外国历史-古文明帝国
-INSERT INTO `wp_course` (`category_code`, `name`, `title`, `cover_url`, `description`, `created_at`, `updated_at`) VALUES
- ('guwenmingdiguo', '', '', '', '', NOW(), NOW());
-INSERT INTO `wp_lesson` (`course_id`, `name`, `orderlist`, `created_at`, `updated_at`) VALUES
- ('', '', '1', NOW(), NOW());
-
--- 外国历史-中东史
-INSERT INTO `wp_course` (`category_code`, `name`, `title`, `cover_url`, `description`, `created_at`, `updated_at`) VALUES
- ('yisilanlishi', '', '', '', '', NOW(), NOW());
-INSERT INTO `wp_lesson` (`course_id`, `name`, `orderlist`, `created_at`, `updated_at`) VALUES
- ('', '', '1', NOW(), NOW());
+ ('124', '资产阶级的萌芽和发展', '1', NOW(), NOW()),
+ ('124', '英国光荣革命', '1', NOW(), NOW()),
+ ('124', '美国独立战争', '1', NOW(), NOW()),
+ ('124', '法国大革命', '1', NOW(), NOW()),
+ ('124', '拿破仑帝国', '1', NOW(), NOW()),
+ ('124', '社会主任革命的萌芽和发展', '1', NOW(), NOW()),
+ ('124', '巴黎公社', '1', NOW(), NOW()),
+ ('124', '共产国际', '1', NOW(), NOW()),
+ ('124', '苏联和苏联的解体', '1', NOW(), NOW());
 
 -- 外国历史-历史专题
 INSERT INTO `wp_course` (`category_code`, `name`, `title`, `cover_url`, `description`, `created_at`, `updated_at`) VALUES
  ('waiguoshihuibian', '', '', '', '', NOW(), NOW());
 INSERT INTO `wp_lesson` (`course_id`, `name`, `orderlist`, `created_at`, `updated_at`) VALUES
- ('', '', '1', NOW(), NOW());
+ ('12', '', '1', NOW(), NOW()),
 
 
 
@@ -1626,4 +1550,127 @@ INSERT INTO `wp_course` (`category_code`, `name`, `title`, `cover_url`, `descrip
 INSERT INTO `wp_lesson` (`course_id`, `name`, `orderlist`, `created_at`, `updated_at`) VALUES
  ('', '简史', '1', NOW(), NOW()),
  ('', '', '1', NOW(), NOW()),
+
+
+-- 外国历史-古代帝国
+INSERT INTO `wp_course` (`category_code`, `name`, `title`, `cover_url`, `description`, `created_at`, `updated_at`) VALUES
+ ('gudaidiguo', '古埃及', '', '', '', NOW(), NOW());
+INSERT INTO `wp_lesson` (`course_id`, `name`, `orderlist`, `created_at`, `updated_at`) VALUES
+ ('113', '古风时代(1-2王朝，前4000-前2700)', '1', NOW(), NOW()),
+ ('113', '古典时代-古王国(3-8王朝，前2700-前2180)', '1', NOW(), NOW()),
+ ('113', '古典时代-第一中间期(9-10王朝，前2180-前2040)', '1', NOW(), NOW()),
+ ('113', '古典时代-中王国时期(11-12王朝，前2040-前1786)', '1', NOW(), NOW()),
+ ('113', '古典时代-第二中间期(13-17王朝，前1786-前1550)', '1', NOW(), NOW()),
+ ('113', '帝国时代-新王国时期(18-20王朝，前1550-前1069)', '1', NOW(), NOW()),
+ ('113', '帝国时代-第三中间期(21-25王朝，前1069-前664)', '1', NOW(), NOW()),
+ ('113', '帝国时代-晚王国时期(26-31王朝，前664-前332)', '1', NOW(), NOW()),
+ ('113', '希腊化时代-托勒密(31-32王朝，前330-前30)', '1', NOW(), NOW()),
+ ('113', '罗马时代(埃及行省，前30-639年)', '1', NOW(), NOW());
+
+-- 外国历史-古代帝国
+INSERT INTO `wp_course` (`category_code`, `name`, `title`, `cover_url`, `description`, `created_at`, `updated_at`) VALUES
+ ('gudaidiguo', '美索不达米亚', '', '', '', NOW(), NOW());
+INSERT INTO `wp_lesson` (`course_id`, `name`, `orderlist`, `created_at`, `updated_at`) VALUES
+ ('114', '阿卡德王国', '1', NOW(), NOW()),
+ ('114', '乌尔王朝', '1', NOW(), NOW()),
+ ('114', '古巴比伦王国', '1', NOW(), NOW()),
+ ('114', '亚述帝国', '1', NOW(), NOW()),
+ ('114', '新巴比伦王国', '1', NOW(), NOW());
+
+-- 外国历史-古代帝国
+INSERT INTO `wp_course` (`category_code`, `name`, `title`, `cover_url`, `description`, `created_at`, `updated_at`) VALUES
+ ('gudaidiguo', '波斯帝国', '', '', '', NOW(), NOW());
+INSERT INTO `wp_lesson` (`course_id`, `name`, `orderlist`, `created_at`, `updated_at`) VALUES
+ ('115', '从米底王国到波斯帝国', '1', NOW(), NOW()),
+ ('115', '统一两河流域', '1', NOW(), NOW()),
+ ('115', '希波战争', '1', NOW(), NOW()),
+ ('115', '亚历山大终结波斯帝国', '1', NOW(), NOW()),
+ ('115', '波斯帝国国王图谱', '1', NOW(), NOW());
+
+-- 外国历史-古代帝国
+INSERT INTO `wp_course` (`category_code`, `name`, `title`, `cover_url`, `description`, `created_at`, `updated_at`) VALUES
+ ('gudaidiguo', '古希腊', '', '', '', NOW(), NOW());
+INSERT INTO `wp_lesson` (`course_id`, `name`, `orderlist`, `created_at`, `updated_at`) VALUES
+ ('116', '爱琴文明，克里特岛文明与迈锡尼文明', '1', NOW(), NOW()),
+ ('116', '前776年的奥林匹克运动会', '1', NOW(), NOW()),
+ ('116', '雅典和斯巴达', '1', NOW(), NOW()),
+ ('116', '希波战争', '1', NOW(), NOW()),
+ ('116', '伯罗奔尼撒战争', '1', NOW(), NOW()),
+ ('116', '马其顿的崛起和希腊的灭亡', '1', NOW(), NOW()),
+ ('116', '希腊化时代', '1', NOW(), NOW());
+
+-- 外国历史-古代帝国
+INSERT INTO `wp_course` (`category_code`, `name`, `title`, `cover_url`, `description`, `created_at`, `updated_at`) VALUES
+ ('gudaidiguo', '亚历山大帝国', '', '', '', NOW(), NOW());
+INSERT INTO `wp_lesson` (`course_id`, `name`, `orderlist`, `created_at`, `updated_at`) VALUES
+ ('117', '马其顿王国的崛起', '1', NOW(), NOW()),
+ ('117', '腓力征服希腊', '1', NOW(), NOW()),
+ ('117', '亚历山大和他的战功', '1', NOW(), NOW()),
+ ('117', '昙花一现的亚历山大帝国', '1', NOW(), NOW()),
+ ('117', '托勒密王国', '1', NOW(), NOW()),
+ ('117', '塞琉西王国', '1', NOW(), NOW()),
+ ('117', '马其顿王国', '1', NOW(), NOW());
+
+-- 外国历史-古代帝国
+INSERT INTO `wp_course` (`category_code`, `name`, `title`, `cover_url`, `description`, `created_at`, `updated_at`) VALUES
+ ('gudaidiguo', '罗马帝国', '', '', '', NOW(), NOW());
+INSERT INTO `wp_lesson` (`course_id`, `name`, `orderlist`, `created_at`, `updated_at`) VALUES
+ ('118', '王政时代(公元前8世纪-前590年)', '1', NOW(), NOW()),
+ ('118', '共和时代(前509-395年)', '1', NOW(), NOW()),
+ ('118', '帝国时代(395-476年)', '1', NOW(), NOW()),
+ ('118', '帝国的分裂与灭亡(395-476,1453)', '1', NOW(), NOW()),
+ ('118', '帝国的建立和鼎盛', '1', NOW(), NOW()),
+ ('118', '危机和分治', '1', NOW(), NOW()),
+ ('118', '西罗马帝国的灭亡', '1', NOW(), NOW()),
+ ('118', '罗马帝国的后续影响', '1', NOW(), NOW()),
+ ('118', '凯撒和屋大维', '1', NOW(), NOW()),
+ ('118', '罗马和基督教', '1', NOW(), NOW()),
+ ('118', '罗马帝王', '1', NOW(), NOW());
+
+-- 外国历史-古代帝国
+INSERT INTO `wp_course` (`category_code`, `name`, `title`, `cover_url`, `description`, `created_at`, `updated_at`) VALUES
+ ('gudaidiguo', '拜占庭帝国', '', '', '', NOW(), NOW());
+INSERT INTO `wp_lesson` (`course_id`, `name`, `orderlist`, `created_at`, `updated_at`) VALUES
+ ('119', '查士丁尼王朝', '1', NOW(), NOW()),
+ ('119', '希拉克略王朝', '1', NOW(), NOW()),
+ ('119', '伊苏里亚王朝', '1', NOW(), NOW()),
+ ('119', '弗里吉亚王朝', '1', NOW(), NOW()),
+ ('119', '马其顿王朝', '1', NOW(), NOW()),
+ ('119', '杜卡斯王朝', '1', NOW(), NOW()),
+ ('119', '科穆宁王朝', '1', NOW(), NOW()),
+ ('119', '安格鲁斯王朝', '1', NOW(), NOW()),
+ ('119', '尼西亚流亡政府', '1', NOW(), NOW()),
+ ('119', '帕列奥列格王朝', '1', NOW(), NOW()),
+ ('119', '东罗马和西罗马', '1', NOW(), NOW()),
+ ('119', '拜占庭和伊斯兰教', '1', NOW(), NOW()),
+ ('119', '拜占庭和土耳其', '1', NOW(), NOW()),
+ ('119', '拜占庭帝国帝王图谱', '1', NOW(), NOW());
+
+-- 外国历史-古代帝国
+INSERT INTO `wp_course` (`category_code`, `name`, `title`, `cover_url`, `description`, `created_at`, `updated_at`) VALUES
+ ('gudaidiguo', '阿拉伯帝国', '', '', '', NOW(), NOW());
+INSERT INTO `wp_lesson` (`course_id`, `name`, `orderlist`, `created_at`, `updated_at`) VALUES
+ ('120', '默罕默德创国和帝国的形成', '1', NOW(), NOW()),
+ ('120', '四大哈里发时期', '1', NOW(), NOW()),
+ ('120', '倭马亚王朝', '1', NOW(), NOW()),
+ ('120', '阿巴斯王朝', '1', NOW(), NOW()),
+ ('120', '分裂和灭亡', '1', NOW(), NOW());
+
+
+-- 外国历史-古代帝国
+INSERT INTO `wp_course` (`category_code`, `name`, `title`, `cover_url`, `description`, `created_at`, `updated_at`) VALUES
+ ('gudaidiguo', '奥斯曼帝国', '', '', '', NOW(), NOW());
+INSERT INTO `wp_lesson` (`course_id`, `name`, `orderlist`, `created_at`, `updated_at`) VALUES
+ ('121', '帝国的兴起和扩张(1258-1453年)', '1', NOW(), NOW()),
+ ('121', '鼎盛时期(1453-1683年)', '1', NOW(), NOW()),
+ ('121', '停滞和平庸', '1', NOW(), NOW()),
+ ('121', '衰落和瓦解', '1', NOW(), NOW()),
+ ('121', '与俄国的历史渊源', '1', NOW(), NOW()),
+ ('121', '帝国的苏丹', '1', NOW(), NOW());
+
+-- 外国历史-古代帝国
+INSERT INTO `wp_course` (`category_code`, `name`, `title`, `cover_url`, `description`, `created_at`, `updated_at`) VALUES
+ ('gudaidiguo', '', '', '', '', NOW(), NOW());
+INSERT INTO `wp_lesson` (`course_id`, `name`, `orderlist`, `created_at`, `updated_at`) VALUES
+ ('', '', '1', NOW(), NOW());
 
