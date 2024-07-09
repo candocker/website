@@ -59,6 +59,7 @@ class ClientController extends AbstractController
         $file = base_path() . "/vendor/candocker/website/resources/thirddata/{$app}/{$module}-{$action}.json";
         $text = file_get_contents($file);
         $data = json_decode(trim($text), true);
+        //var_export($data);exit();
         if ($returnType == 'array') {
             return $data;
         }
