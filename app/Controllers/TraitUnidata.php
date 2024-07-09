@@ -16,23 +16,68 @@ trait TraitUnidata
         return $this->getContentData($app, $module, $action);
     }
 
+    public function _postsList_last2($app)
+    {
+        $types = [
+            'zhuige_vote' => 'vote',
+            'zhuige_bbs_topic' => 'topic',
+            'zhuige_goods' => 'score',
+            'zhuige_business_card' => 'merchant',
+            'zhuige_res' => 'knowledge',
+            'zhuige_column' => 'course',
+            'post' => 'article',
+            'zhuige_activity' => 'activity',
+        ];
+        $type = $this->request->input('post_type');
+        $type = $types[$type] ?? 'topic';
+        $items = $this->getCircleDatas($type);
+        return [
+            'code' => 0,
+            'message' => '操作成功！',
+            'data' => ['sticky_count' => 0, 'topics' => $items, 'more' => 'nomore'],
+        ];
+    }
+
     public function _settingHome($app)
     {
         $file = base_path() . "/vendor/candocker/website/resources/formatdata/{$app}/home.php";
-        $fileKnowledge = base_path() . "/vendor/candocker/website/resources/formatdata/{$app}/knowledge.php";
         $baseData = require($file);
-        $num = rand(3, 10);
+
+        /*$types = [
+            //'zhuige_vote' => 'vote',
+            //'zhuige_bbs_topic' => 'topic',
+            'zhuige_goods' => 'score',
+            //'zhuige_business_card' => 'merchant',
+            'zhuige_res' => 'knowledge',
+            'zhuige_column' => 'course',
+            'post' => 'article',
+            'zhuige_activity' => 'activity',
+        ];
+        foreach ($types as $type => $file) {
+            $items = $this->getCircleDatas($file);
+            $pData = [
+                'title' => $type,
+                'post_type' => $type,
+                'items' => $items,
+            ];
+            if ($file == 'activity') {
+                $pData['banner'] = 'https://www.zhuige.com/uploads/20210912/7099f99f590b2a09b50fb4328fe12e50.png';
+                $pData['subtitle'] = 'subtitle';
+            }
+            $baseData['data']['rec_posts'][] = $pData;
+        }*/
+        //print_r($baseData);
+        return $baseData;
+    }
+
+    public function getCircleDatas($type)
+    {
+        $num = rand(3, 6);
+        $fileKnowledge = base_path() . "/vendor/candocker/website/resources/formatdata/circle/{$type}.php";
         $items = [];
         for ($i = 0; $i <= $num; $i++) {
             $items[] = require($fileKnowledge);
         }
-        //print_r($items);
-        //print_r($baseData);
-        $baseData['data']['rec_posts'][] = [
-            'title' => '知识库',
-            'post_type' => 'zhuige_res',
-            'items' => $items,
-        ];
-        return $baseData;
+        return $items;
     }
 }
