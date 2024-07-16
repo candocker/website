@@ -31,11 +31,19 @@ trait TraitUnidata
         $type = $this->request->input('post_type');
         $type = $types[$type] ?? 'topic';
         $items = $this->getCircleDatas($type);
+        //var_export($items);exit();
         return [
             'code' => 0,
             'message' => '操作成功！',
             'data' => ['sticky_count' => 0, 'topics' => $items, 'more' => 'nomore'],
         ];
+    }
+
+    public function _bookHome($app)
+    {
+        $file = base_path() . "/vendor/candocker/website/resources/formatdata/circle/book-home.php";
+        $baseData = require($file);
+        return $baseData;
     }
 
     public function _settingHome($app)
@@ -66,7 +74,7 @@ trait TraitUnidata
             }
             $baseData['data']['rec_posts'][] = $pData;
         }*/
-        //print_r($baseData);
+        //var_export($baseData);exit();
         return $baseData;
     }
 
