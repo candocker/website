@@ -7,21 +7,38 @@ use Swoolecan\Foundation\Helpers\CommonTool;
 
 trait TraitKnowledge
 {
+    public function hotCourseList()
+    {
+        //$this->createCourses();exit();
+        $courseDatas = $this->_getCourseDatas(8, true);
+
+        return $this->success($courseDatas);
+    }
+
     public function courseList()
     {
         //$this->createCourses();exit();
+        $courseDatas = $this->_getCourseDatas();
+
+        return $this->success($courseDatas);
+    }
+
+    public function _getCourseDatas($limit = 20, $withTeacher = false)
+    {
         $query = $this->getModelObj('infocms-course');
         $query = $this->formatParams($query, $this->request->all());
-        $infos = $query->limit(20)->get();
+        $infos = $query->limit($limit)->get();
         $cData = require(base_path() . '/vendor/candocker/website/resources/knowledge/courseData.php');
-        $results = [];
+        $courseDatas = [];
         //print_r($cData);
         foreach ($infos as $info) {
             $data = $this->formatCourseData('course', $info, $cData);
-            $results[] = $data;
+            if ($withTeacher) {
+                $data['tinfo'] = $this->formatCourseData('teacher', $info, $cData);
+            }
+            $courseDatas[] = $data;
         }
-
-        return $this->success($results);
+        return $courseDatas;
     }
 
     public function formatParams($query, $params)
@@ -84,6 +101,9 @@ trait TraitKnowledge
     {
         $result = $this->getContentData('knowledge', 'home-data', 'mobile', 'array');
         $result['data']['classify'] = $this->_classifyDatas('');
+        $courseDatas = $this->_getCourseDatas();
+        $result['data']['courses'] = $courseDatas;
+
         return $this->successCustom($result);
     }
 

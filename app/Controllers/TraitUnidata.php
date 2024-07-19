@@ -39,6 +39,17 @@ trait TraitUnidata
         ];
     }
 
+    public function _forumDetail($app)
+    {
+        $id = $this->request->input('forum_id');
+        $id = $id > 1 ? 1 : $id;
+        $file = base_path() . "/vendor/candocker/website/resources/formatdata/forum-{$id}.php";
+        $baseData = require($file);
+        $userDatas = $this->getRandUserData(rand(5, 10));
+        $baseData['data']['forum']['users'] = $userDatas;
+        return $baseData;
+    }
+
     public function _bookHome($app)
     {
         $file = base_path() . "/vendor/candocker/website/resources/formatdata/circle/book-home.php";
@@ -87,5 +98,39 @@ trait TraitUnidata
             $items[] = require($fileKnowledge);
         }
         return $items;
+    }
+
+    public function getRandUserData($num, $type = 'simple')
+    {
+        $baseDatas = require(base_path() . "/vendor/candocker/website/resources/formatdata/circle/userinfo.php");
+        $result = [];
+        for ($i = 1; $i <= $num; $i++) {
+            $data = [
+                'user_id' => rand(1, 100),
+                'nickname' => $names[rand(0, 19)],
+                'avatar' => $avatars[rand(0, 20)],
+                'reward' => 'https://q.zhuige.com/wp-content/uploads/2023/10/jq1696170093VTRVIP.jpg',
+                'post_count' => rand(1, 1000),
+                'fans_count' => rand(100, 10000),
+                'is_follow' => rand(0, 1),
+                'owner' => rand(0, 1),
+                //'reward' => '',
+            ];
+            if ($type !== 'simple') {
+                $data['certify'] = [
+                    'status' => 1,
+                    'cid' => ['guanfang', 'chuangzuo'][rand(0, 1)],
+                    'icon' => ['https://q.zhuige.com/wp-content/uploads/2022/08/lvv.png', 'https://q.zhuige.com/wp-content/uploads/2022/08/8888.png'][rand(0, 1)],
+                    'name' => $titles[rand(0, 8)],
+                ];
+                $data['vip'] = [
+                    'status' => 1,
+                    'icon' => 'https://q.zhuige.com/wp-content/uploads/2022/09/vv1-1.png',
+                    'expire' => '2099-09-09',
+                ];
+            }
+            $result[] = $data;
+        }
+        return $result;
     }
 }
