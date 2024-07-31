@@ -4,8 +4,10 @@ namespace ModuleWebsite\Controllers;
 
 class ReadController extends AbstractController
 {
-	public function home()
-	{
+    use TraitBook;
+
+    public function home()
+    {
         $datas = [
             'title' => '碎片知识',
             'description' => '碎片化知识、碎片化学系',
@@ -16,7 +18,7 @@ class ReadController extends AbstractController
             ],
         ];
         return $this->customView('home', $datas);
-	}
+    }
 
     public function readClassical()
     {
@@ -172,25 +174,6 @@ class ReadController extends AbstractController
         return $datas;
     }
 
-    protected function getBookInfos($sort, $bookCode = null, $withTdk = false)
-    {
-        $bookListFile = $this->getBasePath() . $sort . 'list/index.php';
-        $bookDatas = require($bookListFile);
-        if (!empty($bookCode)) {
-            foreach ($bookDatas['chapters'] as $chapter) {
-                if (isset($chapter['books'][$bookCode])) {
-                    return $chapter['books'][$bookCode];
-                }
-            }
-        }
-
-        if ($withTdk) {
-            $bookDatas['tdkData'] = $this->formatTdk($bookDatas);
-            return $bookDatas;
-        }
-        return $bookDatas;
-    }
-
     protected function getChapterInfos($sort, $bookCode, $withTdk = false)
     {
         $bookData = $this->getBookInfos($sort, $bookCode);
@@ -207,20 +190,10 @@ class ReadController extends AbstractController
         return $chapterDatas;
     }
 
-    protected function formatTdk($datas)
+    protected function viewPath()
     {
-        $tdkData = [
-            'title' => $datas['name'] ?? '经典古籍',
-            'keywords' => $datas['kewowrd'] ?? '',
-            'description' => $datas['brief'] ?? '',
-        ];
-        return $tdkData;
+        return 'read';
     }
-
-	protected function viewPath()
-	{
-		return 'read';
-	}
 
     protected function getReadService()
     {
