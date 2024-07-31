@@ -51,20 +51,20 @@ abstract class AbstractController extends AbstractControllerBase
     public function isMobile($force = false)
     {
         if (empty($force)) {
-		    return null;
+            return null;
         }
         return $this->resource->isMobile();
     }
 
-	protected function customView($view, $datas = [], $viewPath = null)
-	{
-		$viewPath = is_null($viewPath) ? $this->viewPath() : $viewPath;
-		$view = $viewPath . '.' . $view;
-		$viewPre = $this->viewPre();
-		/*$datas = array_merge([
-			'title' => 'title',
-			'keywords' => 'keywords',
-			'description' => 'description'
+    protected function customView($view, $datas = [], $viewPath = null)
+    {
+        $viewPath = is_null($viewPath) ? $this->viewPath() : $viewPath;
+        $view = $viewPath . '.' . $view;
+        $viewPre = $this->viewPre();
+        /*$datas = array_merge([
+            'title' => 'title',
+            'keywords' => 'keywords',
+            'description' => 'description'
         ], $datas);*/
         $datas['navDatas'] = $this->getNavDatas();
         $datas['bigNav'] = $datas['bigNav'] ?? '';
@@ -78,8 +78,8 @@ abstract class AbstractController extends AbstractControllerBase
         }
         $datas = $this->resource->formatResultDatas($datas);
         //print_r($datas);exit();
-		return view($view, ['datas' => $datas]);
-	}
+        return view($view, ['datas' => $datas]);
+    }
 
     protected function getNavDatas()
     {
