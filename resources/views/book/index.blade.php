@@ -1,3 +1,4 @@
+@php $rowCount = 4 @endphp
 <html>
 
 <head>
@@ -22,70 +23,38 @@ a:hover {color: red;text-decoration:underline}
                 <!--<a href="001.htm">后页</a>--><br />
             </center>
         </td>
-
-
-        <td WIDTH="84%">
+        <td WIDTH="94%">
+            @foreach ($datas['data'] as $pData)
             <center>
                 <br>
-                <b><font face="楷体_GB2312"><font color="#FF6666"><font size=+2>罪与罚</font></font></font></b>
-                <p>作者：陀思妥耶夫斯基</p>
+                <b><font face="楷体_GB2312"><font color="#FF6666"><font size=+2>{{$pData['name']}}</font></font></font></b>
+                <p>{{$pData['description']}}</p>
             </center>
             <hr color="#EE9B73" size="1" width="94%">
             <center>
-                <table BORDER=0 CELLSPACING=2 CELLPADDING=2 COLS=2 WIDTH="50%">
-                    <tr>
-                        <td><center><a href="00.htm">内容简介</a></center></td>
-                        <td><center><a href="000.htm">作品赏析</a></center></td>
-                    </tr>
+                <table BORDER=0 CELLSPACING=2 CELLPADDING=2 COLS=2 WIDTH="90%">
+                @php $i = 1; @endphp
+                @foreach ($pData['books'] as $pInfo)
+                @if ($i % $rowCount == 1)<tr>@endif
+                <td><center align="left">
+                    <a href="/{{$pInfo['code']}}/list.html">{{$pInfo['name']}}</a>
+                </center></td>
+                @if ($i % $rowCount == $rowCount)</tr>@endif
+                @php $i += 1; @endphp
+                @endforeach
+                @if ($i % $rowCount != $rowCount)</tr>@endif
+
+
                 </table>
             </center>
-            <center>
-                <table BORDER=0 CELLPADDING=2 WIDTH="60%">
-                    <tr>
-                        <td COLSPAN="4" WIDTH="600" BGCOLOR="#eeebdf">
-                            <center><a href="001.htm">译序</a></center>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td ALIGN=CENTER COLSPAN="4" BGCOLOR="#eeebdf">
-                            <center>第一章</center>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td ALIGN=CENTER>
-                            <a href="002.htm">一</a>
-                        </td>
-                        <td ALIGN=CENTER>
-                            <a href="003.htm">二</a>
-                        </td>
-                        <td ALIGN=CENTER>
-                            <a href="004.htm">三</a>
-                        </td>
-                        <td ALIGN=CENTER>
-                            <a href="005.htm">四</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td ALIGN=CENTER>
-                            <a href="006.htm">五</a>
-                        </td>
-                        <td ALIGN=CENTER>
-                            <a href="007.htm">六</a>
-                        </td>
-                        <td ALIGN=CENTER>
-                            <a href="008.htm">七</a>
-                        </td>
-                        <td ALIGN=CENTER>
-                        </td>
-                    </tr>
-                </table>
-            </center>
+            <hr color="#EE9B73" size="1" width="94%">
+            @endforeach
         </td>
-        <td VALIGN="bottom" ROWSPAN="2" width="8%" bgcolor="#006699" class="tt3">
+        <!--<td VALIGN="bottom" ROWSPAN="2" width="8%" bgcolor="#006699" class="tt3">
             <center><br><a href="001.htm">后页</a><br /></center>
-        </td>
+        </td>-->
     </tr>
-    <tr>
+    <!--<tr>
         <td class="tt3">
             <hr color="#EE9B73" size="1" width="94%" />
             <center>
@@ -96,7 +65,7 @@ a:hover {color: red;text-decoration:underline}
                 </p>
             </center>
         </td>
-    </tr>
+    </tr>-->
 </table>
 </body>
 </html>
