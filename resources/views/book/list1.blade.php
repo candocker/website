@@ -35,7 +35,7 @@ p,td,select{font-size:9pt}a{color:#0058b0;font-size:9pt;text-decoration:none}a:h
                         </tr>
                         <tr bgcolor=#FFFFCC>
                             <td width=641 height=51 background="http://asset.canliang.wang/common/images/bg4.gif">
-                                @foreach ($datas as $pInfo)
+                                @foreach ($datas['chapterDatas'] as $pInfo)
                                 @if ($pInfo['chapter_type'] == 'top')
                                 <p style="line-height: 150%; margin-left: 30; margin-right: 5; margin-top: 10; margin-bottom: 10" align="center">
                                     <font size="3">
@@ -53,6 +53,37 @@ p,td,select{font-size:9pt}a{color:#0058b0;font-size:9pt;text-decoration:none}a:h
                                         @else 
                                             <font size="3">{{$pInfo['name']}}</font>
                                         @endif
+                                    </span>
+                                </p>
+                                @elseif ($pInfo['chapter_type'] == 'small')
+                                <p style="line-height: 150%; margin-left: 30; margin-right: 5; margin-top: 10; margin-bottom: 10" align="left">
+                                    <!--<span lang="EN-US">
+                                        <font size="3">
+                                            <b>
+                                                <o:p>
+                                                </o:p>
+                                            </b>
+                                            （一）优势的基础
+                                        </font>
+                                        <span style="FONT-SIZE: 13.5pt">
+                                            <font size="3">
+                                                <b>
+                                                    <o:p>
+                                                    </o:p>
+                                                </b>
+                                            </font>
+                                        </span>
+                                    </span>-->
+                                    <span lang="EN-US">
+                                        <font size="3">
+                                        @if ($pInfo['code']) 
+                                        <a href="/{{$pInfo['book_code']}}/{{$pInfo['code']}}.html">
+                                            <b><o:p></o:p></b>{{$pInfo['name']}}
+                                        </a>
+                                        @else 
+                                            <b><o:p></o:p></b>{{$pInfo['name']}}
+                                        @endif
+                                        </font>
                                     </span>
                                 </p>
                                 @elseif ($pInfo['chapter_type'] == 'big')
@@ -81,25 +112,6 @@ p,td,select{font-size:9pt}a{color:#0058b0;font-size:9pt;text-decoration:none}a:h
                                             </span>
                                         </b>
                                     </font>
-                                </p>-->
-                                <!--<p style="line-height: 150%; margin-left: 30; margin-right: 5; margin-top: 10; margin-bottom: 10" align="left">
-                                    <span lang="EN-US">
-                                        <font size="3">
-                                            <b>
-                                                <o:p>
-                                                </o:p>
-                                            </b>
-                                            （一）优势的基础
-                                        </font>
-                                        <span style="FONT-SIZE: 13.5pt">
-                                            <font size="3">
-                                                <b>
-                                                    <o:p>
-                                                    </o:p>
-                                                </b>
-                                            </font>
-                                        </span>
-                                    </span>
                                 </p>-->
                                 <!--<p style="line-height: 150%; margin-left: 30; margin-right: 5; margin-top: 10; margin-bottom: 10" align="left">
                                     <font size="3">

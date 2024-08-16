@@ -8,10 +8,8 @@
                     <p align=center class=9>
                         <font color="#800000">
                             <b>
-                                [美]埃德加·斯诺《
-                                <span style="mso-bidi-font-size: 24.0pt">
-                                    漫长的革命》
-                                </span>
+                                <!--[美]埃德加·斯诺-->
+                                <span style="mso-bidi-font-size: 24.0pt">{{$datas['bookData']['name']}}</span>
                             </b>
                         </font>
                     </p>

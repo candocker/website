@@ -433,4 +433,16 @@ trait TraitApplet
             $r = $service->putFile($info, $file, $data['image']);
         }
     }
+
+    public function _booktest($index)
+    {
+        $file = base_path() . "/vendor/candocker/website/resources/booktest/{$index}.json";
+        $result = json_decode(file_get_contents($file), true);
+        return $this->successCustom($result);
+    }
+
+    public function booktest1()
+    {
+        return $this->_booktest(1);
+    }
 }

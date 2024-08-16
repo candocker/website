@@ -49,8 +49,9 @@ a:hover{color:#6699FF}
                             <td width=100% height=51 background="http://asset.canliang.wang/common/images/bg4.gif">
                                 @foreach ($datas['contents'] as $pInfo)
 
-                                <p align="left" style="line-height: 150%; margin-left: 10; margin-right: 5; margin-top: 10; margin-bottom: 10">
-                                    <font size="4">{{$pInfo}}</font>
+                                <!--<p align="left" style="line-height: 150%; margin-left: 10; margin-right: 5; margin-top: 10; margin-bottom: 10">-->
+                                <p align="left" style="line-height: 24px; letter-spacing:1.0px; margin-left: 10; margin-right: 5; margin-top: 10; margin-bottom: 10">
+                                    <font size="4">{!!$pInfo!!}</font>
                                 </p>
                                 @endforeach
                                 <!--<p align="right" style="line-height: 150%; margin-left: 10; margin-right: 5; margin-top: 10; margin-bottom: 10">
