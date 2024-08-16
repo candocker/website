@@ -24,7 +24,7 @@ a:hover {color: red;text-decoration:underline}
             </center>
         </td>
         <td WIDTH="94%">
-            @foreach ($datas['data'] as $pData)
+            @foreach ($datas['sortBooks'] as $pData)
             <center>
                 <br>
                 <b><font face="楷体_GB2312"><font color="#FF6666"><font size=+2>{{$pData['name']}}</font></font></font></b>

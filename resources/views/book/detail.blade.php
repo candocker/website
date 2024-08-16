@@ -2,7 +2,7 @@
 
 <head>
 <meta http-equiv=Content-Type content="text/html; charset=utf8">
-<title>{{$datas['chapterInfo']['name']}}</title>
+<title>{{$datas['currentChapterData']['name']}}</title>
 <style>
 <!--
 .part{font-size:12pt}.9{font-size:9pt}A:link{text-decoration:none;color:#0033CC}A:visited{text-decoration:none;color:#0033CC}A:active{text-decoration:none;color:#0000ff}A:hover{text-decoration:underline;color:#FF0000}
@@ -41,7 +41,7 @@ a:hover{color:#6699FF}
                         <tr bgcolor=#CCCC99>
                             <td width=100% height=20 valign="middle" bgcolor="#FFFFCC">
                                 <p align=center>
-                                    <b><font size="4">{{$datas['chapterInfo']['name']}}</font></b>
+                                    <b><font size="4">{{$datas['currentChapterData']['name']}}</font></b>
                                 </p>
                             </td>
                         </tr>
