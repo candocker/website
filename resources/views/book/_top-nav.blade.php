@@ -16,7 +16,6 @@
                     <p align=center class=9>
                         <font color="#800000">
                             <b>
-                                <!--[美]埃德加·斯诺-->
                                 <span style="mso-bidi-font-size: 24.0pt"><a href="/{{$datas['bookData']['code']}}/list.html">{{$datas['bookData']['name']}}</a></span>
                             </b>
                         </font>
