@@ -67,6 +67,15 @@ class BookhouseController extends AbstractController
         return view('book.detail', ['datas' => $datas]);
     }
 
+    public function houseLoan()
+    {
+        $this->viewPre();
+        $datas = $this->getBookhouseServiceObj()->myLoan();
+        //print_r($datas); exit();
+        $view = view('simple.loan', ['datas' => $datas]);
+        return $view;
+    }
+
     public function getBookhouseServiceObj()
     {
         return $this->getServiceObj('culture-bookhouse');
