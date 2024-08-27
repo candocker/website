@@ -6,9 +6,31 @@ class BookhouseController extends AbstractController
 {
     use TraitBook;
 
-    public function foreignSorts()
+    public function knowledgeSorts()
     {
-        $datas = $this->getBookhouseServiceObj()->_getSeries('foreign');
+        $navType = $this->request->input('nav_type');
+        $bigSortCode = $this->request->input('big_sort_code');
+        $sortCode = $this->request->input('sort_code');
+        $datas = [];
+        if ($navType == 'book') {
+            $service = $this->getBookhouseServiceObj();
+            $datas = $bigSortCode == 'sort' ? $service->getPointBooks($sortCode) : $service->getSeries($sortCode);
+        } elseif ($navType == 'history') {
+            $datas = $this->getFetchDataServiceObj()->getGroupInfos($sortCode);
+        }
+        return $this->success($datas);
+    }
+
+    public function knowledgeBigSorts()
+    {
+        $navType = $this->request->input('nav_type');
+        $bigSortCode = $this->request->input('big_sort_code');
+        $datas = [];
+        if ($navType == 'book') {
+            $datas = $this->getBookhouseServiceObj()->getBigSorts($bigSortCode);
+        } elseif ($navType == 'history') {
+            $datas = $this->getFetchDataServiceObj()->getSubjectInfos($bigSortCode);
+        }
         return $this->success($datas);
     }
 
@@ -24,8 +46,11 @@ class BookhouseController extends AbstractController
     public function home()
     {
         $this->viewPre();
-        $force = $this->request->input('force', false);
-        $datas = $this->getBookhouseServiceObj()->_getSortBooks($force);
+        $results = $this->getBookhouseServiceObj()->_getSortBooks();
+        $datas = [
+            'tdkData' => ['title' => '图书分类-图书在线阅读，鲁迅全集、汉译学史名著'],
+            'sortBooks' => $results,
+        ];
         $view = view('book.index', ['datas' => $datas]);
         //\Storage::disk('local')->put('views/' . request()->path(), $view->render());
         return $view;
@@ -74,6 +99,11 @@ class BookhouseController extends AbstractController
         //print_r($datas); exit();
         $view = view('simple.loan', ['datas' => $datas]);
         return $view;
+    }
+
+    public function getFetchDataServiceObj()
+    {
+        return $this->getServiceObj('infocms-fetchData');
     }
 
     public function getBookhouseServiceObj()
