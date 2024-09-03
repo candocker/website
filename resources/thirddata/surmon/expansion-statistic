@@ -1,1 +1,0 @@
-{"status":"success","message":"Get statistic succeed","params":{"isAuthenticated":false,"isUnauthenticated":true,"url":"/expansion/statistic","method":"GET","routes":{},"payload":{}},"result":{"tags":24,"articles":173,"comments":2169,"totalViews":785636,"totalLikes":6441,"todayViews":263,"averageEmotion":4.762}}

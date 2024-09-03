@@ -5,6 +5,34 @@ namespace ModuleWebsite\Controllers;
 class BookhouseController extends AbstractController
 {
     use TraitBook;
+    use TraitUnidata;
+
+    public function infolist()
+    {
+        $infoType = $this->request->input('info_type');
+        //$datas = $this->getFetchDataServiceObj()->getFigureDetail($infoType);
+        $datas = $this->getCircleTestInfos($infoType);
+        //print_r($datas);
+        return $this->success($datas);
+    }
+
+    public function figureDetail()
+    {
+        $figureCode = $this->request->input('figure_code');
+        $datas = $this->getFetchDataServiceObj()->getFigureDetail($figureCode);
+        return $this->success($datas);
+    }
+
+    public function groupDetail()
+    {
+        $groupCode = $this->request->input('group_code');
+        $datas = $this->getFetchDataServiceObj()->getGroupDetail($groupCode);
+        $datas['articles'] = [
+            'title' => '文章',
+            'items' => $this->getCircleDatas('article'),
+        ];
+        return $this->success($datas);
+    }
 
     public function knowledgeSorts()
     {
@@ -15,7 +43,7 @@ class BookhouseController extends AbstractController
         if ($navType == 'book') {
             $service = $this->getBookhouseServiceObj();
             $datas = $bigSortCode == 'sort' ? $service->getPointBooks($sortCode) : $service->getSeries($sortCode);
-        } elseif ($navType == 'history') {
+        } elseif (in_array($navType, ['figure', 'history'])) {
             $datas = $this->getFetchDataServiceObj()->getGroupInfos($sortCode);
         }
         return $this->success($datas);
@@ -28,7 +56,7 @@ class BookhouseController extends AbstractController
         $datas = [];
         if ($navType == 'book') {
             $datas = $this->getBookhouseServiceObj()->getBigSorts($bigSortCode);
-        } elseif ($navType == 'history') {
+        } elseif (in_array($navType, ['history', 'figure'])) {
             $datas = $this->getFetchDataServiceObj()->getSubjectInfos($bigSortCode);
         }
         return $this->success($datas);

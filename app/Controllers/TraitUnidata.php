@@ -47,6 +47,7 @@ trait TraitUnidata
         $baseData = require($file);
         $userDatas = $this->getRandUserData(rand(5, 10));
         $baseData['data']['forum']['users'] = $userDatas;
+        var_export($baseData);exit();
         return $baseData;
     }
 
@@ -61,21 +62,35 @@ trait TraitUnidata
     {
         $file = base_path() . "/vendor/candocker/website/resources/formatdata/{$app}/home.php";
         $baseData = require($file);
+        //$baseData['data']['rec_posts'][] = $this->getCircleTestInfos('score');
 
-        /*$types = [
-            //'zhuige_vote' => 'vote',
-            //'zhuige_bbs_topic' => 'topic',
-            'zhuige_goods' => 'score',
-            //'zhuige_business_card' => 'merchant',
-            'zhuige_res' => 'knowledge',
-            'zhuige_column' => 'course',
+        return $baseData;
+    }
+
+    public function getCircleTestInfos($infoType)
+    {
+        $results = [];
+        $types = [
+            'zhuige_business_card' => 'merchant',
+            'zhuige_vote' => 'vote',
             'post' => 'article',
+            'zhuige_bbs_topic' => 'topic',
+            'zhuige_goods' => 'score',
+            'zhuige_res' => 'knowledge',
+            'zhuige_wiki' => 'wiki',
+            'zhuige_idlegoods' => 'goods',
+            'zhuige_column' => 'course',
             'zhuige_activity' => 'activity',
         ];
         foreach ($types as $type => $file) {
+            if ($file != $infoType) {
+                continue;
+            }
             $items = $this->getCircleDatas($file);
             $pData = [
                 'title' => $type,
+                'type' => $file,
+                'moreLink' => 'https://www.baidu.com',
                 'post_type' => $type,
                 'items' => $items,
             ];
@@ -83,15 +98,17 @@ trait TraitUnidata
                 $pData['banner'] = 'https://www.zhuige.com/uploads/20210912/7099f99f590b2a09b50fb4328fe12e50.png';
                 $pData['subtitle'] = 'subtitle';
             }
-            $baseData['data']['rec_posts'][] = $pData;
-        }*/
-        //var_export($baseData);exit();
-        return $baseData;
+            //$results[] = $pData;
+        }
+        //print_r($pData);
+        return $pData;
+        return $results;
     }
 
     public function getCircleDatas($type)
     {
         $num = rand(3, 6);
+        //var_dump($num);
         $fileKnowledge = base_path() . "/vendor/candocker/website/resources/formatdata/circle/{$type}.php";
         $items = [];
         for ($i = 0; $i <= $num; $i++) {
