@@ -42,7 +42,11 @@ class BookhouseController extends AbstractController
         $datas = [];
         if ($navType == 'book') {
             $service = $this->getBookhouseServiceObj();
-            $datas = $bigSortCode == 'sort' ? $service->getPointBooks($sortCode) : $service->getSeries($sortCode);
+            if (in_array($bigSortCode, ['sort', 'self'])) {
+                $datas = $service->getPointBooks($sortCode);
+            } else {
+                $datas = $service->getSeries($sortCode);
+            }
         } elseif (in_array($navType, ['figure', 'history'])) {
             $datas = $this->getFetchDataServiceObj()->getGroupInfos($sortCode);
         }
@@ -74,7 +78,7 @@ class BookhouseController extends AbstractController
     public function home()
     {
         $this->viewPre();
-        $results = $this->getBookhouseServiceObj()->_getSortBooks();
+        $results = $this->getBookhouseServiceObj()->_getSortBooks('all');
         $datas = [
             'tdkData' => ['title' => '图书分类-图书在线阅读，鲁迅全集、汉译学史名著'],
             'sortBooks' => $results,

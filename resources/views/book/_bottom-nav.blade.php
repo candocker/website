@@ -15,7 +15,7 @@
                 <td width=59% align="center">
                     <p align=center class=9>
                         <b>
-                            <span style="mso-bidi-font-size: 24.0pt"><a href="/home.html">首页</a></span>
+                            <span style="mso-bidi-font-size: 24.0pt"><a href="/">首页</a></span>
                         </b>
                         <a href="/{{$datas['bookData']['code']}}/list.html">目录页</a>
                     </p>

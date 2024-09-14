@@ -203,7 +203,7 @@ class ReadController extends AbstractController
     public function getNavDatas()
     {
         return [
-            'read' => [
+            /*'read' => [
                 'noUrl' => true,
                 'name' => '有效阅读',
                 'subNavs' => [
@@ -232,11 +232,61 @@ class ReadController extends AbstractController
                     'luxun' => ['name' => '鲁迅图书'],
                     'goodwork' => ['name' => '名家名作'],
                 ],
-            ],
+            ],*/
             'book' => [
-                'name' => '王灿书屋',
+                'name' => '王灿知识库',
                 'url' => 'http://book.canliang.wang/',
             ],
+            'bookpc' => [
+                'name' => 'PC端书屋',
+                'url' => 'http://bookhouse.canliang.wang/',
+            ],
         ];
+    }
+
+    public function dealBook()
+    {
+        $bookListFile = $this->getBasePath() . 'referencelist/index.php';
+        $bookDatas = require($bookListFile);
+        $sqlBook = 'INSERT INTO `wp_book` (`code`, `name`, `category`, `book_path`, `status`, `created_at`, `updated_at`) VALUES ';
+        $sql = 'INSERT INTO `wp_chapter` (`code`, `chapter_type`, `serial`, `book_code`, `name`, `status`, `created_at`, `updated_at`) VALUES ';
+        $command = '';
+        foreach ($bookDatas['chapters'][0]['books'] as $code => $bData) {
+            $datas = $this->getChapterInfos('reference', $code, true);
+            //print_r($datas);exit();
+            $bCode = $code;
+            $infos = $datas['infos'];
+            foreach ($datas['chapters'] as $cInfo) {
+                $sqlBook .= "('ruxue{$cInfo['brief']}', '儒学-{$cInfo['name']}', 'ruxue', '资料库/儒学/儒学-{$cInfo['name']}', 1, NOW(), NOW()),\n";
+                $i = 1;
+                $command .= "mkdir /data/htmlwww/resource/books/资料库/儒学/儒学-{$cInfo['name']}/;\n";
+                foreach ($cInfo['infos'] as $cCode) {
+                    $serial = $i * 10;
+                    $cName = $infos[$cCode]['name'];
+                    $sql .= "('{$cCode}', 'common', {$serial}, 'ruxue{$cInfo['brief']}', '{$cName}', 1, NOW(), NOW()),\n";
+                    $i++;
+                    $filePath = $this->getBasePath() . "references/{$code}/{$cCode}.php";
+                    $command .= "mv {$filePath} /data/htmlwww/resource/books/资料库/儒学/儒学-{$cInfo['name']}/;\n";
+                }
+            }
+            echo $sqlBook;
+        echo $sql;
+            echo $command;exit();
+            //var_dump($code);
+            //print_r($datas);
+            /*$nData = [
+                'code' => $code,
+                'name' => $bData['name'],
+                'type' => 'epub',
+                'category' => 'ruxue',
+            ];
+            $exist = $this->getModelObj('culture-book')->where(['code' => $code])->first();
+            if ($exist) {
+                print_r($exist->toArray());
+            }
+            $this->getModelObj('culture-book')->create($nData);*/
+            //print_r($bData);
+        }
+        echo $sql;
     }
 }
