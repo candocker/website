@@ -6,6 +6,7 @@ class BookhouseController extends AbstractController
 {
     use TraitBook;
     use TraitUnidata;
+    use TraitRecord;
 
     public function infolist()
     {
@@ -83,7 +84,7 @@ class BookhouseController extends AbstractController
             'tdkData' => ['title' => '图书分类-图书在线阅读，鲁迅全集、汉译学史名著'],
             'sortBooks' => $results,
         ];
-        $view = view('book.index', ['datas' => $datas]);
+        $view = view('book.home', ['datas' => $datas]);
         //\Storage::disk('local')->put('views/' . request()->path(), $view->render());
         return $view;
     }
@@ -130,6 +131,27 @@ class BookhouseController extends AbstractController
         $datas = $this->getBookhouseServiceObj()->myLoan();
         //print_r($datas); exit();
         $view = view('simple.loan', ['datas' => $datas]);
+        return $view;
+    }
+
+    public function wikiDetail($type, $code)
+    {
+        $this->viewPre();
+        $datas = [
+            'tdkData' => ['title' => '图书分类-图书在线阅读，鲁迅全集、汉译学史名著'],
+            //'sortBooks' => $results,
+        ];
+        $view = view('knowledge.wiki', ['datas' => $datas]);
+        return $view;
+    }
+
+    public function gatherData()
+    {
+        $this->viewPre();
+        $datas = [
+            'tdkData' => ['title' => '图书分类-图书在线阅读，鲁迅全集、汉译学史名著'],
+        ];
+        $view = view('knowledge.gather', ['datas' => $datas]);
         return $view;
     }
 
