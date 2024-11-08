@@ -76,30 +76,10 @@ class BookhouseController extends AbstractController
         return $this->success($datas);
     }
 
-    public function home()
-    {
-        $this->viewPre();
-        $results = $this->getBookhouseServiceObj()->_getSortBooks('all');
-        $datas = [
-            'tdkData' => ['title' => '图书分类-图书在线阅读，鲁迅全集、汉译学史名著'],
-            'sortBooks' => $results,
-        ];
-        $view = view('book.home', ['datas' => $datas]);
-        //\Storage::disk('local')->put('views/' . request()->path(), $view->render());
-        return $view;
-    }
-
     public function readerSortBooks()
     {
         $datas = $this->getBookhouseServiceObj()->_getSortBooks();
         return $this->success($datas);
-    }
-
-    public function bookList($bookCode = null)
-    {
-        $this->viewPre();
-        $datas = $this->getBookhouseServiceObj()->_bookDetail($bookCode);
-        return view('book.list1', ['datas' => $datas]);
     }
 
     public function readerBookInfo()
@@ -116,13 +96,6 @@ class BookhouseController extends AbstractController
 
         $datas = $this->getBookhouseServiceObj()->getChapterDetail($bookCode, $chapterCode, 'string');
         return $this->success($datas);
-    }
-
-    public function bookDetail($bookCode, $chapterCode)
-    {
-        $this->viewPre();
-        $datas = $this->getBookhouseServiceObj()->getChapterDetail($bookCode, $chapterCode);
-        return view('book.detail', ['datas' => $datas]);
     }
 
     public function houseLoan()
@@ -145,23 +118,8 @@ class BookhouseController extends AbstractController
         return $view;
     }
 
-    public function gatherData()
-    {
-        $this->viewPre();
-        $datas = [
-            'tdkData' => ['title' => '图书分类-图书在线阅读，鲁迅全集、汉译学史名著'],
-        ];
-        $view = view('knowledge.gather', ['datas' => $datas]);
-        return $view;
-    }
-
     public function getFetchDataServiceObj()
     {
         return $this->getServiceObj('infocms-fetchData');
-    }
-
-    public function getBookhouseServiceObj()
-    {
-        return $this->getServiceObj('culture-bookhouse');
     }
 }
